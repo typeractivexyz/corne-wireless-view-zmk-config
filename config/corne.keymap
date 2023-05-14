@@ -10,14 +10,15 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
+        nothing: nothing {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "NOTHING";
             bindings =
                 <&none>,
                 <&none>;
 
             #binding-cells = <2>;
+            tapping-term-ms = <100>;
         };
         hold_tap: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -43,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&new_behavior                   &kp Q  &kp W                  &kp E             &kp R      &kp T      &kp Y      &kp U            &kp I    &kp O     &kp P  &new_behavior
-&new_behavior                   &kp A  &kp S                  &kp D             &kp F      &kp G      &kp H      &kp J            &kp K    &kp L  &kp SEMI  &new_behavior
-&new_behavior  &hold_tap LEFT_SHIFT Z  &kp X                  &kp C             &kp V      &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &kp FSLH  &new_behavior
-                                              &hold_tap LALT ESCAPE  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &lt 1 TAB  &lt 2 BACKSPACE
+&nothing 0 0                   &kp Q  &kp W                  &kp E             &kp R      &kp T      &kp Y      &kp U            &kp I    &kp O     &kp P  &nothing 0 0
+&nothing 0 0                   &kp A  &kp S                  &kp D             &kp F      &kp G      &kp H      &kp J            &kp K    &kp L  &kp SEMI  &nothing 0 0
+&nothing 0 0  &hold_tap LEFT_SHIFT Z  &kp X                  &kp C             &kp V      &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &kp FSLH  &nothing 0 0
+                                             &hold_tap LALT ESCAPE  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &lt 1 TAB  &lt 2 BACKSPACE
             >;
         };
 
@@ -58,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
- &kp LSHFT        &trans        &trans        &trans        &trans        &trans      &trans    &trans    &trans     &trans  &trans    &trans
-                                            &kp LGUI        &trans     &kp SPACE     &kp RET    &trans  &kp RALT
+&nothing 0 0          &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       &kp N6     &kp N7            &kp N8             &kp N9           &kp N0  &nothing 0 0
+&nothing 0 0       &kp GRAVE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &kp LEFT   &kp DOWN            &kp UP          &kp RIGHT    &kp SEMICOLON  &nothing 0 0
+&nothing 0 0  &kp LEFT_SHIFT        &trans        &trans        &trans        &trans    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &nothing 0 0
+                                                &kp LGUI        &trans     &kp SPACE      &kp RET    &lt 0 0          &kp RALT
             >;
         };
 
@@ -73,10 +74,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LCTRL    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI    &trans  &kp SPACE      &kp RET     &trans         &kp RALT
+&new_behavior 0 0  &kp F1  &kp F2      &kp F3            &kp F4      &kp F5        &kp F6           &kp F7             &kp F8    &kp F9   &kp F10  &new_behavior 0 0
+&new_behavior 0 0  &trans  &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp K_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RBKT  &kp BSLH  &new_behavior 0 0
+&new_behavior 0 0  &trans  &trans      &trans            &trans      &trans     &kp UNDER         &kp PLUS           &kp LBRC  &kp RBRC  &kp PIPE  &new_behavior 0 0
+                                     &kp LGUI            &trans   &kp SPACE       &kp RET           &trans           &kp RALT
             >;
         };
     };
