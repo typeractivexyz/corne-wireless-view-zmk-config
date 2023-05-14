@@ -34,10 +34,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none                   &kp Q  &kp W                   &kp E         &kp R                         &kp T      &kp Y      &kp U            &kp I    &kp O                        &kp P  &none
-&none                   &kp A  &kp S                   &kp D         &kp F                         &kp G      &kp H      &kp J            &kp K    &kp L                     &kp SEMI  &none
-&none  &hold_tap LEFT_SHIFT Z  &kp X                   &kp C         &kp V                         &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &hold_tap RIGHT_SHIFT SLASH  &none
-                                      &hold_tap LCTRL ESCAPE  &kp LEFT_ALT  &hold_tap LEFT_COMMAND SPACE    &kp RET  &lt 1 TAB  &lt 2 BACKSPACE
+&none                   &kp Q  &kp W                   &kp E             &kp R                     &kp T      &kp Y      &kp U            &kp I    &kp O                        &kp P  &none
+&none                   &kp A  &kp S                   &kp D             &kp F                     &kp G      &kp H      &kp J            &kp K    &kp L                     &kp SEMI  &none
+&none  &hold_tap LEFT_SHIFT Z  &kp X                   &kp C             &kp V                     &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &hold_tap RIGHT_SHIFT SLASH  &none
+                                      &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE    &kp RET  &lt 1 TAB  &lt 2 BACKSPACE
             >;
         };
 
@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none          &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       &kp N6     &kp N7            &kp N8             &kp N9           &kp N0  &none
-&none       &kp GRAVE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &kp LEFT   &kp DOWN            &kp UP          &kp RIGHT    &kp SEMICOLON  &none
-&none  &kp LEFT_SHIFT        &trans        &trans        &trans        &trans    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &none
-                                         &kp LGUI        &trans     &kp SPACE      &kp RET    &lt 0 0          &kp RALT
+&none          &kp N1        &kp N2                  &kp N3            &kp N4                    &kp N5       &kp N6     &kp N7            &kp N8             &kp N9           &kp N0  &none
+&none       &kp GRAVE  &bt BT_SEL 0            &bt BT_SEL 1      &bt BT_SEL 2              &bt BT_SEL 3     &kp LEFT   &kp DOWN            &kp UP          &kp RIGHT    &kp SEMICOLON  &none
+&none  &kp LEFT_SHIFT        &trans                  &trans            &trans                    &trans    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &none
+                                     &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE      &kp RET    &kp TAB        &kp DELETE
             >;
         };
 
@@ -64,10 +64,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp F1  &kp F2      &kp F3            &kp F4      &kp F5        &kp F6           &kp F7             &kp F8    &kp F9   &kp F10  &none
-&none  &trans  &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp K_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RBKT  &kp BSLH  &none
-&none  &trans  &trans      &trans            &trans      &trans     &kp UNDER         &kp PLUS           &kp LBRC  &kp RBRC  &kp PIPE  &none
-                         &kp LGUI            &trans   &kp SPACE       &kp RET           &trans           &kp RALT
+&none  &kp F1  &kp F2                  &kp F3            &kp F4                    &kp F5        &kp F6           &kp F7             &kp F8    &kp F9   &kp F10  &none
+&none  &trans  &trans              &kp K_PREV  &kp K_PLAY_PAUSE                &kp K_NEXT    &kp K_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RBKT  &kp BSLH  &none
+&none  &trans  &trans                  &trans            &trans                    &trans     &kp UNDER         &kp PLUS           &kp LBRC  &kp RBRC  &kp PIPE  &none
+                       &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE       &kp RET          &kp TAB         &kp DELETE
             >;
         };
     };
