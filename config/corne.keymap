@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -51,7 +51,7 @@
             bindings = <
 &none          &kp N1        &kp N2                  &kp N3            &kp N4                    &kp N5       &kp N6     &kp N7            &kp N8             &kp N9            &kp N0  &none
 &none       &kp GRAVE  &bt BT_SEL 0            &bt BT_SEL 1      &bt BT_SEL 2              &bt BT_SEL 3     &kp LEFT   &kp DOWN            &kp UP          &kp RIGHT  &kp SINGLE_QUOTE  &none
-&none  &kp LEFT_SHIFT        &trans                  &trans            &trans                    &trans    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp RIGHT_SHIFT  &none
+&none  &kp LEFT_SHIFT        &trans                  &trans            &trans                    &trans    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH  &none
                                      &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE      &kp RET    &kp TAB        &kp DELETE
             >;
         };
