@@ -24,7 +24,7 @@
                          &kp LGUI  &mo 2  &kp SPACE    &kp RETURN  &mo 3   &kp RALT
             >;
 
-            label = "COLEMAK-DH";
+            label = "CLMK";
         };
 
         qwerty {
@@ -41,7 +41,7 @@
                           &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 3   &kp RALT
             >;
 
-            label = "QWERTY";
+            label = "QRTY";
         };
 
         lower_layer {
