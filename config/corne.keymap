@@ -29,7 +29,7 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 | LFT | DWN | UP  | RGT |      | 
-// | SHFT |  F7 |  F8 |  F9 | F10 | F11 |   | F12 | BT1 | BT2 | BT3 | PP  |      |
+// | SHFT |  F7 |  F8 |  F9 | F10 | F11 |   | F12 | C_SKIP | C_VOL_DN | C_VOL_UP | PP  |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
@@ -48,7 +48,7 @@
                         bindings = <
    &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
    &kp LCTRL &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp F6 &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp BT_CLR &kp BT_SEL 0   &kp BT_SEL  1 &kp BT_SEL 2   &kp BT_SEL 3   &kp BT_SEL 4      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &bt BT_CLR &bt BT_SEL 0   &bt BT_SEL  1 &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
