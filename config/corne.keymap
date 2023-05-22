@@ -60,7 +60,7 @@
 
             bindings = <
    &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
-	&trans	      &trans        &trans        &trans        &BT_NXT       &BT_CLR     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans    &trans
+	&trans	      &trans        &trans        &trans    &bt BT_NXT    &bt BT_CLR    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
  &kp LSHFT        &tog 1        &trans        &trans        &trans        &trans      &trans    &trans    &trans     &trans  &trans    &trans
                                             &kp LGUI        &trans     &kp SPACE     &kp RET    &trans    &kp RALT
             >;
