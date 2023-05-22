@@ -13,13 +13,27 @@
         compatible = "zmk,combos";
     };
 
+    behaviors {
+        bluetooth_ctrl: bluetooth_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BLUETOOTH_CTRL";
+            bindings =
+                <&bt>,
+                <&bt>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         colemak-dh {
             bindings = <
   &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp B         &kp J  &kp L      &kp U    &kp Y  &kp SEMI  &kp BSPC
-&kp LSHFT  &kp A  &kp R     &kp S  &kp T      &kp G         &kp M  &kp N      &kp E    &kp I     &kp O   &kp SQT
+&sk LSHFT  &kp A  &kp R     &kp S  &kp T      &kp G         &kp M  &kp N      &kp E    &kp I     &kp O   &kp SQT
 &kp LCTRL  &kp Z  &kp X     &kp C  &kp D      &kp V         &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
                          &kp LGUI  &mo 2  &kp SPACE    &kp RETURN  &mo 3   &kp RALT
             >;
@@ -52,10 +66,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
- &kp LSHFT        &trans        &trans        &trans        &trans        &trans      &trans    &trans    &trans     &trans  &trans    &trans
-                                            &kp LGUI        &trans     &kp SPACE     &kp RET    &tog 1  &kp RALT
+  &kp TAB  &kp N1  &kp N2    &kp N3  &kp N4     &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0                       &kp BSPC
+   &trans  &trans  &trans    &trans  &trans     &trans    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans  &bluetooth_ctrl BT_NXT BT_CLR
+&kp LSHFT  &trans  &trans    &trans  &trans     &trans      &trans    &trans    &trans     &trans  &trans                         &trans
+                           &kp LGUI  &trans  &kp SPACE     &kp RET    &tog 1  &kp RALT
             >;
 
             label = "LWR";
