@@ -28,12 +28,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |  F1 |  F2 |  F3 |  F4 |  F5 |   | F6  | LFT | DWN |  UP | RGT |      |
+// | CTRL |  F1 |  F2 |  F3 |  F4 |  F5 |   | LFT | DWN |  UP | RGT |  F6 |      |
 // | SHFT |  F7 |  F8 |  F9 | F10 | F11 |   | F12 |   +  |  {  |  } | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp F1  &kp F2 &kp F3 &kp F4 &kp F5      &kp F6 &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp &trans
+   &kp LCTRL &kp F1  &kp F2 &kp F3 &kp F4 &kp F5      &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F6 &kp &trans
    &kp LSHFT  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11      &kp F12 &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
 
 
