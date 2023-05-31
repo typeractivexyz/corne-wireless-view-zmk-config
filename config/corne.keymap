@@ -14,10 +14,10 @@
 
         colemak-dh {
             bindings = <
-  &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp B         &kp J  &kp L      &kp U    &kp Y  &kp SEMI  &kp BSPC
-&kp LSHFT  &kp A  &kp R     &kp S  &kp T      &kp G         &kp M  &kp N      &kp E    &kp I     &kp O   &kp SQT
-&kp LCTRL  &kp Z  &kp X     &kp C  &kp D      &kp V         &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                         &kp LGUI  &mo 2  &kp SPACE    &kp RETURN  &mo 3   &kp RALT
+  &kp ESCAPE           &kp Q           &kp W               &kp F        &kp P      &kp B            &kp J        &kp L              &kp U            &kp Y         &kp SEMI  &kp INSERT
+     &kp TAB  &mt LEFT_GUI A  &mt LEFT_ALT R    &mt LEFT_SHIFT S  &mt LCTRL T      &kp G            &kp M  &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_GUI O     &kp SQT
+&kp CAPSLOCK           &kp Z           &kp X               &kp C        &kp D      &kp V            &kp K        &kp H          &kp COMMA          &kp DOT         &kp FSLH     &kp DEL
+                                              &mt K_COPY K_PASTE    &lt 2 TAB  &kp SPACE    &kp BACKSPACE  &lt 3 ENTER              &sl 4
             >;
 
             label = "CLMK";
@@ -31,16 +31,16 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &kp TAB  &kp Q  &kp W     &kp E  &kp R      &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
-&kp LSHIFT  &kp A  &kp S     &kp D  &kp F      &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
- &kp LCTRL  &kp Z  &kp X     &kp C  &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                          &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 3   &kp RALT
+&trans           &kp Q           &kp W             &kp E        &kp R   &kp T     &kp Y                &kp U              &kp I            &kp O               &kp P  &trans
+&trans  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G     &kp H  &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RGUI SEMICOLON  &trans
+&trans           &kp Z           &kp X             &kp C        &kp V   &kp B     &kp N                &kp M          &kp COMMA          &kp DOT            &kp FSLH  &trans
+                                                  &trans       &trans  &trans    &trans               &trans             &trans
             >;
 
             label = "QRTY";
         };
 
-        lower_layer {
+        numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -48,16 +48,16 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp TAB  &kp N1  &kp N2    &kp N3  &kp N4     &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
-&kp LSHFT  &trans  &trans    &trans  &trans     &trans    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
-&kp LCTRL  &trans  &trans    &trans  &trans     &trans      &trans    &trans    &trans     &trans  &trans    &trans
-                           &kp LGUI  &trans  &kp SPACE     &kp RET    &trans  &kp RALT
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6    &kp N7  &kp N8     &kp N9  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans     &trans  &trans  &trans
+                        &trans  &trans  &trans      &trans    &trans  &trans
             >;
 
-            label = "LWR";
+            label = "NUM";
         };
 
-        raise_layer {
+        symbols {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -65,21 +65,21 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LSHIFT    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
- &kp LCTRL    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                              &kp LGUI    &trans  &kp SPACE      &kp RET     &trans         &kp RALT
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
+&trans    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&trans    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                            &trans    &trans     &trans       &trans     &trans           &trans
             >;
 
-            label = "RSE";
+            label = "SYM";
         };
 
         function {
             bindings = <
-&bt BT_CLR  &kp F1  &kp F2  &kp F3         &kp F4  &kp F5          &kp F6        &kp F7            &kp F8              &kp F9  &kp F10  &kp F11
-&bt BT_NXT  &trans  &trans  &trans      &kp PG_UP  &tog 1    &kp C_VOL_UP  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD   &trans  &kp F12
-    &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans    &kp C_VOL_DN        &trans            &trans              &trans   &trans   &trans
-                            &trans         &trans  &trans          &trans        &trans            &trans
+&bt BT_CLR   &kp F1   &kp F2  &kp F3         &kp F4    &kp F5          &kp F6      &kp F7            &kp F8      &kp F9  &kp F10  &trans
+&bt BT_NXT  &kp F11  &kp F12  &trans      &kp PG_UP  &kp HOME    &kp C_VOL_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT   &trans  &trans
+    &trans   &trans   &trans  &trans  &kp PAGE_DOWN   &kp END    &kp C_VOL_DN      &trans            &trans      &trans   &trans  &tog 1
+                              &trans         &trans    &trans          &trans      &trans            &trans
             >;
 
             label = "FUN";
