@@ -9,19 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        fun_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
