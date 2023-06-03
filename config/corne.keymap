@@ -45,10 +45,10 @@
 
         colemak-dh {
             bindings = <
-  &kp ESCAPE            &kp Q            &kp W                     &kp F         &kp P      &kp B            &kp J         &kp L               &kp U             &kp Y          &kp SEMI  &kp INSERT
-     &kp TAB  &hml LEFT_GUI A  &hml LEFT_ALT R         &hml LEFT_SHIFT S  &hml LCTRL T      &kp G            &kp M  &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O     &kp SQT
-&kp CAPSLOCK            &kp Z            &kp X                     &kp C         &kp D      &kp V            &kp K         &kp H           &kp COMMA           &kp DOT          &kp FSLH     &kp DEL
-                                                &mt C_AC_COPY C_AC_PASTE     &lt 2 TAB  &kp SPACE    &kp BACKSPACE   &lt 3 ENTER               &sl 4
+ &kp LA(TAB)            &kp Q            &kp W              &kp F         &kp P      &kp B            &kp J         &kp L               &kp U             &kp Y          &kp SEMI  &kp INSERT
+  &kp ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G            &kp M  &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O     &kp SQT
+&kp CAPSLOCK            &kp Z            &kp X              &kp C         &kp D      &kp V            &kp K         &kp H           &kp COMMA           &kp DOT          &kp FSLH     &kp DEL
+                                                       &kp ESCAPE     &lt 2 TAB  &kp SPACE    &kp BACKSPACE   &lt 3 ENTER               &sl 4
             >;
 
             label = "CLMK";
