@@ -10,16 +10,27 @@
 
 / {
     behaviors {
-        hold_tap: hold_tap {
+        hold_tap_200: hold_tap_200 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
+            label = "HOLD_TAP_200";
             bindings =
                 <&kp>,
                 <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+        hold_tap_150: hold_tap_150 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_150";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
             tapping-term-ms = <150>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -34,10 +45,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none                   &kp Q  &kp W                   &kp E             &kp R                     &kp T      &kp Y      &kp U            &kp I    &kp O                        &kp P  &none
-&none                   &kp A  &kp S                   &kp D             &kp F                     &kp G      &kp H      &kp J            &kp K    &kp L                     &kp SEMI  &none
-&none  &hold_tap LEFT_SHIFT Z  &kp X                   &kp C             &kp V                     &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &hold_tap RIGHT_SHIFT SLASH  &none
-                                      &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE    &kp RET  &lt 1 TAB  &lt 2 BACKSPACE
+&none                       &kp Q  &kp W                           &kp E             &kp R                         &kp T      &kp Y      &kp U            &kp I    &kp O                            &kp P  &none
+&none                       &kp A  &kp S                           &kp D             &kp F                         &kp G      &kp H      &kp J            &kp K    &kp L                         &kp SEMI  &none
+&none  &hold_tap_150 LEFT_SHIFT Z  &kp X                           &kp C             &kp V                         &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &hold_tap_200 RIGHT_SHIFT SLASH  &none
+                                          &hold_tap_200 LEFT_CONTROL ESC  &kp LEFT_COMMAND  &hold_tap_200 LEFT_ALT SPACE    &kp RET  &lt 1 TAB  &lt 2 BACKSPACE
             >;
         };
 
@@ -49,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none          &kp N1        &kp N2                  &kp N3            &kp N4                    &kp N5       &kp N6     &kp N7            &kp N8             &kp N9            &kp N0  &none
-&none       &kp GRAVE  &bt BT_SEL 0            &bt BT_SEL 1      &bt BT_SEL 2              &bt BT_SEL 3     &kp LEFT   &kp DOWN            &kp UP          &kp RIGHT  &kp SINGLE_QUOTE  &none
-&none  &kp LEFT_SHIFT        &trans                  &trans            &trans                    &trans    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH  &none
-                                     &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE      &kp RET    &kp TAB        &kp DELETE
+&none          &kp N1        &kp N2                             &kp N3            &kp N4                        &kp N5       &kp N6     &kp N7            &kp N8             &kp N9            &kp N0  &none
+&none       &kp GRAVE  &bt BT_SEL 0                       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3     &kp LEFT   &kp DOWN            &kp UP          &kp RIGHT  &kp SINGLE_QUOTE  &none
+&none  &kp LEFT_SHIFT         &none                              &none             &none                         &none    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH  &none
+                                     &hold_tap_200 LEFT_CONTROL ESCAPE  &kp LEFT_COMMAND  &hold_tap_200 LEFT_ALT SPACE      &kp RET    &kp TAB        &kp DELETE
             >;
         };
 
@@ -64,19 +75,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp F1  &kp F2                  &kp F3            &kp F4                    &kp F5        &kp F6        &kp F7           &kp F8  &kp F9  &kp F10  &none
-&none  &trans  &trans          &kp C_PREVIOUS        &kp C_NEXT          &kp C_PLAY_PAUSE    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP   &none    &none  &none
-&none  &trans  &trans                  &trans            &trans                    &trans        &tog 3         &none            &none   &none    &none  &none
-                       &hold_tap LCTRL ESCAPE  &kp LEFT_COMMAND  &hold_tap LEFT_ALT SPACE       &kp RET       &kp TAB       &kp DELETE
+&none  &kp F1  &kp F2                             &kp F3            &kp F4                        &kp F5        &kp F6        &kp F7           &kp F8  &kp F9  &kp F10  &none
+&none  &trans  &trans                     &kp C_PREVIOUS        &kp C_NEXT              &kp C_PLAY_PAUSE    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP   &none    &none  &none
+&none  &trans  &trans                             &trans            &trans                        &trans        &tog 3         &none            &none   &none    &none  &none
+                       &hold_tap_200 LEFT_CONTROL ESCAPE  &kp LEFT_COMMAND  &hold_tap_200 LEFT_ALT SPACE       &kp RET       &kp TAB       &kp DELETE
             >;
         };
 
         league {
             bindings = <
-&none    &kp NUMBER_1  &kp NUMBER_2                         &kp N3   &kp N4                    &kp N5         &kp Y          &none            &none  &none  &kp P  &none
-&none           &kp Q         &kp W                          &kp E    &kp R                     &kp G    &kp K_MUTE   &kp C_VOL_DN  &kp C_VOLUME_UP  &none  &none  &none
-&none  &kp LEFT_SHIFT         &kp T                          &kp D    &kp F                     &kp B        &tog 3          &none            &none  &none  &none  &none
-                                     &hold_tap LEFT_CONTROL ESCAPE  &kp TAB  &hold_tap LEFT_ALT SPACE     &kp ENTER  &kp RIGHT_WIN       &kp DELETE
+&none    &kp NUMBER_1  &kp NUMBER_2                             &kp N3   &kp N4                        &kp N5         &kp Y          &none            &none  &none  &kp P  &none
+&none           &kp Q         &kp W                              &kp E    &kp R                         &kp G    &kp K_MUTE   &kp C_VOL_DN  &kp C_VOLUME_UP  &none  &none  &none
+&none  &kp LEFT_SHIFT         &kp T                              &kp D    &kp F                         &kp B        &tog 3          &none            &none  &none  &none  &none
+                                     &hold_tap_200 LEFT_CONTROL ESCAPE  &kp TAB  &hold_tap_200 LEFT_ALT SPACE     &kp ENTER  &kp RIGHT_WIN       &kp DELETE
             >;
         };
     };
