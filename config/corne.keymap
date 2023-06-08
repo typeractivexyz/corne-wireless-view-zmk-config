@@ -34,6 +34,14 @@
                 <&kp LEFT_SHIFT>,
                 <&kp CAPSLOCK>;
         };
+        graveTilde: graveTilde {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRAVETILDE";
+            #binding-cells = <0>;
+            bindings =
+                <&kp GRAVE>,
+                <&kp TILDE>;
+        };
     };
 
     keymap {
@@ -64,7 +72,7 @@
             bindings = <
 &trans            &kp AT        &kp HASH            &kp DOLLAR   &kp ASTERISK         &kp PLUS         &kp MINUS      &kp SLASH            &kp PERCENT        &kp CARET          &kp RIGHT  &trans
 &trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp EXCLAMATION      &kp QUESTION       &kp LEFT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans
-&trans            &trans           &none              &kp DOWN         &kp UP        &kp GRAVE    &kp UNDERSCORE  &kp BACKSLASH               &kp PIPE            &none              &none  &trans
+&trans            &trans           &none              &kp DOWN         &kp UP      &graveTilde    &kp UNDERSCORE  &kp BACKSLASH               &kp PIPE            &none              &none  &trans
                                                       &kp LGUI          &mo 3        &kp SPACE           &kp RET         &trans               &kp RALT
             >;
         };
