@@ -129,10 +129,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp BSPC
-&trans            &none            &none            &none            &none            &none              &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &none    &trans
-&trans            &none            &none            &none            &none            &none              &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3            &none    &trans
-                                                   &trans           &trans           &trans             &trans           &trans           &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BSPC
+&trans         &none         &none         &none         &none         &none           &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6         &none    &trans
+&trans         &none         &none         &none         &none         &none           &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &none    &trans
+                                          &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
 
