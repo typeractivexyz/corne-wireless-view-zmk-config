@@ -42,6 +42,50 @@
                 <&kp GRAVE>,
                 <&kp TILDE>;
         };
+        cmd: cmd {
+            compatible = "zmk,behavior-sticky-key";
+            label = "CMD";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            ignore-modifiers;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+        shift: shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SHIFT";
+            bindings = <&shiftLock>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+        alt: alt {
+            compatible = "zmk,behavior-sticky-key";
+            label = "ALT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+        ctrl: ctrl {
+            compatible = "zmk,behavior-sticky-key";
+            label = "CTRL";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            ignore-modifiers;
+            quick-release;
+        };
+        fslash: fslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FSLASH";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SLASH>,
+                <&kp QUESTION>;
+        };
     };
 
     keymap {
@@ -55,10 +99,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &kp TAB  &colons  &kp COMMA  &kp PERIOD  &kp P      &kp Y      &kp F  &kp G     &kp C  &kp R  &kp L   &kp BSPC
- &kp LCTRL    &kp A      &kp O       &kp E  &kp U      &kp I      &kp D  &kp H     &kp T  &kp N  &kp S  &kp EQUAL
-&shiftLock  &quotes      &kp Q       &kp J  &kp K      &kp X      &kp B  &kp M     &kp W  &kp V  &kp Z    &kp ESC
-                                  &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
+    &kp TAB  &colons  &kp COMMA         &kp PERIOD        &kp P      &kp Y            &kp F        &kp G          &kp C  &kp R  &kp L  &kp DELETE
+&ctrl LCTRL    &kp A      &kp O              &kp E        &kp U      &kp I            &kp D        &kp H          &kp T  &kp N  &kp S   &kp EQUAL
+   &shift 0  &quotes      &kp Q              &kp J        &kp K      &kp X            &kp B        &kp M          &kp W  &kp V  &kp Z     &kp ESC
+                                 &cmd LEFT_COMMAND  &lt 1 ENTER  &kp SPACE    &kp BACKSPACE  &lt 2 SPACE  &alt LEFT_ALT
             >;
         };
 
@@ -73,7 +117,7 @@
 &trans            &kp AT        &kp HASH            &kp DOLLAR   &kp ASTERISK         &kp PLUS         &kp MINUS      &kp SLASH            &kp PERCENT        &kp CARET          &kp RIGHT  &trans
 &trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp EXCLAMATION      &kp QUESTION       &kp LEFT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans
 &trans            &trans           &none              &kp DOWN         &kp UP      &graveTilde    &kp UNDERSCORE  &kp BACKSLASH               &kp PIPE            &none              &none  &trans
-                                                      &kp LGUI          &mo 3        &kp SPACE           &kp RET         &trans               &kp RALT
+                                                        &trans         &trans           &trans            &trans          &mo 3                 &trans
             >;
         };
 
@@ -88,7 +132,7 @@
 &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp BSPC
 &trans            &none            &none            &none            &none            &none              &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &none    &trans
 &trans            &none            &none            &none            &none            &none              &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3            &none    &trans
-                                                 &kp LGUI           &trans        &kp SPACE            &kp RET            &mo 3     &kp LEFT_ALT
+                                                   &trans            &mo 3           &trans             &trans           &trans           &trans
             >;
         };
 
