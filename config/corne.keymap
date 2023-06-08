@@ -99,10 +99,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-          &kp TAB  &colons  &kp COMMA         &kp PERIOD        &kp P    &kp Y        &kp F  &kp G          &kp C  &kp R  &kp L  &kp BACKSPACE
-      &ctrl LCTRL    &kp A      &kp O              &kp E        &kp U    &kp I        &kp D  &kp H          &kp T  &kp N  &kp S      &kp EQUAL
-&shift LEFT_SHIFT  &quotes      &kp Q              &kp J        &kp K    &kp X        &kp B  &kp M          &kp W  &kp V  &kp Z        &kp ESC
-                                       &cmd LEFT_COMMAND  &lt 2 SPACE  &kp TAB    &kp ENTER  &mo 1  &alt LEFT_ALT
+          &kp TAB  &colons  &kp COMMA         &kp PERIOD      &kp P      &kp Y        &kp F  &kp G          &kp C  &kp R  &kp L  &kp BACKSPACE
+      &ctrl LCTRL    &kp A      &kp O              &kp E      &kp U      &kp I        &kp D  &kp H          &kp T  &kp N  &kp S      &kp EQUAL
+&shift LEFT_SHIFT  &quotes      &kp Q              &kp J      &kp K      &kp X        &kp B  &kp M          &kp W  &kp V  &kp Z        &kp ESC
+                                       &cmd LEFT_COMMAND  &kp SPACE  &lt 2 TAB    &kp ENTER  &mo 1  &alt LEFT_ALT
             >;
         };
 
@@ -114,7 +114,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans            &kp AT        &kp HASH            &kp DOLLAR   &kp ASTERISK         &kp PLUS         &kp MINUS      &kp SLASH            &kp PERCENT        &kp CARET          &kp RIGHT  &trans
+&trans            &kp AT        &kp HASH             &kp CARET   &kp ASTERISK         &kp PLUS         &kp MINUS      &kp SLASH             &kp DOLLAR      &kp PERCENT          &kp RIGHT  &trans
 &trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp EXCLAMATION      &kp QUESTION       &kp LEFT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans
 &trans            &trans           &none              &kp DOWN         &kp UP      &graveTilde    &kp UNDERSCORE  &kp BACKSLASH               &kp PIPE            &none              &none  &trans
                                                         &trans    &lt 3 SPACE           &trans            &trans         &trans                 &trans
