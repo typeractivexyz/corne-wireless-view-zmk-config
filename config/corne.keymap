@@ -54,7 +54,7 @@
         shift: shift {
             compatible = "zmk,behavior-sticky-key";
             label = "SHIFT";
-            bindings = <&shiftLock>;
+            bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <1000>;
             quick-release;
@@ -99,10 +99,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-    &kp TAB  &colons  &kp COMMA         &kp PERIOD      &kp P  &kp Y    &kp F      &kp G          &kp C  &kp R  &kp L  &kp BACKSPACE
-&ctrl LCTRL    &kp A      &kp O              &kp E      &kp U  &kp I    &kp D      &kp H          &kp T  &kp N  &kp S      &kp EQUAL
-   &shift 0  &quotes      &kp Q              &kp J      &kp K  &kp X    &kp B      &kp M          &kp W  &kp V  &kp Z        &kp ESC
-                                 &cmd LEFT_COMMAND  &kp ENTER  &mo 1    &mo 2  &kp SPACE  &alt LEFT_ALT
+          &kp TAB  &colons  &kp COMMA         &kp PERIOD      &kp P  &kp Y    &kp F      &kp G          &kp C  &kp R  &kp L  &kp BACKSPACE
+      &ctrl LCTRL    &kp A      &kp O              &kp E      &kp U  &kp I    &kp D      &kp H          &kp T  &kp N  &kp S      &kp EQUAL
+&shift LEFT_SHIFT  &quotes      &kp Q              &kp J      &kp K  &kp X    &kp B      &kp M          &kp W  &kp V  &kp Z        &kp ESC
+                                       &cmd LEFT_COMMAND  &kp ENTER  &mo 1    &mo 2  &kp SPACE  &alt LEFT_ALT
             >;
         };
 
