@@ -114,7 +114,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans          &kp SQT  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND        &kp LEFT_BRACE      &kp GRAVE        &kp RIGHT_BRACE   &kp PERCENT  &trans
+&trans          &kp SQT  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND        &kp LEFT_BRACE  &kp SEMICOLON        &kp RIGHT_BRACE   &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS          &kp EQUAL        &kp HASH         &kp PIPE  &kp LEFT_PARENTHESIS      &kp COLON  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &trans        &kp CARET      &kp SLASH      &kp ASTERISK         &kp DOLLAR  &kp UNDERSCORE        &kp TILDE      &kp LEFT_BRACKET  &kp BACKSLASH      &kp RIGHT_BRACKET        &kp AT  &trans
                                                   &trans             &trans           &mo 2           &trans                &trans         &trans
