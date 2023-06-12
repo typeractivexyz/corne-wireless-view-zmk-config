@@ -147,10 +147,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &kp HOME    &kp C_AC_SCROLL_UP    &kp PAGE_UP  &trans    &trans    &trans    &kp UP     &trans  &trans  &trans
-&trans  &trans   &kp END  &kp C_AC_SCROLL_DOWN  &kp PAGE_DOWN  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans    &trans                &trans         &trans  &trans    &trans    &trans    &trans     &trans  &trans  &trans
-                                        &trans         &trans   &mo 3    &trans    &trans    &trans
+&trans  &trans        &kp END   &none     &kp HOME  &trans    &trans    &trans    &kp UP     &trans  &trans  &trans
+&trans  &trans  &kp PAGE_DOWN   &none  &kp PAGE_UP  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans         &trans  &trans       &trans  &trans    &trans    &trans    &trans     &trans  &trans  &trans
+                               &trans       &trans   &mo 3    &trans    &trans    &trans
             >;
         };
     };
