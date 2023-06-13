@@ -138,10 +138,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans        &kp END   &none     &kp HOME  &trans    &trans    &trans    &kp UP     &trans  &trans  &trans
-&trans  &trans  &kp PAGE_DOWN   &none  &kp PAGE_UP  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans         &trans  &trans       &trans  &trans    &trans    &trans    &trans     &trans  &trans  &trans
-                               &trans       &trans   &mo 4    &trans    &trans    &trans
+&trans  &trans          &none  &kp HOME        &none  &trans    &trans    &trans    &kp UP     &trans  &trans  &trans
+&trans  &trans  &kp PAGE_DOWN   &kp END  &kp PAGE_UP  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans         &trans    &trans       &trans  &trans    &trans    &trans    &trans     &trans  &trans  &trans
+                                 &trans       &trans   &mo 4    &trans    &trans    &trans
             >;
         };
 
