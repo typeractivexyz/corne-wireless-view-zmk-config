@@ -88,6 +88,33 @@
         };
     };
 
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            label = "COPY";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp C>;
+        };
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            label = "UNDO";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp Z>;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp V>;
+        };
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            label = "CUT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp X>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -99,10 +126,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-    &kp ESC  &kp W  &kp L              &kp Y      &kp P              &kp B            &kp Z  &kp F      &kp O      &kp U  &kp SINGLE_QUOTE    &kp DELETE
-    &kp TAB  &kp C  &kp R              &kp S      &kp T              &kp G            &kp M  &kp N      &kp E      &kp I             &kp A     &kp ENTER
-&ctrl LCTRL  &kp Q  &kp J              &kp V      &kp D              &kp K            &kp X  &kp H  &kp SLASH  &kp COMMA        &kp PERIOD  &kp LEFT_ALT
-                           &cmd LEFT_COMMAND  &kp SPACE  &shift LEFT_SHIFT    &kp BACKSPACE  &mo 1      &mo 3
+   &kp ESC  &kp W  &kp L        &kp Y      &kp P              &kp B    &kp Z  &kp F              &kp O      &kp U  &kp SINGLE_QUOTE  &kp BACKSPACE
+   &kp TAB  &kp C  &kp R        &kp S      &kp T              &kp G    &kp M  &kp N              &kp E      &kp I             &kp A      &kp ENTER
+&kp DELETE  &kp Q  &kp J        &kp V      &kp D              &kp K    &kp X  &kp H          &kp SLASH  &kp COMMA        &kp PERIOD   &kp LEFT_ALT
+                          &ctrl LCTRL  &kp SPACE  &shift LEFT_SHIFT    &mo 2  &mo 1  &cmd LEFT_COMMAND
             >;
         };
 
@@ -117,7 +144,7 @@
 &trans          &kp SQT  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND        &kp LEFT_BRACE  &kp SEMICOLON        &kp RIGHT_BRACE   &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS          &kp EQUAL        &kp HASH         &kp PIPE  &kp LEFT_PARENTHESIS      &kp COLON  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &trans        &kp CARET  &kp BACKSLASH      &kp ASTERISK         &kp DOLLAR  &kp UNDERSCORE        &kp TILDE      &kp LEFT_BRACKET      &kp SLASH      &kp RIGHT_BRACKET        &kp AT  &trans
-                                                  &trans             &trans           &mo 2           &trans                &trans         &trans
+                                                  &trans              &mo 3           &mo 4           &trans                &trans         &trans
             >;
         };
 
@@ -131,7 +158,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans         &none         &none         &none         &none         &none           &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6         &none  &trans
-&trans         &none         &none         &none         &none         &none           &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &none  &trans
+&trans         &undo          &cut         &copy        &paste         &none           &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &none  &trans
                                           &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
@@ -141,7 +168,7 @@
 &trans  &trans          &none  &kp HOME        &none  &trans    &trans    &trans    &kp UP     &trans  &trans  &trans
 &trans  &trans  &kp PAGE_DOWN   &kp END  &kp PAGE_UP  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &trans         &trans    &trans       &trans  &trans    &trans    &trans    &trans     &trans  &trans  &trans
-                                 &trans       &trans   &mo 4    &trans    &trans    &trans
+                                 &trans       &trans  &trans    &trans    &trans    &trans
             >;
         };
 
