@@ -93,25 +93,33 @@
             compatible = "zmk,behavior-macro";
             label = "COPY";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp C>;
+            bindings =
+                <&kp LEFT_COMMAND &kp C>,
+                <&macro_tap>;
         };
         undo: undo {
             compatible = "zmk,behavior-macro";
             label = "UNDO";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp Z>;
+            bindings =
+                <&kp LEFT_COMMAND &kp Z>,
+                <&macro_tap>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
             label = "PASTE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp V>;
+            bindings =
+                <&kp LEFT_COMMAND &kp V>,
+                <&macro_tap>;
         };
         cut: cut {
             compatible = "zmk,behavior-macro";
             label = "CUT";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp X>;
+            bindings =
+                <&kp LEFT_COMMAND &kp X>,
+                <&macro_tap>;
         };
     };
 
