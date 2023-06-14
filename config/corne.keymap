@@ -94,36 +94,48 @@
             label = "COPY";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_tap &kp C>,
-                <&macro_release &kp LEFT_COMMAND>;
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
         };
         undo: undo {
             compatible = "zmk,behavior-macro";
             label = "UNDO";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LEFT_COMMAND>;
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
             label = "PASTE";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_tap &kp V>,
-                <&macro_release &kp LEFT_COMMAND>;
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
         };
         cut: cut {
             compatible = "zmk,behavior-macro";
             label = "CUT";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_tap &kp X>,
-                <&macro_release &kp LEFT_COMMAND>;
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
         };
     };
 
@@ -138,9 +150,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &kp ESC  &kp W  &kp L        &kp Y      &kp P              &kp B    &kp Z  &kp F              &kp O      &kp U  &kp SINGLE_QUOTE  &kp BACKSPACE
+   &kp ESC  &kp Q  &kp L        &kp Y      &kp P              &kp B    &kp Z  &kp F              &kp O      &kp U  &kp SINGLE_QUOTE  &kp BACKSPACE
    &kp TAB  &kp C  &kp R        &kp S      &kp T              &kp G    &kp M  &kp N              &kp E      &kp I             &kp A      &kp ENTER
-&kp DELETE  &kp Q  &kp J        &kp V      &kp D              &kp K    &kp X  &kp H          &kp SLASH  &kp COMMA        &kp PERIOD   &kp LEFT_ALT
+&kp DELETE  &kp W  &kp J        &kp V      &kp D              &kp K    &kp X  &kp H          &kp SLASH  &kp COMMA        &kp PERIOD   &kp LEFT_ALT
                           &ctrl LCTRL  &kp SPACE  &shift LEFT_SHIFT    &mo 2  &mo 1  &cmd LEFT_COMMAND
             >;
         };
