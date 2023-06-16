@@ -10,38 +10,6 @@
 
 / {
     behaviors {
-        quotes: quotes {
-            compatible = "zmk,behavior-tap-dance";
-            label = "QUOTES";
-            #binding-cells = <0>;
-            bindings =
-                <&kp SQT>,
-                <&kp DOUBLE_QUOTES>;
-        };
-        colons: colons {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COLONS";
-            #binding-cells = <0>;
-            bindings =
-                <&kp SEMICOLON>,
-                <&kp COLON>;
-        };
-        shiftLock: shiftLock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFTLOCK";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_SHIFT>,
-                <&kp CAPSLOCK>;
-        };
-        graveTilde: graveTilde {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GRAVETILDE";
-            #binding-cells = <0>;
-            bindings =
-                <&kp GRAVE>,
-                <&kp TILDE>;
-        };
         cmd: cmd {
             compatible = "zmk,behavior-sticky-key";
             label = "CMD";
@@ -77,14 +45,6 @@
             release-after-ms = <1000>;
             ignore-modifiers;
             quick-release;
-        };
-        fslash: fslash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FSLASH";
-            #binding-cells = <0>;
-            bindings =
-                <&kp SLASH>,
-                <&kp QUESTION>;
         };
     };
 
@@ -150,10 +110,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-          &kp ESC  &kp Q  &kp L        &kp Y      &kp P  &kp B            &kp Z  &kp F              &kp O      &kp U  &kp SINGLE_QUOTE    &kp DELETE
-          &kp TAB  &kp C  &kp R        &kp S      &kp T  &kp G            &kp M  &kp N              &kp E      &kp I             &kp A     &kp ENTER
-&shift LEFT_SHIFT  &kp W  &kp J        &kp V      &kp D  &kp K            &kp X  &kp H          &kp SLASH  &kp COMMA        &kp PERIOD  &kp LEFT_ALT
-                                 &ctrl LCTRL  &kp SPACE  &mo 3    &kp BACKSPACE  &mo 1  &cmd LEFT_COMMAND
+          &kp ESC  &kp Q  &kp L      &kp Y        &kp P  &kp B            &kp Z  &kp F        &kp O      &kp U  &kp SINGLE_QUOTE    &kp DELETE
+          &kp TAB  &kp C  &kp R      &kp S        &kp T  &kp G            &kp M  &kp N        &kp E      &kp I             &kp A     &kp ENTER
+&shift LEFT_SHIFT  &kp W  &kp J      &kp V        &kp D  &kp K            &kp X  &kp H    &kp SLASH  &kp COMMA        &kp PERIOD  &kp LEFT_ALT
+                                 &cmd LCMD  &lt 3 SPACE  &mo 2    &kp BACKSPACE  &mo 1  &ctrl LCTRL
             >;
         };
 
@@ -168,7 +128,7 @@
 &trans        &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND        &kp LEFT_BRACE  &kp SEMICOLON        &kp RIGHT_BRACE   &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS          &kp EQUAL        &kp HASH         &kp PIPE  &kp LEFT_PARENTHESIS      &kp COLON  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &trans        &kp CARET  &kp BACKSLASH      &kp ASTERISK         &kp DOLLAR  &kp UNDERSCORE        &kp TILDE      &kp LEFT_BRACKET      &kp SLASH      &kp RIGHT_BRACKET        &kp AT  &trans
-                                                  &trans              &mo 2           &mo 4           &trans                &trans         &trans
+                                                  &trans              &mo 3           &mo 4           &trans                &trans         &trans
             >;
         };
 
@@ -189,10 +149,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans          &none  &kp HOME        &none  &trans    &trans    &trans    &kp UP     &trans  &trans  &trans
-&trans  &trans  &kp PAGE_DOWN   &kp END  &kp PAGE_UP  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans   &undo           &cut     &copy       &paste  &trans    &trans    &trans    &trans     &trans  &trans  &trans
-                                 &trans       &trans  &trans    &trans    &trans    &trans
+&trans  &none          &none  &kp HOME        &none   &none     &none     &none    &kp UP      &none  &none  &trans
+&trans  &none  &kp PAGE_DOWN   &kp END  &kp PAGE_UP   &none     &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
+&trans  &undo           &cut     &copy       &paste   &none     &none     &none     &none      &none  &none  &trans
+                                &trans       &trans  &trans    &trans    &trans    &trans
             >;
         };
 
