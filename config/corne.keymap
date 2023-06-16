@@ -10,6 +10,7 @@
 
 &lt {
     tapping-term-ms = <130>;
+    flavor = "tap-unless-interrupted";
 };
 
 / {
