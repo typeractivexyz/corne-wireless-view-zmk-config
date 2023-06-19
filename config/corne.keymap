@@ -112,6 +112,8 @@
                 <&kp SEMICOLON>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT>;
+
+            wait-ms = <1>;
         };
         EQUALSs: EQUALSs {
             compatible = "zmk,behavior-macro";
