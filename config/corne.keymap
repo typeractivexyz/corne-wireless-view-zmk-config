@@ -110,9 +110,9 @@
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
-        COLON: COLON {
+        COLONs: COLONs {
             compatible = "zmk,behavior-macro";
-            label = "COLON";
+            label = "COLONS";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
@@ -122,9 +122,9 @@
                 <&macro_release>,
                 <&kp LEFT_SHIFT>;
         };
-        EQUALS: EQUALS {
+        EQUALSs: EQUALSs {
             compatible = "zmk,behavior-macro";
-            label = "EQUALS";
+            label = "EQUALSS";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap_time 50>,
