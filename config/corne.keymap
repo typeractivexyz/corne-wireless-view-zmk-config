@@ -124,6 +124,8 @@
                 <&kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp EQUAL>;
+
+            wait-ms = <1>;
         };
     };
 
