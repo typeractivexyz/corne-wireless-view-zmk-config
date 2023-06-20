@@ -58,6 +58,8 @@
             &sk LSHIFT  &kp Z  &kp X     &kp C  &kp V          &kp B          &kp N  &kp M  &kp COMMA  &kp DOT                &kp FSLH            &key_repeat
                                       &kp LGUI  &mo 2  &mt TAB SPACE    &lt 1 ENTER  &mo 3   &kp RALT
             >;
+
+            label = "alpha";
         };
 
         // numbers
@@ -88,6 +90,8 @@
 &kp LSHFT    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI    &trans     &trans       &trans     &trans         &kp RALT
             >;
+
+            label = "sym";
         };
 
         functions {
@@ -98,7 +102,7 @@
                             &trans  &trans   &trans        &trans            &trans      &trans
             >;
 
-            label = "functions";
+            label = "f-you";
         };
     };
 };
