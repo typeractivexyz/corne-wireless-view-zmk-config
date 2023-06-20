@@ -59,7 +59,7 @@
         numbers {
             bindings = <
 						&kp EQUAL  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7  &kp N8           &kp N9  &kp N0  &kp DELETE
-						&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &k> NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &trans   &kp LSHFT
+						&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &trans   &kp LSHFT
 						 &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans  &trans           &trans  &trans    &kp LGUI
                                 &trans    &trans        &trans       &kp RET      &trans  &kp RALT
             >;
