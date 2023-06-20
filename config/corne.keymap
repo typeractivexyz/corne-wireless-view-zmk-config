@@ -48,7 +48,7 @@
    &kp GRAVE            &kp Q            &kp W              &kp F         &kp P      &kp B            &kp J         &kp L               &kp U             &kp Y          &kp SEMI  &kp INSERT
   &kp ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G            &kp M  &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O     &kp SQT
 &kp CAPSLOCK            &kp Z            &kp X              &kp C         &kp D      &kp V            &kp K         &kp H           &kp COMMA           &kp DOT          &kp FSLH     &kp DEL
-                                                       &kp ESCAPE     &lt 2 TAB  &kp SPACE    &kp BACKSPACE   &lt 3 ENTER               &sl 4
+                                                       &kp ESCAPE     &lt 2 TAB  &kp SPACE    &kp BACKSPACE   &lt 3 ENTER               &mo 4
             >;
 
             label = "CLMK";
@@ -62,10 +62,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp TAB  &kp Q  &kp W  &kp E      &kp R       &kp T     &kp Y   &kp U      &kp I    &kp O     &kp P  &trans
-&kp LSHFT  &kp A  &kp S  &kp D      &kp F       &kp G     &kp H   &kp J      &kp K    &kp L  &kp SEMI  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V       &kp B     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
-                         &mo 2  &kp SPACE  &kp ESCAPE    &trans  &trans     &trans
+  &kp TAB  &kp Q  &kp W         &kp E         &kp R      &kp T     &kp Y   &kp U      &kp I    &kp O     &kp P  &trans
+&kp LSHFT  &kp A  &kp S         &kp D         &kp F      &kp G     &kp H   &kp J      &kp K    &kp L  &kp SEMI  &trans
+&kp LCTRL  &kp Z  &kp X         &kp C         &kp V      &kp B     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &kp LEFT_ALT  &lt 2 ESCAPE  &kp SPACE    &trans  &trans     &trans
             >;
 
             label = "GAME";
