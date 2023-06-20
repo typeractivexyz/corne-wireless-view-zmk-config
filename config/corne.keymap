@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
 /*
  * diamond.dev (andrewDACQ@github) 
  * June 2023
@@ -45,54 +46,36 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // alpha layer
-        // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-        // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-        // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-        //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
         alphas {
             bindings = <
-                &gresc  &kp Q  &kp W     &kp E  &kp R          &kp T          &kp Y  &kp U      &kp I    &kp O                   &kp P               &kp BSPC
-&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt SEMICOLON LS(SEMI)  &mt SQT DOUBLE_QUOTES
+						&gresc  &kp Q  &kp W     &kp E  &kp R          &kp T          &kp Y  &kp U      &kp I    &kp O                   &kp P               &kp BSPC
+						&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt SEMICOLON LS(SEMI)  &mt SQT DOUBLE_QUOTES
             &sk LSHIFT  &kp Z  &kp X     &kp C  &kp V          &kp B          &kp N  &kp M  &kp COMMA  &kp DOT                &kp FSLH            &key_repeat
                                       &kp LGUI  &mo 2  &mt TAB SPACE    &lt 1 ENTER  &mo 3   &kp RALT
             >;
-
-            label = "alpha";
+            label = "♦︎";
         };
-
-        // numbers
-        // |  1   |  2  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
-        // | BTCLR| BT2 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-        // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-        //                    | GUI |     | SPC |   | ENT |     | ALT |
 
         numbers {
             bindings = <
-&kp EQUAL  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7  &kp N8           &kp N9  &kp N0  &kp DELETE
-&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &trans   &kp LSHFT
-   &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans  &trans           &trans  &trans    &kp LGUI
-                                             &trans        &trans       &kp RET      &trans  &kp RALT
+						&kp EQUAL  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7  &kp N8           &kp N9  &kp N0  &kp DELETE
+						&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &k> NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &trans   &kp LSHFT
+						 &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans  &trans           &trans  &trans    &kp LGUI
+                                &trans    &trans        &trans       &kp RET      &trans  &kp RALT
             >;
+				label = "⧞";
         };
-
-        // symbols
-        // |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-        // | CTRL |     |     |     |  -  |  +  |   |     |  =  |  [  |  ]  |  \  |  `   |
-        // | SHFT |     |     |     |     |     |   |  _  |     |  {  |  }  | "|" |  ~   |
-        //                    | GUI |     | SPC |   | ENT |     | ALT |
 
         symbols {
             bindings = <
-  &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
 &kp LCTRL    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI    &trans     &trans       &trans     &trans         &kp RALT
             >;
 
-            label = "sym";
-        };
+            label = "§";
+        };	
 
         functions {
             bindings = <
