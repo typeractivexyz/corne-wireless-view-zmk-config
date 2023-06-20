@@ -49,21 +49,21 @@
         alphas {
             bindings = <
 						&gresc  &kp Q  &kp W     &kp E  &kp R          &kp T          &kp Y  &kp U      &kp I    &kp O                   &kp P               &kp BSPC
-						&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt SEMICOLON LS(SEMI)  &mt SQT DOUBLE_QUOTES
+						&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt LS(SEMI) SEMICOLON   &mt DOUBLE_QUOTES  SQT
             &sk LSHIFT  &kp Z  &kp X     &kp C  &kp V          &kp B          &kp N  &kp M  &kp COMMA  &kp DOT                &kp FSLH            &key_repeat
                                       &kp LGUI  &mo 2  &mt TAB SPACE    &lt 1 ENTER  &mo 3   &kp RALT
             >;
-            label = "♦︎";
+            label = "< dev >";
         };
 
         numbers {
             bindings = <
 						&kp EQUAL  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7  &kp N8           &kp N9  &kp N0  &kp DELETE
-						&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &trans   &kp LSHFT
+						&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &kp LSHFT
 						 &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans  &trans           &trans  &trans    &kp LGUI
                                 &trans    &trans        &trans       &kp RET      &trans  &kp RALT
             >;
-				label = "⧞";
+	label = "# calc #";
         };
 
         symbols {
@@ -74,7 +74,7 @@
                              &kp LGUI    &trans     &trans       &trans     &trans         &kp RALT
             >;
 
-            label = "§";
+            label = "[ code ]";
         };	
 
         functions {
