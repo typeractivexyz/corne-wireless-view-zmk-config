@@ -115,7 +115,7 @@
 
             wait-ms = <0>;
         };
-        PLUSm: PLUSm {
+        PRCNTm: PLUSm {
             compatible = "zmk,behavior-macro";
             label = "PLUSM";
             #binding-cells = <0>;
@@ -222,6 +222,188 @@
                 <&kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp MORE_THAN>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        DQTm: DQTm {
+            compatible = "zmk,behavior-macro";
+            label = "DQTM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp DQT>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        EXCLm: EXCLm {
+            compatible = "zmk,behavior-macro";
+            label = "EXCLM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp EXCL>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        PLUSm: PLUSm {
+            compatible = "zmk,behavior-macro";
+            label = "PLUSM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp PLUS>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        STARm: STARm {
+            compatible = "zmk,behavior-macro";
+            label = "STARM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp STAR>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        DOLLARm: DOLLARm {
+            compatible = "zmk,behavior-macro";
+            label = "DOLLARM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp DOLLAR>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        UNDERm: UNDERm {
+            compatible = "zmk,behavior-macro";
+            label = "UNDERM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp UNDER>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        AMPSm: AMPSm {
+            compatible = "zmk,behavior-macro";
+            label = "AMPSM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp AMPS>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        LBRCm: LBRCm {
+            compatible = "zmk,behavior-macro";
+            label = "LBRCM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp LBRC>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        RBRCm: RBRCm {
+            compatible = "zmk,behavior-macro";
+            label = "RBRCm";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp RBRC>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        PRCNTm: PRCNTm {
+            compatible = "zmk,behavior-macro";
+            label = "PRCNTM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp PRCNT>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        LPARm: LPARm {
+            compatible = "zmk,behavior-macro";
+            label = "LPARM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp LPAR>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        RPARm: RPARm {
+            compatible = "zmk,behavior-macro";
+            label = "RPARM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp RPAR>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        QMARKm: QMARKm {
+            compatible = "zmk,behavior-macro";
+            label = "QMARKM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp QMARK>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT>;
 
