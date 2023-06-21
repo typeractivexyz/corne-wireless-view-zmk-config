@@ -120,12 +120,13 @@
             label = "EQUALSS";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap_time 50>,
+                <&macro_tap_time 25>,
                 <&kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp EQUAL>;
 
-            wait-ms = <1>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
     };
 
