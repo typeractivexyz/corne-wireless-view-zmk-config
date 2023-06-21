@@ -437,10 +437,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND        &kp LEFT_BRACE  &kp SEMICOLON        &kp RIGHT_BRACE   &kp PERCENT  &trans
-&trans  &kp EXCLAMATION      &kp MINUS          &EQUALSs          &kp EQUAL        &kp HASH         &kp PIPE  &kp LEFT_PARENTHESIS        &COLONm  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans        &kp CARET  &kp BACKSLASH      &kp ASTERISK         &kp DOLLAR  &kp UNDERSCORE        &kp TILDE      &kp LEFT_BRACKET      &kp SLASH      &kp RIGHT_BRACKET        &kp AT  &trans
-                                                  &trans             &trans           &mo 4           &trans                &trans         &trans
+&trans  &kp GRAVE     &LESSTHANm  &MORETHANm      &DQTm  &kp PERIOD     &AMPSm            &LBRCm  &kp SEMICOLON             &RBRCm  &PRCNTm  &trans
+&trans     &EXCLm      &kp MINUS      &PLUSm  &kp EQUAL      &HASHm     &PIPEm            &LPARm        &COLONm             &RPARm  &QMARKm  &trans
+&trans    &CARETm  &kp BACKSLASH      &STARm   &DOLLARm     &UNDERm    &TILDEm  &kp LEFT_BRACKET      &kp SLASH  &kp RIGHT_BRACKET     &ATm  &trans
+                                      &trans     &trans       &mo 4     &trans            &trans         &trans
             >;
         };
 
