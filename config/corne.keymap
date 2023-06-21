@@ -115,6 +115,118 @@
 
             wait-ms = <0>;
         };
+        PLUSm: PLUSm {
+            compatible = "zmk,behavior-macro";
+            label = "PLUSM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp PLUS>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        HASHm: HASHm {
+            compatible = "zmk,behavior-macro";
+            label = "HASHM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp HASH>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        CARETm: CARETm {
+            compatible = "zmk,behavior-macro";
+            label = "CARETM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp CARET>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        PIPEm: PIPEm {
+            compatible = "zmk,behavior-macro";
+            label = "PIPEM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp PIPE>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        TILDEm: TILDEm {
+            compatible = "zmk,behavior-macro";
+            label = "TILDEM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp TILDE>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        ATm: ATm {
+            compatible = "zmk,behavior-macro";
+            label = "ATM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp AT>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        LESSTHANm: LESSTHANm {
+            compatible = "zmk,behavior-macro";
+            label = "LESSTHANM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp LESS_THAN>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
+        MORETHANm: MORETHANm {
+            compatible = "zmk,behavior-macro";
+            label = "MORETHANM";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp MORE_THAN>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            wait-ms = <0>;
+        };
     };
 
     keymap {
