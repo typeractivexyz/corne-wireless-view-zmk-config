@@ -63,10 +63,10 @@
 
         numbers {
             bindings = <
- &trans  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp DELETE
-&kp TAB  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans   &kp LSHFT
- &trans     &kp SLASH  &kp ASTERISK  &kp KP_MINUS   &kp KP_PLUS     &kp EQUAL      &trans    &trans    &trans     &trans  &trans    &kp LGUI
-                                           &trans        &trans        &trans     &kp RET    &trans  &kp RALT
+    &kp TAB  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5    &kp LA(LG(LEFT))  &kp LA(LG(DOWN))  &kp LA(LG(UP))  &kp LA(LG(RIGHT))    &kp PAGE_UP  &kp DELETE
+&kp LS(TAB)  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0            &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT  &kp PAGE_DOWN   &kp LSHFT
+     &trans     &kp SLASH  &kp ASTERISK  &kp KP_MINUS   &kp KP_PLUS     &kp EQUAL              &trans            &trans          &trans             &trans         &trans    &kp LGUI
+                                            &kp LCTRL      &kp RALT      &kp LGUI             &kp RET            &trans        &kp RALT
             >;
 
             label = "# calc #";
