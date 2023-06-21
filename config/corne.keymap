@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 /*
  * diamond.dev (andrewDACQ@github) 
  * June 2023
@@ -24,7 +23,7 @@
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <8 9>;
+            key-positions = <19 20>;
         };
 
         esc_combo {
@@ -41,6 +40,11 @@
             bindings = <&kp END>;
             key-positions = <21 22>;
         };
+
+        new_combo {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+        };
     };
 
     keymap {
@@ -48,34 +52,36 @@
 
         alphas {
             bindings = <
-						&gresc  &kp Q  &kp W     &kp E  &kp R          &kp T          &kp Y  &kp U      &kp I    &kp O                   &kp P               &kp BSPC
-						&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt LS(SEMI) SEMICOLON   &mt DOUBLE_QUOTES  SQT
+                &gresc  &kp Q  &kp W     &kp E  &kp R          &kp T          &kp Y  &kp U      &kp I    &kp O                   &kp P               &kp BSPC
+&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt LS(SEMI) SEMICOLON  &mt DOUBLE_QUOTES SQT
             &sk LSHIFT  &kp Z  &kp X     &kp C  &kp V          &kp B          &kp N  &kp M  &kp COMMA  &kp DOT                &kp FSLH            &key_repeat
                                       &kp LGUI  &mo 2  &mt TAB SPACE    &lt 1 ENTER  &mo 3   &kp RALT
             >;
+
             label = "< dev >";
         };
 
         numbers {
             bindings = <
-						&kp EQUAL  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7  &kp N8           &kp N9  &kp N0  &kp DELETE
-						&kp MINUS  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &kp LSHFT
-						 &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans  &trans           &trans  &trans    &kp LGUI
-                                &trans    &trans        &trans       &kp RET      &trans  &kp RALT
+ &trans  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp DELETE
+&kp TAB  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans   &kp LSHFT
+ &trans     &kp SLASH  &kp ASTERISK  &kp KP_MINUS   &kp KP_PLUS     &kp EQUAL      &trans    &trans    &trans     &trans  &trans    &kp LGUI
+                                           &trans        &trans        &trans     &kp RET    &trans  &kp RALT
             >;
-	label = "# calc #";
+
+            label = "# calc #";
         };
 
         symbols {
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
+  &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
 &kp LCTRL    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI    &trans     &trans       &trans     &trans         &kp RALT
             >;
 
             label = "[ code ]";
-        };	
+        };
 
         functions {
             bindings = <
