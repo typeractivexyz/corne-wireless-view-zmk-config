@@ -101,9 +101,9 @@
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
-        COLONs: COLONs {
+        COLONm: COLONm {
             compatible = "zmk,behavior-macro";
-            label = "COLONS";
+            label = "COLONM";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -114,19 +114,6 @@
                 <&kp LEFT_SHIFT>;
 
             wait-ms = <0>;
-        };
-        EQUALSs: EQUALSs {
-            compatible = "zmk,behavior-macro";
-            label = "EQUALSS";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap_time 25>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp EQUAL>;
-
-            wait-ms = <10>;
-            tap-ms = <10>;
         };
     };
 
@@ -157,7 +144,7 @@
 
             bindings = <
 &trans        &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES      &kp PERIOD    &kp AMPERSAND        &kp LEFT_BRACE  &kp SEMICOLON        &kp RIGHT_BRACE   &kp PERCENT  &trans
-&trans  &kp EXCLAMATION      &kp MINUS          &EQUALSs          &kp EQUAL        &kp HASH         &kp PIPE  &kp LEFT_PARENTHESIS        &COLONs  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &kp EXCLAMATION      &kp MINUS          &EQUALSs          &kp EQUAL        &kp HASH         &kp PIPE  &kp LEFT_PARENTHESIS        &COLONm  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &trans        &kp CARET  &kp BACKSLASH      &kp ASTERISK         &kp DOLLAR  &kp UNDERSCORE        &kp TILDE      &kp LEFT_BRACKET      &kp SLASH      &kp RIGHT_BRACKET        &kp AT  &trans
                                                   &trans             &trans           &mo 4           &trans                &trans         &trans
             >;
