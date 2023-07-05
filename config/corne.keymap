@@ -426,7 +426,7 @@
 &trans  &kp GRAVE     &LESSTHANm  &MORETHANm      &DQTm  &kp PERIOD     &AMPSm            &LBRCm  &kp SEMICOLON             &RBRCm  &PRCNTm  &trans
 &trans     &EXCLm      &kp MINUS      &PLUSm  &kp EQUAL      &HASHm     &PIPEm            &LPARm        &COLONm             &RPARm  &QMARKm  &trans
 &trans    &CARETm  &kp BACKSLASH      &STARm   &DOLLARm     &UNDERm    &TILDEm  &kp LEFT_BRACKET      &kp SLASH  &kp RIGHT_BRACKET     &ATm  &trans
-                                      &trans     &trans       &mo 0     &trans            &trans         &trans
+                                      &trans     &trans       &mo 4     &trans            &trans         &trans
             >;
         };
 
