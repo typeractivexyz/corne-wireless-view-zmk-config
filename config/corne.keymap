@@ -411,7 +411,7 @@
   &kp ESC    &kp Q  &kp L       &kp Y      &kp P              &kp B            &kp Z  &kp F        &kp O      &kp U  &kp SINGLE_QUOTE     &kp DELETE
 &lt 2 TAB  &lt 3 C  &kp R       &kp S      &kp T              &kp G            &kp M  &kp N        &kp E      &kp I             &kp A      &kp ENTER
  &kp LCMD    &kp W  &kp J       &kp V      &kp D              &kp K            &kp X  &kp H    &kp SLASH  &kp COMMA        &kp PERIOD  &alt LEFT_ALT
-                           &lt 5 LCMD  &kp SPACE  &shift LEFT_SHIFT    &kp BACKSPACE  &mo 1  &ctrl LCTRL
+                           &lt 4 LCMD  &kp SPACE  &shift LEFT_SHIFT    &kp BACKSPACE  &mo 1  &ctrl LCTRL
             >;
         };
 
@@ -426,7 +426,7 @@
 &trans  &kp GRAVE     &LESSTHANm  &MORETHANm      &DQTm  &kp PERIOD     &AMPSm            &LBRCm  &kp SEMICOLON             &RBRCm  &PRCNTm  &trans
 &trans     &EXCLm      &kp MINUS      &PLUSm  &kp EQUAL      &HASHm     &PIPEm            &LPARm        &COLONm             &RPARm  &QMARKm  &trans
 &trans    &CARETm  &kp BACKSLASH      &STARm   &DOLLARm     &UNDERm    &TILDEm  &kp LEFT_BRACKET      &kp SLASH  &kp RIGHT_BRACKET     &ATm  &trans
-                                      &trans     &trans       &mo 4     &trans            &trans         &trans
+                                      &trans     &trans       &mo 0     &trans            &trans         &trans
             >;
         };
 
@@ -465,10 +465,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &cut  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans    &kp Q  &kp L   &kp Y   &kp P   &kp B     &kp Z   &kp F      &kp O      &kp U     &kp SQT     &kp DELETE
+&trans  &lt 3 C  &kp R   &kp S   &kp T   &kp G     &kp M   &kp N      &kp E      &kp I       &kp A      &kp ENTER
+&trans    &kp W   &cut   &kp V   &kp D   &kp K     &kp X   &kp H  &kp SLASH  &kp COMMA  &kp PERIOD  &alt LEFT_ALT
+                        &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
     };
