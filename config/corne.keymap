@@ -93,10 +93,10 @@
 
         csgo {
             bindings = <
-&none      &kp NUMBER_1  &kp NUMBER_2  &kp W  &kp NUMBER_3  &kp NUMBER_4     &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_CONTROL         &kp A  &kp S         &kp D         &kp G     &none  &none  &none  &none  &none  &none
-&none    &kp LEFT_SHIFT         &none  &none         &kp R         &kp B    &tog 4  &none  &none  &none  &none  &none
-                                       &none       &kp TAB     &kp SPACE     &none  &none  &none
+&none      &kp NUMBER_1  &kp NUMBER_2       &kp W  &kp NUMBER_3  &kp NUMBER_4     &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_CONTROL         &kp A       &kp S         &kp D         &kp G     &none  &none  &none  &none  &none  &none
+&none    &kp LEFT_SHIFT         &none       &none         &kp R         &kp B    &tog 4  &none  &none  &none  &none  &none
+                                       &kp ESCAPE       &kp TAB     &kp SPACE     &none  &none  &none
             >;
         };
     };
