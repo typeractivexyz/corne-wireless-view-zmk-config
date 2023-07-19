@@ -37,10 +37,10 @@
 
             label = "Lower";
             bindings = <
-&kp TAB            &kp N1             &kp N2          &kp N3           &kp N4     &kp N5           &kp N6          &kp N7     &kp N8    &kp N9  &kp N0  &kp BSPC
- &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp PIPE    &kp BACKSLASH  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &trans    &trans
- &trans            &trans             &trans          &trans           &trans     &trans           &trans          &trans     &trans    &trans  &trans    &trans
-                                                    &kp LGUI           &trans  &kp SPACE          &kp RET          &trans   &kp RALT
+&kp GRAVE            &kp N1             &kp N2          &kp N3           &kp N4     &kp N5           &kp N6          &kp N7     &kp N8     &kp N9    &kp N0  &kp BSPC
+   &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp PIPE    &kp BACKSLASH  &kp UNDERSCORE  &kp MINUS  &kp EQUAL  &kp PLUS    &trans
+   &kp F1            &kp F2             &kp F3          &kp F4           &kp F5     &kp F6           &kp F7          &kp F8     &kp F9    &kp F10   &kp F11   &kp F12
+                                                      &kp LGUI           &trans  &kp SPACE          &kp RET          &trans   &kp RALT
             >;
         };
 
@@ -53,10 +53,10 @@
 
             label = "Raise";
             bindings = <
-&kp TAB    &kp EXCL        &kp AT      &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET        &kp AMPS  &kp KP_MULTIPLY         &kp LPAR       &kp RPAR  &kp BSPC
- &trans      &trans        &trans        &trans        &trans        &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW      &kp PG_UP    &trans
- &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3            &trans          &trans           &trans           &trans  &kp PAGE_DOWN    &trans
-                                       &kp LGUI        &trans     &kp SPACE           &kp RET          &trans         &kp RALT
+&kp TILDE        &kp EXCL        &kp AT           &kp HASH         &kp DLLR         &kp PRCNT         &kp CARET        &kp AMPS  &kp KP_MULTIPLY         &kp LPAR       &kp RPAR  &kp BSPC
+   &trans  &kp C_PREVIOUS    &kp C_NEXT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_PLAY_PAUSE    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW      &kp PG_UP    &trans
+   &trans      &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3            &trans          &trans           &trans           &trans  &kp PAGE_DOWN    &trans
+                                                  &kp LGUI           &trans         &kp SPACE           &kp RET          &trans         &kp RALT
             >;
         };
     };
