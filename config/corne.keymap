@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define COLEMAC 0
+#define COLEMAK 0
 #define QWERTY  1
 #define LOWER   2
 #define RAISE   3
@@ -27,13 +27,13 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                colemac_layer {
+                colemak_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BKSP |
 // | CTRL |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | TAB  |
 //                    | GUI | LWR | SPC |   | ENT | RSE | ALT |
-                        label = "COLEMAC";
+                        label = "COLEMAK";
                         bindings = <
    &kp ESC   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &kp LCTRL &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
@@ -88,13 +88,13 @@
                 function_layer {
 // -----------------------------------------------------------------------------------------
 // |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   |  F7   |  F8  |  F9  |  F10  |  F11  |  F12  |
-// |      |      |      |      |      |QWERTY|   |COLEMAC|      |      |       |       |       |
+// |      |      |      |      |      |QWERTY|   |COLEMAK|      |      |       |       |       |
 // |      |      |      |      |      |      |   |       |      |      |       |       |       |
 //                      |  GUI |      | SPC  |   |  ENT  |      | ALT  |
                         label = "Func";
                         bindings = <
    &kp F1  &kp F2  &kp F3  &kp F4    &kp F5  &kp F6      &kp F7       &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-   &trans  &trans  &trans  &trans    &trans  &to QWERTY  &to COLEMAC  &trans  &trans  &trans   &trans   &trans
+   &trans  &trans  &trans  &trans    &trans  &to QWERTY  &to COLEMAK  &trans  &trans  &trans   &trans   &trans
    &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans  &trans  &trans   &trans   &trans
                     	   &kp LGUI  &trans  &kp SPACE   &kp RET      &trans  &kp RALT
                         >;
