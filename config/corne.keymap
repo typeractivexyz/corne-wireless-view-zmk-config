@@ -18,6 +18,7 @@
         behaviors {
                         ctab: control_tab_tap {
                         compatible = "zmk,behavior-hold-tap";
+                        #binding-cells <2> 
                         label = "CTRL_TAB_TAP";
                         flavor = "hold-preferred";
                         tapping-term-ms = <70>;
