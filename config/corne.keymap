@@ -33,13 +33,13 @@
                 colemak_layer {
 // ------------------------------------------------------------------------------------
 // | ESC       |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  ;  | BKSP |
-// | CTRL(TAB) |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  '   |
+// | CTRL(TAB) |  A  |  S  |  R  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  '   |
 // | SHFT      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  /  | TAB  |
 //                         | ALT | LWR | SPC |   | ENT | RSE | GUI |
                         label = "Colemak";
                         bindings = <
    &kp ESC       &kp Q &kp W    &kp F     &kp P       &kp B   &kp J     &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-   &mt LCTRL TAB &kp A &kp R    &kp S     &kp T       &kp G   &kp M     &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &mt LCTRL TAB &kp A &kp S    &kp R     &kp T       &kp G   &kp M     &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT     &kp Z &kp X    &kp C     &kp D       &kp V   &kp K     &kp H  &kp COMMA &kp DOT &kp FSLH &kp TAB
                        &kp LALT &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RGUI
                         >;
