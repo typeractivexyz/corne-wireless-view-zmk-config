@@ -61,13 +61,13 @@
                 lower_layer {
 // -------------------------------------------------------------------------------
 // |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     | DEL  |
 // |      |BTCLR|     |     |     |     |   |     |     |     |     |     |      |
 //                   |     |     | SPC |   | ENT |     |     |
                         label = "Lower";
                         bindings = <
    &trans  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp DEL
    &trans  &bt BT_CLR   &trans       &trans       &trans       &trans        &trans   &trans   &trans &trans    &trans &trans
                                      &trans       &trans       &kp SPACE     &kp RET  &trans   &trans
                         >;
