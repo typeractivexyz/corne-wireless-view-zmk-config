@@ -15,14 +15,6 @@
 #define FUNCT   4
 
 / {
-        combos {
-                compatible = "zmk,combos";
-                combo_esc {
-                        timeout-ms = <50>;
-                        key-positions = <0 1>;
-                        bindings = <&kp TAB>;
-                };
-        };
 
         conditional_layers {
                 compatible = "zmk,conditional-layers";
@@ -37,16 +29,16 @@
 
                 colemak_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BKSP |
-// | CTRL |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | TAB  |
+// | ESC       |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BKSP |
+// | CTRL(TAB) |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
+// | SHFT      |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | TAB  |
 //                         | ALT | LWR | SPC |   | ENT | RSE | GUI |
                         label = "Colemak";
                         bindings = <
-   &kp ESC   &kp Q &kp W   &kp F     &kp P       &kp G   &kp J     &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-   &kp LCTRL &kp A &kp R   &kp S     &kp T       &kp D   &kp H     &kp N  &kp E     &kp I   &kp O    &kp SQT
-   &kp LSHF  &kp Z &kp X   &kp C     &kp V       &kp B   &kp K     &kp M  &kp COMMA &kp DOT &kp FSLH &kp TAB
-                           &kp LALT &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RGUI
+   &kp ESC       &kp Q &kp W    &kp F     &kp P       &kp G   &kp J     &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
+   &mt LCTRL TAB &kp A &kp R    &kp S     &kp T       &kp D   &kp H     &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT     &kp Z &kp X    &kp C     &kp V       &kp B   &kp K     &kp M  &kp COMMA &kp DOT &kp FSLH &kp TAB
+                       &kp LALT &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RGUI
                         >;
                 };
                 qwerty_layer {
@@ -68,7 +60,7 @@
 // |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 // |      |BTCLR|     |     |     |     |   |     |     |     |     |     |      |
-//                    |     |     | SPC |   | ENT |     |     |
+//                   |     |     | SPC |   | ENT |     |     |
                         label = "Lower";
                         bindings = <
    &trans  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
