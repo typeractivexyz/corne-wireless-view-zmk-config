@@ -21,26 +21,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab_combo {
-            bindings = <&kp TAB>;
-            key-positions = <19 20>;
-        };
-
-        esc_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
-        };
-
-        home_combo {
-            bindings = <&kp HOME>;
-            key-positions = <13 14>;
-        };
-
-        end_combo {
-            bindings = <&kp END>;
-            key-positions = <21 22>;
-        };
-
         new_combo {
             bindings = <&caps_word>;
             key-positions = <17 18>;
