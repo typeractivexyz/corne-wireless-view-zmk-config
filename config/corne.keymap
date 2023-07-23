@@ -102,10 +102,10 @@
 
         GTA {
             bindings = <
-&none             &kp Q  &none       &kp W    &none      &none       &none         &none     &none      &none  &none  &none
-&none  &kp LEFT_CONTROL  &kp A       &kp S    &kp D      &kp G    &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &none  &none
-&none    &kp LEFT_SHIFT  &kp E       &none    &kp R      &kp F      &tog 5         &none     &none      &none  &none  &none
-                                &kp ESCAPE  &kp TAB  &kp SPACE       &none         &none     &none
+&none             &kp Q  &none       &kp W    &none      &none        &none           &none         &none      &none  &none  &none
+&none  &kp LEFT_CONTROL  &kp A       &kp S    &kp D      &kp G     &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none    &kp LEFT_SHIFT  &kp E       &none    &kp R      &kp F       &tog 5           &none         &none      &none  &none  &none
+                                &kp ESCAPE  &kp TAB  &kp SPACE    &kp ENTER           &none         &none
             >;
         };
     };
