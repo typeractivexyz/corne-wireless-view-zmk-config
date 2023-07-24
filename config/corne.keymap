@@ -9,6 +9,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        screenshot_screen {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <32>;
+            layers = <1>;
+        };
+
+        screenshot_ui {
+            bindings = <&kp LG(LS(NUMBER_5))>;
+            key-positions = <33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
