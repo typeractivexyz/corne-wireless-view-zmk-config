@@ -12,8 +12,7 @@
 
 &mt {
     tapping-term-ms = <400>;
-    flavor = "tap-preferred";
-}
+};
 
 / {
     keymap {
