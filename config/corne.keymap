@@ -23,10 +23,10 @@
 
             label = "Base";
             bindings = <
-&trans  &kp FR_A  &kp FR_Z  &kp FR_E  &kp FR_R      &kp FR_T    &kp FR_Y      &kp FR_U        &kp FR_I     &kp FR_O     &kp FR_P  &trans
-&trans  &kp FR_Q  &kp FR_S  &kp FR_D  &kp FR_F      &kp FR_G    &kp FR_H      &kp FR_J        &kp FR_K     &kp FR_L     &kp FR_M  &trans
-&trans  &kp FR_W  &kp FR_X  &kp FR_C  &kp FR_V      &kp FR_B    &kp FR_N  &kp FR_COMMA   &kp FR_PERIOD  &kp FR_PIPE  &kp FR_FSLH  &trans
-                            &kp LCMD     &mo 1  &kp FR_SPACE     &kp RET         &mo 2  &kp LEFT_SHIFT
+&trans  &mt LS(FR_A) FR_A  &kp FR_Z  &kp FR_E  &kp FR_R      &kp FR_T    &kp FR_Y      &kp FR_U        &kp FR_I     &kp FR_O     &kp FR_P  &trans
+&trans           &kp FR_Q  &kp FR_S  &kp FR_D  &kp FR_F      &kp FR_G    &kp FR_H      &kp FR_J        &kp FR_K     &kp FR_L     &kp FR_M  &trans
+&trans           &kp FR_W  &kp FR_X  &kp FR_C  &kp FR_V      &kp FR_B    &kp FR_N  &kp FR_COMMA   &kp FR_PERIOD  &kp FR_PIPE  &kp FR_FSLH  &trans
+                                     &kp LCMD     &mo 1  &kp FR_SPACE     &kp RET         &mo 2  &kp LEFT_SHIFT
             >;
         };
 
