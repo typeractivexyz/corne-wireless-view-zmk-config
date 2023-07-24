@@ -46,7 +46,7 @@
             bindings = <
 &trans       &kp TAB  &kp FR_N7  &kp FR_N8  &kp FR_N9  &bt BT_SEL 0           &trans      &kp UP_ARROW              &trans            &trans            &trans  &trans
 &trans  &bt BT_SEL 0  &kp FR_N4  &kp FR_N5  &kp FR_N6  &bt BT_SEL 1         &kp LEFT          &kp DOWN     &kp RIGHT_ARROW            &trans            &trans  &trans
-&trans     &kp FR_N0  &kp FR_N1  &kp FR_N2  &kp FR_N3  &bt BT_SEL 3           &trans  &kp FR_SEMICOLON  &kp FR_EXCLAMATION  &kp FR_AMPERSAND  &kp FR_BACKSLASH  &trans
+&trans     &kp FR_N0  &kp FR_N1  &kp FR_N2  &kp FR_N3  &bt BT_SEL 3       &kp FR_SQT  &kp FR_SEMICOLON  &kp FR_EXCLAMATION  &kp FR_AMPERSAND  &kp FR_BACKSLASH  &trans
                                   &kp LGUI     &trans     &kp SPACE    &kp BACKSPACE            &trans            &kp RALT
             >;
         };
@@ -60,10 +60,10 @@
 
             label = "Raise";
             bindings = <
-&none   &kp FR_EXCL     &kp FR_AT  &kp FR_HASH  &kp FR_DOLLAR  &kp FR_PERCENT    &kp FR_CARET   &kp FR_AMPS      &kp FR_ASTERISK  &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS      &kp BSPC
-&none  &out OUT_BLE  &out OUT_USB       &trans         &trans          &trans    &kp FR_MINUS  &kp FR_EQUAL  &kp FR_LEFT_BRACKET     &kp FR_RIGHT_BRACKET          &kp FR_BACKSLASH  &kp FR_GRAVE
-&none        &trans        &trans       &trans         &trans          &trans    &kp FR_UNDER   &kp FR_PLUS    &kp FR_LEFT_BRACE       &kp FR_RIGHT_BRACE               &kp FR_PIPE  &kp FR_TILDE
-                                      &kp LGUI         &trans       &kp SPACE         &kp RET        &trans             &kp RALT
+&none   &kp FR_EXCL     &kp FR_AT  &kp FR_HASH  &kp FR_DOLLAR  &kp FR_PERCENT    &kp FR_CARET      &kp FR_AMPS      &kp FR_ASTERISK  &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS      &kp BSPC
+&none  &out OUT_BLE  &out OUT_USB       &trans         &trans          &trans    &kp FR_MINUS     &kp FR_EQUAL  &kp FR_LEFT_BRACKET     &kp FR_RIGHT_BRACKET          &kp FR_BACKSLASH  &kp FR_GRAVE
+&none        &trans        &trans       &trans         &trans          &trans    &kp FR_UNDER  &kp FR_QUESTION    &kp FR_LEFT_BRACE       &kp FR_RIGHT_BRACE               &kp FR_PIPE  &kp FR_TILDE
+                                      &kp LGUI         &trans       &kp SPACE         &kp RET           &trans             &kp RALT
             >;
         };
     };
