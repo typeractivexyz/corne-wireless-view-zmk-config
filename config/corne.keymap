@@ -5,10 +5,10 @@
  */
 
 #include <behaviors.dtsi>
+#include "keys_fr.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_fr.h"
 
 / {
     keymap {
@@ -23,10 +23,10 @@
 
             label = "Base";
             bindings = <
-&trans  &kp A  &kp Z     &kp E  &kp R      &kp T      &kp Y      &kp U           &kp I     &kp O     &kp P  &trans
-&trans  &kp Q  &kp S     &kp D  &kp F      &kp G      &kp H      &kp J           &kp K     &kp L     &kp M  &trans
-&trans  &kp W  &kp X     &kp C  &kp V      &kp B      &kp N  &kp COMMA      &kp PERIOD  &kp PIPE  &kp FSLH  &trans
-                      &kp LGUI  &mo 1  &kp SPACE    &kp RET      &mo 2  &kp LEFT_SHIFT
+&trans  &kp FR_A  &kp FR_Z  &kp FR_E  &kp FR_R      &kp FR_T    &kp FR_Y      &kp FR_U        &kp FR_I     &kp FR_O     &kp FR_P  &trans
+&trans  &kp FR_Q  &kp FR_S  &kp FR_D  &kp FR_F      &kp FR_G    &kp FR_H      &kp FR_J        &kp FR_K     &kp FR_L     &kp FR_M  &trans
+&trans  &kp FR_W  &kp FR_X  &kp FR_C  &kp FR_V      &kp FR_B    &kp FR_N  &kp FR_COMMA   &kp FR_PERIOD  &kp FR_PIPE  &kp FR_FSLH  &trans
+                            &kp LCMD     &mo 1  &kp FR_SPACE     &kp RET         &mo 2  &kp LEFT_SHIFT
             >;
         };
 
@@ -39,10 +39,10 @@
 
             label = "Lower";
             bindings = <
-&trans       &kp TAB  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &bt BT_SEL 0           &trans   &kp UP_ARROW           &trans         &trans         &trans  &trans
-&trans  &bt BT_SEL 0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &bt BT_SEL 1         &kp LEFT       &kp DOWN  &kp RIGHT_ARROW         &trans         &trans  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &bt BT_SEL 3           &trans  &kp SEMICOLON  &kp EXCLAMATION  &kp AMPERSAND  &kp BACKSLASH  &trans
-                                        &kp LGUI        &trans     &kp SPACE    &kp BACKSPACE         &trans         &kp RALT
+&trans       &kp TAB  &kp FR_N7  &kp FR_N8  &kp FR_N9  &bt BT_SEL 0           &trans      &kp UP_ARROW              &trans            &trans            &trans  &trans
+&trans  &bt BT_SEL 0  &kp FR_N4  &kp FR_N5  &kp FR_N6  &bt BT_SEL 1         &kp LEFT          &kp DOWN     &kp RIGHT_ARROW            &trans            &trans  &trans
+&trans     &kp FR_N0  &kp FR_N1  &kp FR_N2  &kp FR_N3  &bt BT_SEL 3           &trans  &kp FR_SEMICOLON  &kp FR_EXCLAMATION  &kp FR_AMPERSAND  &kp FR_BACKSLASH  &trans
+                                  &kp LGUI     &trans     &kp SPACE    &kp BACKSPACE            &trans            &kp RALT
             >;
         };
 
@@ -55,10 +55,10 @@
 
             label = "Raise";
             bindings = <
-  &kp TAB      &kp EXCL        &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LCTRL  &out OUT_BLE  &out OUT_USB    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT        &trans        &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                       &kp LGUI    &trans  &kp SPACE      &kp RET     &trans         &kp RALT
+&none   &kp FR_EXCL     &kp FR_AT  &kp FR_HASH  &kp FR_DOLLAR  &kp FR_PERCENT    &kp FR_CARET   &kp FR_AMPS      &kp FR_ASTERISK  &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS      &kp BSPC
+&none  &out OUT_BLE  &out OUT_USB       &trans         &trans          &trans    &kp FR_MINUS  &kp FR_EQUAL  &kp FR_LEFT_BRACKET     &kp FR_RIGHT_BRACKET          &kp FR_BACKSLASH  &kp FR_GRAVE
+&none        &trans        &trans       &trans         &trans          &trans    &kp FR_UNDER   &kp FR_PLUS    &kp FR_LEFT_BRACE       &kp FR_RIGHT_BRACE               &kp FR_PIPE  &kp FR_TILDE
+                                      &kp LGUI         &trans       &kp SPACE         &kp RET        &trans             &kp RALT
             >;
         };
     };
