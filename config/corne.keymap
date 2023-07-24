@@ -10,6 +10,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&mt {
+    tapping-term-ms = <400>;
+    flavor = "tap-preferred";
+}
+
 / {
     keymap {
         compatible = "zmk,keymap";
