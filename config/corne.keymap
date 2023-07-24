@@ -39,8 +39,8 @@
             bindings = <
 &kp GRAVE           &kp N1                &kp N2                 &kp N3          &kp N4           &kp N5              &kp N6             &kp N7        &kp N8          &kp N9         &kp N0  &kp BSPC
 &kp TILDE  &kp EXCLAMATION                &kp AT               &kp HASH      &kp DOLLAR      &kp PERCENT           &kp CARET      &kp AMPERSAND  &kp ASTERISK       &kp MINUS       &kp PLUS  &kp PIPE
-   &trans           &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp EQUAL  &kp UNDERSCORE  &kp BACKSLASH    &trans
-                                                                 &trans          &trans        &kp SPACE             &kp RET             &trans      &kp RALT
+   &trans            &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp EQUAL  &kp UNDERSCORE  &kp BACKSLASH    &trans
+                                                                 &trans          &trans           &trans              &trans             &trans        &trans
             >;
         };
 
@@ -54,9 +54,9 @@
             label = "Raise";
             bindings = <
 &kp F1          &kp F2        &kp F3             &kp F4           &kp F5            &kp F6            &kp F7          &kp F8        &kp F9          &kp F10        &kp F11  &kp F12
-&trans  &kp C_PREVIOUS    &kp C_NEXT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_PLAY_PAUSE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp PG_UP   &trans
-&trans      &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3            &trans          &trans        &trans           &trans  &kp PAGE_DOWN   &trans
-                                                 &trans           &trans         &kp SPACE           &kp RET          &trans      &kp RALT
+ &none  &kp C_PREVIOUS    &kp C_NEXT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_PLAY_PAUSE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp PG_UP    &none
+&trans      &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3             &none           &none         &none            &none  &kp PAGE_DOWN   &trans
+                                                 &trans           &trans            &trans            &trans          &trans        &trans
             >;
         };
     };
