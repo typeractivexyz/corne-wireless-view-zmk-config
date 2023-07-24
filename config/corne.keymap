@@ -21,9 +21,14 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        caps_combo {
             bindings = <&caps_word>;
             key-positions = <17 18>;
+        };
+
+        toggle_f_layer {
+            bindings = <&tog 5>;
+            key-positions = <5 6>;
         };
     };
 
@@ -32,46 +37,57 @@
 
         alphas {
             bindings = <
-                &gresc  &kp Q  &kp W     &kp E  &kp R          &kp T          &kp Y  &kp U      &kp I    &kp O                   &kp P               &kp BSPC
-&mt LEFT_CONTROL MINUS  &kp A  &kp S     &kp D  &kp F          &kp G          &kp H  &kp J      &kp K    &kp L  &mt LS(SEMI) SEMICOLON  &mt DOUBLE_QUOTES SQT
-            &sk LSHIFT  &kp Z  &kp X     &kp C  &kp V          &kp B          &kp N  &kp M  &kp COMMA  &kp DOT                &kp FSLH            &key_repeat
-                                      &kp LGUI  &mo 2  &mt TAB SPACE    &lt 1 ENTER  &mo 3   &kp RALT
+                &gresc  &kp Q  &kp W        &kp E      &kp R        &kp T          &kp Y         &kp U         &kp I    &kp O                   &kp P               &kp BSPC
+&mt LEFT_CONTROL MINUS  &kp A  &kp S        &kp D      &kp F        &kp G          &kp H         &kp J         &kp K    &kp L  &mt LS(SEMI) SEMICOLON  &mt DOUBLE_QUOTES SQT
+            &sk LSHIFT  &kp Z  &kp X        &kp C      &kp V        &kp B          &kp N         &kp M     &kp COMMA  &kp DOT                &kp FSLH              &kp TILDE
+                                      &key_repeat  &lt 5 TAB  &lt 2 SPACE    &lt 1 ENTER  &sk LEFT_GUI  &sk LEFT_ALT
             >;
 
-            label = "< dev >";
+            label = "A";
         };
 
         numbers {
             bindings = <
-    &kp TAB  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5    &kp LA(LG(LEFT))  &kp LA(LG(DOWN))  &kp LA(LG(UP))  &kp LA(LG(RIGHT))    &kp PAGE_UP  &kp DELETE
-&kp LS(TAB)  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0            &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT  &kp PAGE_DOWN   &kp LSHFT
-     &trans     &kp SLASH  &kp ASTERISK  &kp KP_MINUS   &kp KP_PLUS     &kp EQUAL              &trans            &trans          &trans             &trans         &trans    &kp LGUI
-                                            &kp LCTRL      &kp RALT      &kp LGUI             &kp RET            &trans        &kp RALT
+&trans  &kp NUMBER_1        &kp N2        &kp N3        &kp N4        &kp N5      &trans    &trans  &trans   &trans    &kp PAGE_UP  &kp DELETE
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp HOME  &kp DOWN  &kp UP  &kp END  &kp PAGE_DOWN      &trans
+&trans     &kp SLASH  &kp ASTERISK  &kp KP_MINUS   &kp KP_PLUS     &kp EQUAL      &trans    &trans  &trans   &trans         &trans      &trans
+                                          &trans        &trans        &trans      &trans    &trans  &trans
             >;
 
-            label = "# calc #";
+            label = "#";
         };
 
         symbols {
             bindings = <
-  &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LCTRL    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI    &trans     &trans       &trans     &trans         &kp RALT
+&kp GRAVE   &kp EXCL         &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp LEFT_PARENTHESIS  &kp RPAR  &kp SLASH  &trans
+&kp MINUS  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp PLUS     &trans    &kp MINUS  &kp EQUAL              &kp LBKT  &kp RBKT   &kp BSLH  &trans
+   &trans     &trans         &trans        &trans    &trans     &trans    &kp UNDER   &kp PLUS              &kp LBRC  &kp RBRC   &kp PIPE  &trans
+                                           &trans    &trans     &trans       &trans     &trans                &trans
             >;
 
-            label = "[ code ]";
+            label = "$";
+        };
+
+        MOVEMENTS {
+            bindings = <
+&trans  &kp LG(LA(LC(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp LA(LC(LG(NUMBER_5)))        &kp LA(LEFT)      &kp LA(DOWN)      &kp LA(UP)      &kp LA(RIGHT)              &kp LA(LG(LC(LBKT)))      &kp LA(LC(LG(RIGHT_BRACKET)))
+&trans                    &trans                    &trans                    &trans                 &kp PG_UP       &kp LG(LC(KP_PLUS))            &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT  &kp LA(LC(LG(LEFT_PARENTHESIS)))  &kp LA(LG(LC(RIGHT_PARENTHESIS)))
+&trans                    &trans                    &trans                    &trans                 &kp PG_DN      &kp LC(LG(KP_MINUS))    &kp LC(LG(LEFT))  &kp LC(LG(DOWN))  &kp LG(LC(UP))  &kp LG(LC(RIGHT))             &kp LA(LC(LG(CARET)))                             &trans
+                                                                              &trans           &kp LS(LG(TAB))               &kp LG(TAB)              &trans            &trans          &trans
+            >;
+
+            label = "M";
         };
 
         functions {
             bindings = <
-&bt BT_NXT  &kp F1  &kp F2  &kp F2  &kp F4   &kp F5        &trans            &trans      &trans  &trans  &trans    &kp C_VOLUME_UP
-&bt BT_PRV  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &kp C_VOLUME_DOWN
-&bt BT_CLR  &trans  &trans  &trans  &trans   &trans        &trans            &trans      &trans  &trans  &trans         &kp K_MUTE
-                            &trans  &trans   &trans        &trans            &trans      &trans
+&bt BT_NXT       &kp F1  &kp F2  &kp F2  &kp F4   &kp F5        &trans            &trans      &trans  &trans                &trans    &kp C_VOLUME_UP
+&bt BT_PRV       &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &kp C_AL_SCREENSAVER  &kp C_VOLUME_DOWN
+&bt BT_CLR  &kp C_SLEEP  &trans  &trans  &trans   &trans        &trans            &trans      &trans  &trans                &trans         &kp K_MUTE
+                                 &trans  &trans   &tog 4        &tog 4            &trans      &trans
             >;
 
-            label = "f-you";
+            label = "F";
         };
     };
 };
