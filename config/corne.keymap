@@ -41,7 +41,7 @@
    &kp ESC       &kp Q &kp W    &kp F     &kp P       &kp G   &kp J     &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &mt LCTRL TAB &kp A &kp R    &kp S     &kp T       &kp D   &kp H     &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT     &kp Z &kp X    &kp C     &kp V       &kp B   &kp K     &kp M  &kp COMMA &kp DOT &kp FSLH &kp TAB
-                       &kp LALT &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RGUI
+                       &kp LALT &sl LOWER &kp SPACE   &kp RET &sl RAISE &kp RGUI
                         >;
                 };
                 qwerty_layer {
@@ -55,7 +55,7 @@
    &trans  &kp Q &kp W &kp E    &kp R     &kp T       &kp Y   &kp U     &kp I     &kp O   &kp P    &kp BSPC
    &trans  &kp A &kp S &kp D    &kp F     &kp G       &kp H   &kp J     &kp K     &kp L   &kp SEMI &kp SQT
    &trans  &kp Z &kp X &kp C    &kp V     &kp B       &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH &kp TAB
-                       &kp LALT &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RGUI
+                       &kp LALT &sl LOWER &kp SPACE   &kp RET &sl RAISE &kp RGUI
                         >;
                 };
                 lower_layer {
