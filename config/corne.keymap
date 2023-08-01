@@ -19,7 +19,7 @@
 };
 
 &sl {
-    release-after-ms = <300>;
+    release-after-ms = <200>;
 };
 
 / {
