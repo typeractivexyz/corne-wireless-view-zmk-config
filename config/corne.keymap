@@ -23,6 +23,16 @@
 };
 
 / {
+        behaviors {
+                gresc: alt_tab {
+                compatible = "zmk,behavior-mod-morph";
+                label = "ALT_TAB";
+                #binding-cells = <0>;
+                bindings = <&kp CTRL>, <&kp TAB>;
+                mods = <(MOD_LALT)>;
+                };
+        };
+
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
@@ -36,16 +46,16 @@
 
                 colemak_layer {
 // ------------------------------------------------------------------------------------
-// | ESC       |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BKSP |
-// | CTRL(TAB) |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
-// | SHFT      |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | TAB  |
-//                         | ALT | LWR | SPC |   | ENT | RSE | GUI |
+// | ESC        |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BKSP |
+// | CTRL (TAB) |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
+// | SHFT       |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | TAB  |
+//                          | ALT | LWR | SPC |   | ENT | RSE | GUI |
                         label = "Colemak";
                         bindings = <
-   &kp ESC       &kp Q &kp W    &kp F     &kp P       &kp G   &kp J     &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-   &mt LCTRL TAB &kp A &kp R    &kp S     &kp T       &kp D   &kp H     &kp N  &kp E     &kp I   &kp O    &kp SQT
-   &kp LSHFT     &kp Z &kp X    &kp C     &kp V       &kp B   &kp K     &kp M  &kp COMMA &kp DOT &kp FSLH &kp TAB
-                       &kp LALT &sl LOWER &kp SPACE   &kp RET &sl RAISE &kp RGUI
+   &kp ESC   &kp Q &kp W    &kp F     &kp P       &kp G      &kp J   &kp L     &kp U     &kp Y   &kp SEMI &kp BSPC
+   &alt_tab  &kp A &kp R    &kp S     &kp T       &kp D      &kp H   &kp N     &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT &kp Z &kp X    &kp C     &kp V       &kp B      &kp K   &kp M     &kp COMMA &kp DOT &kp FSLH &kp TAB
+                            &kp LALT  &sl LOWER  &kp SPACE   &kp RET &sl RAISE &kp RGUI
                         >;
                 };
                 qwerty_layer {
@@ -64,29 +74,29 @@
                 };
                 lower_layer {
 // -------------------------------------------------------------------------------
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// |      |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     | DEL  |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     |     | SPC |   | ENT |     |     |
+// |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | TAB |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     | DEL  |
+// |     |     |     |     |     |     |   |     |     |     |     |     |      |
+//                   |     |     | SPC |   | ENT |     |     |
                         label = "Lower";
                         bindings = <
-   &trans  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5     &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans  &trans &trans &trans &trans &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp DEL
-   &trans  &trans &trans &trans &trans &trans     &trans   &trans   &trans &trans    &trans &trans
+   &trans   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5     &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp TAB  &trans &trans &trans &trans &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp DEL
+   &trans   &trans &trans &trans &trans &trans     &trans   &trans   &trans &trans    &trans &trans
                          &trans &trans &kp SPACE  &kp RET  &trans   &trans
                         >;
                 };
 
                 raise_layer {
 // ------------------------------------------------------------------------------
-// |     |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// |     | BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// |     |BTCLR|     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                   |     |     | SPC |   | ENT |     |     |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |      |BTCLR|     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    |     |     | SPC |   | ENT |     |     |
                         label = "Raise";
                         bindings = <
    &trans &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT     &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &trans &bt BT_CLR   &trans       &trans       &trans       &trans        &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                                     &trans       &trans       &kp SPACE     &kp RET   &trans    &trans
                         >;
