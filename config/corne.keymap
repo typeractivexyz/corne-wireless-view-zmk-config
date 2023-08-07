@@ -23,16 +23,6 @@
 };
 
 / {
-        behaviors {
-                gresc: alt_tab {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "ALT_TAB";
-                        #binding-cells = <0>;
-                        bindings = <&kp CTRL>, <&kp TAB>;
-                        mods = <MOD_LALT>;
-                };
-        };
-
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
