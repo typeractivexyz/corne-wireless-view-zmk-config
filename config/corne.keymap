@@ -29,10 +29,11 @@
             label = "ALT_TAB";
             #binding-cells = <0>;
             bindings =
-                <&kp CTRL>,
+                <&kp LCTRL>,
                 <&kp TAB>;
 
             mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
         };
     };
 
