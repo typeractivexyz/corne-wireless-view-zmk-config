@@ -23,6 +23,16 @@
 };
 
 / {
+        behaviors {
+                atab: alt_tab {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "ALT_TAB";
+                        #binding-cells = <0>;
+                        bindings = <&kp CTRL>, <&kp TAB>;
+                        mods = <(MOD_LALT)>;
+                };
+        };
+
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
@@ -43,7 +53,7 @@
                         label = "Colemak";
                         bindings = <
    &kp ESC   &kp Q &kp W    &kp F     &kp P       &kp G      &kp J   &kp L     &kp U     &kp Y   &kp SEMI &kp BSPC
-   &kp TAB  &kp A &kp R    &kp S     &kp T       &kp D      &kp H   &kp N     &kp E     &kp I   &kp O    &kp SQT
+   &atab   &kp A &kp R    &kp S     &kp T       &kp D      &kp H   &kp N     &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT &kp Z &kp X    &kp C     &kp V       &kp B      &kp K   &kp M     &kp COMMA &kp DOT &kp FSLH &kp TAB
                             &kp LALT  &sl LOWER  &kp SPACE   &kp RET &sl RAISE &kp RGUI
                         >;
