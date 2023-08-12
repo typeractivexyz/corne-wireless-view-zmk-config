@@ -52,10 +52,10 @@
 
             label = "Num●Sym";
             bindings = <
-&trans      &kp EXCL        &kp AT      &kp HASH      &kp DLLR     &kp PRCNT    &kp CARET   &kp AMPS          &kp ASTERISK          &kp LPAR           &kp RPAR  &kp LC(LS(NUMBER_2))
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp MINUS  &kp EQUAL  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET             &kp GRAVE
-&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UNDER   &kp PLUS              &kp PIPE    &kp LEFT_BRACE    &kp RIGHT_BRACE             &kp TILDE
-                                          &trans        &trans        &trans       &trans     &trans                &trans
+&trans      &kp EXCL        &kp AT      &kp HASH      &kp DLLR     &kp PRCNT    &kp CARET   &kp AMPS   &kp ASTERISK          &kp LPAR           &kp RPAR  &kp LC(LS(NUMBER_2))
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET             &kp GRAVE
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UNDER   &kp PLUS       &kp PIPE    &kp LEFT_BRACE    &kp RIGHT_BRACE             &kp TILDE
+                                          &trans        &trans        &trans       &trans     &trans         &trans
             >;
         };
 
