@@ -73,10 +73,10 @@
 
             label = "Function";
             bindings = <
-&trans  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans         &none  &kp C_VOLUME_DOWN    &kp C_MUTE  &kp C_VOLUME_UP  &kp C_BRI_UP        &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT         &none   &none
-&trans         &none         &kp C_PREV      &kp C_PP       &kp C_NEXT  &kp C_BRI_DN           &none         &none         &none         &none         &none  &trans
-                                               &trans           &trans        &trans          &trans        &trans        &trans
+&trans  &kp ASTERISK  &kp N1  &kp NUMBER_2        &kp N3  &kp MINUS    &kp C_BRIGHTNESS_INC     &kp C_PREVIOUS    &kp C_PP       &kp C_NEXT  &kp LG(LS(NUMBER_5))  &trans
+&trans     &kp SLASH  &kp N4        &kp N5  &kp NUMBER_6   &kp PLUS                &kp LEFT           &kp DOWN      &kp UP        &kp RIGHT                 &none   &none
+&trans    &kp PERIOD  &kp N7        &kp N8        &kp N9  &kp EQUAL    &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp LG(LS(NUMBER_4))  &trans
+                              &kp NUMBER_0        &trans     &trans                  &trans             &trans      &trans
             >;
         };
 
