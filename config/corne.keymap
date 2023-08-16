@@ -82,10 +82,10 @@
 
         bluetooth {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &bt BT_CLR  &trans
-&trans         &none         &none         &none         &none         &none    &none  &none  &none  &none       &none   &none
-&trans         &none         &none         &none         &none         &none    &none  &none  &none  &none       &none  &trans
-                                           &none         &none         &none    &none  &none  &none
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &none   &none   &none  &none  &bt BT_CLR  &trans
+&trans         &none         &none         &none         &none         &none     &none   &none   &none  &none       &none   &none
+&trans         &none         &none         &none         &none         &none     &none   &none   &none  &none       &none  &trans
+                                          &trans        &trans        &trans    &trans  &trans  &trans
             >;
 
             label = "Bluetooth";
