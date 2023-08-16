@@ -57,10 +57,10 @@
 
             label = "Symbols";
             bindings = <
-&trans  &kp EXCL                 &kp AT           &kp HASH         &kp DLLR  &kp PRCNT    &kp CARET       &kp AMPS  &kp ASTERISK         &kp MINUS     &kp EQUAL             &trans
-&trans     &none   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE      &none    &kp GRAVE  &kp BACKSLASH         &none    &kp UNDERSCORE      &kp PLUS  &kp DOUBLE_QUOTES
-&trans     &none  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &none    &kp TILDE       &kp PIPE        &kp LT  &kp GREATER_THAN  &kp QUESTION             &trans
-                                                    &trans           &trans     &trans       &trans         &trans        &trans
+&trans      &kp EXCL        &kp AT      &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET   &kp AMPS   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5         &kp MINUS  &kp EQUAL  &kp BACKSLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp GRAVE
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UNDERSCORE   &kp PLUS       &kp PIPE        &kp LEFT_BRACE        &kp RIGHT_BRACE     &trans
+                                          &trans        &trans        &trans            &trans     &trans         &trans
             >;
         };
 
