@@ -14,7 +14,7 @@
 
         new_combo {
             bindings = <&mo 3>;
-            key-positions = <37 41>;
+            key-positions = <37 40>;
         };
     };
 
