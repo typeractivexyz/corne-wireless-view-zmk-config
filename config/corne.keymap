@@ -29,10 +29,10 @@
 
             label = "Base";
             bindings = <
-&trans  &mt LS(FR_A) FR_A  &mt LS(FR_Z) FR_Z  &mt LS(FR_E) FR_E  &mt LS(FR_R) FR_R        &mt LS(FR_T) FR_T    &mt LS(FR_Y) FR_Y  &mt LS(FR_U) FR_U  &mt LS(FR_I) FR_I  &mt LS(FR_O) FR_O  &mt LS(FR_P) FR_P  &trans
-&trans  &mt LS(FR_Q) FR_Q  &mt LS(FR_S) FR_S  &mt LS(FR_D) FR_D  &mt LS(FR_F) FR_F        &mt LS(FR_G) FR_G    &mt LS(FR_H) FR_H  &mt LS(FR_J) FR_J  &mt LS(FR_K) FR_K  &mt LS(FR_L) FR_L  &mt LS(FR_M) FR_M  &trans
-&trans  &mt LS(FR_W) FR_W  &mt LS(FR_X) FR_X  &mt LS(FR_C) FR_C  &mt LS(FR_V) FR_V        &mt LS(FR_B) FR_B    &mt LS(FR_N) FR_N       &kp FR_COMMA      &kp FR_PERIOD        &kp FR_PIPE        &kp FR_FSLH  &trans
-                                                       &kp LCMD              &mo 1  &mt LEFT_SHIFT FR_SPACE              &kp RET              &mo 2          &kp RCTRL
+&trans  &mt LS(FR_A) FR_A  &mt LS(FR_Z) FR_Z  &mt LS(FR_E) FR_E  &mt LS(FR_R) FR_R        &mt LS(FR_T) FR_T         &mt LS(FR_Y) FR_Y  &mt LS(FR_U) FR_U  &mt LS(FR_I) FR_I  &mt LS(FR_O) FR_O  &mt LS(FR_P) FR_P  &trans
+&trans  &mt LS(FR_Q) FR_Q  &mt LS(FR_S) FR_S  &mt LS(FR_D) FR_D  &mt LS(FR_F) FR_F        &mt LS(FR_G) FR_G         &mt LS(FR_H) FR_H  &mt LS(FR_J) FR_J  &mt LS(FR_K) FR_K  &mt LS(FR_L) FR_L  &mt LS(FR_M) FR_M  &trans
+&trans  &mt LS(FR_W) FR_W  &mt LS(FR_X) FR_X  &mt LS(FR_C) FR_C  &mt LS(FR_V) FR_V        &mt LS(FR_B) FR_B         &mt LS(FR_N) FR_N       &kp FR_COMMA      &kp FR_PERIOD        &kp FR_PIPE        &kp FR_FSLH  &trans
+                                                       &kp LCMD              &mo 1  &mt LEFT_SHIFT FR_SPACE    &mt LEFT_CONTROL ENTER              &mo 2          &kp RCTRL
             >;
         };
 
