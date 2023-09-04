@@ -29,10 +29,10 @@
 
             label = "Base";
             bindings = <
-&trans  &mt LS(FR_A) FR_A  &mt LS(FR_Z) FR_Z  &mt LS(FR_E) FR_E  &mt LS(FR_R) FR_R        &mt LS(FR_T) FR_T         &mt LS(FR_Y) FR_Y  &mt LS(FR_U) FR_U  &mt LS(FR_I) FR_I  &mt LS(FR_O) FR_O  &mt LS(FR_P) FR_P  &trans
-&trans  &mt LS(FR_Q) FR_Q  &mt LS(FR_S) FR_S  &mt LS(FR_D) FR_D  &mt LS(FR_F) FR_F        &mt LS(FR_G) FR_G         &mt LS(FR_H) FR_H  &mt LS(FR_J) FR_J  &mt LS(FR_K) FR_K  &mt LS(FR_L) FR_L  &mt LS(FR_M) FR_M  &trans
-&trans  &mt LS(FR_W) FR_W  &mt LS(FR_X) FR_X  &mt LS(FR_C) FR_C  &mt LS(FR_V) FR_V        &mt LS(FR_B) FR_B         &mt LS(FR_N) FR_N       &kp FR_COMMA      &kp FR_PERIOD        &kp FR_PIPE        &kp FR_FSLH  &trans
-                                                       &kp LCMD              &mo 1  &mt LEFT_SHIFT FR_SPACE    &mt LEFT_CONTROL ENTER              &mo 2          &kp RCTRL
+&trans&mt LS(FR_A) FR_A  &mt LS(FR_Z) FR_Z  &mt LS(FR_E) FR_E  &mt LS(FR_R) FR_R  &mt LS(FR_T) FR_T          &mt LS(FR_Y) FR_Y       &mt LS(FR_U) FR_U  &mt LS(FR_I) FR_I  &mt LS(FR_O) FR_O  &mt LS(FR_P) FR_P  &trans
+&trans&mt LS(FR_Q) FR_Q  &mt LS(FR_S) FR_S  &mt LS(FR_D) FR_D  &mt LS(FR_F) FR_F  &mt LS(FR_G) FR_G          &mt LS(FR_H) FR_H       &mt LS(FR_J) FR_J  &mt LS(FR_K) FR_K  &mt LS(FR_L) FR_L  &mt LS(FR_M) FR_M  &trans
+&trans&mt LS(FR_W) FR_W  &mt LS(FR_X) FR_X  &mt LS(FR_C) FR_C  &mt LS(FR_V) FR_V  &mt LS(FR_B) FR_B          &mt LS(FR_N) FR_N       &kp FR_COMMA       &kp FR_PERIOD      &kp FR_PIPE        &kp FR_FSLH        &trans
+                                            &kp LCMD           &mo 1              &mt LEFT_SHIFT FR_SPACE    &mt LEFT_CONTROL ENTER  &mo 2              &kp RCTRL
             >;
         };
 
@@ -45,10 +45,10 @@
 
             label = "Lower";
             bindings = <
-&trans       &kp TAB  &kp FR_N7  &kp FR_N8  &kp FR_N9  &bt BT_SEL 0            &kp FR_PLUS      &kp UP_ARROW              &trans            &trans        &kp ESCAPE  &trans
-&trans  &bt BT_SEL 0  &kp FR_N4  &kp FR_N5  &kp FR_N6  &bt BT_SEL 1               &kp LEFT          &kp DOWN     &kp RIGHT_ARROW      &kp FR_COLON        &kp FR_DQT  &trans
-&trans     &kp FR_N0  &kp FR_N1  &kp FR_N2  &kp FR_N3     &kp GRAVE    &kp FR_SINGLE_QUOTE  &kp FR_SEMICOLON  &kp FR_EXCLAMATION  &kp FR_AMPERSAND  &kp FR_BACKSLASH  &trans
-                                  &kp LGUI     &trans     &kp SPACE          &kp BACKSPACE            &trans            &kp RALT
+&trans&kp TAB       &kp FR_N7  &kp FR_N8  &kp FR_N9  &bt BT_SEL 0    &kp FR_PLUS          &kp UP_ARROW      &trans              &kp FR_PLUS       &kp ESCAPE        &trans
+&trans&bt BT_SEL 0  &kp FR_N4  &kp FR_N5  &kp FR_N6  &bt BT_SEL 1    &kp LEFT             &kp DOWN          &kp RIGHT_ARROW     &kp FR_COLON      &kp FR_DQT        &trans
+&trans&kp FR_N0     &kp FR_N1  &kp FR_N2  &kp FR_N3  &kp GRAVE       &kp FR_SINGLE_QUOTE  &kp FR_SEMICOLON  &kp FR_EXCLAMATION  &kp FR_AMPERSAND  &kp FR_BACKSLASH  &trans
+                               &kp LGUI   &trans     &kp SPACE       &kp BACKSPACE        &trans            &kp RALT
             >;
         };
 
@@ -61,10 +61,10 @@
 
             label = "Raise";
             bindings = <
-&none     &kp FR_EXCL       &kp FR_AT     &kp FR_HASH     &kp FR_DOLLAR       &kp FR_PERCENT    &kp FR_CARET      &kp FR_AMPS      &kp FR_ASTERISK  &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS      &kp BSPC
-&none  &kp FR_E_ACUTE  &kp FR_E_GRAVE  &kp FR_A_GRAVE  &kp FR_C_CEDILLA       &kp FR_U_GRAVE    &kp FR_MINUS     &kp FR_EQUAL  &kp FR_LEFT_BRACKET     &kp FR_RIGHT_BRACKET              &kp FR_GRAVE  &kp FR_GRAVE
-&none    &out OUT_BLE    &out OUT_USB  &kt FR_A_GRAVE  &kt FR_C_CEDILLA  &kp FR_GREATER_THAN    &kp FR_UNDER  &kp FR_QUESTION    &kp FR_LEFT_BRACE       &kp FR_RIGHT_BRACE              &kp FR_TILDE  &kp FR_TILDE
-                                             &kp LGUI            &trans            &kp SPACE         &kp RET           &trans             &kp RALT
+&none&kp FR_EXCL     &kp FR_AT       &kp FR_HASH     &kp FR_DOLLAR     &kp FR_PERCENT         &kp FR_CARET  &kp FR_AMPS      &kp FR_ASTERISK      &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp BSPC
+&none&kp FR_E_ACUTE  &kp FR_E_GRAVE  &kp FR_A_GRAVE  &kp FR_C_CEDILLA  &kp FR_U_GRAVE         &kp FR_MINUS  &kp FR_EQUAL     &kp FR_LEFT_BRACKET  &kp FR_RIGHT_BRACKET     &kp FR_GRAVE              &kp FR_GRAVE
+&none&out OUT_BLE    &out OUT_USB    &kt FR_A_GRAVE  &kt FR_C_CEDILLA  &kp FR_GREATER_THAN    &kp FR_UNDER  &kp FR_QUESTION  &kp FR_LEFT_BRACE    &kp FR_RIGHT_BRACE       &kp FR_TILDE              &kp FR_TILDE
+                                     &kp LGUI        &trans            &kp SPACE              &kp RET       &trans           &kp RALT
             >;
         };
     };
