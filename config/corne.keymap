@@ -73,10 +73,10 @@
 
             label = "Function";
             bindings = <
-&trans  &kp ASTERISK  &kp N1  &kp NUMBER_2  &kp N3        &kp MINUS    &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS     &kp C_PP               &kp C_NEXT       &kp LG(LS(NUMBER_5))  &trans
-&trans  &kp SLASH     &kp N4  &kp N5        &kp NUMBER_6  &kp PLUS     &kp LEFT              &mt LEFT_ALT DOWN  &mt LEFT_ALT UP_ARROW  &kp RIGHT        &none                 &none
-&trans  &kp PERIOD    &kp N7  &kp N8        &kp N9        &kp EQUAL    &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_MUTE             &kp C_VOLUME_UP  &kp LG(LS(NUMBER_4))  &trans
-                              &kp NUMBER_0  &trans        &trans       &trans                &trans             &trans
+&trans  &kp ASTERISK  &kp N1  &kp NUMBER_2  &kp N3        &kp MINUS    &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS           &kp C_PP                   &kp C_NEXT       &kp LG(LS(NUMBER_5))  &trans
+&trans  &kp SLASH     &kp N4  &kp N5        &kp NUMBER_6  &kp PLUS     &kp LEFT              &mt LA(DOWN_ARROW) DOWN  &mt LA(UP_ARROW) UP_ARROW  &kp RIGHT        &none                 &none
+&trans  &kp PERIOD    &kp N7  &kp N8        &kp N9        &kp EQUAL    &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN        &kp C_MUTE                 &kp C_VOLUME_UP  &kp LG(LS(NUMBER_4))  &trans
+                              &kp NUMBER_0  &trans        &trans       &trans                &trans                   &trans
             >;
         };
 
