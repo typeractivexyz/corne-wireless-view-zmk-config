@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <3000>;
+    tapping-term-ms = <500>;
     flavor = "balanced";
 };
 
