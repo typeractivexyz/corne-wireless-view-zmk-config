@@ -10,6 +10,7 @@
 
 &mt {
     tapping-term-ms = <3000>;
+    flavor = "balanced";
 };
 
 / {
