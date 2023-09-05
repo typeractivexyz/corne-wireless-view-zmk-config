@@ -32,19 +32,19 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
+        base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            label = "Default";
+            label = "Base";
             bindings = <
-&mt LEFT_GUI TAB  &mt LEFT_GUI Q  &mt LEFT_GUI W  &mt LEFT_GUI E  &mt LEFT_GUI R  &mt LEFT_GUI T            &mt LEFT_GUI Y  &mt LEFT_GUI U  &mt LEFT_GUI I      &mt LEFT_GUI O       &mt LEFT_GUI P          &kp ESC
-&kp LEFT_CONTROL  &mt LEFT_GUI A  &mt LEFT_GUI S  &mt LEFT_GUI D  &mt LEFT_GUI F  &mt LEFT_GUI G            &mt LEFT_GUI H  &mt LEFT_GUI J  &mt LEFT_GUI K      &mt LEFT_GUI L       &mt LEFT_GUI SEMICOLON  &mt LEFT_GUI SQT
-&kp LEFT_ALT      &mt LEFT_GUI Z  &mt LEFT_GUI X  &mt LEFT_GUI C  &mt LEFT_GUI V  &mt LEFT_GUI B            &mt LEFT_GUI N  &mt LEFT_GUI M  &mt LEFT_GUI COMMA  &mt LEFT_GUI PERIOD  &mt LEFT_GUI SLASH      &kp ENTER
-                                                  &kp LGUI        &mo 2           &mt LEFT_ALT BACKSPACE    &kp SPACE       &mo 1           &shift_lock
+&mt LG(TAB) TAB   &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E  &mt LG(R) R  &mt LG(T) T                    &mt LG(Y) Y  &mt LG(U) U  &mt LG(I) I          &mt LG(O) O            &mt LG(P) P                  &kp ESC
+&kp LEFT_CONTROL  &mt LG(A) A  &mt LG(S) S  &mt LG(D) D  &mt LG(F) F  &mt LG(G) G                    &mt LG(H) H  &mt LG(J) J  &mt LEFT_GUI LG(K)   &mt LG(L) L            &mt LG(SEMICOLON) SEMICOLON  &mt LG(SQT) SQT
+&kp LEFT_ALT      &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C  &mt LG(V) V  &mt LG(B) B                    &mt LG(N) N  &mt LG(M) M  &mt LG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH          &kp ENTER
+                                            &kp LGUI     &mo 2        &mt LA(BACKSPACE) BACKSPACE    &kp SPACE    &mo 1        &shift_lock
             >;
         };
 
