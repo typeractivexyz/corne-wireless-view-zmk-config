@@ -21,10 +21,10 @@
 
             label = "Base";
             bindings = <
-&kp DELETE         &kp Q  &kp W  &kp F  &kp P        &kp B       &kp J      &kp L           &kp U      &kp Y    &kp SQT   &kp ESCAPE
-&kp BACKSPACE      &kp A  &kp R  &kp S  &kp T        &kp G       &kp M      &kp N           &kp E      &kp I    &kp O     &kp ENTER
-&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C  &kp D        &kp V       &kp K      &kp H           &kp COMMA  &kp DOT  &kp FSLH  &kp LC(DELETE)
-                                 &mo 1  &lt 1 SPACE  &kp BSPC    &lt 2 TAB  &kp LEFT_SHIFT  &kp RALT
+&kp DELETE         &kp Q           &kp W            &kp F        &kp P             &kp B        &kp J           &kp L    &kp U      &kp Y    &kp SQT   &kp ESCAPE
+&kp BACKSPACE      &mt A LEFT_WIN  &mt R LEFT_ALT   &mt S LCTRL  &mt T LEFT_SHIFT  &mt G TAB    &kp M           &kp N    &kp E      &kp I    &kp O     &kp ENTER
+&kp LC(BACKSPACE)  &kp Z           &mt X RIGHT_ALT  &kp C        &kp D             &kp V        &kp K           &kp H    &kp COMMA  &kp DOT  &kp FSLH  &kp LC(DELETE)
+                                                    &to 1        &mo 2             &kp SPACE    &kp LEFT_SHIFT  &kp TAB  &to 2
             >;
         };
 
@@ -33,7 +33,7 @@
 &trans  &trans      &kp BSLH   &kp SEMI    &kp ENTER    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8  &kp N9  &kp EQUAL  &trans
 &trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &kp TAB                 &kp MINUS              &kp N4        &kp N5  &kp N6  &kp GRAVE  &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2  &kp N3  &kp FSLH   &trans
-                               &trans      &trans       &trans                  &kp DOT                &kp N0        &trans
+                               &to 0       &trans       &trans                  &kp DOT                &kp N0        &trans
             >;
 
             label = "Numbers";
@@ -42,9 +42,9 @@
         Nav_Layer {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans   &trans    &kp UP_ARROW   &trans       &trans   &trans
-&trans      &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &trans   &kp LEFT  &kp DOWN       &kp RIGHT    &trans   &trans
+&trans      &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp TAB  &kp LEFT  &kp DOWN       &kp RIGHT    &trans   &trans
 &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE     &trans          &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
-                                        &trans        &trans          &trans          &trans   &trans    &trans
+                                        &trans        &trans          &trans          &trans   &trans    &to 0
             >;
 
             label = "Navigate";
