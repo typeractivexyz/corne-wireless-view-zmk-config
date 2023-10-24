@@ -24,7 +24,7 @@
 &kp DELETE         &kp Q           &kp W            &kp F        &kp P             &kp B        &kp J           &kp L             &kp U        &kp Y                 &kp SQT         &kp ESCAPE
 &kp BACKSPACE      &mt A LEFT_WIN  &mt R LEFT_ALT   &mt S LCTRL  &mt T LEFT_SHIFT  &mt G TAB    &mt M TAB       &mt N LEFT_SHIFT  &mt E LCTRL  &mt I LEFT_ALT        &mt O LEFT_WIN  &kp ENTER
 &kp LC(BACKSPACE)  &kp Z           &mt X RIGHT_ALT  &kp C        &kp D             &kp V        &kp K           &kp H             &kp COMMA    &mt PERIOD RIGHT_ALT  &kp FSLH        &kp LC(DELETE)
-                                                    &to 1        &mo 2             &kp SPACE    &kp LEFT_SHIFT  &kp TAB           &to 2
+                                                    &to 1        &mo 2             &kp SPACE    &kp LEFT_SHIFT  &mo 3             &to 2
             >;
         };
 
@@ -48,6 +48,17 @@
             >;
 
             label = "Navigate";
+        };
+
+        Fun_Layer {
+            bindings = <
+&kp C_BRI_UP          &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &kp C_PLAY_PAUSE  &trans     &trans     &trans    &trans    &trans
+&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &kp TAB           &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans                &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &trans            &trans     &trans     &trans    &trans    &trans
+                                       &trans  &trans  &trans               &trans            &trans     &trans
+            >;
+
+            label = "Function";
         };
 
         lower_layer {
