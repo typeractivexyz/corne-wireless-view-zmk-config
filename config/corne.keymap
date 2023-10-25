@@ -14,10 +14,10 @@
 
         colemak {
             bindings = <
-&trans          &kp Q  &kp W        &kp F       &kp P               &kp B        &kp J     &kp L                &kp U           &kp Y                &kp SEMI   &trans
-&kp LEFT_SHIFT  &kp A  &mt R LCTRL  &mt S LALT  &mt T LEFT_COMMAND  &kp G        &kp M     &mt N RIGHT_COMMAND  &mt E LEFT_ALT  &mt I RIGHT_CONTROL  &kp O      &kp RIGHT_SHIFT
-&trans          &kp Z  &kp X        &kp C       &kp D               &kp V        &kp H     &kp K                &kp COMMA       &kp DOT              &kp SLASH  &trans
-                                    &kp ESC     &lt 1 TAB           &kp SPACE    &kp BSPC  &lt 2 ENTER          &kp DEL
+&trans          &kp Q  &kp W               &kp F           &kp P               &kp B        &kp J     &kp L                &kp U           &kp Y                &kp SEMI   &trans
+&kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G        &kp M     &mt RIGHT_COMMAND N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &kp O      &kp RIGHT_SHIFT
+&trans          &kp Z  &kp X               &kp C           &kp D               &kp V        &kp H     &kp K                &kp COMMA       &kp DOT              &kp SLASH  &trans
+                                           &kp ESC         &lt 1 TAB           &kp SPACE    &kp BSPC  &lt 2 ENTER          &kp DEL
             >;
         };
 
