@@ -47,19 +47,19 @@
 
             label = "Base";
             bindings = <
-&kp TAB        &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J       &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &mt COLON SEMICOLON
-&kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M  &hmr DOLLAR N    &hmr LCTRL E       &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
-&kp DELETE     &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K       &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &mt UNDERSCORE MINUS
-                                                 &kp LCTRL     &kp SPACE          &mo 1         &mo 2       &kp LEFT_SHIFT   &mo 3
+&kp TAB     &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J          &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &mt COLON SEMICOLON
+&caps_word  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M     &hmr DOLLAR N    &hmr LCTRL E       &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
+&kp DELETE  &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K          &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &mt UNDERSCORE MINUS
+                                              &kp LCTRL     &kp SPACE          &mo 1         &kp BACKSPACE  &kp LEFT_SHIFT   &mo 3
             >;
         };
 
         Num_Layer {
             bindings = <
-&kp ESCAPE  &trans      &kp BSLH   &mt SEMICOLON COLON  &kp ENTER    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8  &kp N9  &kp EQUAL  &mt COLON SEMICOLON
-&caps_word  &kp LGUI    &kp LALT   &kp LCTRL            &kp LSHFT    &kp TAB                 &kp MINUS              &kp N4        &kp N5  &kp N6  &kp GRAVE  &kp ENTER
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY           &kp K_PASTE  &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2  &kp N3  &kp FSLH   &mt UNDERSCORE MINUS
-                                   &trans               &trans       &trans                  &kp N0                 &kp PERIOD    &none
+&kp ESCAPE    &kp BACKSLASH  &trans     &kp ENTER   &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &kp EQUAL  &mt COLON SEMICOLON
+&kp CAPSLOCK  &kp LGUI       &kp LALT   &kp LCTRL   &kp LSHFT      &kp TAB                 &trans                 &kp N4        &kp N5      &kp N6  &kp GRAVE  &kp ENTER
+&kp K_REDO    &kp K_UNDO     &kp K_CUT  &kp K_COPY  &kp K_PASTE    &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &kp FSLH   &mt UNDERSCORE MINUS
+                                        &trans      &trans         &trans                  &mo 2                  &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
@@ -69,7 +69,7 @@
             bindings = <
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP    &trans    &kp UP_ARROW   &trans       &kp HOME  &trans
 &out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT    &kp END   &trans
-&trans        &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE     &trans          &kp INS        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &trans
+&kp K_REDO    &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE     &trans          &kp INS        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &trans
                                           &trans        &trans          &trans          &trans         &trans    &none
             >;
 
