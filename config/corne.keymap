@@ -47,18 +47,18 @@
 
             label = "Base";
             bindings = <
-&kp TAB        &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &kp COLON
-&kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M      &hmr DOLLAR N    &hmr LCTRL E       &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
-&kp DELETE     &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &none
-                                                 &kp LCTRL     &mo 1              &kp SPACE     &kp LEFT_SHIFT  &mo 2            &mo 3
+&kp TAB        &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J       &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &mt COLON SEMICOLON
+&kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M  &hmr DOLLAR N    &hmr LCTRL E       &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
+&kp DELETE     &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K       &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &mt UNDERSCORE MINUS
+                                                 &kp LCTRL     &kp SPACE          &mo 1         &mo 2       &kp LEFT_SHIFT   &mo 3
             >;
         };
 
         Num_Layer {
             bindings = <
-&kp ESCAPE  &trans      &kp BSLH   &mt SEMICOLON COLON  &kp ENTER    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8  &kp N9  &kp EQUAL  &trans
-&caps_word  &kp LGUI    &kp LALT   &kp LCTRL            &kp LSHFT    &kp TAB                 &kp MINUS              &kp N4        &kp N5  &kp N6  &kp GRAVE  &trans
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY           &kp K_PASTE  &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2  &kp N3  &kp FSLH   &trans
+&kp ESCAPE  &trans      &kp BSLH   &mt SEMICOLON COLON  &kp ENTER    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8  &kp N9  &kp EQUAL  &mt COLON SEMICOLON
+&caps_word  &kp LGUI    &kp LALT   &kp LCTRL            &kp LSHFT    &kp TAB                 &kp MINUS              &kp N4        &kp N5  &kp N6  &kp GRAVE  &kp ENTER
+&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY           &kp K_PASTE  &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2  &kp N3  &kp FSLH   &mt UNDERSCORE MINUS
                                    &trans               &trans       &trans                  &kp N0                 &kp PERIOD    &none
             >;
 
@@ -67,10 +67,10 @@
 
         Nav_Layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans   &trans    &kp UP_ARROW   &trans       &trans   &out OUT_TOG
-&trans      &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp TAB  &kp LEFT  &kp DOWN       &kp RIGHT    &trans   &trans
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE     &trans          &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
-                                        &trans        &trans          &trans          &trans   &trans    &none
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP    &trans    &kp UP_ARROW   &trans       &kp HOME  &trans
+&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT    &kp END   &trans
+&trans        &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE     &trans          &kp INS        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &trans
+                                          &trans        &trans          &trans          &trans         &trans    &none
             >;
 
             label = "Navigate";
@@ -78,10 +78,10 @@
 
         Fun_Layer {
             bindings = <
-&kp C_BRI_UP          &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &trans   &kp K_PREVIOUS  &kp C_PLAY_PAUSE  &kp K_NEXT  &trans    &trans
-&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &kp TAB  &kp LSHFT       &kp LCTRL         &kp LALT    &kp LGUI  &trans
-&trans                &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &trans   &trans          &trans            &trans      &trans    &trans
-                                       &to 4   &trans  &trans               &trans   &trans          &trans
+&kp C_BRI_UP          &kp F12  &kp F7  &kp F8      &kp F9            &kp C_VOLUME_UP      &trans   &trans     &trans     &trans    &trans    &to 4
+&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5      &kp F6            &kp C_VOLUME_DOWN    &kp TAB  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans                &kp F10  &kp F1  &kp F2      &kp F3            &kp C_MUTE           &trans   &trans     &trans     &trans    &trans    &trans
+                                       &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT           &trans   &trans     &trans
             >;
 
             label = "Function";
@@ -89,10 +89,10 @@
 
         Game_Layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y           &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&kp CAPS   &kp A  &kp S  &kp D      &kp F      &kp G        &kp H           &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N           &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LCTRL  &kp SPACE  &kp SPACE    &kp LEFT_SHIFT  &trans  &to 0
+&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y  &kp U  &kp I      &kp O    &kp P     &to 0
+&kp CAPS   &kp A  &kp S  &kp D      &kp F      &kp G             &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &mo 1  &mo 2  &mo 3
             >;
 
             label = "Gaming";
