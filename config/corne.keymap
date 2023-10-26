@@ -48,7 +48,7 @@
             bindings = <
 &kp TAB        &kp Q            &kp W             &kp F         &kp P              &kp B         &kp J           &kp L              &kp U         &kp Y                  &kp SQT          &kp ESCAPE
 &kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R   &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M      &hmr LEFT_SHIFT N  &hmr LCTRL E  &hmr LEFT_ALT I        &hmr LEFT_WIN O  &kp ENTER
-&kp DELETE     &kp Z            &hml RIGHT_ALT X  &kp C         &kp D              &kp V         &kp K           &kp H              &kp COMMA     &hmr RIGHT_ALT PERIOD  &kp FSLH         &kp LC(DELETE)
+&kp DELETE     &kp Z            &hml RIGHT_ALT X  &kp C         &kp D              &kp V         &kp K           &mt EXCL H         &kp COMMA     &hmr RIGHT_ALT PERIOD  &kp FSLH         &kp LC(DELETE)
                                                   &none         &mo 1              &kp SPACE     &kp LEFT_SHIFT  &mo 2              &mo 3
             >;
         };
