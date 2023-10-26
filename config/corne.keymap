@@ -47,9 +47,9 @@
 
             label = "Base";
             bindings = <
-&kp TAB        &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y     &mt DOUBLE_QUOTES SQT  &kp COLON
-&kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M      &hmr DOLLAR N    &hmr LCTRL E       &hmr LEFT_ALT I   &hmr LEFT_WIN O        &kp ENTER
-&kp DELETE     &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K           &mt EXCL H       &mt AT_SIGN COMMA  &hmr HASH PERIOD  &mt QUESTION SLASH     &none
+&kp TAB        &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &kp COLON
+&kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M      &hmr DOLLAR N    &hmr LCTRL E       &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
+&kp DELETE     &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &none
                                                  &kp LCTRL     &mo 1              &kp SPACE     &kp LEFT_SHIFT  &mo 2            &mo 3
             >;
         };
@@ -59,7 +59,7 @@
 &kp ESCAPE  &trans      &kp BSLH   &mt SEMICOLON COLON  &kp ENTER    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8  &kp N9  &kp EQUAL  &trans
 &caps_word  &kp LGUI    &kp LALT   &kp LCTRL            &kp LSHFT    &kp TAB                 &kp MINUS              &kp N4        &kp N5  &kp N6  &kp GRAVE  &trans
 &trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY           &kp K_PASTE  &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2  &kp N3  &kp FSLH   &trans
-                                   &trans               &trans       &trans                  &kp DOT                &kp N0        &none
+                                   &trans               &trans       &trans                  &kp N0                 &kp PERIOD    &none
             >;
 
             label = "Numbers";
@@ -78,10 +78,10 @@
 
         Fun_Layer {
             bindings = <
-&kp C_BRI_UP          &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &kp C_PLAY_PAUSE  &trans     &trans     &trans    &trans    &trans
-&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &kp TAB           &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans                &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &trans            &trans     &trans     &trans    &trans    &trans
-                                       &to 4   &trans  &trans               &trans            &trans     &trans
+&kp C_BRI_UP          &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &trans   &kp K_PREVIOUS  &kp C_PLAY_PAUSE  &kp K_NEXT  &trans    &trans
+&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &kp TAB  &kp LSHFT       &kp LCTRL         &kp LALT    &kp LGUI  &trans
+&trans                &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &trans   &trans          &trans            &trans      &trans    &trans
+                                       &to 4   &trans  &trans               &trans   &trans          &trans
             >;
 
             label = "Function";
