@@ -56,10 +56,10 @@
 
         Num_Layer {
             bindings = <
-&kp ESCAPE    &kp BACKSLASH  &trans     &kp ENTER   &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &kp EQUAL  &mt COLON SEMICOLON
-&kp CAPSLOCK  &kp LGUI       &kp LALT   &kp LCTRL   &kp LSHFT      &kp TAB                 &trans                 &kp N4        &kp N5      &kp N6  &kp GRAVE  &kp ENTER
-&kp K_REDO    &kp K_UNDO     &kp K_CUT  &kp K_COPY  &kp K_PASTE    &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &kp FSLH   &mt UNDERSCORE MINUS
-                                        &trans      &trans         &trans                  &mo 2                  &kp N0        &kp PERIOD
+&kp ESCAPE    &kp GRAVE   &kp BACKSLASH  &kp ENTER   &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &kp EQUAL  &mt COLON SEMICOLON
+&kp CAPSLOCK  &kp LGUI    &kp LALT       &kp LCTRL   &kp LSHFT      &kp TAB                 &kp SPACE              &kp N4        &kp N5      &kp N6  &kp GRAVE  &kp ENTER
+&kp K_REDO    &kp K_UNDO  &kp K_CUT      &kp K_COPY  &kp K_PASTE    &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &kp FSLH   &mt UNDERSCORE MINUS
+                                         &trans      &trans         &trans                  &mo 2                  &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
