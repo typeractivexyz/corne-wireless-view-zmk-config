@@ -49,7 +49,7 @@
 &kp TAB        &kp Q            &kp W             &kp F         &kp P              &kp B         &kp J           &kp L              &kp U         &kp Y                  &kp SQT          &kp ESCAPE
 &kp BACKSPACE  &hml LEFT_WIN A  &hml LEFT_ALT R   &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M      &hmr LEFT_SHIFT N  &hmr LCTRL E  &hmr LEFT_ALT I        &hmr LEFT_WIN O  &kp ENTER
 &kp DELETE     &kp Z            &hml RIGHT_ALT X  &kp C         &kp D              &kp V         &kp K           &kp H              &kp COMMA     &hmr RIGHT_ALT PERIOD  &kp FSLH         &kp LC(DELETE)
-                                                  &mo 3         &mo 1              &kp SPACE     &kp LEFT_SHIFT  &mo 2              &trans
+                                                  &none         &mo 1              &kp SPACE     &kp LEFT_SHIFT  &mo 2              &mo 3
             >;
         };
 
@@ -58,7 +58,7 @@
 &kp ESCAPE  &trans      &kp BSLH   &kp SEMI    &kp ENTER    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8  &kp N9  &kp EQUAL  &trans
 &caps_word  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &kp TAB                 &kp MINUS              &kp N4        &kp N5  &kp N6  &kp GRAVE  &trans
 &trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2  &kp N3  &kp FSLH   &trans
-                                   &to 4       &trans       &trans                  &kp DOT                &kp N0        &none
+                                   &trans      &trans       &trans                  &kp DOT                &kp N0        &none
             >;
 
             label = "Numbers";
@@ -80,7 +80,7 @@
 &kp C_BRI_UP          &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &kp C_PLAY_PAUSE  &trans     &trans     &trans    &trans    &trans
 &kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &kp TAB           &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
 &trans                &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &trans            &trans     &trans     &trans    &trans    &trans
-                                       &trans  &trans  &trans               &trans            &trans     &trans
+                                       &to 4   &trans  &trans               &trans            &trans     &trans
             >;
 
             label = "Function";
