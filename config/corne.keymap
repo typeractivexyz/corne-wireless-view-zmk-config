@@ -38,6 +38,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Navigate {
+            bindings = <&mo 2>;
+            key-positions = <38 39>;
+            layers = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -62,7 +72,7 @@
 &kp ESCAPE    &kp GRAVE  &kp BACKSLASH  &kp ENTER  &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &kp EQUAL  &mt COLON SEMICOLON
 &kp CAPSLOCK  &kp LGUI   &kp LALT       &kp LCTRL  &kp LSHFT      &kp TAB                 &kp SPACE              &kp N4        &kp N5      &kp N6  &kp GRAVE  &kp ENTER
 &trans        &kp LC(Z)  &kp LC(X)      &kp LC(C)  &kp LC(V)      &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &kp FSLH   &mt UNDERSCORE MINUS
-                                        &trans     &trans         &trans                  &mo 2                  &kp N0        &kp PERIOD
+                                        &trans     &trans         &trans                  &trans                 &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
