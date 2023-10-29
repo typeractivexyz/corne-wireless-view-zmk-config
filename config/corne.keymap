@@ -51,7 +51,6 @@
         Navigate {
             bindings = <&mo 2>;
             key-positions = <38 39>;
-            layers = <2>;
         };
     };
 
