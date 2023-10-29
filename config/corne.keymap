@@ -70,7 +70,7 @@
 &kp TAB     &kp Q            &kp W            &kp F         &kp P              &kp B         &kp J           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &mt COLON SEMICOLON
 &caps_word  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G    &hmr TAB M      &mt DOLLAR N     &mt CARET E        &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
 &kp LCTRL   &kp Z            &kp X            &kp C         &kp D              &kp V         &kp K           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &mt UNDERSCORE MINUS
-                                              &kp DELETE    &kp SPACE          &mo 1         &sk LEFT_SHIFT  &kp BACKSPACE    &mo 3
+                                              &kp DELETE    &kp SPACE          &mo 1         &kp LEFT_SHIFT  &kp BACKSPACE    &mo 3
             >;
         };
 
