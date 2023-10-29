@@ -51,6 +51,7 @@
         Navigate {
             bindings = <&mo 2>;
             key-positions = <38 39>;
+            timeout-ms = <1000>;
         };
     };
 
