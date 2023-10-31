@@ -91,7 +91,7 @@
             label = "Base";
             bindings = <
 &trans  &kp Q            &kp W            &kp F         &kp P              &kp B                     &kp J                           &mt AMPERSAND L  &mt ASTERISK U     &mt CARET Y      &mt DOUBLE_QUOTES SQT  &trans
-&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G                &hmr MINUS M                    &mt DOLLAR N     &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
+&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G                     &hmr MINUS M                    &mt DOLLAR N     &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
 &trans  &mt LCTRL Z      &kp X            &kp C         &kp D              &kp V                     &kp K                           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
                                           &mo 3         &kp SPACE          &Hold_Pref_Layer 1 TAB    &Hold_Pref_KP LEFT_SHIFT ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
@@ -110,10 +110,10 @@
 
         Nav_Layer {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4        &kp PAGE_UP        &kp HOME      &kp UP_ARROW   &kp END    &trans  &trans
-&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB             &kp PAGE_DOWN      &kp LEFT      &kp DOWN       &kp RIGHT  &trans  &trans
-&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LA(TAB)         &kp LG(LS(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans  &trans
-                                          &trans        &trans          &kp LG(UP_ARROW)    &trans             &trans        &none
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP        &kp HOME      &kp UP_ARROW   &kp END    &trans  &trans
+&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &trans          &kp PAGE_DOWN      &kp LEFT      &kp DOWN       &kp RIGHT  &trans  &trans
+&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &trans          &kp LG(LS(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans  &trans
+                                          &trans        &trans          &trans          &trans             &trans        &none
             >;
 
             label = "Navigate";
