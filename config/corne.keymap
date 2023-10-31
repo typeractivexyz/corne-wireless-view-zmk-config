@@ -90,8 +90,8 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q            &kp W            &kp F         &kp P              &kp B                     &kp J                           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &trans
-&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G                &hmr MINUS M                    &mt DOLLAR N     &mt CARET E        &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
+&trans  &kp Q            &kp W            &kp F         &kp P              &kp B                     &kp J                           &mt AMPERSAND L  &mt ASTERISK U     &mt CARET Y      &mt DOUBLE_QUOTES SQT  &trans
+&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G                &hmr MINUS M                    &mt DOLLAR N     &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
 &trans  &mt LCTRL Z      &kp X            &kp C         &kp D              &kp V                     &kp K                           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
                                           &mo 3         &kp SPACE          &Hold_Pref_Layer 1 TAB    &Hold_Pref_KP LEFT_SHIFT ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
