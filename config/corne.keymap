@@ -110,9 +110,9 @@
 
         Nav_Layer {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP    &trans    &kp UP_ARROW   &trans       &kp HOME  &trans
-&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT    &kp END   &trans
-&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &trans          &kp INS        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
+&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &trans          &kp INS        &trans    &trans        &trans     &trans  &trans
                                           &trans        &trans          &trans          &trans         &trans    &none
             >;
 
@@ -121,10 +121,10 @@
 
         Fun_Layer {
             bindings = <
-&kp C_BRI_UP          &kp F12  &kp F7  &kp F8      &kp F9            &kp C_VOLUME_UP      &trans   &trans     &trans     &trans    &trans    &to 4
-&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5      &kp F6            &kp C_VOLUME_DOWN    &kp TAB  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans                &kp F10  &kp F1  &kp F2      &kp F3            &kp C_MUTE           &trans   &trans     &trans     &trans    &trans    &trans
-                                       &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT           &trans   &trans     &trans
+&kp C_BRI_UP          &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &trans      &trans            &trans      &trans    &trans    &to 4
+&kp C_BRIGHTNESS_DEC  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &kp TAB     &kp LSHFT         &kp LCTRL   &kp LALT  &kp LGUI  &trans
+&trans                &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &trans      &trans            &trans      &trans    &trans    &trans
+                                       &trans  &trans  &trans               &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT
             >;
 
             label = "Function";
