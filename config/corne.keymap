@@ -43,16 +43,39 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 37 36 38 39 40 41>;
             require-prior-idle-ms = <250>;
         };
+        Hold_Pref_Layer: Hold_Pref_Layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_PREF_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
+        Tap_Pref_Layer: Tap_Pref_Layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREF_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+        };
+        Hold_Pref_KP: Hold_Pref_KP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_PREF_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30 31 32 33 34 36 37 38 39 40 41 35 23 11>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        Navigate {
-            bindings = <&mo 2>;
-            key-positions = <38 39>;
-            timeout-ms = <1000>;
-        };
     };
 
     keymap {
@@ -67,18 +90,18 @@
 
             label = "Base";
             bindings = <
-&kp TAB     &kp Q            &kp W            &kp F         &kp P              &kp B          &kp J           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &mt COLON SEMICOLON
-&caps_word  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G     &hmr TAB M      &mt DOLLAR N     &mt CARET E        &hmr LEFT_ALT I  &hmr LEFT_WIN O        &kp ENTER
-&kp LCTRL   &kp Z            &kp X            &kp C         &kp D              &kp V          &kp K           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &mt UNDERSCORE MINUS
-                                              &mo 3         &kp SPACE          &lt 1 ENTER    &kp LEFT_SHIFT  &kp BACKSPACE    &kp DELETE
+&kp TAB     &kp Q            &kp W            &kp F         &kp P              &kp B                     &kp J                           &mt AMPERSAND L  &mt ASTERISK U     &mt PERCENT Y    &mt DOUBLE_QUOTES SQT  &trans
+&caps_word  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &hml TAB G                &hmr MINUS M                    &mt DOLLAR N     &mt CARET E        &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
+&kp LCTRL   &kp Z            &kp X            &kp C         &kp D              &kp V                     &kp K                           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
+                                              &mo 3         &kp SPACE          &Hold_Pref_Layer 1 TAB    &Hold_Pref_KP LEFT_SHIFT ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
         Num_Layer {
             bindings = <
-&kp ESCAPE    &kp GRAVE  &kp BACKSLASH  &kp ENTER  &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &mt COLON SEMICOLON
-&kp CAPSLOCK  &kp LGUI   &kp LALT       &kp LCTRL  &kp LSHFT      &kp TAB                 &mt UNDERSCORE MINUS   &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &kp ENTER
-&trans        &kp LC(Z)  &kp LC(X)      &kp LC(C)  &kp LC(V)      &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &kp FSLH             &mt UNDERSCORE MINUS
+&kp ESCAPE    &kp GRAVE  &kp BACKSLASH  &kp ENTER  &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &trans
+&kp CAPSLOCK  &kp LGUI   &kp LALT       &kp LCTRL  &kp LSHFT      &kp TAB                 &mt UNDERSCORE MINUS   &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &trans
+&trans        &kp LC(Z)  &kp LC(X)      &kp LC(C)  &kp LC(V)      &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &kp FSLH             &trans
                                         &trans     &trans         &trans                  &trans                 &kp N0        &kp PERIOD
             >;
 
