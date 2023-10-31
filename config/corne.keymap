@@ -110,10 +110,10 @@
 
         Nav_Layer {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
-&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB         &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &trans          &kp INS        &trans    &trans        &trans     &trans  &trans
-                                          &trans        &trans          &trans          &trans         &trans    &none
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4        &kp PAGE_UP        &kp HOME      &kp UP_ARROW   &kp END    &trans  &trans
+&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB             &kp PAGE_DOWN      &kp LEFT      &kp DOWN       &kp RIGHT  &trans  &trans
+&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LA(TAB)         &kp LG(LS(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans  &trans
+                                          &trans        &trans          &kp LG(UP_ARROW)    &trans             &trans        &none
             >;
 
             label = "Navigate";
