@@ -19,7 +19,7 @@
 
         colemak {
             bindings = <
-&trans          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &trans
+&tog 5          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &trans
 &kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G                  &kp M                        &mt RIGHT_COMMAND N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &kp O      &kp RIGHT_SHIFT
 &trans          &kp Z  &kp X               &kp C           &kp D               &kp V                  &kp K                        &kp H                &kp COMMA       &kp DOT              &kp SLASH  &trans
                                            &kp ESC         &lt 1 TAB           &mt LG(SPACE) SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 2 ENTER          &kp DEL
@@ -66,6 +66,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
                                         &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &kp LEFT_ARROW  &kp RIGHT    &trans  &trans  &trans
             >;
         };
     };
