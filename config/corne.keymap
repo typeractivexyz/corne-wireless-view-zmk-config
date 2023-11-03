@@ -72,6 +72,16 @@
             tapping-term-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30 31 32 33 34 36 37 38 39 40 41 35 23 11>;
         };
+        Tap_Pref_KP: Tap_Pref_KP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREF_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
     };
 
     combos {
@@ -90,19 +100,19 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q            &kp W            &kp F         &kp P              &kp B                     &kp J                           &mt AMPERSAND L  &mt ASTERISK U     &mt CARET Y      &mt DOUBLE_QUOTES SQT  &trans
-&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G                     &hmr MINUS M                    &mt DOLLAR N     &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
-&trans  &mt LCTRL Z      &kp X            &kp C         &kp D              &kp V                     &kp K                           &mt EXCL H       &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
-                                          &mo 3         &kp SPACE          &Hold_Pref_Layer 1 TAB    &Hold_Pref_KP LEFT_SHIFT ENTER  &lt 2 BACKSPACE  &kp DELETE
+&trans  &kp Q            &kp W            &kp F         &kp P                     &kp B                     &kp J                     &mt AMPERSAND L                     &mt ASTERISK U     &mt CARET Y      &mt DOUBLE_QUOTES SQT  &trans
+&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &hmr MINUS M              &mt DOLLAR N                        &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
+&trans  &mt LCTRL Z      &kp X            &kp C         &kp D                     &kp V                     &kp K                     &mt EXCL H                          &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
+                                          &mo 3         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &kp DELETE
             >;
         };
 
         Num_Layer {
             bindings = <
-&trans      &kp ESCAPE  &kp GRAVE  &kp ENTER  &kp BACKSPACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &trans
-&caps_word  &kp LGUI    &kp LALT   &kp LCTRL  &kp LSHFT      &kp TAB                 &kp MINUS              &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &trans
-&trans      &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp LBKT                &kp RBKT               &kp NUMBER_1  &kp N2      &kp N3  &mt BACKSLASH SLASH  &trans
-                                   &trans     &trans         &trans                  &trans                 &kp N0        &kp PERIOD
+&trans      &kp ESCAPE  &kp GRAVE  &kp ENTER  &kp BACKSPACE  &kp DELETE                           &trans                               &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &trans
+&caps_word  &kp LGUI    &kp LALT   &kp LCTRL  &kp LSHFT      &kp PERIOD                           &kp MINUS                            &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &trans
+&trans      &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)      &mt LEFT_BRACKET LEFT_PARENTHESIS    &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp NUMBER_1  &kp N2      &kp N3  &mt BACKSLASH SLASH  &trans
+                                   &trans     &trans         &trans                               &trans                               &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
