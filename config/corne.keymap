@@ -103,7 +103,7 @@
 &trans  &kp Q            &kp W            &kp F         &kp P                     &kp B                     &kp J                     &mt AMPERSAND L                     &mt ASTERISK U     &mt CARET Y      &mt DOUBLE_QUOTES SQT  &trans
 &trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &hmr MINUS M              &mt DOLLAR N                        &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
 &trans  &mt LCTRL Z      &kp X            &kp C         &kp D                     &kp V                     &kp K                     &mt EXCL H                          &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
-                                          &mo 3         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &kp DELETE
+                                          &mo 4         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &kp DELETE
             >;
         };
 
@@ -112,7 +112,7 @@
 &trans      &kp ESCAPE  &kp GRAVE  &kp ENTER  &kp BACKSPACE  &kp DELETE                           &trans                               &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &trans
 &caps_word  &kp LGUI    &kp LALT   &kp LCTRL  &kp LSHFT      &kp PERIOD                           &kp MINUS                            &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &trans
 &trans      &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)      &mt LEFT_BRACKET LEFT_PARENTHESIS    &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp NUMBER_1  &kp N2      &kp N3  &mt BACKSLASH SLASH  &trans
-                                   &trans     &trans         &trans                               &trans                               &kp N0        &kp PERIOD
+                                   &trans     &trans         &trans                               &mo 3                                &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
@@ -120,20 +120,31 @@
 
         Nav_Layer {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PAGE_UP        &kp HOME      &kp UP_ARROW   &kp END    &trans  &trans
-&out OUT_TOG  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &trans          &kp PAGE_DOWN      &kp LEFT      &kp DOWN       &kp RIGHT  &trans  &trans
-&trans        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &trans          &kp LG(LS(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans  &trans
-                                          &trans        &trans          &trans          &trans             &trans        &none
+&trans  &trans        &trans        &trans     &trans          &trans    &kp PAGE_UP        &kp HOME      &kp UP_ARROW   &kp END    &trans  &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp PAGE_DOWN      &kp LEFT      &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans    &kp LG(LS(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans  &trans
+                                    &trans     &trans          &mo 3     &trans             &trans        &none
             >;
 
             label = "Navigate";
         };
 
+        Sym_Layer {
+            bindings = <
+&trans  &trans        &trans        &trans     &trans          &trans                  &trans                 &kp AMPERSAND    &kp ASTERISK  &trans     &kp PLUS      &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp PERIOD              &kp UNDER              &kp DOLLAR       &kp PERCENT   &kp CARET  &kp COLON     &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp QUESTION  &trans
+                                    &trans     &trans          &trans                  &trans                 &trans           &trans
+            >;
+
+            label = "Symbols";
+        };
+
         Fun_Layer {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp C_BRIGHTNESS_INC    &trans             &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans    &to 4
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp C_BRIGHTNESS_INC    &trans             &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans    &to 5
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_BRIGHTNESS_DEC    &kp TAB            &kp LSHFT        &kp LCTRL         &kp LALT    &kp LGUI  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                  &trans             &trans           &trans            &trans      &trans    &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                  &trans             &bt BT_NXT       &out OUT_TOG      &bt BT_CLR  &trans    &trans
                          &trans  &trans  &trans                  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
             >;
 
@@ -145,7 +156,7 @@
 &kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y  &kp U  &kp I      &kp O    &kp P     &to 0
 &kp CAPS   &kp A  &kp S  &kp D      &kp F      &kp G             &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &mo 1  &mo 2  &mo 3
+                         &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &mo 1  &mo 2  &mo 4
             >;
 
             label = "Gaming";
