@@ -19,7 +19,7 @@
 
         colemak {
             bindings = <
-&tog 5          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &trans
+&tog 4          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &trans
 &kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G                  &kp M                        &mt RIGHT_COMMAND N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &kp O      &kp RIGHT_SHIFT
 &trans          &kp Z  &kp X               &kp C           &kp D               &kp V                  &kp K                        &kp H                &kp COMMA       &kp DOT              &kp SLASH  &trans
                                            &kp ESC         &lt 1 TAB           &mt LG(SPACE) SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 2 ENTER          &kp DEL
@@ -41,15 +41,6 @@
 &trans  &kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans  &trans
 &trans  &kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp N0     &kp N1  &kp N2  &kp N3  &trans  &trans
                                       &trans                &mo 3                  &trans       &trans     &trans  &trans
-            >;
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp A   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
