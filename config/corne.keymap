@@ -422,7 +422,7 @@
 
             bindings = <
 &kp ESC    &kp Q    &kp L               &kp Y           &kp P               &kp B                &kp Z          &kp F               &kp O           &kp U               &kp SINGLE_QUOTE  &kp DELETE
-&lt 2 TAB  &lt 3 C  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G                &kp M          &mt LEFT_COMMAND N  &mt LEFT_ALT E  &mt LEFT_CONTROL I  &kp A             &kp ENTER
+&lt 2 TAB  &lt 3 C  &hm LEFT_CONTROL R  &hm LEFT_ALT S  &hm LEFT_COMMAND T  &kp G                &kp M          &hm LEFT_COMMAND N  &hm LEFT_ALT E  &hm LEFT_CONTROL I  &kp A             &kp ENTER
 &kp LCMD   &kp W    &kp J               &kp V           &kp D               &kp K                &kp X          &kp H               &kp SLASH       &kp COMMA           &kp PERIOD        &alt LEFT_ALT
                                         &cmd LCMD       &kp SPACE           &shift LEFT_SHIFT    &kp BACKSPACE  &mo 1               &ctrl LCTRL
             >;
