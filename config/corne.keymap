@@ -12,6 +12,10 @@
     tapping-term-ms = <175>;
 };
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
     behaviors {
         cmd: cmd {
