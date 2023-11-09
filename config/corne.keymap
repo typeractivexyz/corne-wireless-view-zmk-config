@@ -142,10 +142,10 @@
 
         Fun_Layer {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp C_BRIGHTNESS_INC    &trans             &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans    &to 5
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_BRIGHTNESS_DEC    &kp TAB            &kp LSHFT        &kp LCTRL         &kp LALT    &kp LGUI  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                  &trans             &bt BT_NXT       &out OUT_TOG      &bt BT_CLR  &trans    &trans
-                         &trans  &trans  &trans                  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp C_BRIGHTNESS_INC    &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans    &to 5
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_BRIGHTNESS_DEC    &kp TAB               &kp LSHFT        &kp LCTRL         &kp LALT    &kp LGUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                  &kp C_BRIGHTNESS_DEC  &bt BT_NXT       &out OUT_TOG      &bt BT_CLR  &trans    &trans
+                         &trans  &trans  &trans                  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &kp C_MUTE
             >;
 
             label = "Function";
