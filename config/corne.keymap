@@ -19,7 +19,7 @@
 
         colemak {
             bindings = <
-&tog 4          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &trans
+&tog 4          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &kp B
 &kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G                  &kp M                        &mt RIGHT_COMMAND N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &kp O      &kp RIGHT_SHIFT
 &trans          &kp Z  &kp X               &kp C           &kp D               &kp V                  &kp K                        &kp H                &kp COMMA       &kp DOT              &kp SLASH  &trans
                                            &kp ESC         &lt 1 TAB           &mt LG(SPACE) SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 2 ENTER          &kp DEL
