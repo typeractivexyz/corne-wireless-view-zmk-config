@@ -32,6 +32,7 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 37 38 36 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
             require-prior-idle-ms = <250>;
         };
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
@@ -43,6 +44,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 37 36 38 39 40 41>;
             require-prior-idle-ms = <250>;
         };
+
         Hold_Pref_Layer: Hold_Pref_Layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_PREF_LAYER";
@@ -52,6 +54,7 @@
             tapping-term-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
+
         Tap_Pref_Layer: Tap_Pref_Layer {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_PREF_LAYER";
@@ -63,6 +66,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
         };
+
         Hold_Pref_KP: Hold_Pref_KP {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_PREF_KP";
@@ -72,6 +76,7 @@
             tapping-term-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30 31 32 33 34 36 37 38 39 40 41 35 23 11>;
         };
+
         Tap_Pref_KP: Tap_Pref_KP {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_PREF_KP";
@@ -112,7 +117,7 @@
 &trans      &kp ESCAPE  &kp GRAVE  &kp ENTER  &kp BACKSPACE  &kp DELETE                           &trans                               &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &trans
 &caps_word  &kp LGUI    &kp LALT   &kp LCTRL  &kp LSHFT      &kp PERIOD                           &kp MINUS                            &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &trans
 &trans      &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)      &mt LEFT_BRACKET LEFT_PARENTHESIS    &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp NUMBER_1  &kp N2      &kp N3  &mt BACKSLASH SLASH  &trans
-                                   &trans     &trans         &trans                               &mo 3                                &kp N0        &kp PERIOD
+                                   &trans     &trans         &trans                               &Hold_Pref_Layer 3 ENTER             &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
@@ -120,10 +125,10 @@
 
         Nav_Layer {
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans    &trans         &trans    &trans        &trans     &trans  &trans
-                                    &trans     &trans          &mo 3     &trans         &trans    &none
+&trans  &trans        &trans        &trans     &trans          &trans                    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans                    &trans         &trans    &trans        &trans     &trans  &trans
+                                    &trans     &trans          &Hold_Pref_Layer 3 TAB    &trans         &trans    &none
             >;
 
             label = "Navigate";
