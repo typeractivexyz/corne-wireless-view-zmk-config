@@ -18,7 +18,7 @@
         compatible = "zmk,combos";
 
         new_combo {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <36 37>;
         };
     };
@@ -30,24 +30,28 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
+
         layer_1: layer_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_1";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
         };
+
         layer_2: layer_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_2";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
+            bindings = <&mo 3>, <&tog 3>;
         };
+
         cmd_opt: cmd_opt {
             compatible = "zmk,behavior-tap-dance";
             label = "CMD_OPT";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
         };
+
         open_bracket: open_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "OPEN_BRACKET";
@@ -57,6 +61,7 @@
                 <&kp LEFT_BRACKET>,
                 <&kp LEFT_BRACE>;
         };
+
         close_bracket: close_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "CLOSE_BRACKET";
@@ -103,19 +108,19 @@
             >;
         };
 
-        function {
+        numpad {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Function";
+            label = "Numpad";
             bindings = <
-&trans  &mt LG(NUMBER_1) NUMBER_1  &mt LG(NUMBER_2) NUMBER_2  &mt LG(NUMBER_3) NUMBER_3  &mt LG(NUMBER_4) NUMBER_4  &mt LG(NUMBER_5) NUMBER_5    &mt LG(NUMBER_6) NUMBER_6      &mt LG(NUMBER_7) NUMBER_7      &mt LG(NUMBER_8) NUMBER_8      &mt LG(NUMBER_9) NUMBER_9        &mt LG(NUMBER_0) NUMBER_0  &trans
-&trans  &kp LG(LS(NUMBER_5))       &kp C_VOLUME_DOWN          &kp C_MUTE                 &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC         &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN        &mt LA(UP_ARROW) UP_ARROW      &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp PERIOD                 &none
-&trans  &kp LG(LS(NUMBER_4))       &kp C_PREV                 &kp C_PLAY_PAUSE           &kp C_NEXT                 &kp C_BRIGHTNESS_DEC         &kp LG(LC(SPACE))              &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp COMMA                  &trans
-                                                              &trans                     &trans                     &trans                       &trans                         &trans                         &trans
+&trans  &mt LG(NUMBER_1) NUMBER_1  &mt LG(NUMBER_2) NUMBER_2  &mt LG(NUMBER_3) NUMBER_3  &mt LG(NUMBER_4) NUMBER_4  &mt LG(NUMBER_5) NUMBER_5    &mt LG(NUMBER_6) NUMBER_6      &mt LG(NUMBER_7) NUMBER_7  &mt LG(NUMBER_8) NUMBER_8  &mt LG(NUMBER_9) NUMBER_9        &mt LG(NUMBER_0) NUMBER_0  &trans
+&trans  &kp LG(LS(NUMBER_5))       &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_INC         &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN    &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp SEMICOLON              &kp SQT
+&trans  &kp LG(LS(NUMBER_4))       &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_DEC         &kp C_VOLUME_DOWN              &kp C_VOLUME_UP            &kp COMMA                  &kp PERIOD                       &kp SLASH                  &trans
+                                                              &trans                     &trans                     &trans                       &trans                         &trans                     &trans
             >;
         };
 
