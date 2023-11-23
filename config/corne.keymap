@@ -17,9 +17,9 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        bluetooth {
             bindings = <&mo 4>;
-            key-positions = <36 37>;
+            key-positions = <40 41>;
         };
     };
 
@@ -42,7 +42,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_2";
             #binding-cells = <0>;
-            bindings = <&mo 3>, <&tog 3>;
+            bindings = <&mo 2>, <&tog 2>;
         };
 
         cmd_opt: cmd_opt {
