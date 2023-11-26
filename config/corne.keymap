@@ -5,7 +5,7 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -37,10 +37,10 @@
 
             label = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0   &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp F11  &kp F12
-&kp LCTRL   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6    &kp F7    &kp F8    &kp F9     &kp F10  &kp ESC
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB    &kp N1          &kp N2     &kp N3    &kp N4     &kp N5              &kp N6             &kp N7          &kp N8           &kp N9      &kp N0     &kp BSPC
+&kp F1     &kp F2          &kp F3     &kp F4    &kp F5     &kp F6              &kp F7             &kp F8          &kp F9           &kp F10     &kp F11    &kp F12
+&kp LCTRL  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kt LEFT_BRACE  &kp RIGHT_BRACE  &kp PERIOD  &kp SLASH  &kp ESC
+                                      &kp LGUI  &trans     &kp SPACE           &kp RET            &trans          &kp RALT
             >;
         };
 
@@ -53,10 +53,10 @@
 
             label = "Raise";
             bindings = <
-&kp TAB         &kp EXCL    &kp AT   &kp HASH     &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LEFT_SHIFT  &kp HOME    &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp RCTRL       &kp DELETE  &trans   &trans       &trans         &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                     &kp LGUI     &trans         &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB         &kp EXCL  &kp AT         &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTERISK    &kp LPAR   &kp RPAR  &kp BSPC
+&kp LEFT_SHIFT  &kp HOME  &kp PAGE_UP    &trans    &trans    &trans       &trans     &trans          &kp UP_ARROW    &trans     &kp BSLH  &kp GRAVE
+&kp RCTRL       &kp END   &kp PAGE_DOWN  &trans    &trans    &trans       &kp DEL    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PIPE  &kp TILDE
+                                         &kp LGUI  &trans    &kp SPACE    &kp RET    &trans          &kp RALT
             >;
         };
     };
