@@ -38,9 +38,9 @@
 
             label = "Lower";
             bindings = <
-&kp TAB    &kp N1          &kp N2     &kp N3    &kp N4     &kp N5              &kp N6             &kp N7          &kp N8           &kp N9      &kp N0     &kp BSPC
-&kp F1     &kp F2          &kp F3     &kp F4    &kp F5     &kp F6              &kp F7             &kp F8          &kp F9           &kp F10     &kp F11    &kp F12
-&kp LCTRL  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kt LEFT_BRACE  &kp RIGHT_BRACE  &kp PERIOD  &kp SLASH  &kp ESC
+&kp TAB    &kp N1          &kp N2     &kp N3    &kp N4     &kp N5              &kp N6             &kp N7          &kp N8           &kp N9         &kp N0            &kp BSPC
+&kp F1     &kp F2          &kp F3     &kp F4    &kp F5     &kp F6              &kp F7             &kp F8          &kp F9           &kp F10        &kp F11           &kp F12
+&kp LCTRL  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kt LEFT_BRACE  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN  &kp ESC
                                       &kp LGUI  &trans     &kp SPACE           &kp RET            &trans          &kp RALT
             >;
         };
