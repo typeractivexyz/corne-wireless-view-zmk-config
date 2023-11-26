@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -53,10 +54,10 @@
 
             label = "Raise";
             bindings = <
-&kp TAB         &kp EXCL  &kp AT         &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTERISK    &kp LPAR   &kp RPAR  &kp BSPC
-&kp LEFT_SHIFT  &kp HOME  &kp PAGE_UP    &trans    &trans    &trans       &trans     &trans          &kp UP_ARROW    &trans     &kp BSLH  &kp GRAVE
-&kp RCTRL       &kp END   &kp PAGE_DOWN  &trans    &trans    &trans       &kp DEL    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PIPE  &kp TILDE
-                                         &kp LGUI  &trans    &kp SPACE    &kp RET    &trans          &kp RALT
+&kp TAB         &kp EXCL  &kp AT         &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS        &kp ASTERISK    &kp LPAR   &kp RPAR  &kp BSPC
+&kp LEFT_SHIFT  &kp HOME  &kp PAGE_UP    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans     &trans          &kp UP_ARROW    &trans     &kp BSLH  &kp GRAVE
+&kp RCTRL       &kp END   &kp PAGE_DOWN  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &kp DEL    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PIPE  &kp TILDE
+                                         &kp LGUI      &trans        &kp SPACE       &kp RET    &trans          &kp RALT
             >;
         };
     };
