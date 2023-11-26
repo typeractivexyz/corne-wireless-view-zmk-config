@@ -48,8 +48,8 @@
         raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | SHFT | HOME| PgUp|     |     |     |   |     |     |  UP |     |  \  |  `   |
-            // | CTRL | END | PgDn|     |     |     |   | DEL | LFT | DWN | RGT | "|" |  ~   |
+            // | SHFT | HOME| PgUp| BT3 | BT4 | BT5 |   |     |     |  UP |     |  \  |  `   |
+            // | CTRL | END | PgDn|BTCLR| BT1 | BT2 |   | DEL | LFT | DWN | RGT | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             label = "Raise";
