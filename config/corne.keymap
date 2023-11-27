@@ -18,6 +18,12 @@
             key-positions = <11 41>;
             layers = <0>;
         };
+
+        LOWER-DEL {
+            bindings = <&kp DEL>;
+            key-positions = <11 41>;
+            layers = <1>;
+        };
     };
 
     keymap {
