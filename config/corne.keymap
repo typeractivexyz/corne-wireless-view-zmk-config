@@ -16,10 +16,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp BACKSPACE
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RIGHT_ALT
             >;
         };
 
@@ -28,8 +28,8 @@
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp LCTRL       &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp MINUS       &kp EQUAL      &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_SHIFT  &kp N6           &kp N7       &kp N8    &kp N9      &kp N0         &kp UNDERSCORE  &kt PLUS       &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_ALT
-                                              &kp LGUI  &trans      &kp SPACE      &kp RET         &trans         &kp BACKSPACE
+&kp LEFT_SHIFT  &kp N6           &kp N7       &kp N8    &kp N9      &kp N0         &kp UNDERSCORE  &kt PLUS       &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ESC
+                                              &kp LGUI  &trans      &kp SPACE      &kp RET         &trans         &kp RIGHT_ALT
             >;
         };
 
@@ -38,8 +38,8 @@
             bindings = <
 &kp F1          &kp F2        &kp F3        &kp F4        &kp F5      &kp F6      &kp F7         &kp F8             &kp F9          &kp F10       &kp F11           &kp F12
 &kp LCTRL       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &caps_word  &kp HOME    &kp PAGE_UP    &kp C_VOLUME_DOWN  &kp UP_ARROW    &kp C_VOL_UP  &kp C_PREV        &kp C_NEXT
-&kp LEFT_SHIFT  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &trans      &kp END     &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT     &kp C_PLAY_PAUSE  &kp RIGHT_ALT
-                                            &trans        &trans      &trans      &trans         &trans             &trans
+&kp LEFT_SHIFT  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &none       &kp END     &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT     &kp C_PLAY_PAUSE  &kp ESC
+                                            &kp LGUI      &trans      &kp SPACE   &kp RET        &trans             &kp RIGHT_ALT
             >;
         };
     };
