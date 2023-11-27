@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        BASE-DEL {
+            bindings = <&kp DEL>;
+            key-positions = <11 41>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
