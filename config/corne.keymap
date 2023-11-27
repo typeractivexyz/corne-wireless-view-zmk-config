@@ -12,34 +12,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        base-del {
-            bindings = <&kp DEL>;
-            key-positions = <11 41>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        lower-del {
-            bindings = <&kp DEL>;
-            key-positions = <11 41>;
-            timeout-ms = <50>;
-            layers = <1>;
-        };
-
-        base-esc {
-            bindings = <&kp ESC>;
-            key-positions = <41 0>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        lower-esc {
-            bindings = <&kp ESC>;
-            key-positions = <41 0>;
-            timeout-ms = <50>;
-            layers = <1>;
-        };
     };
 
     keymap {
@@ -56,7 +28,7 @@
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
                               &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
@@ -72,7 +44,7 @@
             bindings = <
 &kp TAB    &kp N1          &kp N2     &kp N3    &kp N4     &kp N5              &kp N6             &kp N7          &kp N8           &kp N9         &kp N0            &kp BSPC
 &kp F1     &kp F2          &kp F3     &kp F4    &kp F5     &kp F6              &kp F7             &kp F8          &kp F9           &kp F10        &kp F11           &kp F12
-&kp LCTRL  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kt LEFT_BRACE  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN  &kp ESC
+&kp LCTRL  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kt LEFT_BRACE  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN  &kp DELETE
                                       &kp LGUI  &trans     &kp SPACE           &kp RET            &trans          &kp RALT
             >;
         };
@@ -86,10 +58,10 @@
 
             label = "Raise";
             bindings = <
-&kp TAB         &kp EXCL  &kp AT         &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS        &kp ASTERISK    &kp LPAR   &kp RPAR  &kp BSPC
-&kp LEFT_SHIFT  &kp HOME  &kp PAGE_UP    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans     &trans          &kp UP_ARROW    &trans     &kp BSLH  &kp GRAVE
-&kp RCTRL       &kp END   &kp PAGE_DOWN  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &kp DEL    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PIPE  &kp TILDE
-                                         &kp LGUI      &trans        &kp SPACE       &kp RET    &trans          &kp RALT
+&kp TAB         &kp EXCL  &kp AT         &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET   &kp AMPS           &kp ASTERISK    &kp LPAR      &kp RPAR  &kp BSPC
+&kp LEFT_SHIFT  &kp HOME  &kp PAGE_UP    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp UP_ARROW    &kp C_VOL_UP  &kp BSLH  &kp GRAVE
+&kp RCTRL       &kp END   &kp PAGE_DOWN  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &kp ESC     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT     &kp PIPE  &kp TILDE
+                                         &kp LGUI      &trans        &kp SPACE       &kp RET     &trans             &kp RALT
             >;
         };
     };
