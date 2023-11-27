@@ -26,6 +26,20 @@
             timeout-ms = <50>;
             layers = <1>;
         };
+
+        base-esc {
+            bindings = <&kp ESC>;
+            key-positions = <41 0>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        lower-esc {
+            bindings = <&kp ESC>;
+            key-positions = <41 0>;
+            timeout-ms = <50>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -76,15 +90,6 @@
 &kp LEFT_SHIFT  &kp HOME  &kp PAGE_UP    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans     &trans          &kp UP_ARROW    &trans     &kp BSLH  &kp GRAVE
 &kp RCTRL       &kp END   &kp PAGE_DOWN  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &kp DEL    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PIPE  &kp TILDE
                                          &kp LGUI      &trans        &kp SPACE       &kp RET    &trans          &kp RALT
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
