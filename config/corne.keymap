@@ -39,7 +39,7 @@
 
         lower_layer {
             bindings = <
-&mt ESC TAB     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp TAB         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp LCTRL       &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp MINUS       &kp EQUAL      &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
 &kp LEFT_SHIFT  &kp N6           &kp N7       &kp N8    &kp N9      &kp N0         &kp UNDERSCORE  &kt PLUS       &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_ALT
                                               &kp LGUI  &trans      &kp SPACE      &kp ENTER       &trans         &trans
@@ -48,7 +48,7 @@
 
         raise_layer {
             bindings = <
-&mt ESC TAB     &kp N1  &kp N2      &kp N3             &kp N4           &kp N5       &kp N6         &kp N7          &kp N8          &kp N9     &kp N0  &mt DELETE BACKSPACE
+&kp TAB         &kp N1  &kp N2      &kp N3             &kp N4           &kp N5       &kp N6         &kp N7          &kp N8          &kp N9     &kp N0  &kp BACKSPACE
 &kp LCTRL       &trans  &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT       &kp HOME     &kp PAGE_UP    &trans          &kp UP_ARROW    &trans     &trans  &trans
 &kp LEFT_SHIFT  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp END      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp RIGHT_ALT
                                     &kp LEFT_GUI       &trans           &kp SPACE    &kp ENTER      &trans          &trans
@@ -57,8 +57,8 @@
 
         upper_layer {
             bindings = <
-&mt F1 TAB      &kp F2      &kp F3        &kp F4        &kp F5        &kp F6          &kp F7         &kp F8          &kp F9          &kp F10          &kp F11  &mt F12 DEL
-&kp LCTRL       &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &trans          &kp UP_ARROW    &trans           &trans   &trans
+&kp TAB         &kp F1      &kp F2        &kp F3        &kp F4        &kp F5          &kp F6         &kp F7          &kp F8          &kp F9           &kp F10  &kp BACKSPACE
+&kp LCTRL       &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &trans          &kp UP_ARROW    &trans           &kp F11  &kp F12
 &kt LEFT_SHIFT  &trans      &trans        &trans        &trans        &trans          &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp RIGHT_ALT
                                           &kp LEFT_GUI  &tog 0        &kp SPACE       &kp ENTER      &trans          &trans
             >;
