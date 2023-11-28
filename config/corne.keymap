@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define UPPER   3
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Upper_Layer {
+            if-layers = <LOWER RAISE>;
+            then-layer = <UPPER>;
+        };
+    };
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -55,15 +69,6 @@
             >;
 
             label = "Upper";
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Upper_Layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
         };
     };
 };
