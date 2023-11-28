@@ -55,7 +55,7 @@
             >;
         };
 
-        upper_layer {
+        adjust_layer {
             bindings = <
 &kp TAB         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6     &kp F7          &kp F8          &kp F9           &kp F10  &kp BACKSPACE
 &kp LCTRL       &bt BT_CLR    &trans        &trans        &trans        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp F11  &kp F12
