@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define LOWER 1
@@ -14,23 +15,23 @@
 #define ADJUST 3
 
 / {
-
     combos {
         compatible = "zmk,combos";
+
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
         combo_del {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <34 35>;
             bindings = <&kp DEL>;
         };
     };
 
     keymap {
-
         compatible = "zmk,keymap";
 
         default_layer {
@@ -38,7 +39,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R                &kp T        &kp Y      &kp U      &kp I        &kp O    &kp P     &kp BACKSPACE
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F                &kp G        &kp H      &kp J      &kp K        &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V                &kp B        &kp N      &kp M      &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                         &kp LGUI  &lt LOWER LG(SPACE)  &kp SPACE    &kp ENTER  &mo RAISE  &tog ADJUST  
+                         &kp LGUI  &lt LOWER LG(SPACE)  &kp SPACE    &kp ENTER  &mo RAISE  &tog ADJUST
             >;
         };
 
