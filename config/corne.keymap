@@ -17,14 +17,12 @@
             bindings = <&kp ESC>;
             key-positions = <0 11>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         Base-DEL {
             bindings = <&kp DEL>;
             key-positions = <11 10>;
             timeout-ms = <50>;
-            layers = <0>;
         };
     };
 
