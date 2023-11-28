@@ -7,3 +7,5 @@
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/pictures/lower.jpg?raw=true)
 
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/pictures/raise.jpg?raw=true)
+
+![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/picture/upper.jpg?raw=true)
