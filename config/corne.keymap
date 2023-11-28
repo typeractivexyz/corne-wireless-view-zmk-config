@@ -7,19 +7,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        ESC-BaseLayer {
+        Base-ESC {
             bindings = <&kp ESC>;
             key-positions = <0 11>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        DEL-BaseLayer {
+        Base-DEL {
             bindings = <&kp DEL>;
             key-positions = <11 10>;
             timeout-ms = <50>;
