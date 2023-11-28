@@ -13,13 +13,13 @@
     combos {
         compatible = "zmk,combos";
 
-        Base-ESC {
+        Combos-ESC {
             bindings = <&kp ESC>;
             key-positions = <0 11>;
             timeout-ms = <50>;
         };
 
-        Base-DEL {
+        Combos-DEL {
             bindings = <&kp DEL>;
             key-positions = <11 10>;
             timeout-ms = <50>;
