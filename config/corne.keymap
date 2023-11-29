@@ -17,12 +17,11 @@
 
 / {
     behaviors {
-        gresc: gresc {
+        gresc: shfit_tilde {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRESC";
-            #binding-cells = <0>;
+            label = "SHFIT_TILDE";
+            binding-cells = <25>;
             bindings = <&kp LEFT_SHIFT>, <&kp TILDE>;
-
             mods = <(MOD_LGUI)>;
         };
     };
