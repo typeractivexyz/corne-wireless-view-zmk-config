@@ -16,12 +16,13 @@
 #define ADJUST 3
 
 / {
-        behaviors {
-        gresc: grave_escape {
+    behaviors {
+        gresc: shfit_tilde {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
+            label = "SHFIT_TILDE";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp TILDE>;
+
             mods = <(MOD_LGUI)>;
         };
     };
