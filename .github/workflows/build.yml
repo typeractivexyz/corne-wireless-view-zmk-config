@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - "release"
+      - "test"
 
 jobs:
   build:
