@@ -17,9 +17,9 @@
 
 / {
     behaviors {
-        gresc: shfit_tilde {
+        gresc: gresc {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHFIT_TILDE";
+            label = "GRESC";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp TILDE>;
 
