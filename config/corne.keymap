@@ -32,8 +32,9 @@
         };
 
         combo_return-base {
-            bindings = <&to BASE>;
+            timeout-ms = <50>
             key-positions = <35 24>;
+            bindings = <&to BASE>;
         };
     };
 
