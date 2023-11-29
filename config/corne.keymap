@@ -30,6 +30,11 @@
             key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
+
+        combo_return-base {
+            bindings = <&to 0>;
+            key-positions = <35 24>;
+        };
     };
 
     keymap {
