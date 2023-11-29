@@ -38,6 +38,7 @@
         };
 
         combo_tilde {
+            timeout-ms = <50>;
             bindings = <&kp TILDE>;
             key-positions = <0 36>;
         };
