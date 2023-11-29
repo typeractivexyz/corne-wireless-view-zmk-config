@@ -16,6 +16,16 @@
 #define ADJUST 3
 
 / {
+        behaviors {
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp TILDE>;
+            mods = <(MOD_LGUI)>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -45,7 +55,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R                &kp T                   &kp Y      &kp U      &kp I        &kp O    &kp P     &kp BACKSPACE
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F                &kp G                   &kp H      &kp J      &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V                &kp B                   &kp N      &kp M      &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_ALT
+&gresc     &kp Z  &kp X  &kp C     &kp V                &kp B                   &kp N      &kp M      &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_ALT
                          &kp LGUI  &lt LOWER LG(SPACE)  &mt LEFT_SHIFT SPACE    &kp ENTER  &mo RAISE  &tog ADJUST
             >;
         };
