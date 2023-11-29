@@ -32,7 +32,7 @@
         };
 
         combo_return-base {
-            bindings = <&to 0>;
+            bindings = <&to BASE>;
             key-positions = <35 24>;
         };
     };
