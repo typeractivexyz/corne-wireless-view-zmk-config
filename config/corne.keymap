@@ -36,6 +36,11 @@
             key-positions = <34 35>;
             bindings = <&to BASE>;
         };
+
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <0 36>;
+        };
     };
 
     keymap {
