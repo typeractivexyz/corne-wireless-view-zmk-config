@@ -33,7 +33,7 @@
 
         combo_return-base {
             timeout-ms = <50>;
-            key-positions = <35 34>;
+            key-positions = <34 35>;
             bindings = <&to BASE>;
         };
     };
