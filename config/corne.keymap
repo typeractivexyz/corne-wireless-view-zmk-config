@@ -22,6 +22,7 @@
             label = "TAB_TILDE";
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp TILDE>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL)>;
         };
     };
