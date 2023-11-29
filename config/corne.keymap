@@ -20,7 +20,7 @@
         gresc: tab_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "TAB_TILDE";
-            binding-cells = <0>;
+            #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp TILDE>;
             mods = <(MOD_LGUI)>;
         };
