@@ -16,17 +16,6 @@
 #define ADJUST 3
 
 / {
-    behaviors {
-        TAB: tab_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TAB_TILDE";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp TILDE>;
-
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL)>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
