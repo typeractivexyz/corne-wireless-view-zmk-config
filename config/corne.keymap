@@ -15,13 +15,6 @@
 #define RAISE  2
 #define ADJUST 3
 
-
-&gresc {
-    bindings = <&kp TAB>, <&kp TILDE>;
-
-    mods = <(MOD_LSFT)>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -47,6 +40,17 @@
         combo_tilde {
             bindings = <&kp TILDE>;
             key-positions = <0 36>;
+        };
+    };
+
+    behaviors {
+        gresc: gresc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRESC";
+            bindings = <&kp TAB>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
