@@ -20,19 +20,16 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
 
         combo_del {
-            timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
 
         combo_return-base {
-            timeout-ms = <50>;
             key-positions = <34 35>;
             bindings = <&to 0>;
         };
@@ -49,10 +46,10 @@
 
         base_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R            &kp T                   &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F            &kp G                   &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V            &kp B                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                              &kp LGUI  &lt 1 LG(SPACE)  &mt LEFT_SHIFT SPACE    &kp ENTER  &mo 2  &tog 3
+&kp TAB         &kp Q  &kp W  &kp E     &kp R                &kp T                   &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D     &kp F                &kp G                   &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V                &kp B                   &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                              &kp LGUI  &lt LOWER LG(SPACE)  &mt LEFT_SHIFT SPACE    &kp ENTER  &mo RAISE  &tog ADJUST
             >;
         };
 
