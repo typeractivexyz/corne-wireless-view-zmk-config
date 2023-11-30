@@ -34,24 +34,17 @@
         combo_return-base {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&to BASE>;
+            bindings = <&to 0>;
         };
 
         combo_tilde {
             bindings = <&kp TILDE>;
             key-positions = <0 36>;
+            layers = <0>;
         };
     };
 
     behaviors {
-        gresc: gresc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GRESC";
-            bindings = <&kp TAB>, <&kp TILDE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
     };
 
     keymap {
@@ -59,10 +52,10 @@
 
         base_layer {
             bindings = <
-&gresc          &kp Q  &kp W  &kp E     &kp R                &kp T                   &kp Y      &kp U      &kp I        &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F                &kp G                   &kp H      &kp J      &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V                &kp B                   &kp N      &kp M      &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                              &kp LGUI  &lt LOWER LG(SPACE)  &mt LEFT_SHIFT SPACE    &kp ENTER  &mo RAISE  &tog ADJUST
+&kp TAB         &kp Q  &kp W  &kp E     &kp R            &kp T                   &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D     &kp F            &kp G                   &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V            &kp B                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                              &kp LGUI  &lt 1 LG(SPACE)  &mt LEFT_SHIFT SPACE    &kp ENTER  &mo 2  &tog 3
             >;
         };
 
@@ -86,10 +79,10 @@
 
         adjust_layer {
             bindings = <
-&kp TAB         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7          &kp F8          &kp F9           &kp F10  &mt F11 F12
-&kp LCTRL       &bt BT_CLR    &out OUT_TOG  &trans        &trans        &trans                  &trans     &trans          &kp UP_ARROW    &trans           &trans   &trans
-&kt LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp RIGHT_ALT
-                                            &kp LEFT_GUI  &trans        &mt LEFT_SHIFT SPACE    &kp ENTER  &trans          &trans
+&kp TAB         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &mt F11 F12
+&kp LCTRL       &bt BT_CLR    &out OUT_TOG  &trans        &trans        &trans                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&kt LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans          &trans          &trans        &trans           &trans   &kp RIGHT_ALT
+                                            &kp LEFT_GUI  &trans        &mt LEFT_SHIFT SPACE    &kp ENTER       &trans          &trans
             >;
         };
     };
