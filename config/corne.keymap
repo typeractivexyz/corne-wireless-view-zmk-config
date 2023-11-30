@@ -33,12 +33,6 @@
             key-positions = <34 35>;
             bindings = <&to 0>;
         };
-
-        combo_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <0 36>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -48,7 +42,7 @@
             bindings = <&kp TAB>, <&kp TILDE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_LGUI)>;
         };
     };
 
