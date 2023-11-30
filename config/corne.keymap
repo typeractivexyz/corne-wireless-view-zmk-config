@@ -31,7 +31,7 @@
 
         combo_return-base {
             key-positions = <34 35>;
-            bindings = <&to 0>;
+            bindings = <&to BASE>;
         };
     };
 
