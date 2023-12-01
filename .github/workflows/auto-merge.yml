@@ -1,0 +1,33 @@
+name: Automerge
+
+on:
+  pull_request:
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  check_suite:
+    types:
+      - completed
+  status: {}
+
+jobs:
+  # 合併發布版本的 pr 到 main
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automerge
+        uses: 'pascalgn/automerge-action@v0.15.6'
+        env:
+          GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
+          MERGE_LABELS: ''
+          # 只要是 cloverdefa 帳號，都進行自動合併
+          MERGE_FILTER_AUTHOR: 'cloverdefa'
