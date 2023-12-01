@@ -18,7 +18,7 @@
         compatible = "zmk,combos";
 
         bluetooth {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <40 41>;
         };
     };
