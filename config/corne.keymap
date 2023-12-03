@@ -59,11 +59,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
-
-        &lt {
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
     };
 
     keymap {
