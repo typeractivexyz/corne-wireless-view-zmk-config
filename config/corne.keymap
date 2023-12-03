@@ -82,9 +82,9 @@
         base_layer {
             bindings = <
 &tab_tilde  &kp Q  &kp W  &kp E     &kp R      &kp T               &kp Y    &kp U           &kp I      &kp O    &kp P     &kp NON_US_BACKSLASH
-&kp LCTRL   &kp A  &kp S  &kp D     &kp F      &kp G               &kp H    &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B               &kp N    &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
-                          &kp LGUI  &mo LOWER  &mt LSHIFT SPACE    &kp RET  &lt RAISE BSPC  &td_multi
+&cm LCTRL   &kp A  &kp S  &kp D     &kp F      &kp G               &kp H    &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
+&cm LSHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B               &kp N    &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
+                          &kp LGUI  &mo LOWER  &sm LSHIFT SPACE    &kp RET  &lt RAISE BSPC  &td_multi
             >;
         };
 
