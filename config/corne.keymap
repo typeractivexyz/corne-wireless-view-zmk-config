@@ -23,6 +23,7 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LGUI>, <&macro_tap &kp SPACE>, <&macro_release &kp LGUI>; 
         };
+    };
 
     combos {
         compatible = "zmk,combos";
