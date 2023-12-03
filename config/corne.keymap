@@ -74,6 +74,36 @@
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&spotlight>;
         };
+        bm: bottom_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BOTTOM_ROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        cm: code_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CODE_ROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+        };
+
+        sm: space_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_MOD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -84,7 +114,7 @@
 &tab_tilde  &kp Q  &kp W  &kp E     &kp R      &kp T               &kp Y    &kp U           &kp I      &kp O    &kp P     &kp NON_US_BACKSLASH
 &kp LCTRL   &kp A  &kp S  &kp D     &kp F      &kp G               &kp H    &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B               &kp N    &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
-                          &kp LGUI  &mo LOWER  &mt LSHIFT SPACE    &kp RET  &lt RAISE BSPC  &td_multi
+                          &kp LGUI  &mo LOWER  &sm LSHIFT SPACE    &kp RET  &lt RAISE BSPC  &td_multi
             >;
         };
 
