@@ -8,4 +8,4 @@
 
 ![Raise Layer](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/pictures/raise.png?raw=true)
 
-![Adjust Layer](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/pictures/adjust.png?raw=true)
+![Adjust Layer](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/pictures/function.png?raw=true)
