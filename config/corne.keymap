@@ -16,6 +16,14 @@
 #define FUNCTION 3
 
 / {
+    macros {
+        spotlight: spotlight {
+            label = "spotlight";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp SPACE>, <&macro_release &kp LGUI>; 
+        };
+
     combos {
         compatible = "zmk,combos";
 
