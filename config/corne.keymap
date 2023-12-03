@@ -74,6 +74,16 @@
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&spotlight>;
         };
+
+        sm: space_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_MOD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
