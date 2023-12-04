@@ -72,7 +72,7 @@
             label = "TAP_DANCE_MULTI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp ESC>, <&spotlight>;
+            bindings = <&kp LGUI>, <&spotlight>;
         };
 
         sm: space_mod {
