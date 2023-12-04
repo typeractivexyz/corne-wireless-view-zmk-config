@@ -130,8 +130,8 @@
         compatible = "zmk,conditional-layers";
 
         Function_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <FUNCTION>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
