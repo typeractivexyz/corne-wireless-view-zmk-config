@@ -62,7 +62,7 @@
             label = "TAB_TILDE";
             bindings = <&kp TAB>, <&kp TILDE>;
             #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_RALT)>;
         };
 
         td_multi_gui: tap_dance_multi_gui {
