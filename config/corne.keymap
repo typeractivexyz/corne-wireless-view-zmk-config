@@ -90,9 +90,9 @@
 
         lower_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp NON_US_HASH  &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND        &kp STAR      &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp LEFT_CONTROL  &kp N1           &kp N2  &kp N3           &kp N4      &kp N5                  &kp MINUS       &kp EQUAL            &kp GRAVE     &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp PIPE
-&kp LEFT_SHIFT    &kp N6           &kp N7  &kp N8           &kp N9      &kp N0                  &kp UNDERSCORE  &kt PLUS             &kp TILDE     &kp LEFT_BRACE           &kp RIGHT_BRACE           &kp RIGHT_ALT
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp NON_US_HASH  &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND        &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp LEFT_CONTROL  &kp N1           &kp N2  &kp N3           &kp N4      &kp N5                  &kp MINUS       &kp EQUAL            &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&kp LEFT_SHIFT    &kp N6           &kp N7  &kp N8           &kp N9      &kp N0                  &kp UNDERSCORE  &kt PLUS             &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_ALT
                                            &td_multi_gui    &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt RAISE BACKSPACE  &mo FUNCTION
             >;
         };
