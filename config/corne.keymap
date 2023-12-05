@@ -35,21 +35,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_1";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
+            bindings = <&mo 1>, <&mo 1>, <&tog 1>;
         };
 
         layer_2: layer_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_2";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
-        };
-
-        cmd_opt: cmd_opt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CMD_OPT";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
+            bindings = <&mo 2>, <&mo 2>, <&tog 2>;
         };
 
         open_bracket: open_bracket {
@@ -118,8 +111,8 @@
             label = "Numpad";
             bindings = <
 &trans  &mt LG(NUMBER_1) NUMBER_1  &mt LG(NUMBER_2) NUMBER_2  &mt LG(NUMBER_3) NUMBER_3  &mt LG(NUMBER_4) NUMBER_4  &mt LG(NUMBER_5) NUMBER_5    &mt LG(NUMBER_6) NUMBER_6      &mt LG(NUMBER_7) NUMBER_7  &mt LG(NUMBER_8) NUMBER_8  &mt LG(NUMBER_9) NUMBER_9        &mt LG(NUMBER_0) NUMBER_0  &trans
-&trans  &kp LG(LS(NUMBER_5))       &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_INC         &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN    &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp SEMICOLON              &kp SQT
-&trans  &kp LG(LS(NUMBER_4))       &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_DEC         &kp C_VOLUME_DOWN              &kp C_VOLUME_UP            &kp COMMA                  &kp PERIOD                       &kp SLASH                  &trans
+&trans  &trans                     &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_INC         &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN    &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp SEMICOLON              &kp SQT
+&trans  &trans                     &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_DEC         &kp C_VOLUME_DOWN              &kp C_VOLUME_UP            &kp COMMA                  &kp PERIOD                       &kp SLASH                  &trans
                                                               &trans                     &trans                     &trans                       &trans                         &trans                     &trans
             >;
         };
