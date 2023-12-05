@@ -57,14 +57,6 @@
     };
 
     behaviors {
-        tab_tilde: tab_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TAB_TILDE";
-            bindings = <&kp TAB>, <&kp TILDE>;
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
         td_multi_gui: tap_dance_multi_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_GUI";
@@ -89,7 +81,7 @@
 
         base_layer {
             bindings = <
-&gresc      &kp Q  &kp W  &kp E          &kp R      &kp T               &kp Y    &kp U           &kp I         &kp O    &kp P     &kp NUBS
+&kp TAB     &kp Q  &kp W  &kp E          &kp R      &kp T               &kp Y    &kp U           &kp I         &kp O    &kp P     &kp NUBS
 &kp LCTRL   &kp A  &kp S  &kp D          &kp F      &kp G               &kp H    &kp J           &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z  &kp X  &kp C          &kp V      &kp B               &kp N    &kp M           &kp COMMA     &kp DOT  &kp FSLH  &kp RALT
                           &td_multi_gui  &mo LOWER  &sm LSHIFT SPACE    &kp RET  &lt RAISE BSPC  &mo FUNCTION
@@ -98,7 +90,7 @@
 
         lower_layer {
             bindings = <
-&gresc      &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT         &kp CARET  &kp AMPERSAND   &kp STAR      &kp LPAR  &kp RPAR  &kp NUBS
+&kp TAB     &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT         &kp CARET  &kp AMPERSAND   &kp STAR      &kp LPAR  &kp RPAR  &kp NUBS
 &kp LCTRL   &kp N1           &kp N2  &kp N3         &kp N4      &kp N5              &kp MINUS  &kp EQUAL       &kp GRAVE     &kp LBKT  &kp RBKT  &kp PIPE
 &kp LSHIFT  &kp N6           &kp N7  &kp N8         &kp N9      &kp N0              &kp UNDER  &kt PLUS        &kp TILDE     &kp LBRC  &kp RBRC  &kp RALT
                                      &td_multi_gui  &trans      &sm LSHIFT SPACE    &kp RET    &lt RAISE BSPC  &mo FUNCTION
@@ -107,7 +99,7 @@
 
         raise_layer {
             bindings = <
-&gresc      &kp N1        &kp N2      &kp N3         &kp N4        &kp N5              &kp N6     &kp N7    &kp N8        &kp N9     &kp N0  &kp BSPC
+&kp TAB     &kp N1        &kp N2      &kp N3         &kp N4        &kp N5              &kp N6     &kp N7    &kp N8        &kp N9     &kp N0  &kp BSPC
 &kp LCTRL   &none         &kp C_PREV  &kp C_PP       &kp C_NEXT    &kp HOME            &kp PG_UP  &none     &kp UP        &none      &none   &none
 &kp LSHIFT  &kp CAPSLOCK  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp END             &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none   &kp RALT
                                       &td_multi_gui  &mo LOWER     &sm LSHIFT SPACE    &kp RET    &trans    &mo FUNCTION
@@ -116,7 +108,7 @@
 
         function_layer {
             bindings = <
-&gresc      &kp F1        &kp F2        &kp F3         &kp F4        &kp F5              &kp F6    &kp F7          &kp F8  &kp F9     &kp F10  &kp F11
+&kp TAB     &kp F1        &kp F2        &kp F3         &kp F4        &kp F5              &kp F6    &kp F7          &kp F8  &kp F9     &kp F10  &kp F11
 &kp LCTRL   &bt BT_CLR    &out OUT_TOG  &none          &none         &none               &kp LEFT  &kp DOWN        &kp UP  &kp RIGHT  &none    &kp F12
 &kp LSHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4        &none     &none           &none   &none      &none    &kp RALT
                                         &td_multi_gui  &mo LOWER     &sm LSHIFT SPACE    &kp RET   &lt RAISE BSPC  &trans
