@@ -92,7 +92,7 @@
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND        &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT    &kp N1           &kp N2  &kp N3         &kp N4      &kp N5                  &kp MINUS       &kp EQUAL            &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &kp N6           &kp N7  &kp N8         &kp N9      &kp N0                  &kp UNDERSCORE  &kt PLUS             &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp N6           &kp N7  &kp N8         &kp N9      &kp N0                  &kp UNDERSCORE  &kt PLUS             &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ESC
                                            &td_multi_gui  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt RAISE BACKSPACE  &kp LEFT_ALT
             >;
         };
@@ -101,7 +101,7 @@
             bindings = <
 &kp TAB           &kp N1        &kp N2      &kp N3         &kp N4        &kp N5                  &kp N6     &kp N7     &kp N8        &kp N9     &kp N0  &kp BACKSPACE
 &kp LEFT_SHIFT    &none         &kp C_PREV  &kp C_PP       &kp C_NEXT    &none                   &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT  &none   &none
-&kp LEFT_CONTROL  &kp CAPSLOCK  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &none                   &kp PG_UP  &kp PG_DN  &kp HOME      &kp END    &none   &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp CAPSLOCK  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &none                   &kp PG_UP  &kp PG_DN  &kp HOME      &kp END    &none   &kp ESC
                                             &td_multi_gui  &mo LOWER     &sm LEFT_SHIFT SPACE    &kp ENTER  &trans     &kp LEFT_ALT
             >;
         };
@@ -110,7 +110,7 @@
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4         &kp F5        &kp F6                  &kp F7     &kp F8               &kp F9  &kp F10  &kp F11  &kp F12
 &none       &none         &none         &none          &none         &none                   &none      &none                &none   &none    &none    &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &none      &none                &none   &none    &none    &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &none      &none                &none   &none    &none    &kp ESC
                                         &td_multi_gui  &mo LOWER     &sm LEFT_SHIFT SPACE    &kp ENTER  &lt RAISE BACKSPACE  &kp LEFT_ALT
             >;
     };
