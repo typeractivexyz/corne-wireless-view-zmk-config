@@ -74,17 +74,6 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-        
-        cm: code_row_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CODE_ROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-            retro-tap;
-        };
     };
 
     keymap {
@@ -94,7 +83,7 @@
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E          &kp R      &kp T                   &kp Y      &kp U                &kp I         &kp O       &kp P          &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F      &kp G                   &kp H      &kp J                &kp K         &kp L       &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V      &kp B                   &kp N      &kp M                &kp COMMA     &kp PERIOD  &kp SLASH      &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V      &kp B                   &kp N      &kp M                &kp COMMA     &kp TILDE   &kp PERIOD     &kp SLASH
                                 &td_multi_gui  &mo LOWER  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt RAISE BACKSPACE  &kp LEFT_ALT
             >;
         };
@@ -104,7 +93,7 @@
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND        &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT    &kp N1           &kp N2  &kp N3         &kp N4      &kp N5                  &kp MINUS       &kp EQUAL            &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
 &kp LEFT_CONTROL  &kp N6           &kp N7  &kp N8         &kp N9      &kp N0                  &kp UNDERSCORE  &kt PLUS             &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_ALT
-                                           &td_multi_gui  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt RAISE BACKSPACE  &kp LEST_ALT
+                                           &td_multi_gui  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt RAISE BACKSPACE  &kp LEFT_ALT
             >;
         };
 
