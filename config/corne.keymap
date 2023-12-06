@@ -146,7 +146,7 @@
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U                &kp I         &kp O      &kp P          &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J                &kp K         &kp L      &kp SEMICOLON  &kp APOSTROPHE
-&td_multi_screen  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M                &kp COMMA     &kp TILDE  &kp PERIOD     &kp SLASH
+&kp LEFT_CONTROL ================================== &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M                &kp COMMA     &kp TILDE  &kp PERIOD     &kp SLASH
                                 &kp LEFT_ALT   &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
         };
