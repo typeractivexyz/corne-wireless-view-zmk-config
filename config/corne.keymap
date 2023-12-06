@@ -48,9 +48,7 @@
                 <&macro_tap>,
                 <&kp S>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>
-                <&macro_release>,
-                <&kp LGUI>;
+                <&kp LEFT_SHIFT &kp LGUI>;
         };
     };
 
@@ -87,7 +85,7 @@
             label = "TAP_DANCE_MULTI_SCREEN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_CONTROL>, <&screenshot>;
+            bindings = <&kp LEFT_CONTROL>, <&td_multi_screen>;
         };
 
         sm: space_mod {
