@@ -68,11 +68,6 @@
             key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
-
-        combo_return-base {
-            key-positions = <34 35>;
-            bindings = <&to BASE>;
-        };
     };
 
     behaviors {
