@@ -99,9 +99,9 @@
 
         raise_layer {
             bindings = <
-&kp TAB           &none         &none       &none          &none         &none                   &none      &none     &kp UP        &none      &none   &kp BACKSPACE
-&kp LEFT_SHIFT    &none         &kp C_PREV  &kp C_PP       &kp C_NEXT    &kp HOME                &kp PG_UP  &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none
-&kp LEFT_CONTROL  &kp CAPSLOCK  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp END                 &kp PG_DN  &none     &none         &none      &none   &kp ESC
+&kp TAB           &none         &none       &none          &none         &kp HOME              &kp PG_UP      &none     &kp UP        &none      &none   &kp BACKSPACE
+&kp LEFT_SHIFT    &none         &kp C_PREV  &kp C_PP       &kp C_NEXT    &kp END                &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none
+&kp LEFT_CONTROL  &kp CAPSLOCK  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &none                 &none  &none     &none         &none      &none   &kp ESC
                                             &td_multi_gui  &mo LOWER     &sm LEFT_SHIFT SPACE    &kp ENTER  &trans    &kp LEFT_ALT
             >;
         };
