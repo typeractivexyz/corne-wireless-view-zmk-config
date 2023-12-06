@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE     0
 #define LOWER    1
@@ -123,7 +123,7 @@
         raise_layer {
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
-&kp LEFT_SHIFT    &kp CAPSLOCK  &none         &none          &none         &kp HOME                &kp PAGE_UP    &none         &kp UP_ARROW  &none         &none         &none
+&kp LEFT_SHIFT    &kp CAPSLOCK  &none         &none          &none         &kp HOME                &kp PAGE_UP    &none         &kp UP        &none         &none         &none
 &kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT     &none         &kp ESC
                                               &td_multi_gui  &mo LOWER     &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
@@ -133,7 +133,7 @@
             bindings = <
 &kp F1            &kp F2        &kp F3        &kp F4         &kp F5        &kp F6                  &kp F7            &kp F8               &kp F9             &kp F10     &kp F11  &kp F12
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp K_PLAY_PAUSE  &none                &kp C_VOLUME_UP    &none       &none    &none
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp K_MUTE        &kp C_PREV           &kp C_VOLUME_DOWN  &kp C_NEXT  &none    &none
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp K_MUTE        &kp C_PREV           &kp C_VOLUME_DOWN  &kp C_NEXT  &none    &kp ESC
                                               &td_multi_gui  &mo LOWER     &sm LEFT_SHIFT SPACE    &kp ENTER         &lt RAISE BACKSPACE  &kp LEFT_ALT
             >;
         };
