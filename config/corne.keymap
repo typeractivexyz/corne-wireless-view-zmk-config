@@ -114,5 +114,12 @@
                                         &td_multi_gui  &mo LOWER     &sm LEFT_SHIFT SPACE    &kp ENTER  &lt RAISE BACKSPACE  &trans
             >;
         };
+        conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        function_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
