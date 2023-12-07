@@ -32,12 +32,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp SPACE>,
+                <&macro_release &kp LGUI>;
         };
 
         screenshot: screenshot {
@@ -45,12 +42,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp S>,
-                <&macro_release>,
-                <&kp LGUI &kp LEFT_SHIFT>;
+                <&macro_press &kp LGUI &kp LEFT_SHIFT>,
+                <&macro_tap &kp S>,
+                <&macro_release &kp LGUI &kp LEFT_SHIFT>;
         };
     };
 
