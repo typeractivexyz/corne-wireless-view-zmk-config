@@ -40,19 +40,6 @@
                 <&kp LGUI>;
         };
 
-        screenshot_win: screenshot_win {
-            label = "SCREENSHOT_WIN";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp S>,
-                <&macro_release>,
-                <&kp LGUI &kp LEFT_SHIFT>;
-        };
-
         screenshot_mac: screenshot_mac {
             label = "SCREEMSHOT_MAC";
             compatible = "zmk,behavior-macro";
@@ -62,6 +49,19 @@
                 <&kp LGUI &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LGUI &kp LEFT_SHIFT>;
+        };
+
+        screenshot_win: screenshot_win {
+            label = "SCREENSHOT_WIN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>,
                 <&macro_release>,
                 <&kp LGUI &kp LEFT_SHIFT>;
         };
@@ -82,20 +82,20 @@
     };
 
     behaviors {
-        td_multi_win: tap_dance_multi_win {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MULTI_WIN";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LGUI>, <&screenshot_win>, <&kp ESCAPE>;
-        };
-
         td_multi_mac: tap_dance_multi_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LGUI>, <&spotlight>, <&screenshot_mac>;
+        };
+
+        td_multi_win: tap_dance_multi_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTI_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LGUI>, <&screenshot_win>, <&kp ESCAPE>;
         };
 
         sm: space_mod {
