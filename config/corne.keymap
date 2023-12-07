@@ -50,7 +50,7 @@
                 <&macro_tap>,
                 <&kp S>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp LGUI>;
+                <&kp LGUI &kp LEFT_SHIFT>;
         };
     };
 
