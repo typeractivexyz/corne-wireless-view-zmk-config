@@ -32,19 +32,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp SPACE>,
-                <&macro_release &kp LGUI>;
-        };
-
-        screenshot_win: screenshot_win {
-            label = "SCREENSHOT_WIN";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LGUI &kp LEFT_SHIFT>,
-                <&macro_tap &kp S>,
-                <&macro_release &kp LGUI &kp LEFT_SHIFT>;
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
 
         screenshot_mac: screenshot_mac {
@@ -52,9 +45,25 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI &kp LEFT_SHIFT>,
-                <&macro_tap &kp NUMBER_4>,
-                <&macro_release &kp LGUI &kp LEFT_SHIFT>;
+                <&macro_press>,
+                <&kp LGUI &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LGUI &kp LEFT_SHIFT>;
+        };
+
+        screenshot_win: screenshot_win {
+            label = "SCREENSHOT_WIN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LGUI &kp LEFT_SHIFT>;
         };
     };
 
@@ -132,9 +141,9 @@
 
         mac_function_layer {
             bindings = <
-&kp F1            &kp F2        &kp F3        &kp F4         &kp F5        &kp F6                  &kp F7            &kp F8                 &kp F9             &kp F10     &kp F11  &kp F12
+&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6            &kp F7                 &kp F8             &kp F9      &kp F10  &kp DELETE
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp K_PLAY_PAUSE  &none                  &kp C_VOLUME_UP    &trans      &trans   &to WINDOWS
-&kp LEFT_CONTROL  &bt BT_CLR    &trans        &trans         &trans        &none                   &kp K_MUTE        &kp C_PREV             &kp C_VOLUME_DOWN  &kp C_NEXT  &trans   &trans
+&kp LEFT_CONTROL  &bt BT_CLR    &trans        &trans         &trans        &none                   &kp K_MUTE        &kp C_PREV             &kp C_VOLUME_DOWN  &kp C_NEXT  &kp F11  &kp F12
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER         &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
         };
@@ -168,9 +177,9 @@
 
         windows_function_layer {
             bindings = <
-&kp F1            &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                  &kp F7            &kp F8                 &kp F9             &kp F10     &kp F11  &kp F12
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6            &kp F7                 &kp F8             &kp F9      &kp F10  &kp DELETE
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp K_PLAY_PAUSE  &trans                 &kp C_VOLUME_UP    &trans      &trans   &to MAC
-&kp LEFT_CONTROL  &bt BT_CLR    &trans        &trans        &trans        &trans                  &kp K_MUTE        &kp C_PREV             &kp C_VOLUME_DOWN  &kp C_NEXT  &trans   &trans
+&kp LEFT_CONTROL  &bt BT_CLR    &trans        &trans        &trans        &trans                  &kp K_MUTE        &kp C_PREV             &kp C_VOLUME_DOWN  &kp C_NEXT  &kp F11  &kp F12
                                               &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER         &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
         };
