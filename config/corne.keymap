@@ -141,9 +141,9 @@
 
         windows_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6            &kp F7                 &kp F8             &kp F9      &kp F10  &none
-&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp K_PLAY_PAUSE  &none                  &kp C_VOLUME_UP    &none       &none    &to MAC
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp K_MUTE        &kp C_PREV             &kp C_VOLUME_DOWN  &kp C_NEXT  &kp F11  &kp F12
+&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6            &kp F7                 &kp F8             &kp F9      &kp F10     &none
+&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp K_MUTE        &kp C_VOLUME_UP        &kp C_VOLUME_DOWN  &kp K_NEXT  &kp K_PREV  &to MAC
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp K_PLAY_PAUSE  &none                  &none              &none       &kp F11     &kp F12
                                               &td_multi_win  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER         &lt WIN_NUM BACKSPACE  &kp LEFT_ALT
             >;
         };
@@ -177,9 +177,9 @@
 
         mac_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6            &kp F7                 &kp F8             &kp F9      &kp F10  &none
-&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp K_PLAY_PAUSE  &none                  &kp C_VOLUME_UP    &none       &none    &to WINDOWS
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp K_MUTE        &kp C_PREV             &kp C_VOLUME_DOWN  &kp C_NEXT  &kp F11  &kp F12
+&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6            &kp F7                 &kp F8             &kp F9      &kp F10     &none
+&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp K_MUTE        &kp C_VOLUME_UP        &kp C_VOLUME_DOWN  &kp K_NEXT  &kp K_PREV  &to WINDOWS
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp K_PLAY_PAUSE  &none                  &none              &none       &kp F11     &kp F12
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER         &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
         };
