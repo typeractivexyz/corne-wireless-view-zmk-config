@@ -79,6 +79,41 @@
             key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
+
+        combo_LEFT-BRACKET {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <14 15>;
+        };
+
+        combo_RIGHT-BRACKET {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <20 21>;
+        };
+
+        combo_LEFT-PARENTHESIS {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 16>;
+        };
+
+        combo_RIGHT-PARENTHESIS {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 19>;
+        };
+
+        combo_TILDE {
+            bindings = <&kp TILDE>;
+            key-positions = <26 27>;
+        };
+
+        combo_PIPE {
+            bindings = <&kp PIPE>;
+            key-positions = <33 32>;
+        };
+
+        combo_SEMICOLON {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
