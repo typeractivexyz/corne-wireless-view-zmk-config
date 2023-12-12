@@ -187,7 +187,7 @@
         windows_function_layer {
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7           &kp F8             &kp F9      &kp F10     &kp F11
-&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp K_NEXT  &kp K_PREV  &to MAC
+&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PREV  &to MAC
 &kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &none            &none              &none       &none       &bm LC(LEFT_SHIFT) BACKSPACE
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans           &td_multi_win
             >;
