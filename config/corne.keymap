@@ -114,12 +114,6 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <7 8>;
         };
-
-        combo_GLOBE {
-            bindings = <&kp GLOBE>;
-            key-positions = <24 25>;
-            layers = <4 5 6 7>;
-        };
     };
 
     behaviors {
@@ -167,7 +161,7 @@
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E         &kp R              &kp T                   &kp Y      &kp U                  &kp I          &kp O    &kp P          &kp MINUS
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F              &kp G                   &kp H      &kp J                  &kp K          &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V              &kp B                   &kp N      &kp M                  &kp COMMA      &kp DOT  &kp SLASH      &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V              &kp B                   &kp N      &kp M                  &kp COMMA      &kp DOT  &kp SLASH      &kp K_CMENU
                                 &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
         };
@@ -194,7 +188,7 @@
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7           &kp F8             &kp F9      &kp F10     &kp F11
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PREV  &to MAC
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &none       &none       &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &none       &none       &none
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans           &td_multi_win
             >;
         };
@@ -203,7 +197,7 @@
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U                  &kp I         &kp O    &kp P          &kp MINUS
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J                  &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M                  &kp COMMA     &kp DOT  &kp SLASH      &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M                  &kp COMMA     &kp DOT  &kp SLASH      &kp GLOBE
                                 &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
         };
@@ -230,7 +224,7 @@
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6     &kp F7           &kp F8             &kp F9      &kp F10     &kp F11
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PREV  &to WINDOWS
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &none       &none       &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &none       &none       &none
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans           &kp LEFT_ALT
             >;
         };
