@@ -27,6 +27,21 @@
 
 / {
     macros {
+        calculator: calculator {
+            label = "CALCULATOR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp C &kp A &kp L &kp C &kp ENTER>;
+        };
+
         screenshot_win: screenshot_win {
             label = "SCREENSHOT_WIN";
             compatible = "zmk,behavior-macro";
@@ -64,22 +79,6 @@
                 <&kp NUMBER_4>,
                 <&macro_release>,
                 <&kp LGUI &kp LEFT_SHIFT>;
-        };
-
-        calculator: calculator {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp R>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp C &kp A &kp L &kp C &kp ENTER>;
-
-            label = "CALCULATOR";
         };
     };
 
