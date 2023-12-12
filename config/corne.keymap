@@ -27,6 +27,21 @@
 
 / {
     macros {
+        calculator_win: calculator_win {
+            label = "CALCULATRO_WOM"';
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <macro_press>,
+                <&kp LGUI>,
+                <macro_tap>,
+                <&kp r>,
+                <macro_release>,
+                <&kp LGUI>,
+                <macro_tap>,
+                <&kp c &kp a &kp l &kp c &kp ENTER>;
+        }
+
         screenshot_win: screenshot_win {
             label = "SCREENSHOT_WIN";
             compatible = "zmk,behavior-macro";
@@ -105,7 +120,7 @@
 
         combo_RIGHT-PARENTHESIS {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <20 19>;
+            key-positions = <19 20>;
             timeout-ms = <200>;
             layers = <0 4>;
         };
@@ -153,7 +168,7 @@
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E         &kp R              &kp T                   &kp Y      &kp U                  &kp I          &kp O    &kp P          &kp MINUS
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F              &kp G                   &kp H      &kp J                  &kp K          &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V              &kp B                   &kp N      &kp M                  &kp COMMA      &kp DOT  &kp SLASH      &kp K_CMENU
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V              &kp B                   &kp N      &kp M                  &kp COMMA      &kp DOT  &kp SLASH      &calculator_win
                                 &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
         };
@@ -180,7 +195,7 @@
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7           &kp F8             &kp F9      &kp F10     &kp F11
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PREV  &to MAC
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &none       &none       &none
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &kp C_MUTE  &none       &none
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans           &td_multi_win
             >;
         };
@@ -216,7 +231,7 @@
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6     &kp F7           &kp F8             &kp F9      &kp F10     &kp F11
 &kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PREV  &to WINDOWS
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &none       &none       &none
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP   &kp C_BRI_UP     &kp C_BRI_DN       &kp K_MUTE  &none       &none
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans           &kp LEFT_ALT
             >;
         };
