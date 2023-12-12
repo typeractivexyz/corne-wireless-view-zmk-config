@@ -144,16 +144,6 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-
-        bm: backspace_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_MOD";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -172,7 +162,7 @@
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND          &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT    &none            &none   &none         &none       &none                   &kp MINUS       &kp EQUAL              &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none         &none       &none                   &kp UNDERSCORE  &kt PLUS               &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &none            &none   &none         &none       &none                   &kp UNDERSCORE  &kt PLUS               &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LC(LEFT_SHIFT)
                                            &kp LEFT_ALT  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
         };
@@ -181,7 +171,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
 &kp LEFT_SHIFT    &none         &none         &none         &none              &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &none
-&kp LEFT_CONTROL  &none         &none         &none         &none              &kp END                 &kp PAGE_DOWN  &none         &none          &none         &none         &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &none         &none         &none         &none              &kp END                 &kp PAGE_DOWN  &none         &none          &none         &none         &kp LC(LEFT_SHIFT)
                                               &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &td_multi_win
             >;
         };
@@ -208,7 +198,7 @@
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND          &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT    &none            &none   &none          &none       &none                   &kp MINUS       &kp EQUAL              &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none          &none       &none                   &kp UNDERSCORE  &kt PLUS               &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &none            &none   &none          &none       &none                   &kp UNDERSCORE  &kt PLUS               &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LC(LEFT_SHIFT)
                                            &td_multi_mac  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
         };
@@ -217,7 +207,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
 &kp LEFT_SHIFT    &none         &none         &none          &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none
-&kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &none         &bm LC(LEFT_SHIFT) BACKSPACE
+&kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &none         &kp LC(LEFT_SHIFT)
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
         };
