@@ -70,12 +70,12 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        combo_ESC {
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
 
-        combo_del {
+        combo_DEL {
             key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
