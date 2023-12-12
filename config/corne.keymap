@@ -118,7 +118,7 @@
         combo_GLOBE {
             bindings = <&kp GLOBE>;
             key-positions = <24 25>;
-            layers = <MAC MAC_CODE MAC_NUM MAC_FUNC>;
+            layers = <4 5 6 7>;
         };
     };
 
