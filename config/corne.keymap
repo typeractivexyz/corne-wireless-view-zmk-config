@@ -104,16 +104,6 @@
             bindings = <&kp TILDE>;
             key-positions = <26 27>;
         };
-
-        combo_PIPE {
-            bindings = <&kp PIPE>;
-            key-positions = <33 32>;
-        };
-
-        combo_SEMICOLON {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <7 8>;
-        };
     };
 
     behaviors {
