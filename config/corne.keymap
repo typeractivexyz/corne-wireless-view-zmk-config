@@ -73,36 +73,48 @@
         combo_ESC {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            timeout-ms = <200>;
         };
 
         combo_DEL {
             bindings = <&kp DEL>;
             key-positions = <10 11>;
+            timeout-ms = <200>;
         };
 
         combo_LEFT-BRACKET {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <14 15>;
+            timeout-ms = <200>;
+            layers = <0 4>;
         };
 
         combo_RIGHT-BRACKET {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <20 21>;
+            timeout-ms = <200>;
+            layers = <0 4>;
         };
 
         combo_LEFT-PARENTHESIS {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <15 16>;
+            timeout-ms = <200>;
+            layers = <0 4>;
         };
 
         combo_RIGHT-PARENTHESIS {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <20 19>;
+            timeout-ms = <200>;
+            layers = <0 4>;
         };
 
         combo_TILDE {
             bindings = <&kp TILDE>;
             key-positions = <26 27>;
+            timeout-ms = <200>;
+            layers = <0 4>;
         };
     };
 
