@@ -39,7 +39,7 @@
                 <&macro_release>,
                 <&kp LGUI>,
                 <&macro_tap>,
-                <&kp W &kp T &kp ENTER>;
+                <&kp BACKSPACE &kp W &kp T &kp ENTER>;
         };
 
         screenshot_win: screenshot_win {
