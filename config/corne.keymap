@@ -38,7 +38,9 @@
                 <&macro_release>,
                 <&kp LGUI>,
                 <&macro_tap>,
-                <&kp BACKSPACE &kp W &kp T &kp ENTER>;
+                <&kp BACKSPACE>,
+                <&macro_tap>,
+                <&kp W &kp T &kp ENTER>;
         };
 
         screenshot_win: screenshot_win {
@@ -146,6 +148,8 @@
         combo_GRAVE {
             bindings = <&kp GRAVE>;
             key-positions = <32 33>;
+            timeout-ms = <200>;
+            layers = <0 4>;
         };
     };
 
