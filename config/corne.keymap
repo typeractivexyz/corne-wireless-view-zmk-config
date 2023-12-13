@@ -96,6 +96,18 @@
             timeout-ms = <200>;
         };
 
+        combo_LEFT-BRACE {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <13 14>;
+            layers = <0 4>;
+        };
+
+        combo_RIGHT-BRACE {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <21 22>;
+            layers = <0 4>;
+        };
+
         combo_LEFT-BRACKET {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <14 15>;
@@ -128,18 +140,6 @@
             bindings = <&kp TILDE>;
             key-positions = <26 27>;
             timeout-ms = <200>;
-            layers = <0 4>;
-        };
-
-        combo_LEFT-BRACE {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <13 14>;
-            layers = <0 4>;
-        };
-
-        combo_RIGHT-BRACE {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <21 22>;
             layers = <0 4>;
         };
     };
