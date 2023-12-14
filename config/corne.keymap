@@ -255,6 +255,24 @@
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp LEFT_ALT
             >;
         };
+
+        game_mode_layer {
+            bindings = <
+&kp NUMBER_5      &kp I   &kp Q         &kp W         &trans        &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &kp A         &kp S         &kp D         &kp G           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp Z   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp NUMBER_6  &mo 9         &kp SPACE       &trans  &trans  &trans
+            >;
+        };
+
+        game_mode2_layer {
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F4        &kp F1        &kp B         &kp F3        &kp T           &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
