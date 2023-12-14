@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define WINDOWS  0
+#define WIN      0
 #define WIN_CODE 1
 #define WIN_NUM  2
 #define WIN_FUNC 3
@@ -214,7 +214,7 @@
         windows_function_layer {
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7      &kp F8             &kp F9           &kp F10  &kp F11
-&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to MAC
+&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &to 8    &to MAC
 &kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT  &kp C_PREV         &none            &none    &none
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &td_multi_win
             >;
@@ -250,9 +250,27 @@
         mac_function_layer {
             bindings = <
 &kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6     &kp F7      &kp F8             &kp F9           &kp F10  &kp F11
-&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to WINDOWS
+&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to WIN
 &kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP   &kp C_NEXT  &kp C_PREV         &none            &none    &none
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp LEFT_ALT
+            >;
+        };
+
+        game_mode_layer {
+            bindings = <
+&kp NUMBER_5      &kp I   &kp Q         &kp W         &trans        &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &kp A         &kp S         &kp D         &kp G           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp Z   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp NUMBER_6  &mo 9         &kp SPACE       &trans  &trans  &trans
+            >;
+        };
+
+        game_mode2_layer {
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans  &to WIN
+&trans  &kp F4        &kp F1        &kp B         &kp F3        &kp T           &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
