@@ -242,7 +242,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp BACKSPACE
 &kp LEFT_SHIFT    &none         &none         &none          &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &kp LC(LEFT_SHIFT)  &kp GLOBE
+&kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &kp LC(LEFT_SHIFT)  &sk GLOBE
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
         };
