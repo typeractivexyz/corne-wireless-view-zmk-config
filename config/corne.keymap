@@ -258,10 +258,10 @@
 
         game_mode_layer {
             bindings = <
-&kp G             &kp I  &kp Q         &kp W         &none         &kp R           &none  &none  &none  &none  &none  &none
+&kp TAB           &kp Q  &kp NUMBER_1  &kp W         &none         &kp R           &none  &none  &none  &none  &none  &none
 &kp LEFT_CONTROL  &none  &kp A         &kp S         &kp D         &none           &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &kp Z  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
-                                       &kp NUMBER_6  &mo 9         &kp SPACE       &none  &none  &none
+&kp LEFT_SHIFT    &kp Z  &none         &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
+                                       &none         &mo 9         &kp SPACE       &none  &none  &none
             >;
         };
 
@@ -269,7 +269,7 @@
             bindings = <
 &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none
 &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &none  &to WIN
-&trans  &kp F4        &kp F1        &kp B         &kp F3        &kp T           &none  &none  &none  &none  &none  &none
+&kp G   &none         &kp F4        &kp F1        &kp F3        &kp B           &none  &none  &none  &none  &none  &none
                                     &none         &trans        &trans          &none  &none  &none
             >;
         };
