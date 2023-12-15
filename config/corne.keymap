@@ -194,7 +194,7 @@
                                 &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
 
-            label = "WIN_DEF";
+            label = "WINDOWS";
         };
 
         windows_code_layer {
@@ -238,7 +238,7 @@
                                 &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
 
-            label = "MAC_DEF";
+            label = "MAC";
         };
 
         mac_code_layer {
