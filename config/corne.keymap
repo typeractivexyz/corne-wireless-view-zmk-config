@@ -193,6 +193,8 @@
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V              &kp B                   &kp N      &kp M                  &kp COMMA      &kp DOT  &kp SLASH      &kp EQUAL
                                 &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
+
+            label = "WIN_DEF";
         };
 
         windows_code_layer {
