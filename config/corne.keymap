@@ -194,7 +194,7 @@
                                 &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
 
-            label = "WINDOWS";
+            label = "WIN";
         };
 
         windows_code_layer {
@@ -205,7 +205,7 @@
                                            &kp LEFT_ALT  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
 
-            label = "WIN_CODE";
+            label = "WIN_C";
         };
 
         windows_number_layer {
@@ -216,7 +216,7 @@
                                               &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &td_multi_win
             >;
 
-            label = "WIN_NUM";
+            label = "WIN_N";
         };
 
         windows_function_layer {
@@ -227,7 +227,7 @@
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &td_multi_win
             >;
 
-            label = "WIN_FUNC";
+            label = "WIN_F";
         };
 
         mac_default_layer {
@@ -249,7 +249,7 @@
                                            &td_multi_mac  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
 
-            label = "MAC_CODE";
+            label = "MAC_C";
         };
 
         mac_number_layer {
@@ -260,7 +260,7 @@
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
 
-            label = "MAC_NUM";
+            label = "MAC_N";
         };
 
         mac_function_layer {
@@ -271,7 +271,7 @@
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp LEFT_ALT
             >;
 
-            label = "MAC_FUNC";
+            label = "MAC_F";
         };
 
         game_default_layer {
@@ -293,7 +293,7 @@
                                     &none         &trans        &trans          &none  &none  &none
             >;
 
-            label = "GAME_OPT";
+            label = "GAME2";
         };
     };
 
