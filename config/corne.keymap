@@ -276,10 +276,10 @@
 
         game_default_layer {
             bindings = <
-&kp TAB           &kp Q  &none  &kp W         &kp E         &kp R           &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &none  &kp A  &kp S         &kp D         &none           &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &kp Z  &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
-                                &kp NUMBER_1  &mo GAME_OPT  &kp SPACE       &none  &none  &none
+&kp TAB           &none  &kp Q         &kp W         &kp E         &kp R           &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &none  &kp A         &kp S         &kp D         &none           &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
+                                       &sk Z         &mo GAME_OPT  &kp SPACE       &none  &none  &none
             >;
 
             label = "GAME";
@@ -287,9 +287,9 @@
 
         game_option_layer {
             bindings = <
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none
+&kp B   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none
 &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &none  &to WIN_DEF
-&kp G   &none         &kp F4        &kp F1        &kp F3        &kp B           &none  &none  &none  &none  &none  &none
+&kp G   &none         &kp F4        &kp F1        &kp F3        &none           &none  &none  &none  &none  &none  &none
                                     &none         &trans        &trans          &none  &none  &none
             >;
 
