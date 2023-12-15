@@ -279,7 +279,7 @@
 &kp TAB           &none  &kp Q         &kp W         &kp E         &kp R           &none  &none  &none  &none  &none  &none
 &kp LEFT_CONTROL  &none  &kp A         &kp S         &kp D         &none           &none  &none  &none  &none  &none  &none
 &kp LEFT_SHIFT    &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
-                                       &kp Z         &mo 9         &kp SPACE       &none  &none  &none
+                                       &kp Z         &mo GAME_OPT  &kp SPACE       &none  &none  &none
             >;
 
             label = "GAME";
