@@ -258,7 +258,7 @@
             >;
         };
 
-        game_mode_layer {
+        game_default_layer {
             bindings = <
 &kp TAB           &kp Q  &kp NUMBER_1  &kp W         &kp E         &kp R           &none  &none  &none  &none  &none  &none
 &kp LEFT_CONTROL  &none  &kp A         &kp S         &kp D         &none           &none  &none  &none  &none  &none  &none
