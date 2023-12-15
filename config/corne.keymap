@@ -161,7 +161,7 @@
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LGUI>, <&terminal_win>, <&screenshot_win>;
+            bindings = <&kp LGUI>, <&screenshot_win>, <&terminal_win>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
@@ -169,7 +169,7 @@
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LGUI>, <&spotlight>, <&screenshot_mac>;
+            bindings = <&kp LGUI>, <&screenshot_mac>, <&spotlight>;
         };
 
         sm: space_mod {
