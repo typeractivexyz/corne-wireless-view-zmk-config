@@ -243,10 +243,10 @@
 
         mac_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND          &kp STAR      &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
-&kp LEFT_SHIFT    &none            &none   &none          &none       &none                   &none           &none                  &none         &none     &none                 &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none          &none       &none                   &kp UNDERSCORE  &none                  &none         &none     &kp LC(LEFT_SHIFT)    &kp EQUAL
-                                           &td_multi_mac  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET  &kp AMPERSAND          &kp STAR      &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
+&kp LEFT_SHIFT    &none            &none   &none          &none       &none                   &none      &none                  &none         &none     &none                 &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none          &none       &none                   &none      &none                  &none         &none     &kp LC(LEFT_SHIFT)    &kp EQUAL
+                                           &td_multi_mac  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER  &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
 
             label = "MAC_C";
