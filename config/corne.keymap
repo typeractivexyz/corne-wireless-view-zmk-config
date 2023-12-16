@@ -200,8 +200,8 @@
         windows_code_layer {
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT             &kp CARET        &kp AMPERSAND          &kp STAR       &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
-&kp LEFT_SHIFT    &none            &none   &none         &none       &kp CAPSLOCK            &kp INSERT       &none                  &none          &none     &none                 &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none         &none       &kp PRINTSCREEN         &kp PAUSE_BREAK  &none                  &none          &none     &kp LC(LEFT_SHIFT)    &kp EQUAL
+&kp LEFT_SHIFT    &none            &none   &none         &none       &kp CAPSLOCK            &kp INSERT       &kp APOSTROPHE         &none          &none     &none                 &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none         &none       &kp PRINTSCREEN         &kp PAUSE_BREAK  &kp DOUBLE_QUOTES      &none          &none     &sk LC(LEFT_SHIFT)    &kp EQUAL
                                            &kp LEFT_ALT  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER        &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
 
@@ -212,7 +212,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0        &kp BACKSPACE
 &kp LEFT_SHIFT    &none         &none         &none         &none              &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none              &kp END                 &kp PAGE_DOWN  &none         &none          &none         &kp LC(LEFT_SHIFT)  &none
+&kp LEFT_CONTROL  &none         &none         &none         &none              &kp END                 &kp PAGE_DOWN  &none         &none          &none         &sk LC(LEFT_SHIFT)  &none
                                               &kp LEFT_ALT  &lt WIN_CODE LGUI  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &td_multi_win
             >;
 
@@ -244,8 +244,8 @@
         mac_code_layer {
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET        &kp AMPERSAND          &kp STAR      &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
-&kp LEFT_SHIFT    &none            &none   &none          &none       &kp CAPSLOCK            &kp INSERT       &none                  &none         &none     &none                 &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none          &none       &kp PRINTSCREEN         &kp PAUSE_BREAK  &none                  &none         &none     &kp LC(LEFT_SHIFT)    &kp EQUAL
+&kp LEFT_SHIFT    &none            &none   &none          &none       &kp CAPSLOCK            &kp INSERT       &kp APOSTROPHE         &none         &none     &none                 &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none          &none       &kp PRINTSCREEN         &kp PAUSE_BREAK  &kp DOUBLE_QUOTES      &none         &none     &sk LC(LEFT_SHIFT)    &kp EQUAL
                                            &td_multi_mac  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER        &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
 
@@ -256,7 +256,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp BACKSPACE
 &kp LEFT_SHIFT    &none         &none         &none          &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &kp LC(LEFT_SHIFT)  &sk GLOBE
+&kp LEFT_CONTROL  &none         &none         &none          &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &sk LC(LEFT_SHIFT)  &sk GLOBE
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
 
