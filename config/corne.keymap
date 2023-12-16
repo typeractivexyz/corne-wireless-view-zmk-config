@@ -134,13 +134,13 @@
 
         windows_default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T                   &kp Y      &kp U  &kp I          &kp O    &kp P          &kp MINUS
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F  &kp G                   &kp H      &kp J  &kp K          &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B                   &kp N      &kp M  &kp COMMA      &kp DOT  &kp SLASH      &kp BACKSPACE
-                                &kp LEFT_ALT  &mo 1  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo 2  &td_multi_win
+&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I          &kp O    &kp P          &kp MINUS
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K          &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA      &kp DOT  &kp SLASH      &kp BACKSPACE
+                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &td_multi_win
             >;
 
-            label = "WIN";
+            label = "Windows";
         };
 
         windows_code_layer {
@@ -148,10 +148,10 @@
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &kp NON_US_BACKSLASH  &kp GRAVE
 &kp LEFT_SHIFT    &none            &none   &none         &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QUESTION       &kp MINUS  &kp COLON             &kp PIPE
 &kp LEFT_CONTROL  &none            &none   &none         &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)    &kp TILDE
-                                           &kp LEFT_ALT  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo 2              &td_multi_win
+                                           &kp LEFT_ALT  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo WIN_NUM        &td_multi_win
             >;
 
-            label = "WIN_C";
+            label = "W-Code";
         };
 
         windows_number_layer {
@@ -159,10 +159,10 @@
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0        &none
 &kp LEFT_SHIFT    &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT           &none
 &kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none         &none          &none         &sk LC(LEFT_SHIFT)  &none
-                                              &kp LEFT_ALT  &mo 1         &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &td_multi_win
+                                              &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &td_multi_win
             >;
 
-            label = "WIN_N";
+            label = "W-Num";
         };
 
         windows_function_layer {
@@ -173,18 +173,18 @@
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &td_multi_win
             >;
 
-            label = "WIN_F";
+            label = "W-Func";
         };
 
         mac_default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U  &kp I         &kp O    &kp P          &kp MINUS
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M  &kp COMMA     &kp DOT  &kp SLASH      &kp BACKSPACE
-                                &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo 6  &kp LEFT_ALT
+&kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U        &kp I         &kp O    &kp P          &kp MINUS
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J        &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp BACKSPACE
+                                &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LEFT_ALT
             >;
 
-            label = "MAC";
+            label = "MacOS";
         };
 
         mac_code_layer {
@@ -192,10 +192,10 @@
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &kp NON_US_BACKSLASH  &kp GRAVE
 &kp LEFT_SHIFT    &none            &none   &none          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QUESTION       &kp MINUS  &kp COLON             &kp PIPE
 &kp LEFT_CONTROL  &none            &none   &none          &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)    &kp TILDE
-                                           &td_multi_mac  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo 6              &kp LEFT_ALT
+                                           &td_multi_mac  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo MAC_NUM        &kp LEFT_ALT
             >;
 
-            label = "MAC_C";
+            label = "M-Code";
         };
 
         mac_number_layer {
@@ -206,7 +206,7 @@
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
 
-            label = "MAC_N";
+            label = "M-Num";
         };
 
         mac_function_layer {
@@ -217,7 +217,7 @@
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp LEFT_ALT
             >;
 
-            label = "MAC_F";
+            label = "M-Func";
         };
 
         game_default_layer {
@@ -239,7 +239,7 @@
                                     &none         &trans        &trans          &none  &none  &none
             >;
 
-            label = "GAME2";
+            label = "Option";
         };
     };
 
