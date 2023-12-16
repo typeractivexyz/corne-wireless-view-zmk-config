@@ -151,7 +151,7 @@
                                            &kp LEFT_ALT  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo WIN_NUM        &td_multi_win
             >;
 
-            label = "Coding";
+            label = "W-Code";
         };
 
         windows_number_layer {
@@ -162,7 +162,7 @@
                                               &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &td_multi_win
             >;
 
-            label = "Number";
+            label = "W-Num";
         };
 
         windows_function_layer {
@@ -173,7 +173,7 @@
                                               &kp LEFT_ALT  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &td_multi_win
             >;
 
-            label = "Func";
+            label = "W-Func";
         };
 
         mac_default_layer {
@@ -195,7 +195,7 @@
                                            &td_multi_mac  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo MAC_NUM        &kp LEFT_ALT
             >;
 
-            label = "Coding";
+            label = "M-Code";
         };
 
         mac_number_layer {
@@ -206,7 +206,7 @@
                                               &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp LEFT_ALT
             >;
 
-            label = "Number";
+            label = "M-Num";
         };
 
         mac_function_layer {
@@ -217,7 +217,7 @@
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp LEFT_ALT
             >;
 
-            label = "Func";
+            label = "M-Func";
         };
 
         game_default_layer {
