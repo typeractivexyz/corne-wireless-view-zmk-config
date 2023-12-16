@@ -99,60 +99,6 @@
             key-positions = <10 11>;
             timeout-ms = <200>;
         };
-
-        combo_LEFT-BRACE {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <13 14>;
-            layers = <0 4>;
-        };
-
-        combo_RIGHT-BRACE {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <21 22>;
-            layers = <0 4>;
-        };
-
-        combo_LEFT-BRACKET {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <14 15>;
-            timeout-ms = <200>;
-            layers = <0 4>;
-        };
-
-        combo_RIGHT-BRACKET {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <20 21>;
-            timeout-ms = <200>;
-            layers = <0 4>;
-        };
-
-        combo_LEFT-PARENTHESIS {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <15 16>;
-            timeout-ms = <200>;
-            layers = <0 4>;
-        };
-
-        combo_RIGHT-PARENTHESIS {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 20>;
-            timeout-ms = <200>;
-            layers = <0 4>;
-        };
-
-        combo_TILDE {
-            bindings = <&kp TILDE>;
-            key-positions = <26 27>;
-            timeout-ms = <200>;
-            layers = <0 4>;
-        };
-
-        combo_GRAVE {
-            bindings = <&kp GRAVE>;
-            key-positions = <32 33>;
-            timeout-ms = <200>;
-            layers = <0 4>;
-        };
     };
 
     behaviors {
@@ -199,10 +145,10 @@
 
         windows_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT             &kp CARET        &kp AMPERSAND          &kp STAR       &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
-&kp LEFT_SHIFT    &none            &none   &none         &none       &kp CAPSLOCK            &kp INSERT       &kp APOSTROPHE         &none          &none     &none                 &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none         &none       &kp PRINTSCREEN         &kp PAUSE_BREAK  &kp DOUBLE_QUOTES      &none          &none     &sk LC(LEFT_SHIFT)    &kp EQUAL
-                                           &kp LEFT_ALT  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER        &lt WIN_NUM BACKSPACE  &td_multi_win
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND          &kp STAR           &kp PLUS  &kp NON_US_BACKSLASH  &kp GRAVE
+&kp LEFT_SHIFT    &none            &none   &none         &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp QUESTION       &none     &kp COLON             &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none         &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE         &kp DOUBLE_QUOTES  &none     &sk LC(LEFT_SHIFT)    &kp TILDE
+                                           &kp LEFT_ALT  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
 
             label = "WIN_C";
@@ -243,10 +189,10 @@
 
         mac_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT             &kp CARET        &kp AMPERSAND          &kp STAR      &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
-&kp LEFT_SHIFT    &none            &none   &none          &none       &kp CAPSLOCK            &kp INSERT       &kp APOSTROPHE         &none         &none     &none                 &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none          &none       &kp PRINTSCREEN         &kp PAUSE_BREAK  &kp DOUBLE_QUOTES      &none         &none     &sk LC(LEFT_SHIFT)    &kp EQUAL
-                                           &td_multi_mac  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER        &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND          &kp STAR           &kp PLUS  &kp NON_US_BACKSLASH  &kp GRAVE
+&kp LEFT_SHIFT    &none            &none   &none          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp QUESTION       &none     &kp COLON             &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none          &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE         &kp DOUBLE_QUOTES  &none     &sk LC(LEFT_SHIFT)    &kp TILDE
+                                           &td_multi_mac  &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &lt MAC_NUM BACKSPACE  &kp LEFT_ALT
             >;
 
             label = "MAC_C";
