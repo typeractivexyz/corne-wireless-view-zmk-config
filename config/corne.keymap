@@ -199,10 +199,10 @@
 
         windows_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT             &kp CARET       &kp AMPERSAND          &kp STAR       &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
-&kp LEFT_SHIFT    &none            &none   &none         &none       &none                   &none           &none                  &none          &none     &none                 &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none         &none       &none                   &kp UNDERSCORE  &none                  &none          &none     &kp LC(LEFT_SHIFT)    &kp EQUAL
-                                           &kp LEFT_ALT  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER       &lt WIN_NUM BACKSPACE  &td_multi_win
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT             &kp CARET  &kp AMPERSAND          &kp STAR       &kp PLUS  &kp NON_US_BACKSLASH  &kp MINUS
+&kp LEFT_SHIFT    &none            &none   &none         &none       &none                   &none      &none                  &none          &none     &none                 &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none         &none       &none                   &none      &none                  &none          &none     &kp LC(LEFT_SHIFT)    &kp EQUAL
+                                           &kp LEFT_ALT  &trans      &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &td_multi_win
             >;
 
             label = "WIN_C";
