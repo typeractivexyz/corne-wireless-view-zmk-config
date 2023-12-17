@@ -221,9 +221,9 @@
 
         mac_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6         &kp F7      &kp F8             &kp F9           &kp F10  &kp F11
-&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp F12        &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to WIN_DEF
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP       &kp C_NEXT  &kp C_PREV         &none            &none    &none
+&kp TAB           &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                  &kp F6     &kp F7      &kp F8             &kp F9           &kp F10  &kp F11
+&kp LEFT_SHIFT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to WIN_DEF
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none          &none         &none                   &kp C_PP   &kp C_NEXT  &kp C_PREV         &none            &none    &none
                                               &td_multi_mac  &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp LEFT_ALT
             >;
 
@@ -233,8 +233,8 @@
         game_default_layer {
             bindings = <
 &kp TAB           &none         &kp Q  &kp W  &kp E         &kp R           &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &kp NUMBER_1  &kp A  &kp S  &kp D         &none           &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &kp NUMBER_2  &none  &none  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &kp NUMBER_2  &kp A  &kp S  &kp D         &none           &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp NUMBER_1  &none  &none  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
                                        &sk Z  &mo 9         &kp SPACE       &none  &none  &none
             >;
 
@@ -245,7 +245,7 @@
             bindings = <
 &kp B   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none
 &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &none  &to WIN_DEF
-&kp G   &none         &kp F4        &kp F1        &kp F3        &none           &none  &none  &none  &none  &none  &none
+&kp G   &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                     &none         &trans        &trans          &none  &none  &none
             >;
 
@@ -257,13 +257,13 @@
         compatible = "zmk,conditional-layers";
 
         windows_function {
-            if-layers = <WIN_CODE WIN_NUM>;
-            then-layer = <WIN_FUNC>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
 
         mac_function {
-            if-layers = <MAC_CODE MAC_NUM>;
-            then-layer = <MAC_FUNC>;
+            if-layers = <5 6>;
+            then-layer = <7>;
         };
     };
 };
