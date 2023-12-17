@@ -121,10 +121,20 @@
         sm: space_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        em: enter_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ENTER_MOD";
+            #binding-cells = <0>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -137,7 +147,7 @@
 &kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y          &kp U              &kp I          &kp O    &kp P          &kp MINUS
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H          &kp J              &kp K          &kp L    &kp SEMICOLON  &kp APOSTROPHE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N          &kp M              &kp COMMA      &kp DOT  &kp SLASH      &kp TILDE
-                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp BACKSPACE  &lt WIN_NUM ENTER  &td_multi_win
+                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp BACKSPACE  &em WIN_NUM ENTER  &td_multi_win
             >;
 
             label = "Windows";
@@ -148,7 +158,7 @@
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &kp NON_US_BACKSLASH  &kp GRAVE
 &kp LEFT_SHIFT    &none            &none   &none         &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QUESTION       &kp MINUS  &kp COLON             &kp PIPE
 &kp LEFT_CONTROL  &none            &none   &none         &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)    &kp TILDE
-                                           &kp LEFT_ALT  &trans            &sm LEFT_SHIFT SPACE    &kp BACKSPACE          &lt WIN_NUM ENTER  &td_multi_win
+                                           &kp LEFT_ALT  &trans            &sm LEFT_SHIFT SPACE    &kp BACKSPACE          &em WIN_NUM ENTER  &td_multi_win
             >;
 
             label = "WinCode";
@@ -181,7 +191,7 @@
 &kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y          &kp U              &kp I         &kp O    &kp P          &kp MINUS
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H          &kp J              &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N          &kp M              &kp COMMA     &kp DOT  &kp SLASH      &kp TILDE
-                                &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp BACKSPACE  &lt MAC_NUM ENTER  &kp LEFT_ALT
+                                &td_multi_mac  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp BACKSPACE  &em MAC_NUM ENTER  &kp LEFT_ALT
             >;
 
             label = "MacOS";
@@ -192,7 +202,7 @@
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &kp NON_US_BACKSLASH  &kp GRAVE
 &kp LEFT_SHIFT    &none            &none   &none          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QUESTION       &kp MINUS  &kp COLON             &kp PIPE
 &kp LEFT_CONTROL  &none            &none   &none          &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)    &kp TILDE
-                                           &td_multi_mac  &trans            &sm LEFT_SHIFT SPACE    &kp BACKSPACE          &lt MAC_NUM ENTER  &kp LEFT_ALT
+                                           &td_multi_mac  &trans            &sm LEFT_SHIFT SPACE    &kp BACKSPACE          &em MAC_NUM ENTER  &kp LEFT_ALT
             >;
 
             label = "MacCode";
