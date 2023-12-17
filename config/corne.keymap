@@ -232,10 +232,10 @@
 
         game_default_layer {
             bindings = <
-&kp TAB           &none  &kp Q         &kp W         &kp E         &kp R           &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &none  &kp A         &kp S         &kp D         &none           &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
-                                       &sk Z         &mo 9         &kp SPACE       &none  &none  &none
+&kp TAB           &none         &kp Q  &kp W  &kp E         &kp R           &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &kp NUMBER_1  &kp A  &kp S  &kp D         &none           &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp NUMBER_2  &none  &none  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
+                                       &sk Z  &mo 9         &kp SPACE       &none  &none  &none
             >;
 
             label = "Game";
