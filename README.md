@@ -7,7 +7,7 @@ The key first hit = WIN_GUI
 The key secend hit = Screenshot   
 The key third hit = Open Windows Terminal   
 ## td_multi_mac  
-The key first hit = Command   
+The key first hit = Shift   
 The key secend hit = Screenshot   
 The key third hit = Spotlight   
 
