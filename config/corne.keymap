@@ -168,10 +168,10 @@
 
         windows_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
-&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &sk LC(LEFT_SHIFT)  &none
-                                              &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &trans
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7            &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
+&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT           &none
+&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none                   &none         &none         &sk LC(LEFT_SHIFT)  &none
+                                              &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &bm WIN_NUM BACKSPACE   &trans
             >;
 
             label = "WinNum";
@@ -179,10 +179,10 @@
 
         windows_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7      &kp F8             &kp F9           &kp F10       &kp F11
-&td_multi_win     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &to GAME_DEF  &to MAC_DEF
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT  &kp C_PREV         &none            &none         &none
-                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &trans
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7                 &kp F8             &kp F9           &kp F10       &kp F11
+&td_multi_win     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_MUTE             &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &to GAME_DEF  &to MAC_DEF
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT             &kp C_PREV         &none            &none         &none
+                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &trans
             >;
 
             label = "WinFunc";
@@ -212,10 +212,10 @@
 
         mac_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp BACKSPACE
-&td_multi_mac     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &sk LC(LEFT_SHIFT)  &sk GLOBE
-                                              &trans        &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &trans
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp BACKSPACE
+&td_multi_mac     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT               &kp DOWN      &kp UP        &kp RIGHT           &none
+&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none                  &none         &none         &sk LC(LEFT_SHIFT)  &sk GLOBE
+                                              &trans        &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &bm MAC_NUM BACKSPACE  &trans
             >;
 
             label = "MacNum";
@@ -223,10 +223,10 @@
 
         mac_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7      &kp F8             &kp F9           &kp F10  &kp F11
-&td_multi_mac     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to WIN_DEF
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT  &kp C_PREV         &none            &none    &none
-                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &trans
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7                 &kp F8             &kp F9           &kp F10  &kp F11
+&td_multi_mac     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp K_MUTE             &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &to WIN_DEF
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT             &kp C_PREV         &none            &none    &none
+                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &bm MAC_NUM BACKSPACE  &trans
             >;
 
             label = "MacFunc";
@@ -234,10 +234,10 @@
 
         game_default_layer {
             bindings = <
-&kp TAB           &none         &kp Q  &kp W  &kp E         &kp R           &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &kp NUMBER_2  &kp A  &kp S  &kp D         &none           &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &kp NUMBER_1  &none  &none  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
-                                       &sk Z  &mo 9         &kp SPACE       &none  &none  &none
+&kp TAB           &none         &kp Q  &kp W  &kp E         &kp R           &kp F1  &kp F2  &kp F3  &kp F4  &none  &none
+&kp LEFT_SHIFT    &kp NUMBER_2  &kp A  &kp S  &kp D         &none           &none   &none   &none   &none   &none  &none
+&kp LEFT_CONTROL  &kp NUMBER_1  &none  &none  &kp NUMBER_3  &kp NUMBER_4    &none   &none   &none   &none   &none  &kp TILDE
+                                       &sk Z  &mo 9         &kp SPACE       &kp M   &none   &none
             >;
 
             label = "Game";
