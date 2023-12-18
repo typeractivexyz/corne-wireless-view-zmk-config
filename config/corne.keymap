@@ -237,7 +237,7 @@
 &kp TAB           &none         &kp Q  &kp W  &kp E         &kp R           &kp F1  &kp F2  &kp F3  &kp F4  &none  &none
 &kp LEFT_SHIFT    &kp NUMBER_2  &kp A  &kp S  &kp D         &none           &none   &none   &none   &none   &none  &none
 &kp LEFT_CONTROL  &kp NUMBER_1  &none  &none  &kp NUMBER_3  &kp NUMBER_4    &none   &none   &none   &none   &none  &kp TILDE
-                                       &sk Z  &mo 9         &kp SPACE       &none   &none   &none
+                                       &sk Z  &mo 9         &kp SPACE       &kp M   &none   &none
             >;
 
             label = "Game";
