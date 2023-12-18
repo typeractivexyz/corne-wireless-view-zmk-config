@@ -1,1 +1,1 @@
-![Image](https:\\github.com\cloverdefa\corne-wireless-view-zmk-config\blob\main\image\view.jpg)
+![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/mainIMG/view.jpg)
