@@ -3,13 +3,13 @@
 ## Layer win_code + Layer win_num = Layer win_func   
 ## Layer mac_code + Layer mac_num = Layer mac_func   
 ## td_multi_win  
-The first hit = WIN_GUI   
+The key first hit = WIN_GUI   
 The key secend hit = Screenshot   
-The third hit = Open Windows Terminal   
+The key third hit = Open Windows Terminal   
 ## td_multi_mac  
-The first hit = Command   
-The secend hit = Screenshot   
-The third hit = Spotlight   
+The key first hit = Command   
+The key secend hit = Screenshot   
+The key third hit = Spotlight   
 
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/view.jpg)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/win_def.png)
