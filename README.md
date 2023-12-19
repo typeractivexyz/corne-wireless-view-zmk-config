@@ -8,6 +8,8 @@
 The key first hit = WIN_GUI   
 The key secend hit = Screenshot   
 The key third hit = Open Windows Terminal   
+To 4 = Change Layer into MAC_DEF
+To 8 = Change Layer into GAME_DEF
 
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/win_def.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/win_code.png)
@@ -18,11 +20,15 @@ The key third hit = Open Windows Terminal
 The key first hit = Shift   
 The key secend hit = Screenshot   
 The key third hit = Spotlight   
+To 0 = Change Layer into WIN_DEF
+
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_def.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_code.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_num.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_func.png)
 
 ### Game mode setting for CS2
+To 0 = Change Layer into WIN_DEF
+
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/game_def.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/game_opt.png)
