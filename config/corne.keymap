@@ -17,13 +17,26 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak {
+        colemak_win {
             bindings = <
-&tog 4          &kp Q  &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI   &kp B
-&kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G                  &kp M                        &mt RIGHT_COMMAND N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &kp O      &kp RIGHT_SHIFT
-&trans          &kp Z  &kp X               &kp C           &kp D               &kp V                  &kp K                        &kp H                &kp COMMA       &kp DOT              &kp SLASH  &trans
-                                           &kp ESC         &lt 1 TAB           &mt LG(SPACE) SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 2 ENTER          &kp DEL
+&trans  &kp Q             &kp W               &kp F       &kp P           &kp B                 &kp J                        &kp L            &kp U            &kp Y                &kp SEMI           &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LALT S  &mt LEFT_GUI T  &kp G                 &kp M                        &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_ARROW O  &trans
+&trans  &kp Z             &kp X               &kp C       &kp V           &kp D                 &kp K                        &kp H            &kp COMMA        &kp DOT              &kp FSLH           &trans
+                                              &kp ESCAPE  &lt 2 TAB       &mt LEFT_WIN SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 3 ENTER      &kp DELETE
             >;
+
+            label = "WINDOWS";
+        };
+
+        COLEMAK_MAC {
+            bindings = <
+&trans  &kp Q             &kp W               &kp F           &kp P               &kp B                  &kp J                        &kp L                &kp U           &kp Y                &kp SEMI           &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G                  &kp M                        &mt RIGHT_COMMAND N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O  &trans
+&trans  &kp Z             &kp X               &kp C           &kp D               &kp V                  &kp K                        &kp H                &kp COMMA       &kp DOT              &kp SLASH          &trans
+                                              &kp ESC         &lt 2 TAB           &mt LG(SPACE) SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 3 ENTER          &kp DEL
+            >;
+
+            label = "MAC";
         };
 
         navigation {
@@ -31,8 +44,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans  &mo 3           &trans
+                        &trans  &trans  &trans    &trans  &mo 4           &trans
             >;
+
+            label = "navigation";
         };
 
         symbols {
@@ -40,32 +55,25 @@
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp MINUS  &kp N7  &kp N8  &kp N9  &trans  &trans
 &trans  &kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans  &trans
 &trans  &kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp N0     &kp N1  &kp N2  &kp N3  &trans  &trans
-                                      &trans                &mo 3                  &trans       &trans     &trans  &trans
+                                      &trans                &mo 4                  &trans       &trans     &trans  &trans
             >;
+
+            label = "symbols";
         };
 
-        lower_layer {
+        bluetooth {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Lower";
+            label = "bluetooth";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp LEFT_ARROW  &kp RIGHT    &trans  &trans  &trans
+&trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
