@@ -1,13 +1,13 @@
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/view.jpg)   
    
-### KEY TAB + KEY Q = ESC   
-### KEY P + KEY - = DEL   
-### Layer win_code + Layer win_num = Layer win_func   
-### Layer mac_code + Layer mac_num = Layer mac_func   
-### To 4 = Change Layer into MAC_DEF   
-### To 8 = Change Layer into GAME_DEF   
+KEY TAB + KEY Q = ESC   
+KEY P + KEY - = DEL   
+Layer win_code + Layer win_num = Layer win_func   
+Layer mac_code + Layer mac_num = Layer mac_func   
+To 4 = Change Layer into MAC_DEF   
+To 8 = Change Layer into GAME_DEF   
    
-### td_multi_win   
+## td_multi_win   
 The key first hit = WIN_GUI   
 The key secend hit = Screenshot   
 The key third hit = Open Windows Terminal   
@@ -17,7 +17,7 @@ The key third hit = Open Windows Terminal
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/win_num.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/win_func.png)
    
-### To 0 = Change Layer into WIN_DEF   
+To 0 = Change Layer into WIN_DEF   
    
 ### td_multi_mac   
 The key first hit = Shift   
@@ -29,9 +29,9 @@ The key third hit = Spotlight
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_num.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_func.png)
    
-### To 0 = Change Layer into WIN_DEF   
+To 0 = Change Layer into WIN_DEF   
    
-### Game mode setting for CS2   
+Game mode setting for CS2   
    
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/game_def.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/game_opt.png)
