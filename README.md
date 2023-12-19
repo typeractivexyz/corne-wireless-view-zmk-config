@@ -22,5 +22,7 @@ The key third hit = Spotlight
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_code.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_num.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/mac_func.png)
+
+### Game mode setting for CS2
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/game_def.png)
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/game_opt.png)
