@@ -70,10 +70,10 @@
 
             label = "bluetooth";
             bindings = <
-&trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans  &trans      &bt BT_SEL 0
+&trans  &trans  &trans  &trans  &trans             &trans             &trans  &mkp LCLK       &mkp RCLK   &trans  &trans      &bt BT_SEL 1
+&trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans          &trans      &trans  &bt BT_CLR  &bt BT_SEL 2
+                        &trans  &trans             &trans             &trans  &trans          &trans
             >;
         };
     };
