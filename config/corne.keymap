@@ -19,9 +19,9 @@
 
         colemak_win {
             bindings = <
-&trans  &kp Q             &kp W               &kp F       &kp P           &kp B                 &kp J                        &kp L            &kp U            &kp Y                &kp SEMI           &trans
-&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LALT S  &mt LEFT_GUI T  &kp G                 &kp M                        &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_ARROW O  &trans
-&trans  &kp Z             &kp X               &kp C       &kp V           &kp D                 &kp K                        &kp H            &kp COMMA        &kp DOT              &kp FSLH           &trans
+&trans  &kp Q             &kp W               &kp F       &kp P           &kp B                 &kp J                        &kp L            &kp U           &kp Y                &kp SEMI           &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LALT S  &mt LEFT_GUI T  &kp G                 &kp M                        &mt RIGHT_GUI N  &mt LEFT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_ARROW O  &trans
+&trans  &kp Z             &kp X               &kp C       &kp D           &kp V                 &kp K                        &kp H            &kp COMMA       &kp DOT              &kp FSLH           &trans
                                               &kp ESCAPE  &lt 2 TAB       &mt LEFT_WIN SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 3 ENTER      &kp DELETE
             >;
 
