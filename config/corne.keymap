@@ -146,10 +146,10 @@
 
         windows_default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U                  &kp I         &kp O    &kp P          &kp MINUS
-&td_multi_win     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J                  &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M                  &kp COMMA     &kp DOT  &kp SLASH      &kp TILDE
-                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &kp LEFT_GUI
+&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I         &kp O    &kp P          &kp MINUS
+&td_multi_win     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp TILDE
+                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp BACKSPACE
             >;
 
             label = "Windows";
@@ -157,10 +157,10 @@
 
         windows_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND          &kp STAR           &kp PLUS   &none               &kp NON_US_BACKSLASH
-&td_multi_win     &none            &none   &none     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp SLASH          &kp MINUS  &kp COLON           &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none     &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE         &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)  &none
-                                           &trans    &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &bm WIN_NUM BACKSPACE  &trans
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &none               &kp NON_US_BACKSLASH
+&td_multi_win     &none            &none   &none     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH          &kp MINUS  &kp COLON           &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none     &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)  &none
+                                           &trans    &trans            &sm LEFT_SHIFT SPACE    &kp ENTER              &mo WIN_NUM        &kp BACKSPACE
             >;
 
             label = "WinCode";
@@ -168,10 +168,10 @@
 
         windows_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
-&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT               &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none                  &none         &none         &sk LC(LEFT_SHIFT)  &none
-                                              &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &bm WIN_NUM BACKSPACE  &trans
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
+&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT           &none
+&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none         &none         &none         &sk LC(LEFT_SHIFT)  &none
+                                              &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans        &kp BACKSPACE
             >;
 
             label = "WinNum";
@@ -179,10 +179,10 @@
 
         windows_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7                 &kp F8             &kp F9           &kp F10       &kp F11
-&td_multi_win     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_MUTE             &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &to GAME_DEF  &to MAC_DEF
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT             &kp C_PREV         &none            &none         &none
-                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &trans
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6     &kp F7      &kp F8             &kp F9           &kp F10       &kp F11
+&td_multi_win     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F12    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &to GAME_DEF  &to MAC_DEF
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &kp C_PP   &kp C_NEXT  &kp C_PREV         &none            &none         &none
+                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &kp ENTER  &trans      &kp BACKSPACE
             >;
 
             label = "WinFunc";
