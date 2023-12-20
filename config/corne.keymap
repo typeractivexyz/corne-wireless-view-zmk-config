@@ -25,7 +25,7 @@
                                               &kp ESCAPE  &lt 2 TAB       &mt LEFT_WIN SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 3 ENTER      &kp DELETE
             >;
 
-            label = "WINDOWS";
+            label = "WIN";
         };
 
         COLEMAK_MAC {
@@ -47,18 +47,18 @@
                         &trans  &trans  &trans    &trans  &mo 4           &trans
             >;
 
-            label = "navigation";
+            label = "NAV";
         };
 
         symbols {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp MINUS  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp N0     &kp N1  &kp N2  &kp N3  &trans  &trans
-                                      &trans                &mo 4                  &trans       &trans     &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE          &kp MINUS  &kp N7  &kp N8  &kp N9  &trans    &trans
+&trans  &kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans    &trans
+&trans  &kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE         &kp N0     &kp N1  &kp N2  &kp N3  &kp STAR  &trans
+                                      &trans                &mo 4                  &kp LEFT_SHIFT    &trans     &trans  &trans
             >;
 
-            label = "symbols";
+            label = "SYM";
         };
 
         bluetooth {
@@ -68,7 +68,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "bluetooth";
+            label = "BTH";
             bindings = <
 &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans  &trans      &bt BT_SEL 0
 &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans          &trans      &trans  &trans      &bt BT_SEL 1
