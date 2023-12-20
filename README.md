@@ -20,7 +20,7 @@ To 8 = 切換至 game_default_layer
 To 0 = 切換至 windows_default_layer   
    
 ### td_multi_mac   
-第一下或按住 = Shift   
+第一下或按住 = Command   
 快速點兩下 = 打開截圖   
 快速點三下 = Spotlight   
    
