@@ -79,11 +79,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LEFT_SHIFT>,
+                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
                 <&macro_release>,
-                <&kp LGUI &kp LEFT_SHIFT>;
+                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_ALT>;
         };
     };
 
@@ -168,10 +168,10 @@
 
         windows_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7            &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
-&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none                   &none         &none         &sk LC(LEFT_SHIFT)  &none
-                                              &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &bm WIN_NUM BACKSPACE   &trans
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
+&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT               &kp DOWN      &kp UP        &kp RIGHT           &none
+&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none                  &none         &none         &sk LC(LEFT_SHIFT)  &none
+                                              &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &bm WIN_NUM BACKSPACE  &trans
             >;
 
             label = "WinNum";
