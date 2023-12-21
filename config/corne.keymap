@@ -85,12 +85,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_CONTROL>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
                 <&macro_release>,
-                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_ALT>;
+                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_CONTROL>;
         };
     };
 
