@@ -220,7 +220,7 @@
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET    &kp AMPERSAND           &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &td_multi_mac     &none            &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE    &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &sk GLOBE        &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &sk LC(LEFT_SHIFT)
+&kp LEFT_CONTROL  &sk GLOBE        &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
                                            &trans    &trans          &sm LEFT_SHIFT SPACE    &em 6 ENTER  &bm LEFT_ALT BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
