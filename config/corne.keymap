@@ -116,7 +116,7 @@
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LGUI>, <&screenshot_win>, <&terminal_win>;
+            bindings = <&kp LEFT_GUI>, <&screenshot_win>, <&terminal_win>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
@@ -231,7 +231,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6    &kp NUMBER_7            &kp NUMBER_8        &kp NUMBER_9     &kp NUMBER_0   &kp C_VOLUME_UP
 &td_multi_mac     &none         &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW        &kp RIGHT_ARROW  &kp PAGE_UP    &kp C_VOLUME_DOWN
-&kp LEFT_CONTROL  &sk GLOBE     &none         &kp C_PREVIOUS  &none             &kp END                 &none           &none                   &none               &none            &kp PAGE_DOWN  &sk LC(LEFT_SHIFT)
+&kp LEFT_CONTROL  &sk GLOBE     &none         &kp C_PREVIOUS  &none             &kp END                 &none           &none                   &none               &none            &kp PAGE_DOWN  &none
                                               &trans          &mo 5             &sm LEFT_SHIFT SPACE    &em 6 ENTER     &bm LEFT_ALT BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
