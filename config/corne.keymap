@@ -56,6 +56,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI &kp LEFT_SHIFT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp S>,
                 <&macro_release>,
@@ -69,6 +70,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
@@ -82,6 +84,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI &kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
                 <&macro_release>,
