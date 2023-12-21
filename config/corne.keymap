@@ -35,6 +35,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp R>,
                 <&macro_release>,
@@ -45,6 +46,7 @@
                 <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp W &kp T>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp ENTER>;
         };
@@ -174,7 +176,7 @@
         windows_number_layer {
             bindings = <
 &kp TAB           &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &kp C_VOLUME_UP
-&td_multi_win     &none                &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp PAGE_UP    &none           &kp UP_ARROW    &none            &none         &kp C_VOLUME_DOWN
+&td_multi_win     &none                &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none         &kp C_VOLUME_DOWN
 &kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none         &kp C_PREVIOUS  &none             &kp END                 &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &sk LC(LEFT_SHIFT)
                                                      &trans          &mo 1             &sm LEFT_SHIFT SPACE    &em 2 ENTER    &kp BACKSPACE   &trans
             >;
@@ -218,7 +220,7 @@
         mac_number_layer {
             bindings = <
 &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &kp C_VOLUME_UP
-&td_multi_mac     &none         &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp PAGE_UP    &none           &kp UP_ARROW    &none            &none         &kp C_VOLUME_DOWN
+&td_multi_mac     &none         &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none         &kp C_VOLUME_DOWN
 &kp LEFT_CONTROL  &sk GLOBE     &none         &kp C_PREVIOUS  &none             &kp END                 &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &sk LC(LEFT_SHIFT)
                                               &trans          &mo 5             &sm LEFT_SHIFT SPACE    &em 6 ENTER    &kp BACKSPACE   &trans
             >;
