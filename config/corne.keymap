@@ -147,7 +147,7 @@
         windows_default_layer {
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y        &kp U          &kp I      &kp O    &kp P          &kp MINUS
-&td_multi_win     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H        &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&td_multi_win     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H        &kp J          &kp K      &kp L    &kp SEMICOLON  &kp GRAVE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N        &kp M          &kp COMMA  &kp DOT  &kp SLASH      &kp TILDE
                                 &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE  &none
             >;
@@ -157,9 +157,9 @@
 
         windows_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &none               &kp NON_US_BACKSLASH
-&td_multi_win     &none            &none   &none     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH          &kp MINUS  &kp COLON           &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none     &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)  &none
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &kp NON_US_BACKSLASH  &kp MINUS
+&td_multi_win     &none            &none   &none     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH          &kp MINUS  &kp COLON             &kp PIPE
+&kp LEFT_CONTROL  &none            &none   &none     &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &kp SLASH             &sk LC(LEFT_SHIFT)
                                            &trans    &trans            &sm LEFT_SHIFT SPACE    &em 2 ENTER            &kp BACKSPACE      &trans
             >;
 
@@ -168,9 +168,9 @@
 
         windows_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &none
-&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none          &none         &none         &sk LC(LEFT_SHIFT)  &none
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
+&td_multi_win     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none
+&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none          &none         &none         &none         &sk LC(LEFT_SHIFT)
                                               &trans        &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &em 2 ENTER    &kp BACKSPACE  &trans
             >;
 
@@ -191,7 +191,7 @@
         mac_default_layer {
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y        &kp U          &kp I         &kp O    &kp P          &kp MINUS
-&td_multi_mac     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H        &kp J          &kp K         &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&td_multi_mac     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H        &kp J          &kp K         &kp L    &kp SEMICOLON  &kp GRAVE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N        &kp M          &kp COMMA     &kp DOT  &kp SLASH      &kp TILDE
                                 &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &em 6 ENTER  &kp BACKSPACE  &kp LEFT_ALT
             >;
@@ -201,9 +201,9 @@
 
         mac_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &none               &kp NON_US_BACKSLASH
-&td_multi_mac     &none            &none   &none     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH          &kp MINUS  &kp COLON           &kp PIPE
-&kp LEFT_CONTROL  &none            &none   &none     &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &sk LC(LEFT_SHIFT)  &sk GLOBE
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND      &kp STAR           &kp PLUS   &kp NON_US_BACKSLASH  &kp MINUS
+&td_multi_mac     &none            &none   &none     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH          &kp MINUS  &kp COLON             &kp PIPE
+&kp LEFT_CONTROL  &sk GLOBE        &none   &none     &none             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp APOSTROPHE     &kp DOUBLE_QUOTES  &kp EQUAL  &kp SLASH             &sk LC(LEFT_SHIFT)
                                            &trans    &trans            &sm LEFT_SHIFT SPACE    &em 6 ENTER            &kp BACKSPACE      &trans
             >;
 
@@ -212,9 +212,9 @@
 
         mac_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp BACKSPACE
-&td_multi_mac     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT           &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none          &none         &none         &sk LC(LEFT_SHIFT)  &sk GLOBE
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
+&td_multi_mac     &none         &none         &none         &none         &kp HOME                &kp PAGE_UP    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none
+&kp LEFT_CONTROL  &sk GLOBE     &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none          &none         &none         &none         &sk LC(LEFT_SHIFT)
                                               &trans        &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &em 6 ENTER    &kp BACKSPACE  &trans
             >;
 
