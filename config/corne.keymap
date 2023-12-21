@@ -141,10 +141,20 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ENTER_MOD";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&mo>, <&kp>;
+        };
+
+        bm: bspc_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BSPC_MOD";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -153,10 +163,10 @@
 
         windows_default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T                   &kp Y        &kp U          &kp I      &kp O    &kp P          &kp MINUS
-&td_multi_win     &kp A  &kp S  &kp D         &kp F  &kp G                   &kp H        &kp J          &kp K      &kp L    &kp SEMICOLON  &kp GRAVE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B                   &kp N        &kp M          &kp COMMA  &kp DOT  &kp SLASH      &kp TILDE
-                                &kp LEFT_ALT  &mo 1  &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE  &none
+&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T                   &kp Y        &kp U          &kp I               &kp O    &kp P          &kp MINUS
+&td_multi_win     &kp A  &kp S  &kp D         &kp F  &kp G                   &kp H        &kp J          &kp K               &kp L    &kp SEMICOLON  &kp GRAVE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B                   &kp N        &kp M          &kp COMMA           &kp DOT  &kp SLASH      &kp TILDE
+                                &kp LEFT_ALT  &mo 1  &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
             label = "Windows";
@@ -164,10 +174,10 @@
 
         windows_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION      &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET    &kp AMPERSAND      &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&td_multi_win     &none                &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES  &kp SLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &sk LC(LEFT_SHIFT)
-                                               &trans    &trans          &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE      &trans
+&kp TAB           &kp EXCLAMATION      &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET    &kp AMPERSAND      &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&td_multi_win     &none                &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES  &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
+                                               &trans    &trans          &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE      &kp LC(LEFT_SHIFT)
             >;
 
             label = "WinCode";
@@ -175,10 +185,10 @@
 
         windows_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp C_VOLUME_UP
-&td_multi_win     &none                &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP    &kp C_VOLUME_DOWN
-&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none         &kp C_PREVIOUS  &none             &kp END                 &none           &none           &none         &none            &kp PAGE_DOWN  &sk LC(LEFT_SHIFT)
-                                                     &trans          &mo 1             &sm LEFT_SHIFT SPACE    &em 2 ENTER     &kp BACKSPACE   &trans
+&kp TAB           &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8        &kp NUMBER_9     &kp NUMBER_0   &kp C_VOLUME_UP
+&td_multi_win     &none                &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW        &kp RIGHT_ARROW  &kp PAGE_UP    &kp C_VOLUME_DOWN
+&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none         &kp C_PREVIOUS  &none             &kp END                 &none           &none           &none               &none            &kp PAGE_DOWN  &none
+                                                     &trans          &mo 1             &sm LEFT_SHIFT SPACE    &em 2 ENTER     &kp BACKSPACE   &kp LC(LEFT_SHIFT)
             >;
 
             label = "WinNum";
@@ -186,10 +196,10 @@
 
         windows_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6       &kp F7         &kp F8  &kp F9  &kp F10       &none
-&td_multi_win     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F11      &kp F12        &none   &none   &to GAME_DEF  &to MAC_DEF
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &none        &none          &none   &none   &none         &none
-                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE  &trans
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6       &kp F7         &kp F8              &kp F9  &kp F10       &none
+&td_multi_win     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F11      &kp F12        &none               &none   &to GAME_DEF  &to MAC_DEF
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &none        &none          &none               &none   &none         &none
+                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
             label = "WinFunc";
@@ -197,10 +207,10 @@
 
         mac_default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T                   &kp Y        &kp U          &kp I         &kp O    &kp P          &kp MINUS
-&td_multi_mac     &kp A  &kp S  &kp D         &kp F  &kp G                   &kp H        &kp J          &kp K         &kp L    &kp SEMICOLON  &kp GRAVE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B                   &kp N        &kp M          &kp COMMA     &kp DOT  &kp SLASH      &kp TILDE
-                                &kp LEFT_GUI  &mo 5  &sm LEFT_SHIFT SPACE    &em 6 ENTER  &kp BACKSPACE  &kp LEFT_ALT
+&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T                   &kp Y        &kp U                   &kp I               &kp O    &kp P          &kp MINUS
+&td_multi_mac     &kp A  &kp S  &kp D         &kp F  &kp G                   &kp H        &kp J                   &kp K               &kp L    &kp SEMICOLON  &kp GRAVE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B                   &kp N        &kp M                   &kp COMMA           &kp DOT  &kp SLASH      &kp TILDE
+                                &kp LEFT_GUI  &mo 5  &sm LEFT_SHIFT SPACE    &em 6 ENTER  &bm LEFT_ALT BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
             label = "MacOS";
@@ -208,10 +218,10 @@
 
         mac_code_layer {
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET    &kp AMPERSAND      &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&td_multi_mac     &none            &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &sk GLOBE        &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES  &kp SLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &sk LC(LEFT_SHIFT)
-                                           &trans    &trans          &sm LEFT_SHIFT SPACE    &em 6 ENTER  &kp BACKSPACE      &trans
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET    &kp AMPERSAND           &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&td_multi_mac     &none            &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE    &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&kp LEFT_CONTROL  &sk GLOBE        &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &sk LC(LEFT_SHIFT)
+                                           &trans    &trans          &sm LEFT_SHIFT SPACE    &em 6 ENTER  &bm LEFT_ALT BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
             label = "MacCode";
@@ -219,10 +229,10 @@
 
         mac_number_layer {
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp C_VOLUME_UP
-&td_multi_mac     &none         &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP    &kp C_VOLUME_DOWN
-&kp LEFT_CONTROL  &sk GLOBE     &none         &kp C_PREVIOUS  &none             &kp END                 &none           &none           &none         &none            &kp PAGE_DOWN  &sk LC(LEFT_SHIFT)
-                                              &trans          &mo 5             &sm LEFT_SHIFT SPACE    &em 6 ENTER     &kp BACKSPACE   &trans
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6    &kp NUMBER_7            &kp NUMBER_8        &kp NUMBER_9     &kp NUMBER_0   &kp C_VOLUME_UP
+&td_multi_mac     &none         &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW        &kp RIGHT_ARROW  &kp PAGE_UP    &kp C_VOLUME_DOWN
+&kp LEFT_CONTROL  &sk GLOBE     &none         &kp C_PREVIOUS  &none             &kp END                 &none           &none                   &none               &none            &kp PAGE_DOWN  &sk LC(LEFT_SHIFT)
+                                              &trans          &mo 5             &sm LEFT_SHIFT SPACE    &em 6 ENTER     &bm LEFT_ALT BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
             label = "MacNum";
@@ -230,10 +240,10 @@
 
         mac_function_layer {
             bindings = <
-&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6       &kp F7         &kp F8  &kp F9  &kp F10  &none
-&td_multi_mac     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F11      &kp F12        &none   &none   &to 8    &to WIN_DEF
-&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &none        &none          &none   &none   &none    &none
-                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &em 6 ENTER  &kp BACKSPACE  &trans
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6       &kp F7                  &kp F8              &kp F9  &kp F10  &none
+&td_multi_mac     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp F11      &kp F12                 &none               &none   &to 8    &to WIN_DEF
+&kp LEFT_CONTROL  &bt BT_CLR    &none         &none         &none         &none                   &none        &none                   &none               &none   &none    &none
+                                              &trans        &trans        &sm LEFT_SHIFT SPACE    &em 6 ENTER  &bm LEFT_ALT BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
             label = "MacFunc";
