@@ -141,7 +141,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ENTER_MOD";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&mo>, <&kp>;
