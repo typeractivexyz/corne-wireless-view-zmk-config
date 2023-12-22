@@ -131,7 +131,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
@@ -145,6 +145,17 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&mo>, <&kp>;
+        };
+
+        bm: bspc_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BSPC_MOD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            flavor = "hold-preferred";
         };
     };
 
@@ -166,7 +177,7 @@
             bindings = <
 &kp TAB           &kp EXCLAMATION      &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET    &kp AMPERSAND      &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &td_multi_win     &none                &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES  &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
+&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE    &kp DOUBLE_QUOTES  &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_ALT
                                                &trans    &trans          &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE      &kp LC(LEFT_SHIFT)
             >;
 
@@ -177,7 +188,7 @@
             bindings = <
 &kp TAB           &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &kp C_VOLUME_UP
 &td_multi_win     &none                &none         &kp C_NEXT      &kp C_PLAY_PAUSE  &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
-&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none         &kp C_PREVIOUS  &none             &kp END                 &kp PAGE_DOWN  &none           &none               &none         &none            &none
+&kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none         &kp C_PREVIOUS  &none             &kp END                 &kp PAGE_DOWN  &none           &none               &none         &none            &kp LEFT_ALT
                                                      &trans          &mo 1             &sm LEFT_SHIFT SPACE    &em 2 ENTER    &kp BACKSPACE   &kp LC(LEFT_SHIFT)
             >;
 
@@ -188,7 +199,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR              &none        &none          &none               &none  &none         &none
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                  &none        &none          &none               &none  &to GAME_DEF  &to MAC_DEF
-&kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                 &none        &none          &none               &none  &none         &none
+&kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                 &none        &none          &none               &none  &none         &kp LEFT_ALT
                                           &trans        &trans        &sm LEFT_SHIFT SPACE    &em 2 ENTER  &kp BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
 
