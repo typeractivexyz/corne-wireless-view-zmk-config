@@ -135,6 +135,8 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <38>;
         };
 
         em: enter_mod {
@@ -145,6 +147,8 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&mo>, <&kp>;
+
+            hold-trigger-key-positions = <39>;
         };
 
         bm: bspc_mod {
@@ -156,6 +160,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             flavor = "hold-preferred";
+            hold-trigger-key-positions = <40>;
         };
     };
 
