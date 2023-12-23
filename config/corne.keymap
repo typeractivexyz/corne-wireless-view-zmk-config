@@ -41,10 +41,10 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans  &mo 4           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &kp UP_ARROW    &trans           &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp CLCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp INS   &kp HOME        &kp PAGE_DOWN   &kp PG_UP        &kp END  &trans
+                        &trans  &trans  &trans    &trans    &mo 4           &trans
             >;
 
             label = "NAV";
