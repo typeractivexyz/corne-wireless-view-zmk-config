@@ -41,6 +41,12 @@
             key-positions = <5 17>;
             layers = <2>;
         };
+
+        bluetooth-clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <2 3>;
+            layers = <2>;
+        };
     };
 
     keymap {
