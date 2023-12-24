@@ -12,9 +12,33 @@
     combos {
         compatible = "zmk,combos";
 
-        buetooth-1 {
+        buetooth-0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <1 13>;
+            layers = <2>;
+        };
+
+        bluetooth-2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <14 2>;
+            layers = <2>;
+        };
+
+        buetooth-3 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <15 3>;
+            layers = <2>;
+        };
+
+        bluetooth-4 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <4 16>;
+            layers = <2>;
+        };
+
+        bluetooth-5 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <5 17>;
             layers = <2>;
         };
     };
