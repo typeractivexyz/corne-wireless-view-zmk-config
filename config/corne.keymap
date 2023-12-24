@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// Layers
+
 #define WIN_DEF  0
 #define WIN_CODE 1
 #define WIN_NUM  2
@@ -136,27 +138,6 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-
-        em: enter_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ENTER_MOD";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            bindings = <&mo>, <&kp>;
-        };
-
-        bm: bspc_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BSPC_MOD";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-        };
     };
 
     keymap {
@@ -168,7 +149,7 @@
 &kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U                  &kp I               &kp O    &kp P          &kp MINUS
 &td_multi_win     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J                  &kp K               &kp L    &kp SEMICOLON  &kp GRAVE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M                  &kp COMMA           &kp DOT  &kp SLASH      &kp TILDE
-                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -178,7 +159,7 @@
 &kp TAB           &kp EXCLAMATION      &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND          &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &td_multi_win     &none                &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE       &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
 &kp LEFT_CONTROL  &kp C_AL_CALCULATOR  &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES      &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_ALT
-                                               &trans    &trans          &sm LEFT_SHIFT SPACE    &trans     &bm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                               &trans    &trans          &sm LEFT_SHIFT SPACE    &trans     &lt WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -208,7 +189,7 @@
 &kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U                  &kp I               &kp O    &kp P          &kp MINUS
 &td_multi_mac     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J                  &kp K               &kp L    &kp SEMICOLON  &kp GRAVE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M                  &kp COMMA           &kp DOT  &kp SLASH      &kp TILDE
-                                &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &lt MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -218,7 +199,7 @@
 &kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND          &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &td_multi_mac     &none            &none   &none     &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE       &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
 &kp LEFT_CONTROL  &sk GLOBE        &none   &none     &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES      &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_ALT
-                                           &trans    &trans          &sm LEFT_SHIFT SPACE    &trans     &bm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                           &trans    &trans          &sm LEFT_SHIFT SPACE    &trans     &lt MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
