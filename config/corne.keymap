@@ -92,25 +92,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_ESC {
-            bindings = <&kp ESC>;
-            key-positions = <1 2 3>;
-            timeout-ms = <150>;
-        };
-
-        combo_DEL {
-            bindings = <&kp DEL>;
-            key-positions = <9 10>;
-            timeout-ms = <150>;
-        };
-
-        combo_TAB {
-            bindings = <&kp TAB>;
-            key-positions = <1 2>;
-            timeout-ms = <150>;
-            layers = <0 1 2 3 4 5 6 7>;
-        };
-
         combo_TD_MULTI_WIN {
             bindings = <&td_multi_win>;
             key-positions = <13 14>;
