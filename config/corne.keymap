@@ -95,7 +95,7 @@
         combo_ESC {
             bindings = <&kp ESC>;
             key-positions = <1 2 3>;
-            timeout-ms = <200>;
+            timeout-ms = <150>;
         };
 
         combo_DEL {
