@@ -94,7 +94,7 @@
 
         combo_ESC {
             bindings = <&kp ESC>;
-            key-positions = <3 4>;
+            key-positions = <1 2 3>;
             timeout-ms = <200>;
         };
 
