@@ -134,6 +134,7 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <33 34>;
             timeout-ms = <200>;
+            layers = <4 5 6 7>;
         };
     };
 
