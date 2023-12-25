@@ -198,7 +198,7 @@
             label = "WinCode";
             bindings = <
 &trans  &kp EXCLAMATION      &kp AT  &kp HASH              &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND           &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp C_AL_CALCULATOR  &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none
+&trans  &kp C_AL_CALCULATOR  &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
 &trans  &trans               &none   &kp PIPE              &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
                                      &trans                &trans          &sm LEFT_SHIFT SPACE    &trans     &bsm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
@@ -208,7 +208,7 @@
             label = "WinNum";
             bindings = <
 &trans  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &trans
-&trans  &kp C_AL_CALCULATOR  &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&trans  &kp C_AL_CALCULATOR  &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &trans  &trans               &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &none            &trans
                                            &trans          &mo WIN_CODE      &sm LEFT_SHIFT SPACE    &trans         &trans           &kp LC(LEFT_SHIFT)
             >;
@@ -218,7 +218,7 @@
             label = "WinFunc";
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to MAC_DEF   &none
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to MAC_DEF   &trans
 &trans  &kp F11  &kp F12  &none   &none   &none                   &none         &none         &none               &none         &none         &trans
                           &trans  &trans  &sm LEFT_SHIFT SPACE    &trans        &trans        &kp LC(LEFT_SHIFT)
             >;
@@ -238,7 +238,7 @@
             label = "MacCode";
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT  &kp HASH              &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND           &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &sk GLOBE        &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none
+&trans  &sk GLOBE        &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
 &trans  &trans           &none   &kp PIPE              &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
                                  &trans                &trans          &sm LEFT_SHIFT SPACE    &trans     &bsm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
@@ -248,7 +248,7 @@
             label = "MacNum";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &trans
-&trans  &sk GLOBE     &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&trans  &sk GLOBE     &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &trans  &trans        &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &none            &trans
                                     &trans          &mo MAC_CODE      &sm LEFT_SHIFT SPACE    &trans         &trans           &kp LC(LEFT_SHIFT)
             >;
@@ -258,7 +258,7 @@
             label = "MacFunc";
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &none
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &trans
 &trans  &kp F11  &kp F12  &none   &none   &none                   &none         &none         &none               &none         &none         &trans
                           &trans  &trans  &sm LEFT_SHIFT SPACE    &trans        &trans        &kp LC(LEFT_SHIFT)
             >;
