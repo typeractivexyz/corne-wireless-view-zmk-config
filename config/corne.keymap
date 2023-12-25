@@ -209,7 +209,7 @@
             bindings = <
 &none  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &none
 &none  &kp C_AL_CALCULATOR  &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &trans               &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &none         &kp TAB          &none
+&none  &trans               &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &kp TAB          &none
                                           &trans          &mo WIN_CODE      &sm LEFT_SHIFT SPACE    &trans         &trans           &kp LC(LEFT_SHIFT)
             >;
         };
@@ -249,7 +249,7 @@
             bindings = <
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &none
 &none  &kp GLOBE     &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &trans        &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &none         &kp TAB          &none
+&none  &trans        &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &kp TAB          &none
                                    &trans          &mo MAC_CODE      &sm LEFT_SHIFT SPACE    &trans         &trans           &kp LC(LEFT_SHIFT)
             >;
         };
