@@ -139,7 +139,7 @@
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
+            bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
