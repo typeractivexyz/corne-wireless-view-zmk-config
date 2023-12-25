@@ -8,7 +8,25 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// Layers
+
+#define L1 0
+#define L2 1
+#define Fn 2
+
 / {
+    behaviors {
+        tp: tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREFERRED";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -52,33 +70,33 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        layer_base {
             label = "Base";
             bindings = <
-&kp ESC        &kp Q        &kp W       &kp E       &kp R            &kp T    &kp Y  &kp U       &kp I           &kp O         &kp P            &kp EXCLAMATION
-&kp BACKSPACE  &kp A        &kp S       &kp D       &kp F            &kp G    &kp H  &kp J       &kp K           &kp L         &kp COLON        &kp ENTER
-&mo 2          &mt LCTRL Z  &mt LALT X  &mt LCMD C  &kp V            &kp B    &kp N  &kp M       &mt RCMD COMMA  &mt RALT DOT  &mt RCTRL SLASH  &mo 2
-                                        &kp TAB     &mt LSHFT SPACE  &mo 1    &mo 1  &kp RSHIFT  &kp GRAVE
+&kp ESC        &kp Q        &kp W       &kp E       &kp R            &kp T     &kp Y   &kp U      &kp I           &kp O         &kp P                    &kp EXCLAMATION
+&kp BACKSPACE  &kp A        &kp S       &kp D       &kp F            &kp G     &kp H   &kp J      &kp K           &kp L         &kp SEMI                 &kp ENTER
+&mo Fn         &mt LCTRL Z  &mt LALT X  &mt LCMD C  &kp V            &kp B     &kp N   &kp M      &mt RCMD COMMA  &mt RALT DOT  &mt RIGHT_CONTROL SLASH  &mo Fn
+                                        &kp TAB     &mt LSHFT SPACE  &mo L2    &mo L2  &kp RSHFT  &kp GRAVE
             >;
         };
 
-        code_layer {
-            label = "Code";
+        layer_number {
+            label = "Number";
             bindings = <
-&trans    &kp N1    &kp N2    &kp N3         &kp N4            &kp N5      &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         &trans
-&kp LBKT  &kp RBKT  &kp LPAR  &kp RPAR       &kp LBRC          &kp RBRC    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp SEMICOLON  &trans
-&trans    &trans    &trans    &kp LESS_THAN  &kp GREATER_THAN  &kp SQT     &trans    &trans    &trans  &trans     &kp COLON      &trans
-                              &trans         &trans            &trans      &trans    &trans    &trans
+&trans  &kp EXCL      &kp AT       &kp HASH     &kp DLLR  &kp PRCNT    &kp CARET       &kp AMPS       &kp KP_MULTIPLY          &kp LPAR  &kp RPAR  &kp BSLH
+&trans  &kp N1        &kp N2       &kp N3       &kp N4    &kp N5       &kp MINUS       &kp EQUAL      &kp GRAVE                &kp LBKT  &kp RBKT  &kp PIPE
+&trans  &mt LCTRL N6  &mt LALT N7  &mt LCMD N8  &kp N9    &kp N0       &mt RCMD UNDER  &mt RALT PLUS  &mt RIGHT_CONTROL TILDE  &kp LBRC  &kp RBRC  &kp RSHFT
+                                   &trans       &trans    &trans       &trans          &trans         &trans
             >;
         };
 
-        raise_layer {
-            label = "Raise";
+        layer_function {
+            label = "Function";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR  &kp PIPE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC      &kp RBRC  &kp SQT   &kp TILDE
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &bt BT_CLR
+&trans  &kp F1        &kp F2       &kp F3        &kp F4        &kp F5      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans             &trans
+&trans  &mt LCTRL F6  &mt LALT F7  &mt LCMD F8   &kp F9        &kp F10     &trans        &trans        &kp RCMD      &kp RALT      &kp RIGHT_CONTROL  &trans
+                                   &trans        &trans        &trans      &trans        &trans
             >;
         };
     };
