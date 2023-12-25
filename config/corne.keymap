@@ -94,7 +94,7 @@
 
         combo_ESC {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <3 4>;
             timeout-ms = <200>;
         };
 
@@ -106,7 +106,7 @@
 
         combo_TAB {
             bindings = <&kp TAB>;
-            key-positions = <3 4>;
+            key-positions = <1 2>;
             timeout-ms = <200>;
             layers = <0 1 2 3 4 5 6 7>;
         };
@@ -126,7 +126,7 @@
         };
 
         combo_CONTROL {
-            bindings = <&kp LEFT_CONTROL>;
+            bindings = <&sk LEFT_CONTROL>;
             key-positions = <25 26>;
             timeout-ms = <200>;
         };
@@ -215,7 +215,7 @@
             label = "WinFunc";
             bindings = <
 &none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to 8         &to 4         &none
+&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to MAC_DEF   &none
 &none  &kp F11  &kp F12  &none   &none   &none                   &none         &none         &none               &none         &none         &none
                          &trans  &trans  &sm LEFT_SHIFT SPACE    &trans        &trans        &kp LC(LEFT_SHIFT)
             >;
@@ -255,7 +255,7 @@
             label = "MacFunc";
             bindings = <
 &none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to 8         &to 0         &none
+&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &none
 &none  &kp F11  &kp F12  &none   &none   &none                   &none         &none         &none               &none         &none         &none
                          &trans  &trans  &sm LEFT_SHIFT SPACE    &trans        &trans        &kp LC(LEFT_SHIFT)
             >;
@@ -274,9 +274,9 @@
         game_option_layer {
             label = "Option";
             bindings = <
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none
-&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &to 0  &none
-&none  &kp G         &none         &none         &none         &kp B           &none  &none  &none  &none  &none  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none        &none
+&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &to WIN_DEF  &none
+&none  &kp G         &none         &none         &none         &kp B           &none  &none  &none  &none  &none        &none
                                    &none         &trans        &trans          &none  &none  &none
             >;
         };
