@@ -154,8 +154,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BOTTOM_ROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <135>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -175,7 +175,7 @@
             label = "SPACE_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <135>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
