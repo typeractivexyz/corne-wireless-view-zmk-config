@@ -165,8 +165,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC_MOD";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
         };
@@ -175,8 +175,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
