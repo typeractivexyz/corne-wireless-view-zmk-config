@@ -106,6 +106,25 @@
             timeout-ms = <150>;
         };
 
+        combo_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <1 2 3>;
+            timeout-ms = <200>;
+        };
+
+        combo_DEL {
+            bindings = <&kp DEL>;
+            key-positions = <9 10>;
+            timeout-ms = <200>;
+        };
+
+        combo_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+            timeout-ms = <200>;
+            layers = <0 1 2 3 4 5 6 7>;
+        };
+
         combo_ALT {
             bindings = <&sk LEFT_ALT>;
             key-positions = <33 34>;
@@ -131,22 +150,23 @@
             bindings = <&kp LEFT_GUI>, <&spotlight>, <&screenshot_mac>;
         };
 
-        bm: bottom_row_mods {
+        cm: code_row_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "BOTTOM_ROW_MODS";
+            label = "CODE_ROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+            retro-tap;
         };
 
-        bsm: bspc_mod {
+        bm: bspc_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC_MOD";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
         };
@@ -155,8 +175,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -168,10 +188,10 @@
         windows_default_layer {
             label = "Windows";
             bindings = <
-&kp TAB          &kp Q  &kp W  &kp E  &kp R         &kp T                   &kp Y      &kp U                   &kp I               &kp O    &kp P          &kp DELETE
-&td_multi_win    &kp A  &kp S  &kp D  &kp F         &kp G                   &kp H      &kp J                   &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&kp LEFT_CONTROL &kp Z  &kp X  &kp C  &kp V         &kp B                   &kp N      &kp M                   &kp COMMA           &kp DOT  &kp SLASH      &kp ESC
-                                     &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bsm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+&kp TAB           &kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y                   &kp U      &kp I                  &kp O               &kp P          &kp DELETE
+&td_multi_win     &kp A  &kp S  &kp D  &kp F         &kp G         &kp H                   &kp J      &kp K                  &kp L               &kp SEMICOLON  &kp LC(TAB)
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V         &kp B         &kp N                   &kp M      &kp COMMA              &kp DOT             &kp SLASH      &kp ESC
+                                       &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -181,7 +201,7 @@
 &trans  &kp EXCLAMATION      &kp AT  &kp HASH              &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND           &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp C_AL_CALCULATOR  &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
 &trans  &trans               &none   &kp PIPE              &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                     &trans                &trans          &sm LEFT_SHIFT SPACE    &trans     &bsm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                     &kp LEFT_ALT          &trans          &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE   &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -190,18 +210,18 @@
             bindings = <
 &trans  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &trans
 &trans  &kp C_AL_CALCULATOR  &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans               &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &none            &trans
-                                           &trans          &mo WIN_CODE      &sm LEFT_SHIFT SPACE    &trans         &trans           &kp LC(LEFT_SHIFT)
+&trans  &trans               &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &kp LC(TAB)      &trans
+                                           &kp LEFT_ALT    &mo WIN_CODE      &sm LEFT_SHIFT SPACE    &kp ENTER      &trans           &kp LC(LEFT_SHIFT)
             >;
         };
 
         windows_function_layer {
             label = "WinFunc";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to MAC_DEF   &trans
-&trans  &kp F11  &kp F12  &none   &none   &none                   &none         &none         &none               &none         &none         &trans
-                          &trans  &trans  &sm LEFT_SHIFT SPACE    &trans        &trans        &kp LC(LEFT_SHIFT)
+&trans  &kp F1   &kp F2   &kp F3        &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &kp F6   &kp F7   &kp F8        &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to MAC_DEF   &trans
+&trans  &kp F11  &kp F12  &none         &none   &none                   &none         &none         &none               &none         &none         &trans
+                          &kp LEFT_ALT  &trans  &sm LEFT_SHIFT SPACE    &kp ENTER     &trans        &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -211,7 +231,7 @@
 &kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U                   &kp I               &kp O    &kp P          &kp DELETE
 &td_multi_mac     &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J                   &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M                   &kp COMMA           &kp DOT  &kp SLASH      &kp ESC
-                                &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bsm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm MAC_NUM BACKSPACE   &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -221,7 +241,7 @@
 &trans  &kp EXCLAMATION  &kp AT  &kp HASH              &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND           &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &sk GLOBE        &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE        &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
 &trans  &trans           &none   &kp PIPE              &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES       &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                 &trans                &trans          &sm LEFT_SHIFT SPACE    &trans     &bsm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+                                 &kp LEFT_GUI          &trans          &sm LEFT_SHIFT SPACE    &kp ENTER  &bm MAC_NUM BACKSPACE   &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -230,18 +250,18 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &trans
 &trans  &sk GLOBE     &none         &kp C_NEXT      &kp MINUS         &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans        &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &none            &trans
-                                    &trans          &mo MAC_CODE      &sm LEFT_SHIFT SPACE    &trans         &trans           &kp LC(LEFT_SHIFT)
+&trans  &trans        &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp END                 &kp PAGE_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN   &kp LC(Z)     &kp LC(TAB)      &trans
+                                    &kp LEFT_GUI    &mo MAC_CODE      &sm LEFT_SHIFT SPACE    &kp ENTER      &trans           &kp LC(LEFT_SHIFT)
             >;
         };
 
         mac_function_layer {
             label = "MacFunc";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &trans
-&trans  &kp F11  &kp F12  &none   &none   &none                   &none         &none         &none               &none         &none         &trans
-                          &trans  &trans  &sm LEFT_SHIFT SPACE    &trans        &trans        &kp LC(LEFT_SHIFT)
+&trans  &kp F1   &kp F2   &kp F3        &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &kp F6   &kp F7   &kp F8        &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &trans
+&trans  &kp F11  &kp F12  &none         &none   &none                   &none         &none         &none               &none         &none         &trans
+                          &kp LEFT_GUI  &trans  &sm LEFT_SHIFT SPACE    &kp ENTER     &trans        &kp LC(LEFT_SHIFT)
             >;
         };
 
