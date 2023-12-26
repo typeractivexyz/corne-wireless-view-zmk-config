@@ -92,19 +92,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_TD_MULTI_WIN {
-            bindings = <&td_multi_win>;
-            key-positions = <13 14>;
-            layers = <0 1 2 3>;
-            timeout-ms = <150>;
-        };
-
-        combo_TD_MULTI_MAC {
-            bindings = <&td_multi_mac>;
-            key-positions = <13 14>;
-            layers = <4 5 6 7>;
-            timeout-ms = <150>;
-        };
     };
 
     behaviors {
