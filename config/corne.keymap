@@ -233,9 +233,9 @@
             label = "MacFunc";
             bindings = <
 &kp TAB           &kp F1   &kp F2   &kp F3        &kp F4  &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &kp DELETE
-&td_multi_mac     &kp F6   &kp F7   &kp F8        &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &kp LC(TAB)
+&td_multi_mac     &kp F6   &kp F7   &kp F8        &kp F9  &kp F10                 &bt BT_CLR    &none         &none               &to GAME_DEF  &to WIN_DEF   &kp LEFT_ALT
 &kp LEFT_CONTROL  &kp F11  &kp F12  &none         &none   &none                   &none         &none         &none               &none         &none         &kp ESC
-                          &kp LEFT_GUI  &trans  &sm LEFT_SHIFT SPACE    &kp ENTER     &trans        &kp LC(LEFT_SHIFT)
+                                    &kp LEFT_GUI  &trans  &sm LEFT_SHIFT SPACE    &kp ENTER     &trans        &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -245,7 +245,7 @@
 &trans  &kp TAB           &kp Q         &kp W         &kp E         &kp R           &kp F1  &kp F2  &kp F3  &kp F4  &none  &none
 &trans  &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &none           &none   &none   &none   &none   &none  &none
 &trans  &kp LEFT_CONTROL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none   &none   &none   &none   &none  &none
-                                       &sk Z         &mo GAME_OPT  &kp SPACE       &kp M   &none   &none
+                                        &sk Z         &mo GAME_OPT  &kp SPACE       &kp M   &none   &none
             >;
         };
 
