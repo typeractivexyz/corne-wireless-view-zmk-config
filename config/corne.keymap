@@ -37,6 +37,13 @@
             hold-trigger-on-release;
             quick-tap-ms = <110>;
         };
+
+        tab_esc: tab_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAB_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp ESCAPE>;
+        };
     };
 
     keymap {
@@ -61,10 +68,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y   &kp U           &kp UP_ARROW    &kp O            &kp P     &trans
-&kp LSHFT  &kp A  &kp S  &kp D         &kp F         &kp G        &kp H   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMI  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N   &kp M           &kp COMMA       &kp DOT          &kp FSLH  &trans
-                         &kp LEFT_ALT  &lt 2 ESCAPE  &kp SPACE    &trans  &trans          &trans
+&tab_esc   &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&kp LSHFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &kp LEFT_ALT  &mo 2  &kp SPACE    &trans  &trans  &trans
             >;
 
             label = "GAME";
