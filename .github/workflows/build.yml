@@ -1,7 +1,8 @@
 on:
   push:
     branches:
-      - "release"
+      - "36KEY"
+      - "42KEY"
 
 jobs:
   build:
