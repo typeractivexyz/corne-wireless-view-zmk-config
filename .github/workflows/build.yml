@@ -1,7 +1,6 @@
 on:
   push:
     branches:
-      - "36KEY"
       - "42KEY"
 
 jobs:
