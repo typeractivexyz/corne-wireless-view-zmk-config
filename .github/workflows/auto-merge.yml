@@ -2,8 +2,9 @@ name: Automerge
 
 on:
   pull_request:
-    braches:
-      - "develop"
+    branches:
+      - "main"
+
   pull_request_review:
     types:
       - submitted
