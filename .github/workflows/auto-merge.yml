@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - "main"
+      - "develop"
+      - "42KEY"
 
   pull_request_review:
     types:
