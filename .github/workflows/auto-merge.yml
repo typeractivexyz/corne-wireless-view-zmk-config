@@ -2,15 +2,8 @@ name: Automerge
 
 on:
   pull_request:
-    types:
-      - labeled
-      - unlabeled
-      - synchronize
-      - opened
-      - edited
-      - ready_for_review
-      - reopened
-      - unlocked
+    braches:
+      - "develop"
   pull_request_review:
     types:
       - submitted
@@ -30,4 +23,7 @@ jobs:
           GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
           MERGE_LABELS: ''
           # 只要是 cloverdefa 帳號，都進行自動合併
-          MERGE_FILTER_AUTHOR: 'cloverdefa'
+          MERGE_FILTER_AUTHOR: "cloverdefa"
+          MERGE_DELETE_BRANCH: "false"
+          # MERGE_DELETE_BRANCH_FILTER: "develop"
+          MERGE_ERROR_FAIL: "true"
