@@ -95,7 +95,7 @@
             bindings =
                 <&macro_press>,
                 <&kp GLOBE>,
-                <macro_wait_time 50>,
+                <&macro_wait_time 50>,
                 <macro_tap>,
                 <&kp F>,
                 <&macro_release>,
