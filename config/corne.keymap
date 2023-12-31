@@ -87,6 +87,20 @@
                 <&macro_release>,
                 <&kp LGUI &kp LEFT_SHIFT &kp LEFT_CONTROL>;
         };
+
+        fullscreen_mac: fullscreen_mac {
+            label = "FULLSCREEN_MAC";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp GLOBE>;
+        };
     };
 
     combos {
@@ -198,20 +212,20 @@
         mac_code_layer {
             label = "MacCode";
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH              &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND          &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&kp ESC           &sk GLOBE        &none   &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE       &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LC(TAB)
-&kp LEFT_CONTROL  &none            &none   &kp PIPE              &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES      &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &td_multi_mac
-                                           &kp LEFT_GUI          &trans          &sm LEFT_SHIFT SPACE    &kp ENTER  &bm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+&kp TAB           &kp EXCLAMATION  &kp AT           &kp HASH              &kp DOLLAR      &kp PERCENT             &kp CARET  &kp AMPERSAND          &kp STAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&kp ESC           &sk GLOBE        &fullscreen_mac  &kp NON_US_BACKSLASH  &kp MINUS       &kp EQUAL               &kp GRAVE  &kp SINGLE_QUOTE       &kp COLON           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LC(TAB)
+&kp LEFT_CONTROL  &none            &none            &kp PIPE              &kp UNDERSCORE  &kp PLUS                &kp TILDE  &kp DOUBLE_QUOTES      &kp SLASH           &kp LEFT_BRACE        &kp RIGHT_BRACE        &td_multi_mac
+                                                    &kp LEFT_GUI          &trans          &sm LEFT_SHIFT SPACE    &kp ENTER  &bm MAC_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
         mac_number_layer {
             label = "MacNum";
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &kp DELETE
-&kp ESC           &sk GLOBE     &none         &none         &kp MINUS     &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &kp LC(TAB)
-&kp LEFT_CONTROL  &none         &none         &none         &none         &kp END                 &kp PAGE_DOWN  &none           &none               &sk LEFT_ALT  &kp LC(Z)        &td_multi_mac
-                                              &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans          &kp LC(LEFT_SHIFT)
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0     &kp DELETE
+&kp ESC           &sk GLOBE     &fullscreen_mac  &none         &kp MINUS     &kp HOME                &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &kp LC(TAB)
+&kp LEFT_CONTROL  &none         &none            &none         &none         &kp END                 &kp PAGE_DOWN  &none           &none               &sk LEFT_ALT  &kp LC(Z)        &td_multi_mac
+                                                 &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER      &trans          &kp LC(LEFT_SHIFT)
             >;
         };
 
