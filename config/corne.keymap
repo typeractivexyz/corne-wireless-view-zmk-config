@@ -121,7 +121,7 @@
             label = "TAP_DANCE_MULTI_ALT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
+            bindings = <&kp LEFT_ALT>, <&kp LA(LS(EQUAL))>, <&kp LA(LS(MINUS))>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
