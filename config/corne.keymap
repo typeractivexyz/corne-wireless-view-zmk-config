@@ -112,15 +112,23 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
+        };
+
+        td_multi_alt: tap_dance_multi_alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTI_ALT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_ALT>, <&kp LA(LS(EQUAL))>, <&kp LA(LS(MINUS))>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
         };
 
@@ -151,10 +159,10 @@
         windows_default_layer {
             label = "Windows";
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U                  &kp I               &kp O    &kp P          &kp DELETE
-&kp ESC           &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J                  &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M                  &kp COMMA           &kp DOT  &kp SLASH      &td_multi_win
-                                &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
+&kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U                  &kp I               &kp O    &kp P          &kp DELETE
+&kp ESC           &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J                  &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M                  &kp COMMA           &kp DOT  &kp SLASH      &td_multi_win
+                                &td_multi_alt  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &bm WIN_NUM BACKSPACE  &kp LC(LEFT_SHIFT)
             >;
         };
 
