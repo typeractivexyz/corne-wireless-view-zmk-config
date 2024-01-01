@@ -105,6 +105,16 @@
 
     combos {
         compatible = "zmk,combos";
+
+        combo_terminal_left_right {
+            bindings = <&kp LA(LS(EQUAL))>;
+            key-positions = <16 15>;
+        };
+
+        combo_terminal_up_down {
+            bindings = <&kp LA(LS(MINUS))>;
+            key-positions = <27 28>;
+        };
     };
 
     behaviors {
@@ -121,7 +131,7 @@
             label = "TAP_DANCE_MULTI_ALT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_ALT>, <&kp LA(LS(EQUAL))>, <&kp LA(LS(MINUS))>;
+            bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
@@ -219,10 +229,10 @@
         mac_number_layer {
             label = "MacNum";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0     &trans
-&trans  &sk GLOBE     &fullscreen_mac  &none         &kp MINUS     &kp HOME         &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &none         &none            &none         &none         &kp END          &kp PAGE_DOWN  &none           &none           &none         &kp LG(Z)        &trans
-                                       &trans        &mo MAC_CODE  &trans           &trans         &trans          &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0     &trans
+&trans  &sk GLOBE     &fullscreen_mac  &none         &kp MINUS     &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &none         &none            &none         &none         &kp END         &kp PAGE_DOWN  &none           &none           &none         &kp LG(Z)        &trans
+                                       &trans        &mo MAC_CODE  &trans          &trans         &trans          &trans
             >;
         };
 
