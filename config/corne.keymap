@@ -109,11 +109,15 @@
         combo_terminal_left_right {
             bindings = <&kp LA(LS(EQUAL))>;
             key-positions = <16 15>;
+            layers = <0>;
+            timeout-ms = <200>;
         };
 
         combo_terminal_up_down {
             bindings = <&kp LA(LS(MINUS))>;
             key-positions = <27 28>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
     };
 
