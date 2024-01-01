@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
         };
 
@@ -120,7 +120,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_ALT";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
         };
 
@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
         };
 
