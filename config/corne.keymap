@@ -106,12 +106,12 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_left_right {
+        combo_terminal_left_right {
             bindings = <&kp LA(LS(EQUAL))>;
             key-positions = <16 15>;
         };
 
-        combo_up_down {
+        combo_terminal_up_down {
             bindings = <&kp LA(LS(MINUS))>;
             key-positions = <27 28>;
         };
