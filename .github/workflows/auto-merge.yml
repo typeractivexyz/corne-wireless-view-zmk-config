@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
       - "develop"
-      - "42KEY"
+      - "build"
 
   pull_request_review:
     types:
