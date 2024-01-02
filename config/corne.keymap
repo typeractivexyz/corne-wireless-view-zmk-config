@@ -105,20 +105,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        combo_terminal_left_right {
-            bindings = <&kp LA(LS(EQUAL))>;
-            key-positions = <16 15>;
-            layers = <0>;
-            timeout-ms = <200>;
-        };
-
-        combo_terminal_up_down {
-            bindings = <&kp LA(LS(MINUS))>;
-            key-positions = <27 28>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -183,10 +169,10 @@
         windows_code_layer {
             label = "WinCode";
             bindings = <
-&trans  &kp EXCLAMATION      &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND          &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp C_AL_CALCULATOR  &none   &none     &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE       &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &none                &none   &none     &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES      &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                     &trans    &trans          &trans         &trans     &mo WIN_NUM            &trans
+&trans  &kp EXCLAMATION      &kp AT  &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp C_AL_CALCULATOR  &none   &kp LA(LS(EQUAL))  &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &none                &none   &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+                                     &trans             &trans          &trans         &trans     &mo WIN_NUM        &trans
             >;
         };
 
@@ -223,10 +209,10 @@
         mac_code_layer {
             label = "MacCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH  &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND          &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &sk GLOBE        &fullscreen_mac  &none     &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE       &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &none            &none            &none     &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES      &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                          &trans    &trans          &trans         &trans     &mo MAC_NUM            &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH  &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &sk GLOBE        &fullscreen_mac  &none     &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &none            &none            &none     &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+                                          &trans    &trans          &trans         &trans     &mo MAC_NUM        &trans
             >;
         };
 
