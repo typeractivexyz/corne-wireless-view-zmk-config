@@ -20,10 +20,10 @@
 
             label = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp F     &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &none  &none
-&none  &kp A  &kp R  &kp S     &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O  &none
-&none  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &none  &none
-                     &kp LGUI  &none  &kp SPACE    &kp RET  &none  &kp RALT
+&none    &kp Q  &kp W  &kp F     &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp APOSTROPHE  &kp MINUS
+&kp TAB  &kp A  &kp R  &kp S     &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O           &kp BACKSPACE
+&none    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp QUESTION    &kp EXCLAMATION
+                       &kp LGUI  &none  &kp SPACE    &kp RET  &none  &kp RALT
             >;
         };
     };
