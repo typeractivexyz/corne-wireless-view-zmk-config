@@ -153,7 +153,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             flavor = "balanced";
-            bindings = <&mo>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         sm: space_mod {
