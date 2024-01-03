@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
         };
 
@@ -120,7 +120,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_ALT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
         };
 
@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
         };
 
@@ -249,9 +249,9 @@
         game_option_layer {
             label = "Option";
             bindings = <
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none
-&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &none  &to WIN_DEF
-&none  &kp G         &none         &none         &none         &kp B           &none  &none  &none  &none  &none  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none        &none
+&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &none  &none  &none  &to MAC_DEF  &to WIN_DEF
+&none  &kp G         &none         &none         &none         &kp B           &none  &none  &none  &none  &none        &none
                                    &none         &trans        &trans          &none  &none  &none
             >;
         };
