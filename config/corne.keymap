@@ -261,13 +261,13 @@
         compatible = "zmk,conditional-layers";
 
         windows_function {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = "WIN_CODE", "WIN_NUM";
+            then-layer = "WIN_FUNC";
         };
 
         mac_function {
-            if-layers = <5 6>;
-            then-layer = <7>;
+            if-layers = "MAC_CODE", "MAC_NUM";
+            then-layer = "MAC_FUNC";
         };
     };
 };
