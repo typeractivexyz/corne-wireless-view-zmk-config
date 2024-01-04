@@ -108,20 +108,20 @@
     };
 
     behaviors {
-        td_multi_win: tap_dance_multi_win {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MULTI_WIN";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
-        };
-
         td_multi_alt: tap_dance_multi_alt {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_ALT";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
+        };
+
+        td_multi_win: tap_dance_multi_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTI_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
         };
 
         td_multi_mac: tap_dance_multi_mac {
