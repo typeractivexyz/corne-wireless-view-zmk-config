@@ -116,22 +116,6 @@
             bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
         };
 
-        td_multi_win: tap_dance_multi_win {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MULTI_WIN";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
-        };
-
-        td_multi_mac: tap_dance_multi_mac {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MULTI_MAC";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
-        };
-
         dm: del_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "DEL_MOD";
@@ -150,6 +134,22 @@
             quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+        };
+
+        td_multi_win: tap_dance_multi_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTI_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&sk LEFT_GUI>, <&terminal_win>, <&screenshot_win>;
+        };
+
+        td_multi_mac: tap_dance_multi_mac {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTI_MAC";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
         };
     };
 
