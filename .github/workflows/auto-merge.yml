@@ -28,7 +28,7 @@ jobs:
           # 只要是 cloverdefa 帳號，都進行自動合併
           MERGE_FILTER_AUTHOR: "cloverdefa"
           # 合併後不進行自動刪除分支
-          MERGE_DELETE_BRANCH: "false"
+          # MERGE_DELETE_BRANCH: "false"
           # MERGE_DELETE_BRANCH_FILTER: "develop"
           # 合併如果發生錯誤，送出錯誤碼1
           MERGE_ERROR_FAIL: "true"
