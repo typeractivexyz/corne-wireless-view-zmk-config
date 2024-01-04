@@ -132,7 +132,7 @@
             bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
         };
 
-        dm: delete_mod {
+        dm: del_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "DEL_MOD";
             #binding-cells = <2>;
