@@ -116,16 +116,6 @@
             bindings = <&kp LEFT_ALT>, <&kp LA(LEFT_SHIFT)>;
         };
 
-        dm: del_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DEL_MOD";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-
         sm: space_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
@@ -151,6 +141,13 @@
             tapping-term-ms = <250>;
             bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
         };
+
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -159,10 +156,10 @@
         windows_default_layer {
             label = "Windows";
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp TAB           &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U        &kp I      &kp O    &kp P          &bspc_del
 &kp ESC           &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J        &kp K      &kp L    &kp SEMICOLON  &kp LC(TAB)
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH      &td_multi_win
-                                &td_multi_alt  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &dm LC(LEFT_SHIFT) DELETE
+                                &td_multi_alt  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -199,10 +196,10 @@
         mac_default_layer {
             label = "MacOS";
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I       &kp O    &kp P          &kp BACKSPACE
+&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I       &kp O    &kp P          &bspc_del
 &kp ESC           &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K       &kp L    &kp SEMICOLON  &kp LG(TAB)
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA   &kp DOT  &kp SLASH      &td_multi_mac
-                                &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &dm LC(LEFT_SHIFT) DELETE
+                                &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
