@@ -156,6 +156,20 @@
     keymap {
         compatible = "zmk,keymap";
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        windows_function {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+        mac_function {
+            if-layers = <5 6>;
+            then-layer = <7>;
+        };
+    };
+
         windows_default_layer {
             label = "Windows";
             bindings = <
@@ -254,20 +268,6 @@
 &none  &kp G         &none         &none         &none         &kp B           &none  &none  &none  &none  &none        &none
                                    &none         &trans        &trans          &none  &none  &none
             >;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        windows_function {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-
-        mac_function {
-            if-layers = <5 6>;
-            then-layer = <7>;
         };
     };
 };
