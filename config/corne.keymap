@@ -254,8 +254,8 @@
         game_option_layer {
             label = "Option";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &none  &none        &none        &none  &none  &none
-&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none         &none           &none  &to WIN_DEF  &to MAC_DEF  &none  &none  &none
+&kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1    &none  &none        &none        &none  &none  &none
+&none         &none         &kp NUMBER_0  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7    &none  &to WIN_DEF  &to MAC_DEF  &none  &none  &none
 &none         &kp G         &none         &none         &none         &kp B           &none  &none        &none        &none  &none  &none
                                           &none         &trans        &trans          &none  &none        &none
             >;
