@@ -244,10 +244,10 @@
         game_default_layer {
             label = "Game";
             bindings = <
-&kp TAB           &none  &kp Q         &kp W         &kp E         &kp R           &kp F1  &kp F2  &kp F3  &kp F4  &none  &none
-&kp LEFT_SHIFT    &none  &kp A         &kp S         &kp D         &none           &none   &none   &none   &none   &none  &none
-&kp LEFT_CONTROL  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none   &none   &none   &none   &none  &none
-                                       &sk Z         &mo GAME_OPT  &kp SPACE       &kp M   &none   &none
+&kp TAB           &none         &kp Q         &kp W         &kp E         &kp R           &kp F1  &kp F2  &kp F3  &kp F4  &none  &none
+&kp LEFT_SHIFT    &none         &kp A         &kp S         &kp D         &none           &none   &none   &none   &none   &none  &none
+&kp LEFT_CONTROL  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1    &none   &none   &none   &none   &none  &none
+                                              &sk Z         &mo GAME_OPT  &kp SPACE       &kp M   &none   &none
             >;
         };
 
