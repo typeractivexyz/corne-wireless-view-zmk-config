@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -20,10 +21,10 @@
 
             label = "Base";
             bindings = <
-&none    &kp Q  &kp W  &kp F     &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp APOSTROPHE  &kp MINUS
-&kp TAB  &kp A  &kp R  &kp S     &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O           &kp BACKSPACE
-&none    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp QUESTION    &kp EXCLAMATION
-                       &kp LGUI  &none  &kp SPACE    &kp RET  &none  &kp RALT
+&bt BT_CLR  &kp Q  &kp W  &kp F     &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp APOSTROPHE  &kp MINUS
+&kp TAB     &kp A  &kp R  &kp S     &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O           &kp BACKSPACE
+&none       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp QUESTION    &kp EXCLAMATION
+                          &kp LGUI  &none  &kp SPACE    &kp RET  &none  &kp RALT
             >;
         };
     };
