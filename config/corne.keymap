@@ -87,20 +87,6 @@
                 <&macro_release>,
                 <&kp LGUI &kp LEFT_SHIFT &kp LEFT_CONTROL>;
         };
-
-        fullscreen_mac: fullscreen_mac {
-            label = "FULLSCREEN_MAC";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp GLOBE>,
-                <&macro_wait_time 50>,
-                <&macro_tap>,
-                <&kp F>,
-                <&macro_release>,
-                <&kp GLOBE>;
-        };
     };
 
     combos {
