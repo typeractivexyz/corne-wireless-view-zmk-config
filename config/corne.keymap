@@ -210,7 +210,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT         &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LG(LA(ESC))
 &trans  &kp LG(M)        &kp LG(LC(F))  &kp LG(D)      &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(LC(Q))
-&trans  &none            &none          &kp LG(LS(D))  &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LG(LS(DEL))
+&trans  &none            &none          &kp LG(LS(D))  &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(LG(DEL))
                                         &trans         &trans          &trans         &trans     &mo MAC_NUM        &trans
             >;
         };
