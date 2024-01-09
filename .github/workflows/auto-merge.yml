@@ -15,7 +15,6 @@ on:
   status: {}
 
 jobs:
-  # 合併發布版本的 pr 到 main
   auto-merge:
     runs-on: ubuntu-latest
     steps:
@@ -24,5 +23,4 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
           MERGE_LABELS: ''
-          # 只要是 cloverdefa 帳號，都進行自動合併
           MERGE_FILTER_AUTHOR: "cloverdefa"
