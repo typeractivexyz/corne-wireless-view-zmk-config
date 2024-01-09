@@ -2,16 +2,10 @@ name: Automerge
 
 on:
   pull_request:
-    types:
-      - labeled
-      - unlabeled
-      - synchronize
-      - opened
-      - edited
-      - ready_for_review
-      - reopened
-      - unlocked
-  pull_request_review:
+    branches:
+      - main
+      - develop
+    pull_request_review:
     types:
       - submitted
   check_suite:
@@ -25,14 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Automerge
-        uses: 'pascalgn/automerge-action@v0.16.0'
-        import fetch from "node-fetch";
-
-        const octokit = new Octokit({
-          request: {
-          fetch: fetch,
-          },
-        });
+        uses: 'pascalgn/automerge-action@v0.15.6'
         env:
           GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
           MERGE_LABELS: ''
