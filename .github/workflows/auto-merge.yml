@@ -3,6 +3,7 @@ name: Automerge
 on:
   pull_request:
     branches:
+      - "main"
       - "develop"
   pull_request_review:
     types:
