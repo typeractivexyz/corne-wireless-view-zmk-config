@@ -45,6 +45,7 @@ jobs:
       - uses: reitermarkus/automerge@v2
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
+          pull-request-author-associations: "cloverdefa"
           merge-method: rebase
           do-not-merge-labels: never-merge
           required-labels: automerge
