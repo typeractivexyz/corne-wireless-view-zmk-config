@@ -45,7 +45,7 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - uses: reitermarkus/automerge@v2
+      - uses: reitermarkus/automerge@v2.7.0
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           pull-request-author-associations: "cloverdefa"
