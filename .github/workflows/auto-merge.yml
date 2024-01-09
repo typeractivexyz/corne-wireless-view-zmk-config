@@ -26,6 +26,13 @@ jobs:
     steps:
       - name: Automerge
         uses: 'pascalgn/automerge-action@v0.16.0'
+        import fetch from "node-fetch";
+
+        const octokit = new Octokit({
+          request: {
+          fetch: fetch,
+          },
+        });
         env:
           GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
           MERGE_LABELS: ''
