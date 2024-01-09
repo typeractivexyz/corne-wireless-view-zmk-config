@@ -2,7 +2,10 @@ name: Automerge
 
 on:
   # Try enabling auto-merge for all open pull requests. (Only recommended for testing.)
-  push:
+  pull_request:
+    branches:
+      - main
+      - develop
 
   # Try enabling auto-merge for all open pull requests.
   schedule:
