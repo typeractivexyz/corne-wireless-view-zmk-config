@@ -26,4 +26,5 @@ jobs:
         uses: "pascalgn/automerge-action@v0.16.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_FILTER_AUTHOR: "cloverdefa"
+          MERGE_LABELS: ""
+          MERGE_FILTER_AUTHOR: "cloberdefa"
