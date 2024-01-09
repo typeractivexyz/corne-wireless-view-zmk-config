@@ -1,26 +1,29 @@
-name: Automerge
-
+name: automerge
 on:
   pull_request:
-    branches:
-      - "main"
-      - "develop"
-
-    pull_request_review:
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
     types:
       - submitted
   check_suite:
     types:
       - completed
   status: {}
-
 jobs:
-  auto-merge:
+  automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: Automerge
-        uses: 'pascalgn/automerge-action@v0.15.6'
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.16.0"
         env:
-          GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
-          MERGE_LABELS: ''
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_FILTER_AUTHOR: "cloverdefa"
