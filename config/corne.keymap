@@ -209,7 +209,7 @@
             label = "MacCode";
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT         &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp LG(LS(M))    &kp LG(LC(F))  &kp LG(D)      &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &kp LG(LS(M))    &kp LG(LC(F))  &kp LG(D)      &kp MINUS       &kp EQUAL      &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(LC(Q))
 &trans  &kp LG(LA(ESC))  &kp LG(GRAVE)  &kp LG(LS(D))  &kp UNDERSCORE  &kp PLUS       &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
                                         &trans         &trans          &trans         &trans     &mo MAC_NUM        &trans
             >;
@@ -219,7 +219,7 @@
             label = "MacNum";
             bindings = <
 &trans  &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0     &trans
-&trans  &none          &none          &none         &kp MINUS     &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(LC(Q))
+&trans  &none          &none          &none         &kp MINUS     &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &trans  &none          &none          &none         &none         &kp END         &kp PAGE_DOWN  &none           &none           &none         &none            &none
                                       &trans        &mo MAC_CODE  &trans          &trans         &trans          &trans
             >;
