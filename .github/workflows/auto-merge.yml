@@ -30,3 +30,4 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.RELEASE_TOKEN }}"
           MERGE_LABELS: ''
           MERGE_FILTER_AUTHOR: 'cloverdefa'
+          MERGE_DELETE_BRANCH_FILTER: 'develop'
