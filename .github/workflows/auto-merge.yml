@@ -1,4 +1,4 @@
-name: Automerge
+name: automerge
 
 on:
   pull_request:
@@ -20,14 +20,13 @@ on:
   status: {}
 
 jobs:
-  # 合併發布版本的 pr 到 main
-  auto-merge:
+  automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: Automerge
-        uses: 'pascalgn/automerge-action@v0.15.6'
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.16.2"
         env:
-          GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
+          GITHUB_TOKEN: "${{ secrets.RELEASE_TOKEN }}"
           MERGE_LABELS: ''
-          # 只要是 cloverdefa 帳號，都進行自動合併
           MERGE_FILTER_AUTHOR: 'cloverdefa'
