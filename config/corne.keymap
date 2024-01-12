@@ -144,6 +144,17 @@
             bindings = <&kp>, <&kp>;
         };
 
+        em: esc_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ESC_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+            binding = <&kp>, <&kp>;
+            hold-trigger-key-positions = <12 24>;
+        };
+
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -159,8 +170,8 @@
             label = "Windows";
             bindings = <
 &kp TAB               &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&mt LEFT_CONTROL ESC  &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LEFT_CONTROL ESC  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_multi_win
+&em LEFT_CONTROL ESC  &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&em LEFT_CONTROL ESC  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_multi_win
                                 &td_multi_alt  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
@@ -199,8 +210,8 @@
             label = "MacOS";
             bindings = <
 &kp TAB               &kp Q  &kp W  &kp E          &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&mt LEFT_CONTROL ESC  &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LEFT_CONTROL ESC  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_multi_mac
+&em LEFT_CONTROL ESC  &kp A  &kp S  &kp D          &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&em LEFT_CONTROL ESC  &kp Z  &kp X  &kp C          &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_multi_mac
                                 &td_multi_cmd  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
