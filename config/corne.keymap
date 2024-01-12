@@ -152,7 +152,6 @@
             quick-tap-ms = <200>;
             flavor = "balanced";
             binding = <&kp>, <&kp>;
-            hold-trigger-key-positions = <12 24>;
         };
 
         bspc_del: backspace_delete {
