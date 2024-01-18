@@ -19,10 +19,10 @@
 
         colemak_win {
             bindings = <
-&trans  &kp Q           &kp W           &kp F               &kp P             &kp B                 &kp J                        &kp L              &kp U                &kp Y           &kp SEMI         &trans
-&trans  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                 &kp M                        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt RIGHT_GUI O  &trans
-&trans  &kp Z           &kp X           &kp C               &kp D             &kp V                 &kp K                        &kp H              &kp COMMA            &kp DOT         &kp FSLH         &to 1
-                                        &kp ESCAPE          &lt 2 TAB         &mt LEFT_WIN SPACE    &mt LC(BACKSPACE) BACKSPACE  &lt 3 ENTER        &kp DELETE
+&trans        &kp Q           &kp W           &kp F               &kp P             &kp B                 &kp J                        &kp L              &kp U                &kp Y           &kp SEMI         &trans
+&bt BT_SEL 0  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                 &kp M                        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt RIGHT_GUI O  &trans
+&bt BT_CLR    &kp Z           &kp X           &kp C               &kp D             &kp V                 &kp K                        &kp H              &kp COMMA            &kp DOT         &kp FSLH         &to 1
+                                              &kp ESCAPE          &lt 2 TAB         &mt LEFT_WIN SPACE    &mt LC(BACKSPACE) BACKSPACE  &lt 3 ENTER        &kp DELETE
             >;
 
             label = "WIN";
