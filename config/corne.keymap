@@ -8,13 +8,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&lt {
-    tapping-term-ms = <175>;
-};
+&lt { tapping-term-ms = <175>; };
 
-&mt {
-    tapping-term-ms = <400>;
-};
+&mt { tapping-term-ms = <400>; };
 
 / {
     behaviors {
@@ -27,6 +23,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         cmd: cmd {
             compatible = "zmk,behavior-sticky-key";
             label = "CMD";
@@ -36,6 +33,7 @@
             release-after-ms = <1000>;
             quick-release;
         };
+
         shift: shift {
             compatible = "zmk,behavior-sticky-key";
             label = "SHIFT";
@@ -45,6 +43,7 @@
             quick-release;
             ignore-modifiers;
         };
+
         alt: alt {
             compatible = "zmk,behavior-sticky-key";
             label = "ALT";
@@ -54,6 +53,7 @@
             quick-release;
             ignore-modifiers;
         };
+
         ctrl: ctrl {
             compatible = "zmk,behavior-sticky-key";
             label = "CTRL";
@@ -78,6 +78,7 @@
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
+
         undo: undo {
             compatible = "zmk,behavior-macro";
             label = "UNDO";
@@ -90,6 +91,7 @@
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
+
         paste: paste {
             compatible = "zmk,behavior-macro";
             label = "PASTE";
@@ -102,6 +104,7 @@
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
+
         cut: cut {
             compatible = "zmk,behavior-macro";
             label = "CUT";
@@ -114,6 +117,7 @@
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
+
         COLONm: COLONm {
             compatible = "zmk,behavior-macro";
             label = "COLONM";
@@ -128,6 +132,7 @@
 
             wait-ms = <0>;
         };
+
         PLUSm: PLUSm {
             compatible = "zmk,behavior-macro";
             label = "PLUSM";
@@ -142,6 +147,7 @@
 
             wait-ms = <0>;
         };
+
         HASHm: HASHm {
             compatible = "zmk,behavior-macro";
             label = "HASHM";
@@ -156,6 +162,7 @@
 
             wait-ms = <0>;
         };
+
         CARETm: CARETm {
             compatible = "zmk,behavior-macro";
             label = "CARETM";
@@ -170,6 +177,7 @@
 
             wait-ms = <0>;
         };
+
         PIPEm: PIPEm {
             compatible = "zmk,behavior-macro";
             label = "PIPEM";
@@ -184,6 +192,7 @@
 
             wait-ms = <0>;
         };
+
         TILDEm: TILDEm {
             compatible = "zmk,behavior-macro";
             label = "TILDEM";
@@ -198,6 +207,7 @@
 
             wait-ms = <0>;
         };
+
         ATm: ATm {
             compatible = "zmk,behavior-macro";
             label = "ATM";
@@ -212,6 +222,7 @@
 
             wait-ms = <0>;
         };
+
         LESSTHANm: LESSTHANm {
             compatible = "zmk,behavior-macro";
             label = "LESSTHANM";
@@ -226,6 +237,7 @@
 
             wait-ms = <0>;
         };
+
         MORETHANm: MORETHANm {
             compatible = "zmk,behavior-macro";
             label = "MORETHANM";
@@ -240,6 +252,7 @@
 
             wait-ms = <0>;
         };
+
         DQTm: DQTm {
             compatible = "zmk,behavior-macro";
             label = "DQTM";
@@ -254,6 +267,7 @@
 
             wait-ms = <0>;
         };
+
         EXCLm: EXCLm {
             compatible = "zmk,behavior-macro";
             label = "EXCLM";
@@ -268,6 +282,7 @@
 
             wait-ms = <0>;
         };
+
         STARm: STARm {
             compatible = "zmk,behavior-macro";
             label = "STARM";
@@ -282,6 +297,7 @@
 
             wait-ms = <0>;
         };
+
         DOLLARm: DOLLARm {
             compatible = "zmk,behavior-macro";
             label = "DOLLARM";
@@ -296,6 +312,7 @@
 
             wait-ms = <0>;
         };
+
         UNDERm: UNDERm {
             compatible = "zmk,behavior-macro";
             label = "UNDERM";
@@ -310,6 +327,7 @@
 
             wait-ms = <0>;
         };
+
         AMPSm: AMPSm {
             compatible = "zmk,behavior-macro";
             label = "AMPSM";
@@ -324,6 +342,7 @@
 
             wait-ms = <0>;
         };
+
         LBRCm: LBRCm {
             compatible = "zmk,behavior-macro";
             label = "LBRCM";
@@ -338,6 +357,7 @@
 
             wait-ms = <0>;
         };
+
         RBRCm: RBRCm {
             compatible = "zmk,behavior-macro";
             label = "RBRCm";
@@ -352,6 +372,7 @@
 
             wait-ms = <0>;
         };
+
         PRCNTm: PRCNTm {
             compatible = "zmk,behavior-macro";
             label = "PRCNTM";
@@ -366,6 +387,7 @@
 
             wait-ms = <0>;
         };
+
         LPARm: LPARm {
             compatible = "zmk,behavior-macro";
             label = "LPARM";
@@ -380,6 +402,7 @@
 
             wait-ms = <0>;
         };
+
         RPARm: RPARm {
             compatible = "zmk,behavior-macro";
             label = "RPARM";
@@ -394,6 +417,7 @@
 
             wait-ms = <0>;
         };
+
         QMARKm: QMARKm {
             compatible = "zmk,behavior-macro";
             label = "QMARKM";
@@ -439,7 +463,7 @@
 &trans  &kp GRAVE  &LESSTHANm     &MORETHANm  &DQTm      &kp PERIOD    &AMPSm   &LBRCm            &kp SEMICOLON  &RBRCm             &PRCNTm  &trans
 &trans  &EXCLm     &kp MINUS      &PLUSm      &kp EQUAL  &HASHm        &PIPEm   &LPARm            &COLONm        &RPARm             &QMARKm  &trans
 &trans  &CARETm    &kp BACKSLASH  &STARm      &DOLLARm   &UNDERm       &TILDEm  &kp LEFT_BRACKET  &kp SLASH      &kp RIGHT_BRACKET  &ATm     &trans
-                                  &trans      &trans     &mo 4         &trans   &trans            &trans
+                                  &trans      &trans     &mo 4         &tog 5   &trans            &trans
             >;
         };
 
@@ -473,6 +497,15 @@
 &sys_reset   &none       &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp F5  &kp F6   &kp F7   &kp F8   &sys_reset
 &trans       &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2     &bt BT_PRV              &bt BT_NXT            &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                             &trans            &trans           &trans                  &trans                &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&kp ESC           &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y   &kp U   &kp I      &kp O    &kp P     &kp RBKT
+&kp TAB           &kp A  &kp S  &kp D     &kp F      &kp G        &kp H   &kp J   &kp K      &kp L    &kp BSLH  &kp RET
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp FSLH
+                                &kp LALT  &kp SPACE  &kp LSHFT    &trans  &trans  &trans
             >;
         };
     };
