@@ -158,10 +158,10 @@
         windows_default_layer {
             label = "Windows";
             bindings = <
-&kp TAB            &kp Q  &kp W  &kp E    &kp R         &kp T                   &kp Y      &kp U        &kp I      &kp O    &kp P          &bspc_del
-&mt LG(LCTRL) ESC  &kp A  &kp S  &kp D    &kp F         &kp G                   &kp H      &kp J        &kp K      &kp L    &kp SEMICOLON  &kp LC(TAB)
-&kp LEFT_CONTROL   &kp Z  &kp X  &kp C    &kp V         &kp B                   &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH      &kp LC(LEFT_SHIFT)
-                                 &td_alt  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &td_win
+&kp TAB               &kp Q  &kp W  &kp E    &kp R         &kp T                   &kp Y      &kp U        &kp I      &kp O    &kp P          &bspc_del
+&mt LEFT_CONTROL ESC  &kp A  &kp S  &kp D    &kp F         &kp G                   &kp H      &kp J        &kp K      &kp L    &kp SEMICOLON  &kp LC(TAB)
+&kp LEFT_CONTROL      &kp Z  &kp X  &kp C    &kp V         &kp B                   &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH      &td_win
+                                    &td_alt  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -169,8 +169,8 @@
             label = "WinCode";
             bindings = <
 &trans          &kp EXCLAMATION  &kp AT  &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(F4)
-&kp LG(LC(F4))  &none            &none   &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LC(LA(DEL))
-&trans          &none            &none   &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&kp LG(LCTRL)   &none            &none   &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LC(LA(DEL))
+&kp LG(LC(F4))  &none            &none   &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
                                          &trans             &trans          &trans         &trans     &mo WIN_NUM        &trans
             >;
         };
@@ -198,10 +198,10 @@
         mac_default_layer {
             label = "MacOS";
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E    &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&kp ESC           &kp A  &kp S  &kp D    &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C    &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &kp LC(LEFT_SHIFT)
-                                &td_cmd  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &td_mac
+&kp TAB               &kp Q  &kp W  &kp E    &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
+&mt LEFT_CONTROL ESC  &kp A  &kp S  &kp D    &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&kp LEFT_CONTROL      &kp Z  &kp X  &kp C    &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_mac
+                                    &td_cmd  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -249,8 +249,8 @@
             label = "Option";
             bindings = <
 &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1    &none  &none        &none        &none  &none  &none
-&none         &none         &kp NUMBER_0  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7    &none  &to WIN_DEF  &to MAC_DEF  &none  &none  &none
-&none         &kp G         &none         &none         &none         &kp B           &none  &none        &none        &none  &none  &none
+&kp ESCAPE    &none         &kp NUMBER_0  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7    &none  &to WIN_DEF  &to MAC_DEF  &none  &none  &none
+&none         &none         &none         &none         &kp G         &kp B           &none  &none        &none        &none  &none  &none
                                           &none         &trans        &trans          &none  &none        &none
             >;
         };
