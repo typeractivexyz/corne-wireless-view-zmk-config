@@ -99,7 +99,7 @@
             layers = <3 7>;
         };
 
-        Combo_WIN_NEWDESKTOP {
+        combo_WIN_NEWDESKTOP {
             bindings = <&kp LG(LC(D))>;
             key-positions = <24 25>;
             timeout-ms = <20>;
