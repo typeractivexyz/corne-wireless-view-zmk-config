@@ -19,10 +19,10 @@
 
         colemak_win {
             bindings = <
-&trans        &kp Q           &kp W           &kp F               &kp P             &kp B                 &kp J                        &kp L              &kp U                &kp Y           &kp SEMI         &trans
-&bt BT_SEL 0  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                 &kp M                        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt RIGHT_GUI O  &trans
-&bt BT_CLR    &kp Z           &kp X           &kp C               &kp D             &kp V                 &kp K                        &kp H              &kp COMMA            &kp DOT         &kp FSLH         &to 1
-                                              &kp ESCAPE          &lt 2 TAB         &mt LEFT_WIN SPACE    &mt LC(BACKSPACE) BACKSPACE  &lt 3 ENTER        &kp DELETE
+&trans        &kp Q             &kp W           &kp F               &kp P           &kp B                 &kp J                        &kp L           &kp U                &kp Y           &kp SEMI          &trans
+&bt BT_SEL 0  &mt LEFT_SHIFT A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_WIN T  &kp G                 &kp M                        &mt LEFT_GUI N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_SHIFT O  &trans
+&bt BT_CLR    &kp Z             &kp X           &kp C               &kp D           &kp V                 &kp K                        &kp H           &kp COMMA            &kp DOT         &kp FSLH          &to 1
+                                                &kp ESCAPE          &lt 2 TAB       &mt LEFT_WIN SPACE    &mt LC(BACKSPACE) BACKSPACE  &lt 3 ENTER     &kp DELETE
             >;
 
             label = "WIN";
@@ -41,10 +41,10 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &kp UP_ARROW    &trans           &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp CLCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp INS   &kp HOME        &kp PAGE_DOWN   &kp PG_UP        &kp END  &trans
-                        &trans  &trans  &trans    &trans    &mo 4           &trans
+&trans  &trans          &trans        &trans     &trans        &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT        &kp K_UNDO    &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &trans    &kp CLCK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &trans
+&trans  &trans          &trans        &trans     &trans        &trans    &kp INS     &kp HOME        &kp PAGE_DOWN   &kp PG_UP        &kp END       &trans
+                                      &trans     &trans        &trans    &trans      &mo 4           &trans
             >;
 
             label = "NAV";
