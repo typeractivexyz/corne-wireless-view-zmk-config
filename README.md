@@ -1,1 +1,2 @@
 ![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/corne-wireless.jpg)   
+![image](https://github.com/cloverdefa/corne-wireless-view-zmk-config/blob/main/IMG/keymap.svg)   
