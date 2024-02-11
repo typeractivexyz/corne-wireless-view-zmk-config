@@ -107,7 +107,7 @@
         };
 
         combo_MAC_WINDOW {
-            binding = <&kp LG(LEFT_ALT)>;
+            bindings = <&kp LG(LEFT_ALT)>;
             key-positions = <36 37>;
             timeout-ms = <20>;
             layers = <4>;
