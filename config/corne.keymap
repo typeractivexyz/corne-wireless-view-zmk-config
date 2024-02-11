@@ -101,7 +101,7 @@
 
         combo_WIN_NEWDESKTOP {
             bindings = <&kp LG(LC(D))>;
-            key-positions = <36 37>;
+            key-positions = <24 25>;
             timeout-ms = <20>;
             layers = <0>;
         };
