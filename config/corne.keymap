@@ -105,12 +105,6 @@
             timeout-ms = <20>;
             layers = <0>;
         };
-
-        combo_MAC_TERMINALWINDOW
-            binding = <&kp LG(LEFT_ALT)>;
-            key-positions = <24 25>;
-            timeout-ms = <20>;
-            layers = <4>;
     };
 
     behaviors {
