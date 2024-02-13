@@ -58,7 +58,7 @@
                 <&kp UP_ARROW>,
                 <&macro_release>,
                 <&kp LGUI>;
-        }
+        };
 
         screenshot_win: screenshot_win {
             label = "SCREENSHOT_WIN";
