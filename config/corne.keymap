@@ -46,6 +46,20 @@
                 <&kp ENTER>;
         };
 
+        windowsmax_win: windowsmax_win {
+            label = "WINDOWSMAX_WIN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LGUI>;
+        }
+
         screenshot_win: screenshot_win {
             label = "SCREENSHOT_WIN";
             compatible = "zmk,behavior-macro";
@@ -166,10 +180,10 @@
         windows_code_layer {
             display-name = "WinCode";
             bindings = <
-&trans          &kp EXCLAMATION  &kp AT  &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(LA(DEL))
-&trans          &none            &none   &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LA(F4)
-&kp LG(LC(F4))  &none            &none   &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                         &trans             &trans          &trans         &trans     &mo WIN_NUM        &trans
+&trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(LA(DEL))
+&trans          &none            &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LA(F4)
+&kp LG(LC(F4))  &none            &none            &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+                                                  &trans             &trans          &trans         &trans     &mo WIN_NUM        &trans
             >;
         };
 
