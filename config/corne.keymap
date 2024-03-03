@@ -49,32 +49,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        QWERTY {
+        default {
             bindings = <
-&kp GRAVE     &kp Q            &kp W            &kp E              &kp R         &kp T        &kp Y          &kp U         &kp I               &kp O             &kp P                     &kp BACKSPACE
-&kp ESCAPE    &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G        &kp H          &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&kp CAPSLOCK  &kp Z            &kp X            &kp C              &kp V         &kp B        &kp N          &kp M         &kp COMMA           &kp DOT           &kp FSLH                  &kp DEL
-                                                &kp ESCAPE         &lt 2 TAB     &kp SPACE    &kp BACKSPACE  &lt 3 ENTER   &mo 4
+&kp GRAVE     &kp Q            &kp W            &kp E              &kp R         &kp T          &kp Y            &kp U         &kp I               &kp O             &kp P                     &kp BACKSPACE
+&kp ESCAPE    &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G          &kp H            &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&kp CAPSLOCK  &kp Z            &kp X            &kp C              &kp V         &kp B          &kp N            &kp M         &kp COMMA           &kp DOT           &kp FSLH                  &kp DEL
+                                                &kp ESCAPE         &lt 3 TAB     &lt 1 SPACE    &lt 2 BACKSPACE  &lt 4 ENTER   &mo 5
             >;
 
             label = "QRTY";
-        };
-
-        Gaming {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            bindings = <
-&tab_esc   &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&kp LSHFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                         &kp LEFT_ALT  &mo 2  &kp SPACE    &trans  &trans  &trans
-            >;
-
-            label = "GAME";
         };
 
         numbers {
@@ -102,24 +85,46 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH       &kp DLLR        &kp PRCNT           &kp CARET          &kp AMPS         &kp ASTERISK      &kp LPAR       &kp RPAR  &trans
-&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp BACKSLASH  &kp PIPE  &trans
-&trans  &trans     &trans     &kp PLUS       &kp UNDER       &trans              &trans             &kp MINUS        &kp EQUAL         &trans         &trans    &trans
-                              &trans         &trans          &trans              &trans             &trans           &trans
+&trans  &kp EXCL       &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET  &kp AMPS           &kp ASTERISK      &kp QUESTION     &kp SINGLE_QUOTE  &trans
+&trans  &kp PLUS       &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp COLON  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp RIGHT_BRACE  &kp LEFT_BRACE    &trans
+&trans  &kp LESS_THAN  &kp PIPE   &kp MINUS             &kp GREATER_THAN       &kp BACKSLASH        &kp GRAVE  &kp UNDER          &kp SLASH         &kp TILDE        &kp SEMI          &trans
+                                  &trans                &trans                 &trans               &trans     &trans             &trans
             >;
 
             label = "SYM";
         };
 
+        navigation {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans         &trans     &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans    &trans         &trans
+            >;
+
+            label = "NAV";
+        };
+
         function {
             bindings = <
-&bt BT_NXT  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans    &kp PAGE_UP    &trans  &trans     &kp HOME  &trans
-&bt BT_CLR  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &kp LEFT  &kp DOWN       &kp UP  &kp RIGHT  &trans    &trans
-&trans      &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans    &kp PAGE_DOWN  &trans  &trans     &kp END   &tog 1
-                             &trans   &trans   &trans    &trans    &trans         &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans   &trans    &trans  &trans  &trans
             >;
 
             label = "FUN";
+        };
+
+        system {
+            bindings = <
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                    &bt BT_CLR    &trans        &trans          &trans  &trans  &trans
+            >;
+
+            label = "SYS";
         };
     };
 };
