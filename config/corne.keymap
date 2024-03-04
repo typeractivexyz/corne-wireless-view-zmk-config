@@ -14,15 +14,37 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <32 33>;
+            layers = <0 1>;
+        };
+
+        nei-mac {
+            bindings = <&sk LEFT_WIN>;
+            key-positions = <19 20 21>;
+            layers = <1>;
+        };
+
+        nei-win {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <19 20 21>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         colemak_win {
             bindings = <
-&trans        &kp Q             &kp W           &kp F               &kp P           &kp B                 &kp J                        &kp L           &kp U                &kp Y           &kp SEMI          &trans
-&bt BT_SEL 0  &mt LEFT_SHIFT A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_WIN T  &kp G                 &kp M                        &mt LEFT_GUI N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_SHIFT O  &trans
-&bt BT_CLR    &kp Z             &kp X           &kp C               &kp D           &kp V                 &kp K                        &kp H           &kp COMMA            &kp DOT         &kp FSLH          &to 1
-                                                &kp ESCAPE          &lt 2 TAB       &mt LEFT_WIN SPACE    &mt LC(BACKSPACE) BACKSPACE  &lt 3 ENTER     &kp DELETE
+&trans  &kp Q  &kp W  &kp F       &kp P      &kp B                 &kp J                 &kp L        &kp U       &kp Y    &kp SQT   &trans
+&trans  &kp A  &kp R  &kp S       &kp T      &kp G                 &kp M                 &kp N        &kp E       &kp I    &kp O     &trans
+&trans  &kp Z  &kp X  &kp C       &kp D      &kp V                 &kp K                 &kp H        &kp COMMA   &kp DOT  &kp FSLH  &to 1
+                      &kp ESCAPE  &lt 2 TAB  &mt LEFT_WIN SPACE    &mt LSHIFT BACKSPACE  &lt 3 ENTER  &kp DELETE
             >;
 
             label = "WIN";
@@ -30,10 +52,10 @@
 
         COLEMAK_MAC {
             bindings = <
-&trans  &kp Q           &kp W           &kp F               &kp P             &kp B                  &kp J                        &kp L              &kp U                &kp Y           &kp SEMI         &trans
-&trans  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                  &kp M                        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt RIGHT_GUI O  &trans
-&trans  &kp Z           &kp X           &kp C               &kp D             &kp V                  &kp K                        &kp H              &kp COMMA            &kp DOT         &kp SLASH        &to 0
-                                        &kp ESC             &lt 2 TAB         &mt LG(SPACE) SPACE    &mt LA(BACKSPACE) BACKSPACE  &lt 3 ENTER        &kp DEL
+&trans  &kp Q  &kp W  &kp F    &kp P      &kp B                  &kp J                     &kp L        &kp U      &kp Y    &kp SQT    &trans
+&trans  &kp A  &kp R  &kp S    &kp T      &kp G                  &kp M                     &kp N        &kp E      &kp I    &kp O      &trans
+&trans  &kp Z  &kp X  &kp C    &kp D      &kp V                  &kp K                     &kp H        &kp COMMA  &kp DOT  &kp SLASH  &to 0
+                      &kp ESC  &lt 2 TAB  &mt LG(SPACE) SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 3 ENTER  &kp DEL
             >;
 
             label = "MAC";
@@ -41,10 +63,10 @@
 
         navigation {
             bindings = <
-&trans  &trans          &trans        &trans     &trans        &trans    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY   &kp C_AC_CUT  &kp C_AC_UNDO  &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &trans    &kp CLCK       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &trans
-&trans  &trans          &trans        &trans     &trans        &trans    &kp INS        &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END        &trans
-                                      &trans     &trans        &trans    &trans         &mo 4           &trans
+&trans  &trans            &trans        &trans            &trans          &trans    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY   &kp C_AC_CUT  &kp C_AC_UNDO  &trans
+&trans  &sk LEFT_COMMAND  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &trans    &kp CLCK       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &trans
+&trans  &trans            &trans        &trans            &trans          &trans    &kp INS        &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END        &trans
+                                        &trans            &trans          &trans    &trans         &mo 4           &trans
             >;
 
             label = "NAV";
@@ -52,9 +74,9 @@
 
         symbols {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE          &kp MINUS  &kp N7  &kp N8  &kp N9  &trans    &trans
-&trans  &kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp SQT   &trans
-&trans  &kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE         &kp N0     &kp N1  &kp N2  &kp N3  &kp STAR  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE          &kp MINUS  &kp N7  &kp N8  &kp N9  &kp STAR       &trans
+&trans  &kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp COLON      &trans
+&trans  &kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE         &kp N0     &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
                                       &trans                &mo 4                  &kp LEFT_SHIFT    &trans     &trans  &trans
             >;
 
