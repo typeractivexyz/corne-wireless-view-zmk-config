@@ -231,8 +231,8 @@
             display-name = "MacNum";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
-&trans  &none         &none         &none         &none         &kp END         &kp C_NEXT      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS   &kp PAGE_DOWN  &trans
+&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &kp PG_UP
+&trans  &none         &none         &none         &none         &kp END         &kp C_NEXT      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS   &kp PAGE_DOWN  &kp PAGE_DOWN
                                     &trans        &mo MAC_CODE  &trans          &trans          &trans             &trans
             >;
         };
