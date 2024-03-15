@@ -101,19 +101,19 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q            &kp W            &kp F         &kp P                     &kp B                     &kp J                     &mt AMPERSAND L                     &mt ASTERISK U     &mt CARET Y      &mt DOUBLE_QUOTES SQT  &trans
-&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &hmr MINUS M              &mt DOLLAR N                        &mt PERCENT E      &hmr LEFT_ALT I  &hmr LEFT_WIN O        &trans
-&trans  &mt LCTRL Z      &kp X            &kp C         &kp D                     &kp V                     &kp K                     &mt EXCL H                          &mt AT_SIGN COMMA  &mt HASH PERIOD  &mt QUESTION SLASH     &trans
-                                          &mo 4         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &kp DELETE
+&trans  &kp Q            &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT    &trans
+&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O      &trans
+&trans  &mt LCTRL Z      &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                                          &mo 4         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &none
             >;
         };
 
         Num_Layer {
             bindings = <
-&trans      &kp ESCAPE  &trans     &kp ENTER  &kp BACKSPACE  &kp DELETE                           &trans                               &kp N7        &kp N8      &kp N9  &mt PLUS EQUAL       &trans
+&trans      &kp ESCAPE  &trans     &kp ENTER  &kp BACKSPACE  &kp DELETE                           &trans                               &kp N7        &kp N8      &kp N9  &kp EQUAL            &trans
 &caps_word  &kp LGUI    &kp LALT   &kp LCTRL  &kp LSHFT      &kp PERIOD                           &kp MINUS                            &kp N4        &kp N5      &kp N6  &mt COLON SEMICOLON  &trans
 &trans      &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)      &mt LEFT_BRACKET LEFT_PARENTHESIS    &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp NUMBER_1  &kp N2      &kp N3  &mt BACKSLASH SLASH  &trans
-                                   &trans     &trans         &trans                               &Hold_Pref_Layer 3 ENTER             &kp N0        &kp PERIOD
+                                   &trans     &trans         &trans                               &Hold_Pref_Layer 3 LS(ENTER)         &kp N0        &kp PERIOD
             >;
 
             label = "Numbers";
@@ -121,10 +121,10 @@
 
         Nav_Layer {
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans                        &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                        &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &trans                        &kp INSERT     &trans    &trans        &trans     &trans  &trans
-                                    &trans     &trans          &Hold_Pref_Layer 3 LA(TAB)    &trans         &trans    &none
+&trans  &trans        &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans                        &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp INSERT  &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL        &kp LEFT_SHIFT  &trans                        &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)        &kp LC(V)       &trans                        &none          &trans    &trans        &trans     &trans      &trans
+                                    &trans           &kp LCTRL       &Hold_Pref_Layer 3 LA(TAB)    &trans         &trans    &none
             >;
 
             label = "Navigate";
