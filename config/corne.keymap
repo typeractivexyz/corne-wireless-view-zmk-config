@@ -132,10 +132,10 @@
 
         Nav_Layer {
             bindings = <
-&trans  &trans        &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans                         &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp INSERT  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL        &kp LEFT_SHIFT  &trans                         &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE  &trans
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)        &kp LC(V)       &trans                         &none          &trans    &trans        &trans     &trans      &trans
-                                    &trans           &kp LCTRL       &Key_Toggle_Layer 3 LA(TAB)    &trans         &trans    &none
+&trans  &trans        &trans        &kp LC(LS(TAB))  &kp LC(TAB)     &trans                    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp INSERT  &trans
+&trans  &sk LEFT_WIN  &sk LEFT_ALT  &sk LCTRL        &sk LEFT_SHIFT  &trans                    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)        &kp LC(V)       &trans                    &none          &trans    &trans        &trans     &trans      &trans
+                                    &trans           &sk LCTRL       &Hold_Pref_Layer 3 TAB    &trans         &trans    &none
             >;
 
             label = "Navigate";
