@@ -121,10 +121,10 @@
 
         Num_Layer {
             bindings = <
-&trans      &kp ESCAPE    &trans     &kp ENTER  &kp BACKSPACE  &kp DELETE              &kp NON_US_BACKSLASH      &kp N7        &kp N8  &kp N9  &kp EQUAL      &trans
-&caps_word  &kp LEFT_WIN  &kp LALT   &kp LCTRL  &kp LSHFT      &kp PERIOD              &kp MINUS                 &kp N4        &kp N5  &kp N6  &kp SEMICOLON  &trans
-&trans      &kp LC(Z)     &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS     &kp NUMBER_1  &kp N2  &kp N3  &trans         &trans
-                                     &trans     &trans         &trans                  &Hold_Pref_Layer 3 ENTER  &kp N0        &none
+&trans      &kp ESCAPE    &trans        &kp ENTER  &kp BACKSPACE   &kp DELETE              &kp NON_US_BACKSLASH      &kp N7        &kp N8  &kp N9  &kp EQUAL      &trans
+&caps_word  &sk LEFT_WIN  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp PERIOD              &kp MINUS                 &kp N4        &kp N5  &kp N6  &kp SEMICOLON  &trans
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS     &kp NUMBER_1  &kp N2  &kp N3  &trans         &trans
+                                        &trans     &trans          &trans                  &Hold_Pref_Layer 3 ENTER  &kp N0        &none
             >;
 
             label = "Numbers";
@@ -144,7 +144,7 @@
         Sym_Layer {
             bindings = <
 &trans  &trans        &trans        &trans     &trans          &trans              &kp PIPE           &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp PLUS      &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp PERIOD          &kp UNDER          &kp DOLLAR       &kp PERCENT   &kp CARET  &kp COLON     &trans
+&trans  &sk LEFT_WIN  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp PERIOD          &kp UNDER          &kp DOLLAR       &kp PERCENT   &kp CARET  &kp COLON     &trans
 &trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp QUESTION  &trans
                                     &trans     &trans          &trans              &trans             &trans           &trans
             >;
