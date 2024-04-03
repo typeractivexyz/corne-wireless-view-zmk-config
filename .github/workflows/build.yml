@@ -8,3 +8,5 @@ on:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  draw:
+    uses: ./.github/workflows/draw-keymaps.yml
