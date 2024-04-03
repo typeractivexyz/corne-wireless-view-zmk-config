@@ -15,6 +15,8 @@
             label = "SHIFT_DANCE";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+
+            tapping-term-ms = <350>;
         };
     };
 
