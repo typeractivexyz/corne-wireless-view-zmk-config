@@ -182,7 +182,7 @@
             bindings = <
 &trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(LA(DEL))
 &trans          &none            &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LA(F4)
-&kp LG(LC(F4))  &none            &none            &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&kp LG(LC(F4))  &none            &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
                                                   &trans             &trans          &trans         &trans     &mo WIN_NUM        &trans
             >;
         };
