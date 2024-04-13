@@ -1,7 +1,7 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: alxcrt
+      url-base: https://github.com/alxcrt/zmk
   projects:
     - name: zmk
       remote: zmkfirmware
