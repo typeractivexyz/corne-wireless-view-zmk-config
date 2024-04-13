@@ -42,7 +42,7 @@
         colemak_win {
             bindings = <
 &trans  &kp Q  &kp W  &kp F       &kp P      &kp B                 &kp J                 &kp L        &kp U       &kp Y    &kp SQT   &trans
-&trans  &kp A  &kp R  &kp S       &kp T      &kp G                 &kp M                 &kp N        &kp E       &kp I    &kp O     &trans
+&trans  &kp A  &kp R  &kp S       &kp T      &kp G                 &kp M                 &kp N        &kp E       &kp I    &kp O     &kp LEFT_SHIFT
 &trans  &kp Z  &kp X  &kp C       &kp D      &kp V                 &kp K                 &kp H        &kp COMMA   &kp DOT  &kp FSLH  &to 1
                       &kp ESCAPE  &lt 2 TAB  &mt LEFT_WIN SPACE    &mt LSHIFT BACKSPACE  &lt 3 ENTER  &kp DELETE
             >;
