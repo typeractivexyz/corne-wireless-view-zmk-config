@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/alxcrt/zmk
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: alxcrt
       revision: main
       import: app/west.yml
   self:
