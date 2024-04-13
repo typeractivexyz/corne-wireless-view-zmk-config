@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: alxcrt
-      url-base: https://github.com/alxcrt/zmk
+      url-base: https://github.com/alxcrt
   projects:
     - name: zmk
       remote: alxcrt
