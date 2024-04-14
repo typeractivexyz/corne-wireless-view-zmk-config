@@ -93,7 +93,7 @@
             label = "BTH";
             bindings = <
 &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans  &trans      &bt BT_SEL 0
-&trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans          &trans      &trans  &trans      &bt BT_SEL 1
+&trans  &trans  &trans  &trans  &trans             &trans             &trans  &to 0           &to 1       &trans  &trans      &bt BT_SEL 1
 &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans          &trans      &trans  &bt BT_CLR  &bt BT_SEL 2
                         &trans  &trans             &trans             &trans  &trans          &trans
             >;
