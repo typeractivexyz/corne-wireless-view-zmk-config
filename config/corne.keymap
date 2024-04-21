@@ -101,6 +101,34 @@
                 <&macro_release>,
                 <&kp LGUI &kp LEFT_SHIFT &kp LEFT_CONTROL>;
         };
+
+        tmux_column: tmux_column {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(S)>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp PERCENT>,
+                <&macro_release>;
+
+            label = "TMUX_COLUMN";
+        };
+
+        tmux_row: tmux_row {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(S)>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES>,
+                <&macro_release>;
+
+            label = "TMUX_ROW";
+        };
     };
 
     combos {
