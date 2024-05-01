@@ -208,10 +208,10 @@
         windows_code_layer {
             display-name = "WinCode";
             bindings = <
-&trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp STAR              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(LA(DEL))
-&trans          &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SINGLE_QUOTE   &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LA(F4)
-&kp LG(LC(F4))  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                                  &trans             &trans          &trans         &trans     &mo WIN_NUM        &trans
+&trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR  &kp PERCENT       &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &kp LC(LA(DEL))
+&trans          &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp PLUS    &kp MINUS         &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(F4)
+&kp LG(LC(F4))  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp EQUAL   &kp UNDERSCORE    &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &trans
+                                                  &trans             &trans      &trans            &trans             &mo WIN_NUM    &trans
             >;
         };
 
