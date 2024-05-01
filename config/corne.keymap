@@ -248,10 +248,10 @@
         mac_code_layer {
             display-name = "MacCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH       &kp DOLLAR      &kp PERCENT       &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &kp LG(LA(ESC))
-&trans  &tmux_column     &kp LG(LC(F))  &kp LG(D)      &kp PLUS        &kp MINUS         &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LC(Q))
-&trans  &tmux_row        &kp LG(LS(M))  &kp LG(LS(D))  &kp UNDERSCORE  &kp UNDERSCORE    &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &trans
-                                        &trans         &trans          &trans            &trans             &mo MAC_NUM    &trans
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH       &kp DOLLAR  &kp PERCENT       &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &kp LG(LA(ESC))
+&trans  &tmux_column     &kp LG(LC(F))  &kp LG(D)      &kp PLUS    &kp MINUS         &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LC(Q))
+&trans  &tmux_row        &kp LG(LS(M))  &kp LG(LS(D))  &kp EQUAL   &kp UNDERSCORE    &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &trans
+                                        &trans         &trans      &trans            &trans             &mo MAC_NUM    &trans
             >;
         };
 
