@@ -42,7 +42,8 @@
                 <&kp W &kp T>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
-                <&kp ENTER>;
+                <&kp ENTER>,
+                <&macro_release>;
         };
 
         windowsmax_win: windowsmax_win {
