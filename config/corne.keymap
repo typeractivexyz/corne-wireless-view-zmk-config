@@ -30,23 +30,20 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 30>,
                 <&macro_tap>,
-                <&kp BACKSPACE>,
-                <&macro_wait_time 50>,
+                <&kp DEL>,
+                <&macro_wait_time 20>,
                 <&macro_tap>,
                 <&kp W>,
                 <&macro_wait_time 20>,
                 <&macro_tap>,
-                <&kp T>,
-                <&macro_wait_time 50>,
-                <&macro_tap>,
-                <&kp ENTER>;
+                <&kp ENTER>,
+                <&macro_release>;
         };
 
         windowsmax_win: windowsmax_win {
@@ -56,10 +53,10 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp UP_ARROW>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
 
         screenshot_win: screenshot_win {
@@ -69,10 +66,10 @@
             bindings =
                 <&macro_press>,
                 <&kp LG(LEFT_SHIFT)>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp S>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LG(LEFT_SHIFT)>;
         };
 
         spotlight: spotlight {
@@ -82,10 +79,10 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp SPACE>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
 
         screenshot_mac: screenshot_mac {
@@ -95,10 +92,10 @@
             bindings =
                 <&macro_press>,
                 <&kp LG(LS(LEFT_CONTROL))>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LG(LS(LEFT_CONTROL))>;
         };
 
         tmux_column: tmux_column {
@@ -110,7 +107,8 @@
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp PERCENT>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LC(S)>;
 
             label = "TMUX_COLUMN";
         };
@@ -124,7 +122,8 @@
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LC(S)>;
 
             label = "TMUX_ROW";
         };
