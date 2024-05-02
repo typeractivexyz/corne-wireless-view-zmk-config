@@ -42,6 +42,9 @@
                 <&kp W>,
                 <&macro_wait_time 20>,
                 <&macro_tap>,
+                <&kp T>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
                 <&kp ENTER>,
                 <&macro_release>;
         };
