@@ -36,11 +36,7 @@
                 <&kp LGUI>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
-                <&kp W>,
-                <&macro_wait_time 20>,
-                <&kp T>,
-                <&macro_wait_time 20>,
-                <&kp ENTER>;
+                <&kp W &kp T &kp ENTER>;
         };
 
         windowsmax_win: windowsmax_win {
