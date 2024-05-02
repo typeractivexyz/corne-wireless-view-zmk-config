@@ -96,7 +96,6 @@
             bindings =
                 <&macro_tap>,
                 <&kp LC(S)>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp PERCENT>,
                 <&macro_release>,
@@ -111,7 +110,6 @@
             bindings =
                 <&macro_tap>,
                 <&kp LC(S)>,
-                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES>,
                 <&macro_release>,
