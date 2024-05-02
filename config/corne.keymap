@@ -34,19 +34,13 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 30>,
-                <&macro_tap>,
-                <&kp DEL>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp W>,
                 <&macro_wait_time 20>,
-                <&macro_tap>,
                 <&kp T>,
                 <&macro_wait_time 20>,
-                <&macro_tap>,
-                <&kp ENTER>,
-                <&macro_release>;
+                <&kp ENTER>;
         };
 
         windowsmax_win: windowsmax_win {
