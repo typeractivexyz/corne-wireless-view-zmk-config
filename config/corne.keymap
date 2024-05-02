@@ -64,7 +64,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LEFT_SHIFT>,
+                <&kp LG(LEFT_SHIFT)>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp S>,
@@ -90,7 +90,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LEFT_SHIFT &kp LEFT_CONTROL>,
+                <&kp LG(LS(LEFT_CONTROL))>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
