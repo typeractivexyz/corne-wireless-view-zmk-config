@@ -112,10 +112,10 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q            &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT    &trans
-&trans  &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O      &trans
-&trans  &mt LCTRL Z      &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &kp SLASH  &trans
-                                          &mo 4         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &none
+&trans  &kp Q                &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT    &trans
+&trans  &hml LEFT_WIN A      &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O      &trans
+&trans  &Tap_Pref_Layer 4 Z  &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                                              &mo 4         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &none
             >;
         };
 
