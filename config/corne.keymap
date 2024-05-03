@@ -210,20 +210,20 @@
         windows_code_layer {
             display-name = "WinCode";
             bindings = <
-&trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans          &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
-&kp LG(LC(F4))  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
-                                                  &trans             &trans          &trans         &trans             &mo WIN_NUM    &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
+&trans  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
+                                          &trans             &trans          &trans         &trans             &mo WIN_NUM    &trans
             >;
         };
 
         windows_number_layer {
             display-name = "WinNum";
             bindings = <
-&trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&trans         &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
-&kp LG(LCTRL)  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
-                                           &trans        &mo WIN_CODE  &trans          &trans          &trans             &trans
+&kp LG(LC(F4))  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
+&kp LG(LC(D))   &none         &none         &none         &kp MINUS          &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&kp LG(LCTRL)   &none         &none         &none         &kp K_SCREENSAVER  &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
+                                            &trans        &mo WIN_CODE       &trans          &trans          &trans             &trans
             >;
         };
 
@@ -260,10 +260,10 @@
         mac_number_layer {
             display-name = "MacNum";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
-&trans  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
-                                    &trans        &mo MAC_CODE  &trans          &trans          &trans             &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
+&trans  &none         &none         &none         &kp MINUS          &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&trans  &none         &none         &none         &kp K_SCREENSAVER  &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
+                                    &trans        &mo MAC_CODE       &trans          &trans          &trans             &trans
             >;
         };
 
