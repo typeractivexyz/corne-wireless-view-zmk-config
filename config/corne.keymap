@@ -117,6 +117,20 @@
 
             label = "TMUX_ROW";
         };
+
+        windowsmax_mac: windowsmax_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "WINDOWSMAX_MAC";
+        };
     };
 
     combos {
@@ -196,9 +210,9 @@
         windows_code_layer {
             display-name = "WinCode";
             bindings = <
-&trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &kp LC(LA(DEL))
-&trans          &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(F4)
-&kp LG(LC(F4))  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &trans
+&trans          &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans          &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
+&kp LG(LC(F4))  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
                                                   &trans             &trans          &trans         &trans             &mo WIN_NUM    &trans
             >;
         };
@@ -207,8 +221,8 @@
             display-name = "WinNum";
             bindings = <
 &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&trans         &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &kp PAGE_UP
-&kp LG(LCTRL)  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &kp PAGE_DOWN
+&trans         &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&kp LG(LCTRL)  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
                                            &trans        &mo WIN_CODE  &trans          &trans          &trans             &trans
             >;
         };
@@ -236,10 +250,10 @@
         mac_code_layer {
             display-name = "MacCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &kp LG(LA(ESC))
-&trans  &tmux_column     &kp LG(LC(F))  &kp LG(D)      &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LC(Q))
-&trans  &tmux_row        &kp LG(LS(M))  &kp LG(LS(D))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &trans
-                                        &trans         &trans          &trans         &trans             &mo MAC_NUM    &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &tmux_column     &windowsmax_mac  &kp LG(D)      &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
+&trans  &tmux_row        &kp LG(LS(M))    &kp LG(LS(D))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
+                                          &trans         &trans          &trans         &trans             &mo MAC_NUM    &trans
             >;
         };
 
@@ -247,8 +261,8 @@
             display-name = "MacNum";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &kp PG_UP
-&trans  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &kp PAGE_DOWN
+&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&trans  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
                                     &trans        &mo MAC_CODE  &trans          &trans          &trans             &trans
             >;
         };
