@@ -143,16 +143,9 @@
             layers = <3 7>;
         };
 
-        combo_WIN_NEWDESKTOP {
-            bindings = <&kp LG(LC(D))>;
-            key-positions = <24 25>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
         combo_MAC_WINDOW {
             bindings = <&kp LG(LEFT_ALT)>;
-            key-positions = <36 37>;
+            key-positions = <24 25>;
             timeout-ms = <20>;
             layers = <4>;
         };
