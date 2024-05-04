@@ -95,11 +95,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LC(S)>,
+                <&kp LC(A)>,
                 <&macro_tap>,
-                <&kp PERCENT>,
+                <&kp PIPE>,
                 <&macro_release>,
-                <&kp LC(S)>;
+                <&kp LC(A)>;
 
             label = "TMUX_COLUMN";
         };
@@ -109,11 +109,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LC(S)>,
+                <&kp LC(A)>,
                 <&macro_tap>,
-                <&kp DOUBLE_QUOTES>,
+                <&kp MINUS>,
                 <&macro_release>,
-                <&kp LC(S)>;
+                <&kp LC(A)>;
 
             label = "TMUX_ROW";
         };
