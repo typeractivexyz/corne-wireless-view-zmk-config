@@ -203,10 +203,10 @@
         windows_code_layer {
             display-name = "WinCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
-&trans  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
-                                          &trans             &trans          &trans         &trans             &trans         &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
+&trans  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
+                                          &trans             &trans          &trans         &trans     &trans             &trans
             >;
         };
 
@@ -243,10 +243,10 @@
         mac_code_layer {
             display-name = "MacCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET          &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &tmux_column     &windowsmax_mac  &kp LG(D)      &kp MINUS       &kp PLUS       &kp SQT            &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
-&trans  &tmux_row        &kp LG(LS(M))    &kp LG(LS(D))  &kp UNDERSCORE  &kp EQUAL      &kp DOUBLE_QUOTES  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
-                                          &trans         &trans          &trans         &trans             &trans         &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &tmux_column     &windowsmax_mac  &kp LG(D)      &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
+&trans  &tmux_row        &kp LG(LS(M))    &kp LG(LS(D))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
+                                          &trans         &trans          &trans         &trans     &trans             &trans
             >;
         };
 
