@@ -155,8 +155,7 @@
 
             label = "TMUX_ROW";
         };
-
-           };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -230,7 +229,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT           &kp HASH           &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
 &trans  &tmux_column     &windowsmax_win  &kp LA(LS(EQUAL))  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
-&trans  &tmux_row        &kp LEFT_GUI     &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
+&trans  &tmux_row        &windowmin_win   &kp LA(LS(MINUS))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
                                           &trans             &trans          &trans         &trans     &trans             &trans
             >;
         };
