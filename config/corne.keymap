@@ -131,6 +131,20 @@
 
             label = "WINDOWSMAX_MAC";
         };
+
+        windowmin_win: windowmin_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LGUI>;
+
+            label = "WINDOWMIN_WIN";
+        };
     };
 
     combos {
