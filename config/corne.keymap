@@ -198,7 +198,11 @@
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&spotlight>,
+                <&screenshot_mac>,
+                <&recording_mac>;
         };
 
         sm: space_mod {
