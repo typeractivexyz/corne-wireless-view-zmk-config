@@ -36,6 +36,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp W &kp T &kp ENTER>;
+
+            label = "TERMINAL_WIN";
         };
 
         windowsmax_win: windowsmax_win {
@@ -49,6 +51,22 @@
                 <&kp UP_ARROW>,
                 <&macro_release>,
                 <&kp LGUI>;
+
+            label = "WINDOWMAX_WIN";
+        };
+
+        windowmin_win: windowmin_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LGUI>;
+
+            label = "WINDOWMIN_WIN";
         };
 
         screenshot_win: screenshot_win {
@@ -62,6 +80,8 @@
                 <&kp S>,
                 <&macro_release>,
                 <&kp LG(LEFT_SHIFT)>;
+
+            label = "SCREENSHOW_WIN";
         };
 
         spotlight: spotlight {
@@ -75,6 +95,22 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LGUI>;
+
+            label = "SPOTLIGHT";
+        };
+
+        windowsmax_mac: windowsmax_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "WINDOWSMAX_MAC";
         };
 
         screenshot_mac: screenshot_mac {
@@ -88,6 +124,8 @@
                 <&kp NUMBER_4>,
                 <&macro_release>,
                 <&kp LG(LS(LEFT_CONTROL))>;
+
+            label = "SCREENSHOT_MAC";
         };
 
         tmux_column: tmux_column {
@@ -118,34 +156,7 @@
             label = "TMUX_ROW";
         };
 
-        windowsmax_mac: windowsmax_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp GLOBE>,
-                <&macro_tap>,
-                <&kp F>,
-                <&macro_release>,
-                <&kp GLOBE>;
-
-            label = "WINDOWSMAX_MAC";
-        };
-
-        windowmin_win: windowmin_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp DOWN_ARROW>,
-                <&macro_release>,
-                <&kp LGUI>;
-
-            label = "WINDOWMIN_WIN";
-        };
-    };
+           };
 
     combos {
         compatible = "zmk,combos";
