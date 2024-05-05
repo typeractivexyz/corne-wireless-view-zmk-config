@@ -24,7 +24,6 @@
 / {
     macros {
         terminal_win: terminal_win {
-            label = "TERMINAL_WIN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -41,7 +40,6 @@
         };
 
         windowsmax_win: windowsmax_win {
-            label = "WINDOWSMAX_WIN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -70,7 +68,6 @@
         };
 
         screenshot_win: screenshot_win {
-            label = "SCREENSHOT_WIN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -85,7 +82,6 @@
         };
 
         spotlight: spotlight {
-            label = "SPOTLIGHT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -114,7 +110,6 @@
         };
 
         screenshot_mac: screenshot_mac {
-            label = "SCREEMSHOT_MAC";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -126,6 +121,20 @@
                 <&kp LG(LS(LEFT_CONTROL))>;
 
             label = "SCREENSHOT_MAC";
+        };
+
+        recording_mac: recording_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LG(LS(LEFT_CONTROL))>,
+                <&macro_tap>,
+                <&kp NUMBER_5>,
+                <&macro_release>,
+                <&kp LG(LS(LEFT_CONTROL))>;
+
+            label = "RECORDING_MAC";
         };
 
         tmux_column: tmux_column {
@@ -189,7 +198,11 @@
             label = "TAP_DANCE_MULTI_MAC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_ALT>, <&spotlight>, <&screenshot_mac>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&spotlight>,
+                <&screenshot_mac>,
+                <&recording_mac>;
         };
 
         sm: space_mod {
