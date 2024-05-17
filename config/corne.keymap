@@ -27,13 +27,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp LGUI>,
                 <&macro_tap>,
-                <&kp LGUI &kp R>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LEFT_GUI>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp W &kp T>,
-                <&macro_wait_time 50>,
-                <&macro_tap>,
+                <&macro_wait_time 20>,
                 <&kp ENTER>;
 
             label = "TERMINAL_WIN";
