@@ -277,10 +277,10 @@
         mac_code_layer {
             display-name = "MacCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &tmux_column     &windowsmax_mac  &kp LG(D)      &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
-&trans  &tmux_row        &kp LG(LS(M))    &kp LG(LS(D))  &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
-                                          &trans         &trans          &trans         &trans     &trans             &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &kp LG(D)        &windowsmax_mac  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
+&trans  &kp LG(LS(D))    &kp LG(LS(M))    &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
+                                          &trans        &trans          &trans         &trans     &trans             &trans
             >;
         };
 
