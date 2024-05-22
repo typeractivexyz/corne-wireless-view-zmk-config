@@ -132,11 +132,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LG(LS(LEFT_CONTROL))>,
+                <&kp LG(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp NUMBER_5>,
                 <&macro_release>,
-                <&kp LG(LS(LEFT_CONTROL))>;
+                <&kp LG(LEFT_SHIFT)>;
 
             label = "RECORDING_MAC";
         };
