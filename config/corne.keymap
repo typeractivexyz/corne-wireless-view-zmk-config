@@ -248,10 +248,10 @@
         windows_code_layer {
             display-name = "WinCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &tmux_list       &windowsmax_win  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
-&trans  &tmux_create     &windowmin_win   &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
-                                          &trans        &trans          &trans         &trans     &trans             &trans
+&trans             &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR  &kp PERCENT       &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&kp LA(LS(EQUAL))  &tmux_list       &windowsmax_win  &tmux_column  &kp MINUS   &kp EQUAL         &kp GRAVE  &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(LC(DEL))
+&kp LA(LS(MINUS))  &tmux_create     &windowmin_win   &tmux_row     &kp PLUS    &kp UNDERSCORE    &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(F4)
+                                                     &trans        &trans      &trans            &trans     &trans             &trans
             >;
         };
 
@@ -288,10 +288,10 @@
         mac_code_layer {
             display-name = "MacCode";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &tmux_list       &windowsmax_mac  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
-&trans  &tmux_create     &kp LG(LS(M))    &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
-                                          &trans        &trans          &trans         &trans     &trans             &trans
+&trans         &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR  &kp PERCENT       &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&kp LG(D)      &tmux_list       &windowsmax_mac  &tmux_column  &kp MINUS   &kp EQUAL         &kp GRAVE  &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LA(ESC))
+&kp LG(LS(D))  &tmux_create     &kp LG(LS(M))    &tmux_row     &kp PLUS    &kp UNDERSCORE    &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp LG(LC(Q))
+                                                 &trans        &trans      &trans            &trans     &trans             &trans
             >;
         };
 
@@ -314,7 +314,7 @@
                           &trans  &trans  &trans     &trans        &trans        &trans
             >;
         };
-      
+
         game_default_layer {
             display-name = "Game";
             bindings = <
