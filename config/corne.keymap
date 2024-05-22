@@ -10,14 +10,14 @@
 
 // Layers
 
-#define WIN_DEF  0
-#define WIN_CODE 1
-#define WIN_NUM  2
-#define WIN_FUNC 3
-#define MAC_DEF  4
-#define MAC_CODE 5
-#define MAC_NUM  6
-#define MAC_FUNC 7
+#define MAC_DEF  0
+#define MAC_CODE 1
+#define MAC_NUM  2
+#define MAC_FUNC 3
+#define WIN_DEF  4
+#define WIN_CODE 5
+#define WIN_NUM  6
+#define WIN_FUNC 7
 #define GAME_DEF 8
 #define GAME_OPT 9
 
@@ -149,7 +149,11 @@
         tmux_column: tmux_column {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(A)>, <&macro_tap>, <&kp PIPE>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(A)>,
+                <&macro_wait_time 10>,
+                <&kp PIPE>;
 
             label = "TMUX_COLUMN";
         };
@@ -157,9 +161,25 @@
         tmux_row: tmux_row {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(A)>, <&macro_tap>, <&kp MINUS>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(A)>,
+                <&macro_wait_time 10>,
+                <&kp MINUS>;
 
             label = "TMUX_ROW";
+        };
+
+        tmux_list: tmux_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(A)>,
+                <&macro_wait_time 10>,
+                <&kp W>;
+
+            label = "TMUX_LIST";
         };
     };
 
@@ -224,46 +244,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        windows_default_layer {
-            display-name = "Windows";
-            bindings = <
-&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
-                             &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
-            >;
-        };
-
-        windows_code_layer {
-            display-name = "WinCode";
-            bindings = <
-&trans  &kp EXCLAMATION    &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &kp LA(LS(EQUAL))  &windowsmax_win  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
-&trans  &kp LA(LS(MINUS))  &windowmin_win   &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
-                                            &trans        &trans          &trans         &trans     &trans             &trans
-            >;
-        };
-
-        windows_number_layer {
-            display-name = "WinNum";
-            bindings = <
-&kp LG(LC(F4))  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&kp LG(LC(D))   &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
-&kp LG(LCTRL)   &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
-                                            &trans        &trans        &trans          &trans          &trans             &trans
-            >;
-        };
-
-        windows_function_layer {
-            display-name = "WinFunc";
-            bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none         &to MAC_DEF   &to GAME_DEF  &none         &none         &trans
-&trans  &kp F11  &kp F12  &none   &none   &none      &none         &none         &none         &none         &none         &trans
-                          &trans  &trans  &trans     &trans        &trans        &trans
-            >;
-        };
-
         mac_default_layer {
             display-name = "MacOS";
             bindings = <
@@ -299,6 +279,46 @@
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none         &to WIN_DEF   &to GAME_DEF  &none         &none         &trans
+&trans  &kp F11  &kp F12  &none   &none   &none      &none         &none         &none         &none         &none         &trans
+                          &trans  &trans  &trans     &trans        &trans        &trans
+            >;
+        };
+
+        windows_default_layer {
+            display-name = "Windows";
+          bindings = <
+&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
+&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
+                             &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
+            >;
+        };
+
+        windows_code_layer {
+            display-name = "WinCode";
+            bindings = <
+&trans  &kp EXCLAMATION    &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &kp LA(LS(EQUAL))  &windowsmax_win  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(LC(DEL))
+&trans  &kp LA(LS(MINUS))  &windowmin_win   &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(F4)
+                                            &trans        &trans          &trans         &trans     &trans             &trans
+            >;
+        };
+
+        windows_number_layer {
+            display-name = "WinNum";
+            bindings = <
+&kp LG(LC(F4))  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
+&kp LG(LC(D))   &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&kp LG(LCTRL)   &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
+                                            &trans        &trans        &trans          &trans          &trans             &trans
+            >;
+        };
+
+        windows_function_layer {
+            display-name = "WinFunc";
+            bindings = <
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none         &to MAC_DEF   &to GAME_DEF  &none         &none         &trans
 &trans  &kp F11  &kp F12  &none   &none   &none      &none         &none         &none         &none         &none         &trans
                           &trans  &trans  &trans     &trans        &trans        &trans
             >;
