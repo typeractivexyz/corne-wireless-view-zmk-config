@@ -10,14 +10,14 @@
 
 // Layers
 
-#define MAC_DEF  0
-#define MAC_CODE 1
-#define MAC_NUM  2
-#define MAC_FUNC 3
-#define WIN_DEF  4
-#define WIN_CODE 5
-#define WIN_NUM  6
-#define WIN_FUNC 7
+#define WIN_DEF  0
+#define WIN_CODE 1
+#define WIN_NUM  2
+#define WIN_FUNC 3
+#define MAC_DEF  4
+#define MAC_CODE 5
+#define MAC_NUM  6
+#define MAC_FUNC 6
 #define GAME_DEF 8
 #define GAME_OPT 9
 
@@ -235,46 +235,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        mac_default_layer {
-            display-name = "MacOS";
-            bindings = <
-&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_mac
-                             &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
-            >;
-        };
-
-        mac_code_layer {
-            display-name = "MacCode";
-            bindings = <
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
-&trans  &tmux_list       &windowsmax_mac  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
-&trans  &tmux_create     &kp LG(LS(M))    &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
-                                          &trans        &trans          &trans         &trans     &trans             &trans
-            >;
-        };
-
-        mac_number_layer {
-            display-name = "MacNum";
-            bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
-&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
-&trans  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
-                                    &trans        &trans        &trans          &trans          &trans             &trans
-            >;
-        };
-
-        mac_function_layer {
-            display-name = "MacFunc";
-            bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none         &to WIN_DEF   &to GAME_DEF  &none         &none         &trans
-&trans  &kp F11  &kp F12  &none   &none   &none      &none         &none         &none         &none         &none         &trans
-                          &trans  &trans  &trans     &trans        &trans        &trans
-            >;
-        };
-
         windows_default_layer {
             display-name = "Windows";
             bindings = <
@@ -315,6 +275,46 @@
             >;
         };
 
+        mac_default_layer {
+            display-name = "MacOS";
+            bindings = <
+&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
+&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_mac
+                             &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
+            >;
+        };
+
+        mac_code_layer {
+            display-name = "MacCode";
+            bindings = <
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
+&trans  &tmux_list       &windowsmax_mac  &tmux_column  &kp MINUS       &kp PLUS       &kp GRAVE  &kp SQT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LG(LA(ESC))
+&trans  &tmux_create     &kp LG(LS(M))    &tmux_row     &kp UNDERSCORE  &kp EQUAL      &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LC(Q))
+                                          &trans        &trans          &trans         &trans     &trans             &trans
+            >;
+        };
+
+        mac_number_layer {
+            display-name = "MacNum";
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
+&trans  &none         &none         &none         &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&trans  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
+                                    &trans        &trans        &trans          &trans          &trans             &trans
+            >;
+        };
+
+        mac_function_layer {
+            display-name = "MacFunc";
+            bindings = <
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none         &to WIN_DEF   &to GAME_DEF  &none         &none         &trans
+&trans  &kp F11  &kp F12  &none   &none   &none      &none         &none         &none         &none         &none         &trans
+                          &trans  &trans  &trans     &trans        &trans        &trans
+            >;
+        };
+      
         game_default_layer {
             display-name = "Game";
             bindings = <
