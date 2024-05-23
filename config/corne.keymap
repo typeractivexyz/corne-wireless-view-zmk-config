@@ -254,6 +254,7 @@
 &kp LA(LS(MINUS))  &tmux_create     &windowmin_win   &tmux_row     &kp PLUS    &kp UNDERSCORE    &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(F4)
                                                      &trans        &trans      &trans            &trans     &trans             &trans
             >;
+            label = "WinCode";
         };
 
         windows_number_layer {
