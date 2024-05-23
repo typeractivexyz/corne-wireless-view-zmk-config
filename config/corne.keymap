@@ -243,6 +243,7 @@
 &mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
                              &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
+            lable = "Windows";
         };
 
         windows_code_layer {
@@ -263,6 +264,7 @@
 &kp LG(LCTRL)   &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
                                             &trans        &trans        &trans          &trans          &trans             &trans
             >;
+            label = "WinNum";
         };
 
         windows_function_layer {
@@ -273,6 +275,7 @@
 &trans  &trans  &trans  &none   &none   &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
                         &trans  &trans  &trans     &trans        &trans        &trans
             >;
+            label = "WinFunc";
         };
 
         mac_default_layer {
@@ -283,6 +286,7 @@
 &mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_mac
                              &kp LEFT_GUI  &mo MAC_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
             >;
+            label = "MacOS";
         };
 
         mac_code_layer {
@@ -293,6 +297,7 @@
 &kp LG(LS(D))  &tmux_create     &kp LG(LS(M))    &tmux_row     &kp PLUS    &kp UNDERSCORE    &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp LG(LC(Q))
                                                  &trans        &trans      &trans            &trans     &trans             &trans
             >;
+            label = "MacCode";
         };
 
         mac_number_layer {
@@ -303,6 +308,7 @@
 &trans  &none         &none         &none         &none         &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
                                     &trans        &trans        &trans          &trans          &trans             &trans
             >;
+            label = "MacNum";
         };
 
         mac_function_layer {
@@ -313,6 +319,7 @@
 &trans  &trans  &trans  &none   &none   &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
                         &trans  &trans  &trans     &trans        &trans        &trans
             >;
+            label = "MacFunc";
         };
 
         game_default_layer {
@@ -323,6 +330,7 @@
 &kp LEFT_CONTROL  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1    &none   &none   &none   &none   &none  &none
                                               &sk Z         &mo GAME_OPT  &kp SPACE       &kp M   &none   &none
             >;
+            label = "Game";
         };
 
         game_option_layer {
@@ -333,6 +341,7 @@
 &none       &none         &none         &none         &none         &kp B           &none  &none        &none        &none  &none  &none
                                         &none         &trans        &trans          &none  &none        &none
             >;
+            label = "Option";
         };
     };
 
