@@ -195,7 +195,7 @@
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_MOD";
+            label = "AUTO_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
@@ -203,7 +203,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-      td_win: tap_dance_multi_win {
+        td_win: tap_dance_multi_win {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
@@ -223,7 +223,7 @@
                 <&recording_mac>;
         };
 
-       bspc_del: backspace_delete {
+        bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
