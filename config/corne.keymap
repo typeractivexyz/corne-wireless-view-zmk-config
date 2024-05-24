@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define AS(keycode) &as LS(keycode) keycode
+
 // Layers
 
 #define WIN_DEF  0
@@ -234,10 +236,10 @@
         windows_default_layer {
             display-name = "Windows";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                           &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                           &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                           &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
-                             &kp LEFT_ALT  &mo WIN_CODE  &auto_shift LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
+&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                  &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
+&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                  &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                  &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
+                             &kp LEFT_ALT  &mo WIN_CODE  AS LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -274,10 +276,10 @@
         mac_default_layer {
             display-name = "MacOS";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                           &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
-&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                           &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                           &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_mac
-                             &kp LEFT_GUI  &mo MAC_CODE  &auto_shift LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
+&kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                  &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
+&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                  &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                  &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_mac
+                             &kp LEFT_GUI  &mo MAC_CODE  AS LEFT_SHIFT SPACE    &kp ENTER  &mo MAC_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
