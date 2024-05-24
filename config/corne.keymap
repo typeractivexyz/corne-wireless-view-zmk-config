@@ -33,10 +33,6 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LEFT_GUI>,
-                <&macro_wait_time 50>,
-                <&macro_tap>,
-                <&kp DELETE>,
-                <&macro_wait_time 10>,
                 <&macro_tap>,
                 <&kp W &kp T &kp ENTER>;
 
