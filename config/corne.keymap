@@ -193,7 +193,17 @@
     };
 
     behaviors {
-        td_win: tap_dance_multi_win {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+      td_win: tap_dance_multi_win {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_WIN";
             #binding-cells = <0>;
@@ -213,17 +223,7 @@
                 <&recording_mac>;
         };
 
-        sm: space_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_MOD";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-
-        bspc_del: backspace_delete {
+       bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
@@ -241,7 +241,7 @@
 &kp TAB        &kp Q  &kp W  &kp E         &kp R         &kp T                   &kp Y      &kp U        &kp I               &kp O    &kp P          &bspc_del
 &mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F         &kp G                   &kp H      &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
 &mt LCTRL ESC  &kp Z  &kp X  &kp C         &kp V         &kp B                   &kp N      &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
-                             &kp LEFT_ALT  &mo WIN_CODE  &sm LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
+                             &kp LEFT_ALT  &mo WIN_CODE  &as LEFT_SHIFT SPACE    &kp ENTER  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
