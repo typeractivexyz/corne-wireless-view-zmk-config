@@ -254,7 +254,7 @@
 &trans             &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR  &kp PERCENT       &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
 &kp LA(LS(EQUAL))  &tmux_list       &windowsmax_win  &tmux_column  &kp MINUS   &kp EQUAL         &kp GRAVE  &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LA(LC(DEL))
 &kp LA(LS(MINUS))  &tmux_create     &windowmin_win   &tmux_row     &kp PLUS    &kp UNDERSCORE    &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp LA(F4)
-                                                     &trans        &trans      &trans            &trans     &kp ESC            &kp TAB
+                                                     &kp ESC       &trans      &trans            &trans     &trans             &kp TAB
             >;
         };
 
@@ -264,7 +264,7 @@
 &kp LG(LC(F4))  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
 &kp LG(LC(D))   &none         &none         &screenshot_win  &kp MINUS      &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
 &kp LG(LCTRL)   &none         &none         &none            &terminal_win  &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
-                                            &trans           &kp ESC        &trans          &trans          &trans             &kp TAB
+                                            &kp ESC          &trans         &trans          &trans          &trans             &kp TAB
             >;
         };
 
@@ -274,7 +274,7 @@
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
 &trans  &trans  &trans  &trans  &trans  &kp F11    &kp F12       &to MAC_DEF   &to GAME_DEF  &none         &none         &trans
 &trans  &trans  &trans  &none   &none   &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-                        &trans  &trans  &trans     &trans        &trans        &kp TAB
+                        &trans  &trans  &trans     &trans        &trans        &trans
             >;
         };
 
@@ -294,7 +294,7 @@
 &trans         &kp EXCLAMATION  &kp AT           &kp HASH      &kp DOLLAR  &kp PERCENT       &kp CARET  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK          &trans
 &kp LG(D)      &tmux_list       &windowsmax_mac  &tmux_column  &kp MINUS   &kp EQUAL         &kp GRAVE  &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp LG(LA(ESC))
 &kp LG(LS(D))  &tmux_create     &kp LG(LS(M))    &tmux_row     &kp PLUS    &kp UNDERSCORE    &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp LG(LC(Q))
-                                                 &trans        &trans      &trans            &trans     &kp ESC            &kp TAB
+                                                 &kp ESC       &trans      &trans            &trans     &trans             &kp TAB
             >;
         };
 
@@ -304,7 +304,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0   &trans
 &trans  &none         &none         &screenshot_mac  &kp MINUS     &kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp PAGE_UP    &trans
 &trans  &none         &none         &recording_mac   &spotlight    &kp END         &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp PAGE_DOWN  &trans
-                                    &trans           &kp ESC       &trans          &trans          &trans             &kp TAB
+                                    &kp ESC          &trans        &trans          &trans          &trans             &kp TAB
             >;
         };
 
