@@ -241,10 +241,10 @@
         windows_default_layer {
             display-name = "Windows";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R         &kp T                   &kp Y          &kp U        &kp I      &kp O    &kp P          &bspc_del
-&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F         &kp G                   &kp H          &kp J        &kp K      &kp L    &kp SEMICOLON  &kp LC(TAB)
-&mt LCTRL ESC  &kp Z  &kp X  &kp C     &kp V         &kp B                   &kp N          &kp M        &kp COMMA  &kp DOT  &kp SLASH      &td_win
-                             &gui_alt  &mo WIN_CODE  &as LEFT_SHIFT SPACE    &as RCTRL RET  &mo WIN_NUM  &bspc_del
+&kp TAB        &kp Q  &kp W  &kp E     &kp R         &kp T                   &kp Y          &kp U        &kp I               &kp O    &kp P          &bspc_del
+&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F         &kp G                   &kp H          &kp J        &kp K               &kp L    &kp SEMICOLON  &kp LC(TAB)
+&mt LCTRL ESC  &kp Z  &kp X  &kp C     &kp V         &kp B                   &kp N          &kp M        &kp COMMA           &kp DOT  &kp SLASH      &td_win
+                             &gui_alt  &mo WIN_CODE  &as LEFT_SHIFT SPACE    &as RCTRL RET  &mo WIN_NUM  &kp LC(LEFT_SHIFT)
             >;
         };
 
@@ -335,6 +335,15 @@
 &kp ESCAPE  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none  &to WIN_DEF  &to MAC_DEF  &none  &none  &none
 &none       &none         &none         &none         &none         &kp B           &none  &none        &none        &none  &none  &none
                                         &none         &trans        &trans          &none  &none        &none
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
