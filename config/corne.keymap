@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
@@ -132,10 +133,10 @@
 
         Nav_Layer {
             bindings = <
-&trans  &kp LC(LS(TAB))  &kp LC(TAB)   &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp INSERT  &trans
-&trans  &sk LEFT_WIN     &sk LEFT_ALT  &sk LCTRL         &sk LEFT_SHIFT     &trans                    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE  &trans
-&trans  &kp LC(Z)        &kp LC(X)     &kp LC(C)         &kp LC(V)          &trans                    &none          &trans    &trans        &trans     &trans      &trans
-                                       &trans            &sk LCTRL          &Hold_Pref_Layer 3 TAB    &trans         &trans    &none
+&trans  &kp LC(LS(TAB))  &kp LC(TAB)   &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END    &kp INSERT  &trans
+&trans  &sk LEFT_WIN     &sk LEFT_ALT  &sk LCTRL         &sk LEFT_SHIFT     &trans                    &kp MINUS      &kp LEFT   &kp DOWN      &kp RIGHT  &kp DELETE  &trans
+&trans  &kp LC(Z)        &kp LC(X)     &kp LC(C)         &kp LC(V)          &trans                    &kp PAGE_DOWN  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans      &trans
+                                       &trans            &trans             &Hold_Pref_Layer 3 TAB    &trans         &trans     &none
             >;
 
             label = "Navigate";
