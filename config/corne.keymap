@@ -144,10 +144,10 @@
 
         Sym_Layer {
             bindings = <
-&trans    &trans        &trans        &trans     &trans          &trans              &kp PIPE           &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp PLUS      &trans
-&kp CAPS  &sk LEFT_WIN  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp PERIOD          &kp UNDER          &kp DOLLAR       &kp PERCENT   &kp CARET  &kp COLON     &trans
-&trans    &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp QUESTION  &trans
-                                      &trans     &trans          &trans              &trans             &trans           &trans
+&trans    &kp LC(LS(TAB))  &kp LC(TAB)   &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)    &kp PIPE           &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp PLUS      &trans
+&kp CAPS  &sk LEFT_WIN     &sk LEFT_ALT  &sk LCTRL         &sk LEFT_SHIFT     &kp PERIOD          &kp UNDER          &kp DOLLAR       &kp PERCENT   &kp CARET  &kp COLON     &trans
+&trans    &kp LC(Z)        &kp LC(X)     &kp LC(C)         &kp LC(V)          &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp QUESTION  &trans
+                                         &trans            &trans             &trans              &trans             &trans           &trans
             >;
 
             label = "Symbols";
