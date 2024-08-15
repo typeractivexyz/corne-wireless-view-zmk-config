@@ -166,10 +166,10 @@
 
         Media {
             bindings = <
-&trans  &trans    &trans    &trans      &trans             &trans             &trans          &trans            &trans      &trans    &trans    &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL   &kp LSHFT          &trans             &trans          &kp LSHFT         &kp LCTRL   &kp LALT  &kp LGUI  &trans
-&trans  &trans    &trans    &trans      &trans             &trans             &trans          &trans            &trans      &trans    &trans    &trans
-                            &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT
+&trans  &trans    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans             &kp K_SCROLL_UP    &mkp LCLK  &kp UP_ARROW  &mkp RCLK  &trans     &trans
+&trans  &kp LGUI  &kp LALT        &kp LCTRL         &kp LSHFT          &trans             &kp K_SCROLL_DOWN  &kp LEFT   &kp DOWN      &kp RIGHT  &mkp MCLK  &trans
+&trans  &trans    &trans          &trans            &trans             &trans             &trans             &trans     &trans        &trans     &trans     &trans
+                                  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &mkp LCLK          &mkp RCLK  &mkp MCLK
             >;
         };
 
