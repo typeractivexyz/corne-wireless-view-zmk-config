@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/jun3d4y
   projects:
     - name: zmk
-      remote: custom
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
