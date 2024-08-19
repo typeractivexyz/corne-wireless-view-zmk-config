@@ -63,7 +63,7 @@
             bindings = <
 &none  &kp FR_A_GRAVE  &kp FR_AT       &mt FR_E_GRAVE FR_E_ACUTE  &kp FR_DOLLAR     &kp FR_PERCENT         &kp FR_CARET  &kp FR_U_GRAVE   &kp FR_ASTERISK      &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp BSPC
 &none  &kp FR_HASH     &kp FR_E_GRAVE  &kp FR_A_GRAVE             &kp FR_C_CEDILLA  &kp FR_U_GRAVE         &kp FR_MINUS  &kp FR_EQUAL     &kp FR_LEFT_BRACKET  &kp FR_RIGHT_BRACKET     &kp FR_GRAVE              &kp FR_GRAVE
-&none  &out OUT_BLE    &out OUT_USB    &kt FR_C_CEDILLA           &kt FR_C_CEDILLA  &kp FR_GREATER_THAN    &kp FR_UNDER  &kp FR_QUESTION  &kp FR_LEFT_BRACE    &kp FR_RIGHT_BRACE       &kp FR_TILDE              &kp FR_TILDE
+&none  &out OUT_BLE    &out OUT_USB    &kp FR_C_CEDILLA           &kt FR_C_CEDILLA  &kp FR_GREATER_THAN    &kp FR_UNDER  &kp FR_QUESTION  &kp FR_LEFT_BRACE    &kp FR_RIGHT_BRACE       &kp FR_TILDE              &kp FR_TILDE
                                        &kp LGUI                   &mo 3             &kp SPACE              &kp RET       &trans           &kp RALT
             >;
         };
