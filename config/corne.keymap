@@ -37,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp F1        &kp F2        &kp F3        &kp HOME      &kp END         &kp N7        &kp N8        &kp N9        &kp NUMBER_0    &trans          &kp DEL
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans          &kp UP_ARROW    &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-                                        &kp LGUI      &trans        &kp ENTER       &kp SPACE     &trans        &kp LEFT_ALT
+&kp TAB     &kp F1        &kp F2        &kp F3         &kp HOME          &kp END         &kp N7        &kp N8        &kp N9        &kp NUMBER_0    &trans          &kp DEL
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans          &kp UP_ARROW    &trans
+&kp LSHFT   &trans        &trans        &kp LESS_THAN  &kp GREATER_THAN  &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+                                        &kp LGUI       &trans            &kp ENTER       &kp SPACE     &trans        &kp LEFT_ALT
             >;
         };
 
