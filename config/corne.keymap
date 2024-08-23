@@ -68,8 +68,8 @@
             display-name = "Symbols";
             bindings = <
 &kp TAB    &trans     &trans    &trans            &trans             &trans       &trans   &trans  &trans    &trans  &trans  &kp BSPC
-&kp LCTRL  &trans     &trans    &trans            &trans             &trans       &trans   &trans  &trans    &trans  &trans  &trans
-&kp LSHFT  &kp GRAVE  &kp BSLH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &trans   &trans  &trans    &trans  &trans  &kp RSHIFT
+&kp LCTRL  &kp GRAVE  &kp BSLH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &trans   &trans  &trans    &trans  &trans  &trans
+&kp LSHFT  &trans     &trans    &trans            &trans             &trans       &trans   &trans  &trans    &trans  &trans  &kp RSHIFT
                                 &kp LGUI          &trans             &kp MINUS    &kp RET  &trans  &kp RALT
             >;
         };
