@@ -20,6 +20,9 @@
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <24 11>;
+            slow-release;
+            timeout-ms = <500>;
+            layers = <0>;
         };
     };
 
