@@ -16,6 +16,11 @@
             bindings = <&kp ESC>;
             key-positions = <24 35>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <24 11>;
+        };
     };
 
     keymap {
