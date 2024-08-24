@@ -15,11 +15,13 @@
         Caps {
             bindings = <&kp CAPS>;
             key-positions = <24 35>;
+            timeout-ms = <100>;
         };
 
         Escape {
             bindings = <&kp ESC>;
             key-positions = <38 39>;
+            timeout-ms = <100>;
         };
     };
 
@@ -38,6 +40,8 @@
             label = "SHIFT_OR_CAPS";
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&kp CAPS>;
+
+            tapping-term-ms = <200>;
         };
 
         next_or_prev: next_or_prev {
