@@ -76,7 +76,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Num/Nav";
+            display-name = "Nav";
             bindings = <
 &kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp BACKSPACE
 &trans     &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp RCTRL  &trans
@@ -94,7 +94,7 @@
 
             display-name = "Symbols";
             bindings = <
-&kp TAB    &trans     &trans    &trans            &trans             &trans       &trans   &trans  &trans    &trans  &trans     &kp BSPC
+&kp TAB    &kp N1     &kp N2    &kp N3            &kp N4             &kp N5       &kp N6   &kp N7  &kp N8    &kp N9  &kp N0     &kp BSPC
 &kp LCTRL  &kp GRAVE  &kp BSLH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &trans   &trans  &trans    &trans  &kp RCTRL  &trans
 &kp LSHFT  &trans     &trans    &trans            &trans             &trans       &trans   &trans  &trans    &trans  &trans     &kp RSHIFT
                                 &kp LGUI          &trans             &kp MINUS    &kp RET  &trans  &kp RALT
