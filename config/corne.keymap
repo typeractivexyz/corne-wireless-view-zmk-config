@@ -12,8 +12,8 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
-            bindings = <&kp ESC>;
+        Caps {
+            bindings = <&kp CAPS>;
             key-positions = <24 35>;
         };
 
@@ -22,7 +22,12 @@
             key-positions = <24 11>;
             slow-release;
             timeout-ms = <500>;
-            layers = <0>;
+            layers = <0 2 1>;
+        };
+
+        Escape {
+            bindings = <&kp ESC>;
+            key-positions = <38 39>;
         };
     };
 
