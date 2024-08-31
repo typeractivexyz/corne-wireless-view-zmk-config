@@ -21,10 +21,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB           &kp Q        &kp W           &kp E        &kp R                    &kp T        &kp Y    &kp U              &kp I        &kp O            &kp P               &kp BSPC
-&mt LCTRL ESCAPE  &mt LCTRL A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F         &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RCMD SEMICOLON  &kp SQT
-&kp LSHFT         &kp Z        &kp X           &kp C        &kp V                    &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH            &kp ESC
-                                               &trans       &mt LS(LA(LCTRL)) SPACE  &kp LSHFT    &kp RET  &to 1              &trans
+&kp TAB           &kp Q         &kp W           &kp E       &kp R                    &kp T        &kp Y    &kp U       &kp I            &kp O         &kp P                &kp BSPC
+&mt LCTRL ESCAPE  &mt LSHIFT A  &mt LEFT_ALT S  &mt LCMD D  &kp F                    &kp G        &kp H    &mt RCMD J  &mt RIGHT_ALT K  &mt RSHIFT L  &mt RCTRL SEMICOLON  &kp SQT
+&kp LSHFT         &kp Z         &kp X           &kp C       &kp V                    &kp B        &kp N    &kp M       &kp COMMA        &kp DOT       &kp FSLH             &kp ESC
+                                                &trans      &mt LS(LA(LCTRL)) SPACE  &kp LSHFT    &kp RET  &to 1       &trans
             >;
         };
 
@@ -37,10 +37,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET      &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans        &kp MINUS      &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans        &kp UNDER      &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &to 0     &kp LSHIFT    &kp RIGHT_ALT  &to 2      &trans
+&kp ESCAPE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET      &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp TAB     &trans    &trans  &trans    &trans    &trans        &kp MINUS      &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp TILDE   &trans    &trans  &trans    &trans    &trans        &kp UNDER      &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp RETURN
+                              &trans    &to 0     &kp LSHIFT    &kp RIGHT_ALT  &to 2      &trans
             >;
         };
 
