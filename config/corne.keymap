@@ -135,7 +135,7 @@
             bindings = <
 &trans  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END      &kp INSERT  &trans
 &trans  &kp LGUI         &kp LALT     &kp LCTRL         &kp LSHFT          &trans                    &kp MINUS      &kp LEFT   &kp DOWN      &kp RIGHT    &kp DELETE  &trans
-&trans  &kp LC(Z)        &kp LC(X)    &kp LC(C)         &kp LC(V)          &trans                    &kp PAGE_DOWN  &mkp LCLK  &mkp MCLK     &kp LS(F10)  &trans      &trans
+&trans  &kp LC(Z)        &kp LC(X)    &kp LC(C)         &kp LC(V)          &kp LS(LC(V))             &kp PAGE_DOWN  &mkp LCLK  &mkp MCLK     &kp LS(F10)  &trans      &trans
                                       &trans            &trans             &Hold_Pref_Layer 3 TAB    &trans         &trans     &none
             >;
 
