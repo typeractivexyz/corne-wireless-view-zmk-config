@@ -113,10 +113,10 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q                &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT                  &trans
-&trans  &hml LEFT_WIN A      &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O                    &trans
-&trans  &Tap_Pref_Layer 4 Z  &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &Tap_Pref_Layer 5 SLASH  &trans
-                                              &trans        &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &none
+&trans  &kp Q                &kp W                &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT                  &trans
+&trans  &hml LEFT_WIN A      &hml LEFT_ALT R      &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O                    &trans
+&trans  &Tap_Pref_Layer 4 Z  &Tap_Pref_Layer 8 X  &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &Tap_Pref_Layer 5 SLASH  &trans
+                                                  &trans        &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &none
             >;
         };
 
@@ -193,6 +193,18 @@
             >;
 
             label = "ESDF";
+        };
+
+        // Layer 8: Mouse movement layer
+        mouse_layer {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans      &trans     &trans     &mmov U  &trans   &trans    &trans   
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans      &trans     &mmov L    &mmov D  &mmov R  &trans    &trans  
+&trans  &trans    &trans    &trans     &trans     &trans      &trans     &trans     &trans   &trans   &trans    &trans  
+                            &trans     &trans     &trans      &mpoint L  &mpoint R  &trans
+            >;
+
+            label = "Mouse";  
         };
     };
 };
