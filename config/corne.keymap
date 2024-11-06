@@ -44,7 +44,7 @@
 &trans  &kp Q  &kp W  &kp F    &kp P      &kp B                  &kp J                     &kp L        &kp U      &kp Y    &kp SQT    &trans
 &trans  &kp A  &kp R  &kp S    &kp T      &kp G                  &kp M                     &kp N        &kp E      &kp I    &kp O      &trans
 &trans  &kp Z  &kp X  &kp C    &kp D      &kp V                  &kp K                     &kp H        &kp COMMA  &kp DOT  &kp SLASH  &to 1
-                      &kp ESC  &lt 2 TAB  &mt LG(SPACE) SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 3 ENTER  &kp DEL
+                      &kp ESC  &lt 2 TAB  &mt LG(SPACE) SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 3 ENTER  &tog 5
             >;
 
             label = "MAC";
@@ -96,6 +96,15 @@
 &trans  &trans  &trans  &trans  &trans             &trans             &trans  &to 0           &to 1       &trans      &bt BT_SEL 1  &trans
 &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans          &trans      &bt BT_CLR  &bt BT_SEL 2  &trans
                         &trans  &trans             &trans             &trans  &trans          &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans          &kp LEFT   &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp DOWN_ARROW  &trans     &kp UP_ARROW    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &kp RIGHT  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans          &trans     &trans          &trans  &trans  &trans
             >;
         };
     };
