@@ -15,7 +15,7 @@
         clear_bt {
             bindings = <&bt BT_CLR>;
             key-positions = <35 12>;
-            timeout-ms = <0>;
+            timeout-ms = <500>;
             layers = <0>;
         };
     };
