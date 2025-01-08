@@ -5,7 +5,10 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &sk { /delete-property/ ignore-modifiers; };
@@ -16,12 +19,12 @@
 
         arrow_up {
             bindings = <&kp UP>;
-            key-positions = <2 3>;
+            key-positions = <16 4>;
         };
 
         arrow_down {
             bindings = <&kp DOWN>;
-            key-positions = <14 15>;
+            key-positions = <16 28>;
         };
 
         arrow_left {
@@ -36,12 +39,12 @@
 
         mouse_up {
             bindings = <&mmv MOVE_UP>;
-            key-positions = <8 9>;
+            key-positions = <19 7>;
         };
 
         mouse_down {
             bindings = <&mmv MOVE_DOWN>;
-            key-positions = <20 21>;
+            key-positions = <19 31>;
         };
 
         mouse_left {
@@ -52,6 +55,31 @@
         mouse_right {
             bindings = <&mmv MOVE_RIGHT>;
             key-positions = <21 22>;
+        };
+
+        ClearAllProfiles {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 11 39 38>;
+        };
+
+        SelectAll {
+            bindings = <&kp LC(A)>;
+            key-positions = <6 7>;
+        };
+
+        Cut {
+            bindings = <&kp LC(LG(X))>;
+            key-positions = <7 8>;
+        };
+
+        Copy {
+            bindings = <&kp LC(LG(C))>;
+            key-positions = <8 9>;
+        };
+
+        Paste {
+            bindings = <&kp LC(LG(V))>;
+            key-positions = <9 10>;
         };
     };
 
@@ -100,7 +128,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <201>;
             hold-trigger-key-positions = <39 40 41 35 34 22 23 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
         };
 
@@ -110,7 +138,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <201>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
     };
@@ -126,28 +154,64 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q            &kp W            &kp F                &kp P              &kp B       &kp J     &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &hml G G    &hmr M M  &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
-&none  &kp X            &kp C            &kp D                &kp V              &kp Z       &kp K     &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                         &none                &kp SPACE          &kp TAB     &kp RET   &kp BACKSPACE       &kp DELETE
+&none  &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J         &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
+&none  &kp X            &kp C            &kp D                &kp V              &kp Z        &kp K         &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
+                                         &none                &lt 1 SPACE        &lt 2 TAB    &lt 4 RETURN  &lt 3 BACKSPACE     &kp DELETE
             >;
         };
 
-        raise {
+        num {
             bindings = <
-&none  &kp SLASH     &kp N7        &kp N8        &kp N9  &kp MINUS    &none  &none  &none   &none   &none  &none
-&none  &kp ASTERISK  &kp N4        &kp N5        &kp N6  &kp PLUS     &none  &none  &none   &none   &none  &none
-&none  &kp PERCENT   &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp EQUAL    &none  &none  &trans  &trans  &none  &none
-                                   &none         &kp N0  &none        &none  &none  &none
+&none  &none         &none         &none             &none           &none     &kp MINUS  &kp N7        &kp N8  &kp N9  &kp SLASH     &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &kp EQUAL  &kp N4        &kp N5  &kp N6  &kp PERCENT   &kp DOLLAR
+&none  &none         &none         &none             &none           &none     &kp PLUS   &kp NUMBER_1  &kp N2  &kp N3  &kp ASTERISK  &none
+                                   &trans            &trans          &trans    &trans     &kp DOT       &kp N0
             >;
         };
 
-        lower {
+        sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &kp UNDERSCORE   &kp AMPERSAND                            &kp PIPE                     &kp ASTERISK                     &kp BACKSLASH                &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp EXCLAMATION  &hmr LEFT_PARENTHESIS RIGHT_PARENTHESIS  &hmr LEFT_BRACE RIGHT_BRACE  &hmr LEFT_BRACKET RIGHT_BRACKET  &hmr LESS_THAN GREATER_THAN  &kp AT_SIGN
+&trans  &trans        &trans        &trans            &trans          &trans    &kp QUESTION     &hmr SINGLE_QUOTE DOUBLE_QUOTES          &kp GRAVE                    &kp DOLLAR                       &trans                       &trans
+                                    &trans            &trans          &trans    &trans           &trans                                   &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+&none  &none  &kp HOME        &kp UP_ARROW    &kp END          &none     &none   &none           &none             &none         &none         &none
+&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none  &none  &none           &none           &none            &none     &none   &none           &trans            &trans        &none         &none
+                              &trans          &trans           &trans    &trans  &trans          &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&none  &none  &none           &mmv MOVE_UP    &none            &none     &none   &none     &msc SCRL_UP    &none     &none  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &none  &none
+&none  &none  &none           &none           &none            &none     &none   &mkp MB4  &mkp MB3        &mkp MB5  &none  &none
+                              &trans          &trans           &trans    &trans  &trans    &trans
+            >;
+        };
+
+        autoshift {
+            bindings = <
+&trans  &as Q  &as W  &as F   &as P   &as B     &as J   &as L   &as U   &as Y   &trans  &trans
+&trans  &as A  &as R  &as S   &as T   &as G     &as M   &as N   &as E   &as I   &as O   &trans
+&trans  &as X  &as C  &as D   &as V   &as Z     &as K   &as H   &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        template {
+            bindings = <
+&none  &none  &none  &none   &none   &none     &none   &none           &none             &none         &none         &none
+&none  &none  &none  &none   &none   &none     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none  &none  &none  &none   &none   &none     &none   &none           &none             &none         &none         &none
+                     &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
