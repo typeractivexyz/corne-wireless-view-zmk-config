@@ -118,28 +118,36 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            label = "Base";
             bindings = <
-&none  &kp Q            &kp W            &kp F                &kp P              &kp B      &kp J    &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G      &kp M    &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
-&none  &kp X            &kp C            &kp D                &kp V              &kp Z      &kp K    &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                         &none                &kp SPACE          &kp TAB    &kp RET  &kp BACKSPACE       &kp DELETE
+&none  &kp Q            &kp W            &kp F                &kp P              &kp B       &kp J     &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &hml G G    &hmr M M  &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
+&none  &kp X            &kp C            &kp D                &kp V              &kp Z       &kp K     &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
+                                         &none                &kp SPACE          &kp TAB     &kp RET   &kp BACKSPACE       &kp DELETE
             >;
         };
 
-        Numbers {
+        raise {
             bindings = <
-&trans  &trans  &kp N7        &kp N8        &kp N9  &kp MINUS    &kp FSLH     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N4        &kp N5        &kp N6  &kp PLUS     &kp STAR     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp EQUAL    &kp PERCENT  &trans  &trans  &trans  &trans  &trans
-                              &kp PERIOD    &kp N0  &trans       &trans       &trans  &trans
+&none  &kp SLASH     &kp N7        &kp N8        &kp N9  &kp MINUS    &none  &none  &none   &none   &none  &none
+&none  &kp ASTERISK  &kp N4        &kp N5        &kp N6  &kp PLUS     &none  &none  &none   &none   &none  &none
+&none  &kp PERCENT   &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp EQUAL    &none  &none  &trans  &trans  &none  &none
+                                   &none         &kp N0  &none        &none  &none  &none
+            >;
+        };
+
+        lower {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
