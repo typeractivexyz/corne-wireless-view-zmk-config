@@ -92,9 +92,9 @@
 
             bindings = <
 &none  &kp Q            &kp W            &kp F                &kp P              &kp G          &kp J         &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp D          &kp H         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
+&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &lt 3 D        &lt 3 H       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B          &kp K         &kp M               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                         &kp LC(Z)            &lt 1 TAB          &lt 2 SPACE    &lt 3 RETURN  &kp BACKSPACE       &kp DELETE
+                                         &kp LC(Z)            &kp TAB            &lt 1 SPACE    &lt 2 RETURN  &kp BACKSPACE       &kp DELETE
             >;
         };
 
