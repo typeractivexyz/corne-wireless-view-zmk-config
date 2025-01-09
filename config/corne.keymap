@@ -118,10 +118,10 @@
 
         nav {
             bindings = <
-&none  &none  &kp HOME        &kp UP_ARROW    &kp END          &none     &none   &none           &none             &none         &none         &none
-&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&none  &none  &none           &none           &none            &none     &none   &none           &trans            &trans        &none         &none
-                              &trans          &trans           &trans    &trans  &trans          &trans
+&none  &none     &none     &none      &none         &none             &none            &none           &none      &none     &none     &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT     &none             &none            &kp RSHFT       &kp RCTRL  &kp RALT  &kp RGUI  &none
+&none  &none     &none     &none      &none         &none             &none            &none           &trans     &trans    &none     &none
+                           &kp HOME   &kp UP_ARROW  &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp END
             >;
         };
 
