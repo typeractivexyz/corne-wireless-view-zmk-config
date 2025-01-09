@@ -154,10 +154,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J         &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
-&none  &kp X            &kp C            &kp D                &kp V              &kp Z        &kp K         &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                         &none                &lt 1 SPACE        &lt 2 TAB    &lt 4 RETURN  &lt 3 BACKSPACE     &kp DELETE
+&none  &kp Q            &kp W            &kp F                &kp P              &kp G        &kp J         &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp D        &kp H         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp K         &kp M               &kp COMMA             &kp DOT           &kp SLASH         &none
+                                         &kp K_UNDO           &lt 1 SPACE        &lt 2 TAB    &lt 4 RETURN  &lt 3 BACKSPACE     &kp DELETE
             >;
         };
 
@@ -199,9 +199,9 @@
 
         autoshift {
             bindings = <
-&trans  &as Q  &as W  &as F   &as P   &as B     &as J   &as L   &as U   &as Y   &trans  &trans
-&trans  &as A  &as R  &as S   &as T   &as G     &as M   &as N   &as E   &as I   &as O   &trans
-&trans  &as X  &as C  &as D   &as V   &as Z     &as K   &as H   &trans  &trans  &trans  &trans
+&trans  &as Q  &as W  &as F   &as P   &as G     &as J   &as L   &as U   &as Y   &trans  &trans
+&trans  &as A  &as R  &as S   &as T   &as D     &as H   &as N   &as E   &as I   &as O   &trans
+&trans  &as Z  &as X  &as C   &as V   &as B     &as K   &as M   &trans  &trans  &trans  &trans
                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
