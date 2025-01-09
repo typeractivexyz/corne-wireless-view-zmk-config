@@ -7,9 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &sk { /delete-property/ ignore-modifiers; };
 
@@ -17,69 +14,9 @@
     combos {
         compatible = "zmk,combos";
 
-        arrow_up {
-            bindings = <&kp UP>;
-            key-positions = <16 4>;
-        };
-
-        arrow_down {
-            bindings = <&kp DOWN>;
-            key-positions = <16 28>;
-        };
-
-        arrow_left {
-            bindings = <&kp LEFT>;
-            key-positions = <15 16>;
-        };
-
-        arrow_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <14 13>;
-        };
-
-        mouse_up {
-            bindings = <&mmv MOVE_UP>;
-            key-positions = <19 7>;
-        };
-
-        mouse_down {
-            bindings = <&mmv MOVE_DOWN>;
-            key-positions = <19 31>;
-        };
-
-        mouse_left {
-            bindings = <&mmv MOVE_LEFT>;
-            key-positions = <20 19>;
-        };
-
-        mouse_right {
-            bindings = <&mmv MOVE_RIGHT>;
-            key-positions = <21 22>;
-        };
-
         ClearAllProfiles {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 11 39 38>;
-        };
-
-        SelectAll {
-            bindings = <&kp LC(A)>;
-            key-positions = <6 7>;
-        };
-
-        Cut {
-            bindings = <&kp LC(LG(X))>;
-            key-positions = <7 8>;
-        };
-
-        Copy {
-            bindings = <&kp LC(LG(C))>;
-            key-positions = <8 9>;
-        };
-
-        Paste {
-            bindings = <&kp LC(LG(V))>;
-            key-positions = <9 10>;
         };
     };
 
@@ -157,7 +94,7 @@
 &none  &kp Q            &kp W            &kp F                &kp P              &kp G          &kp J         &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
 &none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp D          &kp H         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B          &kp K         &kp M               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                         &kp LC(LG(Z))        &lt 1 TAB          &lt 2 SPACE    &lt 4 RETURN  &lt 3 BACKSPACE     &kp DELETE
+                                         &kp LC(Z)            &lt 1 TAB          &lt 2 SPACE    &lt 3 RETURN  &kp BACKSPACE       &kp DELETE
             >;
         };
 
@@ -185,15 +122,6 @@
 &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
 &none  &none  &none           &none           &none            &none     &none   &none           &trans            &trans        &none         &none
                               &trans          &trans           &trans    &trans  &trans          &trans
-            >;
-        };
-
-        mouse {
-            bindings = <
-&none  &none  &none           &mmv MOVE_UP    &none            &none     &none   &none     &msc SCRL_UP    &none     &none  &none
-&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &none  &none
-&none  &none  &none           &none           &none            &none     &none   &mkp MB4  &mkp MB3        &mkp MB5  &none  &none
-                              &trans          &trans           &trans    &trans  &trans    &trans
             >;
         };
 
