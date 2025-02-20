@@ -32,6 +32,7 @@
 &trans  &kp MINUS   &kp UNDER   &kp PLUS   &kp EQUAL  &kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp SINGLE_QUOTE       &trans
                                 &trans     &trans     &trans           &trans            &trans             &trans
             >;
+
         };
     };
 };
