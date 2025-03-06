@@ -116,37 +116,28 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q            &kp W            &kp F                &kp P              &kp B          &kp J       &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &lt 1 G        &kp M       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
-&none  &kp Z            &kp X            &kp C                &kp D              &kp V          &kp K       &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                         &kp LC(Z)            &lt 2 TAB          &lt 3 SPACE    &kp RETURN  &kp BACKSPACE       &kp DELETE
+&kp ESCAPE  &kp Q            &kp W            &kp F                &kp P              &kp B          &kp J       &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
+&none       &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &lt 1 G        &kp M       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
+&none       &kp Z            &kp X            &kp C                &kp D              &kp V          &kp K       &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
+                                              &kp LC(Z)            &lt 2 TAB          &lt 1 SPACE    &kp RETURN  &kp BACKSPACE       &kp DELETE
             >;
         };
 
         nav {
             bindings = <
-&none  &none     &none     &none      &none      &none     &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &none     &none     &none      &none      &none     &none   &none           &trans          &trans           &none  &none
-                           &trans     &trans     &trans    &trans  &trans          &trans
-            >;
-        };
-
-        num {
-            bindings = <
-&none  &none         &none         &none             &none           &none     &none   &kp N7        &kp N8  &kp N9  &none    &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none   &kp N4        &kp N5  &kp N6  &kp N0   &none
-&none  &none         &none         &none             &none           &none     &none   &kp NUMBER_1  &kp N2  &kp N3  &kp DOT  &none
-                                   &trans            &trans          &trans    &trans  &trans        &trans
+&none  &none     &none     &none      &none      &none     &none   &none           &hmr PG_UP UP        &none           &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &none   &hmr HOME LEFT  &hmr PAGE_DOWN DOWN  &hmr END RIGHT  &none  &none
+&none  &none     &none     &none      &none      &none     &none   &none           &trans               &trans          &none  &none
+                           &trans     &trans     &trans    &trans  &kp K_UNDO      &kp K_REDO
             >;
         };
 
         sym {
             bindings = <
-&none  &none         &none         &none             &none           &none       &none           &kp QUESTION                             &kp EXCLAMATION              &kp AMPERSAND                    &kp PIPE                     &hmr BACKSLASH SLASH
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp STAR    &kp MINUS       &hmr LEFT_PARENTHESIS RIGHT_PARENTHESIS  &hmr LEFT_BRACE RIGHT_BRACE  &hmr LEFT_BRACKET RIGHT_BRACKET  &hmr LESS_THAN GREATER_THAN  &kp AT_SIGN
-&none  &none         &none         &none             &none           &none       &kp UNDERSCORE  &hmr DOUBLE_QUOTES SINGLE_QUOTE          &kp GRAVE                    &kp DOLLAR                       &none                        &none
-                                   &none             &none           &none       &none           &none                                    &none
+&none  &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp PLUS     &kp ASTERISK          &kp QUESTION                             &kp EXCLAMATION              &kp AMPERSAND                    &kp PIPE                     &none
+&none  &kp DOLLAR   &kp N4  &kp N5   &kp N6  &kp EQUAL    &hmr SLASH BACKSLASH  &hmr RIGHT_PARENTHESIS LEFT_PARENTHESIS  &hmr RIGHT_BRACE LEFT_BRACE  &hmr RIGHT_BRACKET LEFT_BRACKET  &hmr GREATER_THAN LESS_THAN  &kp AT_SIGN
+&none  &none        &kp N1  &kp N2   &kp N3  &kp MINUS    &kp UNDERSCORE        &hmr SINGLE_QUOTE DOUBLE_QUOTES          &kp GRAVE                    &kp CARET                        &none                        &none
+                            &kp DOT  &kp N0  &trans       &trans                &kp K_UNDO                               &kp K_REDO
             >;
         };
 
