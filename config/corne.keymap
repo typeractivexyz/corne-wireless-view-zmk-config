@@ -168,9 +168,9 @@
 
         autoshift {
             bindings = <
-&trans  &as Q  &as W  &as F   &as P   &as G     &as J   &as L   &as U   &as Y   &trans  &trans
-&trans  &as A  &as R  &as S   &as T   &as D     &as H   &as N   &as E   &as I   &as O   &trans
-&trans  &as Z  &as X  &as C   &as V   &as B     &as K   &as M   &trans  &trans  &trans  &trans
+&trans  &as Q  &as W  &as F   &as P   &as B     &as J   &as L   &as U   &as Y   &trans  &trans
+&trans  &as A  &as R  &as S   &as T   &as G     &as M   &as N   &as E   &as I   &as O   &trans
+&trans  &as Z  &as X  &as C   &as D   &as V     &as K   &as H   &trans  &trans  &trans  &trans
                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
