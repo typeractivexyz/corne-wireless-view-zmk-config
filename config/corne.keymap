@@ -150,10 +150,10 @@
 
         nav {
             bindings = <
-&none  &none     &none     &none      &none      &none     &none   &none           &hmr PG_UP UP        &none           &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &none   &hmr HOME LEFT  &hmr PAGE_DOWN DOWN  &hmr END RIGHT  &none  &none
-&none  &none     &none     &none      &none      &none     &none   &none           &trans               &trans          &none  &none
-                           &trans     &trans     &trans    &trans  &kp K_UNDO      &kp K_REDO
+&none  &none     &none     &none      &none      &none     &none         &none           &hmr PG_UP UP        &none           &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &none         &hmr HOME LEFT  &hmr PAGE_DOWN DOWN  &hmr END RIGHT  &none  &none
+&none  &none     &none     &none      &none      &none     &kp K_SELECT  &kp K_CUT       &kp K_COPY           &kp K_PASTE     &none  &none
+                           &trans     &trans     &trans    &trans        &kp K_UNDO      &kp K_REDO
             >;
         };
 
