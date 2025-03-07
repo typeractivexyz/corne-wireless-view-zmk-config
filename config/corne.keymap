@@ -16,32 +16,57 @@
 
         ClearAllProfiles {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <0 11 39 38>;
+            key-positions = <39 38 36 37 40 41>;
         };
 
-        Profile0 {
+        P0-select {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <0 38 6>;
+            key-positions = <38 36 37 18>;
         };
 
-        Profile1 {
+        P1-select {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <0 38 7>;
+            key-positions = <38 36 37 19>;
         };
 
-        Profile2 {
+        P2-select {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <0 38 8>;
+            key-positions = <38 36 37 20>;
         };
 
-        Profile3 {
+        P3-select {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <0 38 9>;
+            key-positions = <38 36 37 21>;
         };
 
-        Profile4 {
+        P4-select {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <0 38 10>;
+            key-positions = <38 36 37 22>;
+        };
+
+        P0-disconnect {
+            bindings = <&bt BT_DISC 0>;
+            key-positions = <36 37 38 30>;
+        };
+
+        P1-disconnect {
+            bindings = <&bt BT_DISC 1>;
+            key-positions = <36 37 38 31>;
+        };
+
+        P2-disconnect {
+            bindings = <&bt BT_DISC 2>;
+            key-positions = <36 37 38 32>;
+        };
+
+        P3-disconnect {
+            bindings = <&bt BT_DISC 3>;
+            key-positions = <36 37 38 33>;
+        };
+
+        P4-disconnect {
+            bindings = <&bt BT_DISC 4>;
+            key-positions = <36 37 38 34>;
         };
     };
 
@@ -116,10 +141,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q            &kp W            &kp F                &kp P              &kp B          &kp J       &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
-&none       &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &lt 1 G        &kp M       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
-&none       &kp Z            &kp X            &kp C                &kp D              &kp V          &kp K       &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
-                                              &kp LC(Z)            &lt 2 TAB          &lt 1 SPACE    &kp RETURN  &kp BACKSPACE       &kp DELETE
+&kp ESCAPE  &kp Q            &kp W            &kp F                &kp P              &kp B          &kp J         &kp L               &kp U                 &kp Y             &kp SEMICOLON     &none
+&none       &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G          &kp M         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SINGLE_QUOTE
+&none       &kp Z            &kp X            &kp C                &kp D              &kp V          &kp K         &kp H               &kp COMMA             &kp DOT           &kp SLASH         &none
+                                              &none                &kp TAB            &lt 1 SPACE    &lt 2 RETURN  &kp BACKSPACE       &kp DELETE
             >;
         };
 
