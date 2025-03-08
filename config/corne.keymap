@@ -39,7 +39,7 @@
                         display-name = "Raise";
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans &trans
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBKT &kp RBKT
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
