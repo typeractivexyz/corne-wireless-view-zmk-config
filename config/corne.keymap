@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  tapping-term-ms = <175>;
-  quick-tap-ms = <125>;
+  tapping-term-ms = <200>;
+  quick-tap-ms = <75>;
 };
 
 / {
