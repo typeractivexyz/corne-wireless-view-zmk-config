@@ -9,7 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  tapping-term-ms = <200>;
+  tapping-term-ms = <225>;
+  quick-tap-ms = <150>;
 };
 
 / {
@@ -28,7 +29,7 @@
                 lower_layer {
                         display-name = "Lower";
                         bindings = <
-   &kp  TILDE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp UNDER
+   &kp  TILDE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp MINUS
    &kp LSHFT    &kp MINUS       &kp TILDE       &kp GRAVE       &kp LBKT       &kp LBRC         &kp RBRC   &kp RBKT   &kp PLUS &kp EQUAL &kp PLUS &kp BSPC
                                     &trans   &mt LGUI RET   &mt RALT ESC      &trans  &trans   &trans
