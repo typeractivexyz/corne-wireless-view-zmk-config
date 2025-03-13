@@ -13,6 +13,58 @@
 };
 
 / {
+  combos {
+    compatible = "zmk,combos";
+    combo_ctrl {
+      timeout-ms = <50>;
+      key-positions = <13 1>; // A+Q
+      bindings = <&kp LCTRL>;
+    };
+    
+    combo_shift {
+      timeout-ms = <50>;
+      key-positions = <14 2>; // S+W
+      bindings = <&kp LSHIFT>;
+    };
+    
+    combo_alt {
+      timeout-ms = <50>;
+      key-positions = <15 3>; // D+E
+      bindings = <&kp LALT>;
+    };
+    
+    combo_gui {
+      timeout-ms = <50>;
+      key-positions = <16 4>; // F+R
+      bindings = <&kp LGUI>;
+    };
+    
+    // Right hand combos
+    combo_ctrl_r {
+      timeout-ms = <50>;
+      key-positions = <22 10>; // L+O
+      bindings = <&kp RCTRL>;
+    };
+    
+    combo_shift_r {
+      timeout-ms = <50>;
+      key-positions = <21 9>; // K+I
+      bindings = <&kp RSHIFT>;
+    };
+    
+    combo_alt_r {
+      timeout-ms = <50>;
+      key-positions = <20 8>; // J+U
+      bindings = <&kp RALT>;
+    };
+    
+    combo_gui_r {
+      timeout-ms = <50>;
+      key-positions = <19 7>; // H+Y
+      bindings = <&kp RGUI>;
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
