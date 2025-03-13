@@ -15,17 +15,6 @@
 / {
   combos {
     compatible = "zmk,combos";
-    combo_ctrl {
-      timeout-ms = <50>;
-      key-positions = <13 1>; // A+Q
-      bindings = <&kp LCTRL>;
-    };
-    
-    combo_shift {
-      timeout-ms = <50>;
-      key-positions = <14 2>; // S+W
-      bindings = <&kp LSHIFT>;
-    };
     
     combo_alt {
       timeout-ms = <50>;
@@ -39,28 +28,22 @@
       bindings = <&kp LGUI>;
     };
     
-    // Right hand combos
-    combo_ctrl_r {
-      timeout-ms = <50>;
-      key-positions = <22 10>; // L+O
-      bindings = <&kp RCTRL>;
-    };
-    
-    combo_shift_r {
-      timeout-ms = <50>;
-      key-positions = <21 9>; // K+I
-      bindings = <&kp RSHIFT>;
-    };
     combo_alt_r {
       timeout-ms = <50>;
-      key-positions = <20 8>; // J+U
+      key-positions = <20 8>; // K + I
       bindings = <&kp RALT>;
     };
     
     combo_gui_r {
       timeout-ms = <50>;
-      key-positions = <19 7>; // H+Y
+      key-positions = <19 7>; // J + U
       bindings = <&kp RGUI>;
+    };
+
+    combo_bspc {
+      timeout-ms = <50>;
+      key-positions = <14 2>;
+      bindings = <&kp BSPC>;
     };
   };
 
@@ -73,16 +56,16 @@
         &kp LBKT   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp RBKT
         &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &mt LCTRL SQT
         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-        &lt 2 TAB &kp SPACE &mt LSHFT TAB      &mt RSHIFT RET &lt 1 BSPC &mt LSHFT BSPC 
+        &lt 2 TAB &kp SPACE &mt LSHFT ESC      &mt RSHIFT RET &lt 1 BSPC &lt LSHFT BSPC 
       >;
     };
     lower_layer {
       display-name = "Lower";
       bindings = <
-        &kp  TILDE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-        &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp MINUS
-        &kp LSHFT    &kp MINUS       &kp TILDE       &kp GRAVE       &kp LBKT       &kp LBRC         &kp RBRC   &kp RBKT   &kp PLUS &kp EQUAL &kp PLUS &kp RSHFT
-        &trans   &mt LGUI RET   &mt RALT ESC      &trans  &trans   &trans
+        &kp  TILDE  &kp LBKT        &kp N7      &kp N9        &kp N9      &kp RBKT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+        &kp GRAVE    &kp SEMI       &kp N4       &kp N5       &kp N6       &kp EQUAL        &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp MINUS
+        &kp LSHFT    &kp GRAVE       &kp N1       &kp N2       &kp N3       &kp BSLH         &kp RBRC   &kp RBKT   &kp PLUS &kp EQUAL &kp PLUS &kp RSHFT
+        &kp DOT &kp 0 &kp MINUS       &mt RSHIFT RET &lt 1 BSPC &lt LSHFT BSPC 
       >;
     };
 
