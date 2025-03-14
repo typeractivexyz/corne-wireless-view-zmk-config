@@ -68,6 +68,16 @@
             bindings = <&bt BT_DISC 4>;
             key-positions = <36 37 38 34>;
         };
+
+        BT-Next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <36 37 38 41>;
+        };
+
+        BT-Previous {
+            bindings = <&bt BT_PRV>;
+            key-positions = <36 37 38 40>;
+        };
     };
 
     macros {
