@@ -76,7 +76,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            label = "Base";
+            display-name = "Base";
             bindings = <
 &mt LG(TAB) TAB   &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E   &mt LG(R) R  &mt LG(T) T                    &mt LG(Y) Y          &mt LG(U) U  &mt LG(I) I          &mt LG(O) O            &mt LG(P) P                  &kp ESC
 &kp LEFT_CONTROL  &mt LG(A) A  &mt LG(S) S  &mt LG(D) D   &mt LG(F) F  &mt LG(G) G                    &mt LG(H) H          &mt LG(J) J  &mt LG(K) K          &mt LG(L) L            &mt LG(SEMICOLON) SEMICOLON  &mt LG(SQT) SQT
@@ -92,7 +92,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Symbols";
+            display-name = "Symbols";
             bindings = <
 &trans  &kp EXCL   &kp AT                &kp HASH        &kp DLLR   &kp PRCNT           &kp CARET          &kp AMPS       &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp GRAVE  &kp LS(LA(NUMBER_2))  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &open_bracket  &close_bracket        &kp COLON              &kp DOUBLE_QUOTES
@@ -108,7 +108,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Numpad";
+            display-name = "Numpad";
             bindings = <
 &trans  &mt LG(NUMBER_1) NUMBER_1  &mt LG(NUMBER_2) NUMBER_2  &mt LG(NUMBER_3) NUMBER_3  &mt LG(NUMBER_4) NUMBER_4  &mt LG(NUMBER_5) NUMBER_5    &mt LG(NUMBER_6) NUMBER_6      &mt LG(NUMBER_7) NUMBER_7  &mt LG(NUMBER_8) NUMBER_8  &mt LG(NUMBER_9) NUMBER_9        &mt LG(NUMBER_0) NUMBER_0  &trans
 &trans  &trans                     &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_INC         &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN    &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp SEMICOLON              &kp SQT
@@ -125,7 +125,7 @@
                                     &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
-            label = "Bluetooth";
+            display-name = "Bluetooth";
         };
     };
 };
