@@ -16,67 +16,67 @@
 
         ClearAllProfiles {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <39 38 36 37 40 41>;
+            key-positions = <24 12 36>;
         };
 
         P0-select {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <38 36 37 18>;
+            key-positions = <12 24 6>;
         };
 
         P1-select {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <38 36 37 19>;
+            key-positions = <12 24 7>;
         };
 
         P2-select {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <38 36 37 20>;
+            key-positions = <12 24 8>;
         };
 
         P3-select {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <38 36 37 21>;
+            key-positions = <12 24 9>;
         };
 
         P4-select {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <38 36 37 22>;
+            key-positions = <12 24 10>;
         };
 
         P0-disconnect {
             bindings = <&bt BT_DISC 0>;
-            key-positions = <36 37 38 30>;
+            key-positions = <12 24 1>;
         };
 
         P1-disconnect {
             bindings = <&bt BT_DISC 1>;
-            key-positions = <36 37 38 31>;
+            key-positions = <24 12 2>;
         };
 
         P2-disconnect {
             bindings = <&bt BT_DISC 2>;
-            key-positions = <36 37 38 32>;
+            key-positions = <24 12 3>;
         };
 
         P3-disconnect {
             bindings = <&bt BT_DISC 3>;
-            key-positions = <36 37 38 33>;
+            key-positions = <12 24 4>;
         };
 
         P4-disconnect {
             bindings = <&bt BT_DISC 4>;
-            key-positions = <36 37 38 34>;
+            key-positions = <24 12 5>;
         };
 
         BT-Next {
             bindings = <&bt BT_NXT>;
-            key-positions = <36 37 38 41>;
+            key-positions = <12 24 35>;
         };
 
         BT-Previous {
             bindings = <&bt BT_PRV>;
-            key-positions = <36 37 38 40>;
+            key-positions = <24 12 11>;
         };
     };
 
