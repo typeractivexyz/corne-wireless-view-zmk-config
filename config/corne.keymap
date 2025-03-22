@@ -70,12 +70,23 @@
     raise_layer {
       display-name = "Raise";
       bindings = <
-        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans &trans
-        &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBKT &kp RBKT
-        &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+        &kp LCTRL &trans   &trans &trans   &trans   &trans                              &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans &trans
+        &kp LCTRL &trans   &trans &trans   &trans   &trans                              &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBKT &kp RBKT
+        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
         &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
       >;
     };
+
+    media_layer {
+      display-name = "Media";
+      bindings = <
+        &kp  TILDE  &kp LBKT        &kp F7      &kp F8        &kp F9      &kp F10          &kp UNDER &kp C_PP  &kp C_PP &kp LPAR &kp RPAR &kp BSPC
+        &kp GRAVE    &kp SEMI       &kp F4       &kp F5       &kp F6       &kp F11        &kp C_PREV   &kp C_VOLUME_DOWN   &kp C_VOLUME_UP &kp C_NEXT &kp N0 &kp MINUS
+        &kp LSHFT    &kp GRAVE       &kp F1       &kp F2       &kp F3       &kp F12         &kp TILDE   &kp EXCL   &kp AT &kp HASH &kp PIPE &kp RSHFT
+        &kp DOT &kp N0 &kp MINUS       &trans &trans &trans
+      >;
+
+    }
 
     extra_1 {
       status = "reserved";
