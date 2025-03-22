@@ -85,8 +85,7 @@
         &kp LSHFT    &kp GRAVE       &kp F1       &kp F2       &kp F3       &kp F12         &kp TILDE   &kp EXCL   &kp AT &kp HASH &kp PIPE &kp RSHFT
         &kp DOT &kp N0 &kp MINUS       &trans &trans &trans
       >;
-
-    }
+    };
 
     extra_1 {
       status = "reserved";
