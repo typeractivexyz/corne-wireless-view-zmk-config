@@ -60,8 +60,8 @@
     lower_layer {
       display-name = "Lower";
       bindings = <
-        &kp  TILDE  &kp LBKT        &kp N7      &kp N8        &kp N9      &kp RBKT          &kp UNDER &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-        &kp GRAVE    &kp SEMI       &kp N4       &kp N5       &kp N6       &kp EQUAL        &kp SEMI   &kp DOLLAR   &kp PRCNT &kp CARET &kp N0 &kp MINUS
+        &kp  TILDE  &kp LBKT        &kp N7      &kp N8        &kp N9      &kp RBKT          &kp AMPS &kp KP_MULTIPLY  &kp LPAR &kp RPAR &kp RPAR &kp BSPC
+        &kp GRAVE    &kp SEMI       &kp N4       &kp N5       &kp N6       &kp EQUAL        &kp SEMI   &kp DOLLAR   &kp PRCNT &kp CARET &kp N0 &kp PIPE
         &kp LSHFT    &kp GRAVE       &kp N1       &kp N2       &kp N3       &kp BSLH         &kp TILDE   &kp EXCL   &kp AT &kp HASH &kp PIPE &kp RSHFT
         &kp DOT &kp N0 &kp MINUS       &trans &trans &trans
       >;
