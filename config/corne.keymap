@@ -21,10 +21,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB           &kp Q         &kp W           &kp E       &kp R                    &kp T        &kp Y    &kp U       &kp I            &kp O         &kp P                &kp BSPC
-&mt LCTRL ESCAPE  &mt LSHIFT A  &mt LEFT_ALT S  &mt LCMD D  &kp F                    &kp G        &kp H    &mt RCMD J  &mt RIGHT_ALT K  &mt RSHIFT L  &mt RCTRL SEMICOLON  &kp SQT
-&kp LSHFT         &kp Z         &kp X           &kp C       &kp V                    &kp B        &kp N    &kp M       &kp COMMA        &kp DOT       &kp FSLH             &kp ESC
-                                                &trans      &mt LS(LA(LCTRL)) SPACE  &kp LSHFT    &kp RET  &to 1       &trans
+&kp TAB           &kp Q         &kp W           &kp E          &kp R                    &kp T        &kp Y    &kp U       &kp I            &kp O         &kp P                &kp BSPC
+&mt LCTRL ESCAPE  &mt LSHIFT A  &mt LEFT_ALT S  &mt LCMD D     &kp F                    &kp G        &kp H    &mt RCMD J  &mt RIGHT_ALT K  &mt RSHIFT L  &mt RCTRL SEMICOLON  &kp SQT
+&kp LSHFT         &kp Z         &kp X           &kp C          &kp V                    &kp B        &kp N    &kp M       &kp COMMA        &kp DOT       &kp FSLH             &kp ESC
+                                                &kp BACKSPACE  &mt LS(LA(LCTRL)) SPACE  &kp LSHFT    &kp RET  &to 1       &trans
             >;
         };
 
@@ -56,7 +56,7 @@
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+                                        &kp LGUI      &to 0         &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
 
