@@ -57,6 +57,18 @@
       key-positions = <17 5>; // G + T
       bindings = <&kp MEH>;
     };
+
+    combo_shift_sw {
+      timeout-ms = <50>;
+      key-positions = <13 2>; // S+W
+      bindings = <&kp LSHIFT>;
+    };
+
+    combo_shift_lo {
+      timeout-ms = <50>;
+      key-positions = <23 15>; // L+O
+      bindings = <&kp LSHIFT>;
+    };
   };
 
   keymap {
