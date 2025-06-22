@@ -34,6 +34,12 @@
             key-positions = <19 20 21>;
             layers = <1>;
         };
+
+        right_command {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <15 16 14>;
+            layers = <0>;
+        };
     };
 
     keymap {
