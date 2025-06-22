@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     tapping-term-ms = <260>;
@@ -98,10 +99,10 @@
 
             label = "BTH";
             bindings = <
-&trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans      &bt BT_SEL 0  &trans
-&trans  &trans  &trans  &trans  &trans             &trans             &trans  &to 0           &to 1       &trans      &bt BT_SEL 1  &trans
-&trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans          &trans      &bt BT_CLR  &bt BT_SEL 2  &trans
-                        &trans  &trans             &trans             &trans  &trans          &trans
+&to 0   &mmv MOVE_LEFT  &msc SCRL_RIGHT  &mmv MOVE_UP    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans      &bt BT_SEL 0  &trans
+&to 1   &trans          &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp LEFT_SHIFT     &trans  &mkp MB1        &mkp MB2    &trans      &bt BT_SEL 1  &trans
+&trans  &trans          &kp C_PLAY       &mmv MOVE_DOWN  &msc SCRL_UP       &kp LEFT_GUI       &trans  &trans          &trans      &bt BT_CLR  &bt BT_SEL 2  &trans
+                                         &trans          &trans             &trans             &trans  &trans          &trans
             >;
         };
     };
