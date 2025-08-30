@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  tapping-term-ms = <135>;
+  tapping-term-ms = <300>;
 };
 
 &lt {
-  tapping-term-ms = <135>;
+  tapping-term-ms = <100>;
 };
 
 #define MEH LG(LC(LALT))
