@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  tapping-term-ms = <200>;
+  tapping-term-ms = <135>;
 };
 
 &lt {
