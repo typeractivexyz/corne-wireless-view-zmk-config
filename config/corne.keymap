@@ -25,7 +25,7 @@
     hm_l: homerow_mods_left {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <250>;
       quick-tap-ms = <175>;
       require-prior-idle-ms = <150>;
       flavor = "balanced";
@@ -35,7 +35,7 @@
     hm_r: homerow_mods_right {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <250>;
       quick-tap-ms = <175>;
       require-prior-idle-ms = <150>;
       flavor = "balanced";
