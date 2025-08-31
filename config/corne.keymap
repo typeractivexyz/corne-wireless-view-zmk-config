@@ -10,10 +10,12 @@
 
 &mt {
   tapping-term-ms = <300>;
+  hold-trigger-on-release;
 };
 
 &lt {
-  tapping-term-ms = <100>;
+  tapping-term-ms = <135>;
+  hold-trigger-on-release;
 };
 
 #define MEH LG(LC(LALT))
