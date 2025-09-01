@@ -9,13 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  tapping-term-ms = <250>;
-  hold-trigger-on-release;
+  tapping-term-ms = <300>;
 };
 
 &lt {
-  tapping-term-ms = <250>;
-  quick-tap-ms = <200>;
+  tapping-term-ms = <135>;
+  quick-tap-ms = <135>;
   require-prior-idle-ms = <150>;
   flavor = "balanced";
   hold-trigger-on-release;
