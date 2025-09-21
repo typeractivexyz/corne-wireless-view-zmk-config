@@ -81,10 +81,10 @@
 
         league {
             bindings = <
-&none  &kp NUMBER_1    &kp NUMBER_2  &kp N3                             &kp N4   &kp N5                          &kp Y       &none          &none            &none  &kp P  &none
-&none  &kp Q           &kp W         &kp E                              &kp R    &kp G                           &kp K_MUTE  &kp C_VOL_DN   &kp C_VOLUME_UP  &none  &none  &none
-&none  &kp LEFT_SHIFT  &kp C         &kp D                              &kp F    &kp B                           &tog 3      &none          &none            &none  &none  &none
-                                     &hold_tap_200 LEFT_CONTROL ESCAPE  &kp TAB  &hold_tap_200 LEFT_ALT SPACE    &kp ENTER   &kp RIGHT_WIN  &kp DELETE
+&none  &kp NUMBER_1    &kp NUMBER_2  &kp N3                             &kp N4   &kp N5       &kp Y       &none          &none            &none  &kp P  &none
+&none  &kp Q           &kp W         &kp E                              &kp R    &kp G        &kp K_MUTE  &kp C_VOL_DN   &kp C_VOLUME_UP  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp C         &kp D                              &kp F    &kp B        &tog 3      &none          &none            &none  &none  &none
+                                     &hold_tap_200 LEFT_CONTROL ESCAPE  &kp TAB  &kp SPACE    &kp ENTER   &kp RIGHT_WIN  &kp DELETE
             >;
         };
 
